@@ -1,0 +1,37 @@
+name: Build ASN Karma
+
+on:
+  schedule:
+    - cron: "47 4 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      - name: Test
+        run: go test ./...
+
+      - name: Download BlackRoute release
+        run: |
+          mkdir -p data
+          curl -fsSL \
+            https://github.com/ipanalytics/BlackRoute/releases/latest/download/blackroute.jsonl \
+            -o data/blackroute.jsonl
+
+      - name: Build ASN risk
+        run: go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
+
+      - name: Publish release artifacts
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.run_number }}
+          files: release/*
