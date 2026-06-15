@@ -8,6 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     permissions:
       contents: write
     steps:
@@ -52,7 +53,7 @@ jobs:
           tar -xzf data/blackroute_exports.tar.gz -C data blackroute.jsonl
 
       - name: Build ASN risk
-        run: go run ./cmd/asn-karma -input data/blackroute.jsonl -out release -readme README.md
+        run: go run ./cmd/asn-karma -input data/blackroute.jsonl -out release -readme README.md -cymru-batch 25000
 
       - name: Commit README dataset links
         run: |
