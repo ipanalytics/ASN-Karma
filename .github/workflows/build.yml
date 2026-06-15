@@ -20,12 +20,36 @@ jobs:
       - name: Test
         run: go test ./...
 
-      - name: Download BlackRoute release
+      - name: Download BlackRoute export archive
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p data
           curl -fsSL \
-            https://github.com/ipanalytics/BlackRoute/releases/latest/download/blackroute.jsonl \
-            -o data/blackroute.jsonl
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/ipanalytics/BlackRoute/releases/latest \
+            -o data/blackroute-release.json
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          release = json.loads(Path("data/blackroute-release.json").read_text())
+          matches = [
+              asset["browser_download_url"]
+              for asset in release.get("assets", [])
+              if asset.get("name", "").endswith("_exports.tar.gz")
+          ]
+          if not matches:
+              names = ", ".join(asset.get("name", "") for asset in release.get("assets", []))
+              raise SystemExit(f"BlackRoute exports archive not found. Assets: {names}")
+          Path("data/blackroute-export-url.txt").write_text(matches[0] + "\n")
+          PY
+          curl -fsSL \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            "$(cat data/blackroute-export-url.txt)" \
+            -o data/blackroute_exports.tar.gz
+          tar -xzf data/blackroute_exports.tar.gz -C data blackroute.jsonl
 
       - name: Build ASN risk
         run: go run ./cmd/asn-karma -input data/blackroute.jsonl -out release -readme README.md
