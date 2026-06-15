@@ -1,0 +1,25 @@
+{
+  "evidence_window_days": 30,
+  "threat_weights": {
+    "c2_ioc": 100,
+    "prefix_cybercrime": 95,
+    "malware_host_active": 90,
+    "phishing_or_scam": 75,
+    "spam": 65,
+    "bruteforce": 55,
+    "network_scan_or_abuse": 45,
+    "recent_attack_any": 35,
+    "community_high_risk": 35,
+    "multi_sensor_high_risk": 35
+  },
+  "large_cloud_asns": [
+    13335,
+    15169,
+    16509,
+    32934,
+    396982,
+    8075
+  ],
+  "allowlist_asns": [],
+  "watchlist_asns": []
+}

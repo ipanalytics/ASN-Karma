@@ -1,0 +1,3 @@
+{"ip":"203.0.113.10","asn":64500,"asn_name":"Example Hosting","country":"US","source":"feed_a","threat_labels":["c2_ioc","malware_host_active"]}
+{"ip":"203.0.113.11","asn":64500,"asn_name":"Example Hosting","country":"US","source":"feed_b","threat_labels":["network_scan_or_abuse"]}
+{"cidr":"198.51.100.0/24","asn":64501,"asn_name":"Example Network","country":"NL","source":"feed_a","threat_labels":["spam"]}

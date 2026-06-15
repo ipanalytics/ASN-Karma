@@ -1,0 +1,3 @@
+asn,asn_name,country,risk_score,risk_level,observed_records,source_count,recommended_action
+64500,Example Hosting,US,39,low,2,2,no_action
+64501,Example Network,NL,18,low,1,1,no_action
