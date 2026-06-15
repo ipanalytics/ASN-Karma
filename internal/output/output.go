@@ -50,6 +50,13 @@ func writeJSONL(path string, records []model.RiskRecord) error {
 	defer f.Close()
 
 	enc := json.NewEncoder(f)
+	if len(records) == 0 {
+		return enc.Encode(map[string]any{
+			"record_type": "build_status",
+			"status":      "empty_asn_dataset",
+			"message":     "no ASN records were produced from the current input; IP-to-ASN enrichment is required for upstream records without ASN fields",
+		})
+	}
 	for _, rec := range records {
 		if err := enc.Encode(rec); err != nil {
 			return err
