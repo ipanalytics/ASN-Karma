@@ -53,15 +53,15 @@ jobs:
           tar -xzf data/blackroute_exports.tar.gz -C data blackroute.jsonl
 
       - name: Build ASN risk
-        run: go run ./cmd/asn-karma -input data/blackroute.jsonl -out release -readme README.md -cymru-batch 25000
+        run: go run ./cmd/asn-karma -input data/blackroute.jsonl -out release -readme README.md -cymru-batch 25000 -prefix-limit 100
 
       - name: Commit README dataset links
         run: |
-          if ! git diff --quiet README.md; then
+          if [ -n "$(git status --porcelain README.md data/history/asn_daily.jsonl)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add README.md
-            git commit -m "Update ASN dataset links"
+            git add README.md data/history/asn_daily.jsonl
+            git commit -m "Update ASN dataset state"
             git push
           fi
 
@@ -81,4 +81,17 @@ jobs:
           name: ASN Karma dataset ${{ github.run_number }}
           body_path: release/release-notes.md
           make_latest: true
-          files: release/*
+          files: |
+            release/asn-risk.jsonl
+            release/asn-summary.csv
+            release/asn-evidence-table.md
+            release/asn-profiles.tar.gz
+            release/high-risk-asn-critical.txt
+            release/high-risk-asn-high.txt
+            release/high-risk-asn-watch.txt
+            release/high-risk-asn-prefixes-critical.txt
+            release/high-risk-asn-prefixes-high.txt
+            release/high-risk-asn-prefixes-watch.txt
+            release/release-notes.md
+            release/run_stats.json
+            release/checksums.txt
