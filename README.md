@@ -7,7 +7,6 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 </p>
 
 <p align="center">
-  <a href="./LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Apache%202.0-blue"></a>
   <a href="./.github/workflows/build.yml"><img alt="CI" src="https://img.shields.io/badge/ci-github%20actions-2088FF"></a>
   <img alt="Go" src="https://img.shields.io/badge/go-1.22+-00ADD8">
   <img alt="Dataset" src="https://img.shields.io/badge/dataset-jsonl%20%7C%20csv%20%7C%20txt-informational">
