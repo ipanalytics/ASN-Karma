@@ -22,7 +22,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-06-15T13:31:29Z`_
+_Last dataset build: `2026-06-15T13:34:47Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -161,7 +161,7 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from the current dataset. `Evidence` is the number of observed BlackRoute records aggregated for the ASN in the active build window. Country is populated when present in upstream records or enrichment data.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-06-15T13:31:29Z`_
+_Last updated: `2026-06-15T13:34:47Z`_
 
 | ASN | Name | Country | Evidence | Sources | Score | Tier |
 | --- | --- | --- | ---: | ---: | ---: | --- |
