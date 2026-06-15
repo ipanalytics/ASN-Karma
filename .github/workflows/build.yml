@@ -28,7 +28,17 @@ jobs:
             -o data/blackroute.jsonl
 
       - name: Build ASN risk
-        run: go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
+        run: go run ./cmd/asn-karma -input data/blackroute.jsonl -out release -readme README.md
+
+      - name: Commit README evidence table
+        run: |
+          if ! git diff --quiet README.md; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "Update ASN evidence table"
+            git push
+          fi
 
       - name: Publish release artifacts
         uses: softprops/action-gh-release@v2
