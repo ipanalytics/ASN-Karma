@@ -31,11 +31,16 @@ _Last dataset build: `2026-06-15T00:00:00Z`_
 | `asn-risk.jsonl` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/asn-risk.jsonl) | Primary JSONL risk dataset |
 | `asn-summary.csv` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/asn-summary.csv) | CSV summary for review and reporting |
 | `asn-evidence-table.md` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/asn-evidence-table.md) | Markdown table of top ASN evidence counts |
+| `asn-profiles.tar.gz` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/asn-profiles.tar.gz) | Per-ASN JSON profiles |
 | `high-risk-asn-critical.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/high-risk-asn-critical.txt) | Critical ASN tier |
 | `high-risk-asn-high.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/high-risk-asn-high.txt) | High ASN tier |
 | `high-risk-asn-watch.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/high-risk-asn-watch.txt) | Watch ASN tier |
+| `high-risk-asn-prefixes-critical.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/high-risk-asn-prefixes-critical.txt) | Derived critical ASN announced prefixes |
+| `high-risk-asn-prefixes-high.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/high-risk-asn-prefixes-high.txt) | Derived high ASN announced prefixes |
+| `high-risk-asn-prefixes-watch.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/high-risk-asn-prefixes-watch.txt) | Derived watch ASN announced prefixes |
 | `release-notes.md` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/release-notes.md) | Release summary and top ASN table |
 | `run_stats.json` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/run_stats.json) | Build metadata and tier counts |
+| `checksums.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/checksums.txt) | SHA256 checksums for release artifacts |
 
 <!-- ASN_KARMA_RELEASE_END -->
 
@@ -74,6 +79,10 @@ BlackRoute JSONL
 - JSONL primary output for downstream data pipelines.
 - CSV summary for analyst workflows.
 - Text tier files for infrastructure policy integration.
+- 7/30/90 day history signals for persistence and trend.
+- Confidence scoring alongside risk scoring.
+- Per-ASN profile archive and derived announced-prefix artifacts.
+- SHA256 checksums for release artifacts.
 - GitHub Actions workflow for scheduled dataset builds.
 - Explicit `expanded_prefixes_are_evidence: false` field in risk records.
 - Local smoke-test fixture under `data/blackroute.example.jsonl`.
@@ -95,11 +104,16 @@ release/
   asn-risk.jsonl
   asn-summary.csv
   asn-evidence-table.md
+  asn-profiles.tar.gz
   high-risk-asn-critical.txt
   high-risk-asn-high.txt
   high-risk-asn-watch.txt
+  high-risk-asn-prefixes-critical.txt
+  high-risk-asn-prefixes-high.txt
+  high-risk-asn-prefixes-watch.txt
   release-notes.md
   run_stats.json
+  checksums.txt
 ```
 
 ## Installation
@@ -162,11 +176,16 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 | `asn-risk.jsonl` | JSONL | Primary machine-readable ASN risk dataset |
 | `asn-summary.csv` | CSV | Compact review and reporting table |
 | `asn-evidence-table.md` | Markdown | Top ASN evidence table used by README and release notes |
+| `asn-profiles.tar.gz` | tar.gz | Per-ASN JSON profiles with risk, history, confidence, and derived prefixes |
 | `high-risk-asn-critical.txt` | TXT | Strict action tier |
 | `high-risk-asn-high.txt` | TXT | Challenge or rate-limit tier |
 | `high-risk-asn-watch.txt` | TXT | Enrichment and logging tier |
+| `high-risk-asn-prefixes-critical.txt` | TXT | Derived announced prefixes for critical ASN tier |
+| `high-risk-asn-prefixes-high.txt` | TXT | Derived announced prefixes for high ASN tier |
+| `high-risk-asn-prefixes-watch.txt` | TXT | Derived announced prefixes for watch ASN tier |
 | `release-notes.md` | Markdown | GitHub Release body with run summary and top ASN table |
 | `run_stats.json` | JSON | Build metadata and tier counts |
+| `checksums.txt` | TXT | SHA256 checksums for release artifacts |
 
 ## Latest ASN Evidence
 
@@ -193,6 +212,8 @@ When ASN records are available, `asn-risk.jsonl` contains one JSON object per AS
   "country": "US",
   "risk_score": 39,
   "risk_level": "low",
+  "confidence_score": 40,
+  "confidence": "low",
   "recommended_action": "no_action",
   "observed_records": 2,
   "unique_observed_cidrs": 2,
@@ -204,7 +225,14 @@ When ASN records are available, `asn-risk.jsonl` contains one JSON object per AS
     "network_scan_or_abuse": 1
   },
   "evidence_window_days": 30,
-  "persistence_days_30d": 0,
+  "persistence_days_30d": 1,
+  "active_days_7d": 1,
+  "active_days_30d": 1,
+  "active_days_90d": 1,
+  "first_seen": "2026-06-15",
+  "last_seen": "2026-06-15",
+  "trend": "new",
+  "evidence_delta_1d": 2,
   "expanded_prefix_count": 0,
   "expanded_prefixes_are_evidence": false,
   "large_cloud": false,
@@ -214,6 +242,27 @@ When ASN records are available, `asn-risk.jsonl` contains one JSON object per AS
 ```
 
 If a build is explicitly allowed to complete with zero ASN records, `asn-risk.jsonl` contains a single `build_status` JSON object explaining that no ASN records were produced. Scheduled production builds do not use `-allow-empty`; an empty ASN dataset fails before release publication.
+
+## Data Contracts
+
+Schemas are kept under `docs/schema/`:
+
+| Schema | Covers |
+| --- | --- |
+| `docs/schema/asn-risk.schema.json` | `asn-risk.jsonl` records |
+| `docs/schema/run-stats.schema.json` | `run_stats.json` |
+
+## Integration Examples
+
+Operational examples are available under `examples/`:
+
+| File | Target |
+| --- | --- |
+| `examples/cloudflare-waf.md` | Cloudflare WAF ASN policy |
+| `examples/nginx-map.md` | NGINX enrichment map pattern |
+| `examples/opnsense-alias.md` | OPNsense firewall aliases |
+| `examples/splunk-lookup.md` | Splunk CSV lookup |
+| `examples/clickhouse-ingest.sql` | ClickHouse JSONL ingestion |
 
 ## Scoring Policy
 
@@ -238,6 +287,7 @@ Risk tiers are emitted as `critical`, `high`, `watch`, or `low`.
 - Use TXT tier files as policy inputs only after local validation.
 - Keep scoring changes reviewable; policy drift should be visible in config diffs.
 - Do not feed derived ASN prefix expansion back into source evidence.
+- Verify downloaded artifacts with `checksums.txt`.
 - Large cloud and CDN networks need provider-aware handling in production policy.
 - Run builds on a schedule after the upstream BlackRoute release has completed.
 
@@ -247,9 +297,7 @@ ASN Karma focuses on ASN-level aggregation, scoring, and artifact generation. It
 
 Planned extension points include:
 
-- RIPEstat announced-prefix expansion for derived prefix artifacts.
-- Historical persistence windows for 7/30/90 day scoring.
-- Signed release checksums.
+- Optional release signing.
 - GitHub Pages dataset index.
 
 ## Use Cases
@@ -273,6 +321,9 @@ Team Cymru enrichment uses current BGP attribution. For historical analysis, run
 ├── cmd/asn-karma/              # CLI entrypoint
 ├── configs/                    # scoring and policy configuration
 ├── data/                       # local fixtures and input data
+├── data/history/               # persisted daily ASN history state
+├── docs/schema/                # JSON schema contracts
+├── examples/                   # integration examples
 ├── internal/blackroute/         # BlackRoute JSONL ingest
 ├── internal/enrich/             # ASN enrichment adapters
 ├── internal/model/              # normalized records and aggregation

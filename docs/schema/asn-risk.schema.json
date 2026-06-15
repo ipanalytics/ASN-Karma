@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ipanalytics/ASN-Karma/docs/schema/asn-risk.schema.json",
+  "title": "ASN Karma Risk JSONL Record",
+  "oneOf": [
+    {
+      "title": "Risk record",
+      "type": "object",
+      "required": [
+        "asn",
+        "risk_score",
+        "risk_level",
+        "confidence_score",
+        "confidence",
+        "observed_records",
+        "source_count",
+        "expanded_prefixes_are_evidence",
+        "built_at"
+      ],
+      "properties": {
+        "asn": { "type": "integer", "minimum": 1 },
+        "asn_name": { "type": "string" },
+        "country": { "type": "string" },
+        "risk_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "risk_level": { "type": "string", "enum": ["critical", "high", "watch", "low"] },
+        "confidence_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "recommended_action": { "type": "string" },
+        "observed_records": { "type": "integer", "minimum": 0 },
+        "unique_observed_cidrs": { "type": "integer", "minimum": 0 },
+        "source_count": { "type": "integer", "minimum": 0 },
+        "source_diversity": { "type": "integer", "minimum": 0 },
+        "top_threat_labels": {
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 0 }
+        },
+        "evidence_window_days": { "type": "integer", "minimum": 1 },
+        "persistence_days_30d": { "type": "integer", "minimum": 0 },
+        "active_days_7d": { "type": "integer", "minimum": 0, "maximum": 7 },
+        "active_days_30d": { "type": "integer", "minimum": 0, "maximum": 30 },
+        "active_days_90d": { "type": "integer", "minimum": 0, "maximum": 90 },
+        "first_seen": { "type": "string" },
+        "last_seen": { "type": "string" },
+        "trend": { "type": "string", "enum": ["new", "up", "down", "flat"] },
+        "evidence_delta_1d": { "type": "integer" },
+        "expanded_prefix_count": { "type": "integer", "minimum": 0 },
+        "expanded_prefixes_are_evidence": { "type": "boolean", "const": false },
+        "large_cloud": { "type": "boolean" },
+        "watchlist": { "type": "boolean" },
+        "built_at": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": true
+    },
+    {
+      "title": "Build status record",
+      "type": "object",
+      "required": ["record_type", "status", "message"],
+      "properties": {
+        "record_type": { "type": "string", "const": "build_status" },
+        "status": { "type": "string" },
+        "message": { "type": "string" }
+      },
+      "additionalProperties": true
+    }
+  ]
+}

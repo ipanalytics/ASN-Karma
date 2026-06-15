@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ipanalytics/ASN-Karma/docs/schema/run-stats.schema.json",
+  "title": "ASN Karma Run Stats",
+  "type": "object",
+  "required": [
+    "built_at",
+    "duration_seconds",
+    "input_records",
+    "records_with_asn",
+    "records_needing_asn",
+    "records_enriched",
+    "records_unmapped",
+    "unique_asns",
+    "unique_sources"
+  ],
+  "properties": {
+    "built_at": { "type": "string", "format": "date-time" },
+    "duration_seconds": { "type": "number", "minimum": 0 },
+    "input_records": { "type": "integer", "minimum": 0 },
+    "records_with_asn": { "type": "integer", "minimum": 0 },
+    "records_needing_asn": { "type": "integer", "minimum": 0 },
+    "records_enriched": { "type": "integer", "minimum": 0 },
+    "records_unmapped": { "type": "integer", "minimum": 0 },
+    "unique_enrich_queries": { "type": "integer", "minimum": 0 },
+    "mapped_enrich_queries": { "type": "integer", "minimum": 0 },
+    "unique_asns": { "type": "integer", "minimum": 0 },
+    "unique_sources": { "type": "integer", "minimum": 0 },
+    "expanded_asns": { "type": "integer", "minimum": 0 },
+    "expanded_prefixes": { "type": "integer", "minimum": 0 },
+    "critical_count": { "type": "integer", "minimum": 0 },
+    "high_count": { "type": "integer", "minimum": 0 },
+    "watch_count": { "type": "integer", "minimum": 0 },
+    "low_count": { "type": "integer", "minimum": 0 },
+    "top_unmapped_samples": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "top_sources": {
+      "type": "object",
+      "additionalProperties": { "type": "integer", "minimum": 0 }
+    }
+  },
+  "additionalProperties": true
+}
