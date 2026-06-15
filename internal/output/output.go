@@ -27,6 +27,9 @@ func WriteArtifacts(dir string, records []model.RiskRecord, builtAt time.Time) e
 	if err := writeEvidenceTable(filepath.Join(dir, "asn-evidence-table.md"), records, builtAt, 50); err != nil {
 		return err
 	}
+	if err := writeReleaseNotes(filepath.Join(dir, "release-notes.md"), records, builtAt); err != nil {
+		return err
+	}
 	if err := writeASNList(filepath.Join(dir, "high-risk-asn-critical.txt"), records, "critical"); err != nil {
 		return err
 	}
@@ -110,6 +113,47 @@ func UpdateReadmeEvidenceTable(path string, records []model.RiskRecord, builtAt 
 	return os.WriteFile(path, []byte(updated), 0o644)
 }
 
+func UpdateReadmeReleaseLinks(path string, builtAt time.Time, releaseBaseURL string) error {
+	const start = "<!-- ASN_KARMA_RELEASE_START -->"
+	const end = "<!-- ASN_KARMA_RELEASE_END -->"
+
+	b, err := os.ReadFile(path)
+	if err != nil {
+		return err
+	}
+	content := string(b)
+	startIdx := strings.Index(content, start)
+	endIdx := strings.Index(content, end)
+	if startIdx == -1 || endIdx == -1 || endIdx < startIdx {
+		return fmt.Errorf("README release markers not found")
+	}
+
+	replacement := start + "\n" + renderReleaseLinks(builtAt, releaseBaseURL) + end
+	updated := content[:startIdx] + replacement + content[endIdx+len(end):]
+	return os.WriteFile(path, []byte(updated), 0o644)
+}
+
+func writeReleaseNotes(path string, records []model.RiskRecord, builtAt time.Time) error {
+	var b strings.Builder
+	fmt.Fprintf(&b, "# ASN Karma Dataset\n\n")
+	fmt.Fprintf(&b, "Built at `%s`.\n\n", builtAt.UTC().Format(time.RFC3339))
+	fmt.Fprintf(&b, "| Metric | Value |\n")
+	fmt.Fprintf(&b, "| --- | ---: |\n")
+	fmt.Fprintf(&b, "| ASN records | %d |\n", len(records))
+	fmt.Fprintf(&b, "| Critical | %d |\n", countLevel(records, "critical"))
+	fmt.Fprintf(&b, "| High | %d |\n", countLevel(records, "high"))
+	fmt.Fprintf(&b, "| Watch | %d |\n\n", countLevel(records, "watch"))
+	b.WriteString("## Artifacts\n\n")
+	b.WriteString("| File | Description |\n")
+	b.WriteString("| --- | --- |\n")
+	for _, artifact := range releaseArtifacts() {
+		fmt.Fprintf(&b, "| `%s` | %s |\n", artifact.File, artifact.Description)
+	}
+	b.WriteString("\n## Top ASN Evidence\n\n")
+	b.WriteString(renderEvidenceTable(records, builtAt, 25))
+	return os.WriteFile(path, []byte(b.String()), 0o644)
+}
+
 func renderEvidenceTable(records []model.RiskRecord, builtAt time.Time, limit int) string {
 	tableRecords := append([]model.RiskRecord(nil), records...)
 	sort.Slice(tableRecords, func(i, j int) bool {
@@ -154,6 +198,46 @@ func renderEvidenceTable(records []model.RiskRecord, builtAt time.Time, limit in
 	}
 	if len(records) == 0 {
 		b.WriteString("| - | - | - | 0 | 0 | 0 | `none` |\n")
+	}
+	b.WriteString("\n")
+	return b.String()
+}
+
+type releaseArtifact struct {
+	File        string
+	Description string
+}
+
+func releaseArtifacts() []releaseArtifact {
+	return []releaseArtifact{
+		{"asn-risk.jsonl", "Primary JSONL risk dataset"},
+		{"asn-summary.csv", "CSV summary for review and reporting"},
+		{"asn-evidence-table.md", "Markdown table of top ASN evidence counts"},
+		{"high-risk-asn-critical.txt", "Critical ASN tier"},
+		{"high-risk-asn-high.txt", "High ASN tier"},
+		{"high-risk-asn-watch.txt", "Watch ASN tier"},
+		{"release-notes.md", "Release summary and top ASN table"},
+		{"run_stats.json", "Build metadata and tier counts"},
+	}
+}
+
+func renderReleaseLinks(builtAt time.Time, releaseBaseURL string) string {
+	releaseBaseURL = strings.TrimRight(releaseBaseURL, "/")
+
+	var b strings.Builder
+	fmt.Fprintf(&b, "_Last dataset build: `%s`_\n\n", builtAt.UTC().Format(time.RFC3339))
+	b.WriteString("[Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)\n\n")
+	b.WriteString("| Artifact | Download | Description |\n")
+	b.WriteString("| --- | --- | --- |\n")
+	for _, artifact := range releaseArtifacts() {
+		fmt.Fprintf(
+			&b,
+			"| `%s` | [download](%s/%s) | %s |\n",
+			artifact.File,
+			releaseBaseURL,
+			artifact.File,
+			artifact.Description,
+		)
 	}
 	b.WriteString("\n")
 	return b.String()

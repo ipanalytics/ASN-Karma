@@ -20,6 +20,7 @@ func main() {
 		outputDir  = flag.String("out", "release", "directory for release artifacts")
 		configPath = flag.String("config", "configs/scoring.json", "path to scoring config")
 		readmePath = flag.String("readme", "", "optional README path to update with the latest ASN evidence table")
+		releaseURL = flag.String("release-url", "https://github.com/ipanalytics/ASN-Karma/releases/latest/download", "base URL for README release artifact links")
 		builtAt    = flag.String("built-at", "", "override build timestamp in RFC3339 format")
 	)
 	flag.Parse()
@@ -51,6 +52,9 @@ func main() {
 	if *readmePath != "" {
 		if err := output.UpdateReadmeEvidenceTable(*readmePath, results, ts, 25); err != nil {
 			log.Fatalf("update readme evidence table: %v", err)
+		}
+		if err := output.UpdateReadmeReleaseLinks(*readmePath, ts, *releaseURL); err != nil {
+			log.Fatalf("update readme release links: %v", err)
 		}
 	}
 

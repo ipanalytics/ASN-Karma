@@ -2,7 +2,9 @@
 
 ASN Karma is a Go pipeline for building ASN-level risk datasets from observed BlackRoute evidence. It aggregates hostile IP/CIDR records by autonomous system, scores abuse exposure with an auditable rule set, and emits release artifacts for security analytics, fraud/risk enrichment, traffic policy, and network operations.
 
-
+<p align="center">
+  <img src="./site/banner.svg" alt="ASN Karma banner" width="100%">
+</p>
 
 <p align="center">
   <a href="./LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Apache%202.0-blue"></a>
@@ -14,6 +16,28 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 </p>
 
 ---
+
+## Latest Release
+
+Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
+
+<!-- ASN_KARMA_RELEASE_START -->
+_Last dataset build: `2026-06-15T00:00:00Z`_
+
+[Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
+
+| Artifact | Download | Description |
+| --- | --- | --- |
+| `asn-risk.jsonl` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/asn-risk.jsonl) | Primary JSONL risk dataset |
+| `asn-summary.csv` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/asn-summary.csv) | CSV summary for review and reporting |
+| `asn-evidence-table.md` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/asn-evidence-table.md) | Markdown table of top ASN evidence counts |
+| `high-risk-asn-critical.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/high-risk-asn-critical.txt) | Critical ASN tier |
+| `high-risk-asn-high.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/high-risk-asn-high.txt) | High ASN tier |
+| `high-risk-asn-watch.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/high-risk-asn-watch.txt) | Watch ASN tier |
+| `release-notes.md` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/release-notes.md) | Release summary and top ASN table |
+| `run_stats.json` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/run_stats.json) | Build metadata and tier counts |
+
+<!-- ASN_KARMA_RELEASE_END -->
 
 ## Overview
 
@@ -71,6 +95,7 @@ release/
   high-risk-asn-critical.txt
   high-risk-asn-high.txt
   high-risk-asn-watch.txt
+  release-notes.md
   run_stats.json
 ```
 
@@ -128,6 +153,7 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 | `high-risk-asn-critical.txt` | TXT | Strict action tier |
 | `high-risk-asn-high.txt` | TXT | Challenge or rate-limit tier |
 | `high-risk-asn-watch.txt` | TXT | Enrichment and logging tier |
+| `release-notes.md` | Markdown | GitHub Release body with run summary and top ASN table |
 | `run_stats.json` | JSON | Build metadata and tier counts |
 
 ## Latest ASN Evidence
