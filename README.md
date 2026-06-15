@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-06-15T00:00:00Z`_
+_Last dataset build: `2026-06-15T14:58:01Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,12 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from the current dataset. `Evidence` is the number of observed BlackRoute records aggregated for the ASN in the active build window. Country is populated when present in upstream records or enrichment data.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-06-15T00:00:00Z`_
+_Last updated: `2026-06-15T14:58:01Z`_
 
 | ASN | Name | Country | Evidence | Sources | Score | Tier | Review |
 | --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| AS64500 | Example Hosting | US | 2 | 2 | 39 | `low` | false |
-| AS64501 | Example Network | NL | 1 | 1 | 18 | `low` | false |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | 360504 | 34 | 65 | `watch` | true |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | 170200 | 34 | 65 | `watch` | true |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | 96223 | 21 | 65 | `watch` | true |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | 85511 | 30 | 65 | `watch` | true |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | 77442 | 31 | 65 | `watch` | true |
+| AS37963 | ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN | CN | 56997 | 27 | 65 | `watch` | true |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | 49544 | 34 | 65 | `watch` | true |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | 47059 | 31 | 65 | `watch` | true |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | 43793 | 12 | 65 | `watch` | true |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | 41074 | 32 | 65 | `watch` | true |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | 38185 | 31 | 65 | `watch` | true |
+| AS16276 | OVH - OVH SAS, FR | FR | 35084 | 30 | 65 | `watch` | true |
+| AS36352 | AS-COLOCROSSING - HostPapa, US | US | 30461 | 31 | 65 | `watch` | true |
+| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | 30003 | 30 | 65 | `watch` | true |
+| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | 23275 | 32 | 65 | `watch` | true |
+| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | 20472 | 26 | 65 | `watch` | true |
+| AS20473 | AS-VULTR - The Constant Company, LLC, US | US | 18939 | 26 | 65 | `watch` | true |
+| AS212238 | CDNEXT - Datacamp Limited, GB | GB | 17846 | 25 | 65 | `watch` | true |
+| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | 16701 | 28 | 65 | `watch` | true |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | 15842 | 18 | 85 | `high` | false |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | 13269 | 13 | 65 | `watch` | true |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | 12705 | 20 | 65 | `watch` | true |
+| AS51167 | CONTABO - Contabo GmbH, DE | DE | 12574 | 28 | 65 | `watch` | true |
+| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | 12513 | 28 | 65 | `watch` | true |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | 12299 | 11 | 85 | `high` | false |
 
 <!-- ASN_KARMA_TABLE_END -->
 
