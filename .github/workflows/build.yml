@@ -64,6 +64,15 @@ jobs:
             git push
           fi
 
+      - name: Validate release artifacts
+        run: |
+          find release -maxdepth 1 -type f -size 0 -print -quit | grep -q . && {
+            echo "Release contains empty artifact(s):"
+            find release -maxdepth 1 -type f -size 0 -print
+            exit 1
+          }
+          find release -maxdepth 1 -type f -print -exec wc -c {} \;
+
       - name: Publish release artifacts
         uses: softprops/action-gh-release@v2
         with:
