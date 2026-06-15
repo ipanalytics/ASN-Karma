@@ -30,13 +30,13 @@ jobs:
       - name: Build ASN risk
         run: go run ./cmd/asn-karma -input data/blackroute.jsonl -out release -readme README.md
 
-      - name: Commit README evidence table
+      - name: Commit README dataset links
         run: |
           if ! git diff --quiet README.md; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add README.md
-            git commit -m "Update ASN evidence table"
+            git commit -m "Update ASN dataset links"
             git push
           fi
 
@@ -44,4 +44,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.run_number }}
+          name: ASN Karma dataset ${{ github.run_number }}
+          body_path: release/release-notes.md
+          make_latest: true
           files: release/*
