@@ -1,3 +1,0 @@
-# ASN Karma critical tier
-# built_at=2026-06-15T00:00:00Z
-# no entries
