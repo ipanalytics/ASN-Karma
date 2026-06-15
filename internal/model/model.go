@@ -50,6 +50,9 @@ type RiskRecord struct {
 func AggregateRecords(records []ObservedRecord) []ASNAggregate {
 	byASN := map[int]*ASNAggregate{}
 	for _, rec := range records {
+		if rec.ASN == 0 {
+			continue
+		}
 		agg := byASN[rec.ASN]
 		if agg == nil {
 			agg = &ASNAggregate{

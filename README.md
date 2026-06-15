@@ -22,7 +22,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-06-15T13:39:36Z`_
+_Last dataset build: `2026-06-15T00:00:00Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -50,6 +50,7 @@ The project treats ASN expansion as derived intelligence. Source evidence comes 
 ```text
 BlackRoute JSONL
   -> parse observed IP/CIDR evidence
+  -> enrich records without ASN via Team Cymru bulk whois
   -> aggregate records by ASN
   -> compute source diversity and threat label distribution
   -> apply scoring policy from configs/scoring.json
@@ -59,6 +60,7 @@ BlackRoute JSONL
 | Stage | Responsibility | Current implementation |
 | --- | --- | --- |
 | Ingest | Read BlackRoute-style JSONL with tolerant field mapping | `internal/blackroute` |
+| Enrich | Map observed IP/CIDR records to ASN, country, and routed prefix | `internal/enrich` |
 | Model | Normalize observed records and aggregate by ASN | `internal/model` |
 | Scoring | Apply deterministic score and tier policy | `internal/scoring` |
 | Output | Emit release artifacts for machines and operators | `internal/output` |
@@ -67,6 +69,7 @@ BlackRoute JSONL
 ## Features
 
 - Go CLI with no runtime service dependency.
+- Team Cymru bulk whois enrichment for upstream records without ASN metadata.
 - Deterministic ASN scoring from local configuration.
 - JSONL primary output for downstream data pipelines.
 - CSV summary for analyst workflows.
@@ -128,6 +131,15 @@ asn-karma \
   -out release
 ```
 
+ASN enrichment is enabled by default. For offline parser tests against data that already contains ASN fields:
+
+```sh
+asn-karma \
+  -input data/blackroute.example.jsonl \
+  -out release \
+  -asn-enrich=false
+```
+
 Use a fixed build timestamp for reproducible test output:
 
 ```sh
@@ -161,11 +173,12 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from the current dataset. `Evidence` is the number of observed BlackRoute records aggregated for the ASN in the active build window. Country is populated when present in upstream records or enrichment data.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-06-15T13:39:36Z`_
+_Last updated: `2026-06-15T00:00:00Z`_
 
 | ASN | Name | Country | Evidence | Sources | Score | Tier |
 | --- | --- | --- | ---: | ---: | ---: | --- |
-| - | - | - | 0 | 0 | 0 | `none` |
+| AS64500 | Example Hosting | US | 2 | 2 | 39 | `low` |
+| AS64501 | Example Network | NL | 1 | 1 | 18 | `low` |
 
 <!-- ASN_KARMA_TABLE_END -->
 
@@ -200,7 +213,7 @@ When ASN records are available, `asn-risk.jsonl` contains one JSON object per AS
 }
 ```
 
-If the input dataset contains no ASN metadata and IP-to-ASN enrichment has not run, the file contains a single `build_status` JSON object explaining that no ASN records were produced. This keeps release assets non-empty while making the condition explicit for downstream jobs.
+If a build is explicitly allowed to complete with zero ASN records, `asn-risk.jsonl` contains a single `build_status` JSON object explaining that no ASN records were produced. Scheduled production builds do not use `-allow-empty`; an empty ASN dataset fails before release publication.
 
 ## Scoring Policy
 
@@ -234,7 +247,6 @@ ASN Karma focuses on ASN-level aggregation, scoring, and artifact generation. It
 
 Planned extension points include:
 
-- Team Cymru bulk IP-to-ASN mapping for records without ASN metadata.
 - RIPEstat announced-prefix expansion for derived prefix artifacts.
 - Historical persistence windows for 7/30/90 day scoring.
 - Signed release checksums.
@@ -252,7 +264,7 @@ Planned extension points include:
 
 ASN-level scoring is coarse by design. It should be combined with local telemetry, asset context, customer impact analysis, and provider-specific knowledge before enforcement.
 
-The current implementation expects ASN fields in the input JSONL. External IP-to-ASN mapping is an integration target, not a dependency of the core scorer.
+Team Cymru enrichment uses current BGP attribution. For historical analysis, run the scorer against input that already carries time-appropriate ASN metadata.
 
 ## Directory Structure
 
@@ -262,6 +274,7 @@ The current implementation expects ASN fields in the input JSONL. External IP-to
 ├── configs/                    # scoring and policy configuration
 ├── data/                       # local fixtures and input data
 ├── internal/blackroute/         # BlackRoute JSONL ingest
+├── internal/enrich/             # ASN enrichment adapters
 ├── internal/model/              # normalized records and aggregation
 ├── internal/output/             # release artifact writers
 ├── internal/scoring/            # scoring policy implementation

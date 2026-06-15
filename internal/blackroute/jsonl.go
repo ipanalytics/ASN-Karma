@@ -42,7 +42,7 @@ func ReadJSONL(path string) ([]model.ObservedRecord, error) {
 			ASNName:      firstString(raw, "asn_name", "org", "organization"),
 			Country:      strings.ToUpper(firstString(raw, "country", "country_code", "cc", "asn_country")),
 			Source:       firstString(raw, "source", "feed", "provider"),
-			ThreatLabels: stringSlice(raw, "threat_labels", "labels", "categories", "tags"),
+			ThreatLabels: stringSlice(raw, "threat_labels", "threat", "labels", "categories", "classification", "tags"),
 		}
 		rec.ASN = firstInt(raw, "asn", "as_number", "asn_number")
 
@@ -56,9 +56,6 @@ func ReadJSONL(path string) ([]model.ObservedRecord, error) {
 			}
 		}
 
-		if rec.ASN == 0 {
-			continue
-		}
 		out = append(out, rec)
 	}
 	if err := scanner.Err(); err != nil {
