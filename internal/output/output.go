@@ -30,13 +30,13 @@ func WriteArtifacts(dir string, records []model.RiskRecord, builtAt time.Time) e
 	if err := writeReleaseNotes(filepath.Join(dir, "release-notes.md"), records, builtAt); err != nil {
 		return err
 	}
-	if err := writeASNList(filepath.Join(dir, "high-risk-asn-critical.txt"), records, "critical"); err != nil {
+	if err := writeASNList(filepath.Join(dir, "high-risk-asn-critical.txt"), records, "critical", builtAt); err != nil {
 		return err
 	}
-	if err := writeASNList(filepath.Join(dir, "high-risk-asn-high.txt"), records, "high"); err != nil {
+	if err := writeASNList(filepath.Join(dir, "high-risk-asn-high.txt"), records, "high", builtAt); err != nil {
 		return err
 	}
-	if err := writeASNList(filepath.Join(dir, "high-risk-asn-watch.txt"), records, "watch"); err != nil {
+	if err := writeASNList(filepath.Join(dir, "high-risk-asn-watch.txt"), records, "watch", builtAt); err != nil {
 		return err
 	}
 	return writeStats(filepath.Join(dir, "run_stats.json"), records, builtAt)
@@ -249,18 +249,29 @@ func escapeMarkdownCell(s string) string {
 	return s
 }
 
-func writeASNList(path string, records []model.RiskRecord, level string) error {
+func writeASNList(path string, records []model.RiskRecord, level string, builtAt time.Time) error {
 	f, err := os.Create(path)
 	if err != nil {
 		return err
 	}
 	defer f.Close()
 
+	if _, err := fmt.Fprintf(f, "# ASN Karma %s tier\n# built_at=%s\n", level, builtAt.UTC().Format(time.RFC3339)); err != nil {
+		return err
+	}
+
+	wrote := false
 	for _, rec := range records {
 		if rec.RiskLevel == level {
 			if _, err := fmt.Fprintf(f, "AS%d\n", rec.ASN); err != nil {
 				return err
 			}
+			wrote = true
+		}
+	}
+	if !wrote {
+		if _, err := f.WriteString("# no entries\n"); err != nil {
+			return err
 		}
 	}
 	return nil
