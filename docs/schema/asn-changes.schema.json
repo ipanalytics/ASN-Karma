@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ipanalytics/ASN-Karma/docs/schema/asn-changes.schema.json",
+  "title": "ASN Karma Change Record",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["asn", "change", "current_level", "current_evidence", "evidence_delta", "built_at"],
+      "properties": {
+        "asn": { "type": "integer", "minimum": 1 },
+        "asn_name": { "type": "string" },
+        "country": { "type": "string" },
+        "change": {
+          "type": "string",
+          "enum": ["new_asn", "risk_level_changed", "evidence_increased", "evidence_decreased"]
+        },
+        "previous_level": { "type": "string" },
+        "current_level": { "type": "string" },
+        "previous_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "current_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "previous_evidence": { "type": "integer", "minimum": 0 },
+        "current_evidence": { "type": "integer", "minimum": 0 },
+        "evidence_delta": { "type": "integer" },
+        "built_at": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": true
+    },
+    {
+      "type": "object",
+      "required": ["record_type", "status"],
+      "properties": {
+        "record_type": { "type": "string", "const": "build_status" },
+        "status": { "type": "string" }
+      },
+      "additionalProperties": true
+    }
+  ]
+}

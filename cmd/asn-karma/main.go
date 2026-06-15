@@ -88,6 +88,10 @@ func main() {
 	if err != nil {
 		log.Fatalf("load history: %v", err)
 	}
+	previousSnapshots, err := history.LoadLatestSnapshots(*historyPath, ts)
+	if err != nil {
+		log.Fatalf("load latest history snapshots: %v", err)
+	}
 	results := scoring.ScoreAll(context.Background(), cfg, aggregates, historySignals, ts)
 	if len(results) == 0 && !*allowEmpty {
 		log.Fatalf("no ASN risk records produced after enrichment")
@@ -104,8 +108,9 @@ func main() {
 		prefixes.ApplyCounts(results, expandedPrefixes)
 	}
 	stats = finalizeStats(stats, records, results, expandedPrefixes, startedAt)
+	changes := history.BuildChanges(results, previousSnapshots, ts)
 
-	if err := output.WriteArtifacts(*outputDir, results, expandedPrefixes, stats); err != nil {
+	if err := output.WriteArtifacts(*outputDir, results, changes, expandedPrefixes, stats); err != nil {
 		log.Fatalf("write artifacts: %v", err)
 	}
 	if err := history.Update(*historyPath, *historyPath, results, ts, 90); err != nil {

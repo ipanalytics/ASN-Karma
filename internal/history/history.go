@@ -20,6 +20,69 @@ type Snapshot struct {
 	RiskLevel       string `json:"risk_level"`
 }
 
+func BuildChanges(records []model.RiskRecord, previous map[int]Snapshot, builtAt time.Time) []model.ASNChange {
+	changes := make([]model.ASNChange, 0)
+	for _, rec := range records {
+		prev := previous[rec.ASN]
+		delta := rec.ObservedRecords - prev.ObservedRecords
+		change := ""
+		switch {
+		case prev.ASN == 0:
+			change = "new_asn"
+		case prev.RiskLevel != rec.RiskLevel:
+			change = "risk_level_changed"
+		case delta > 0:
+			change = "evidence_increased"
+		case delta < 0:
+			change = "evidence_decreased"
+		default:
+			continue
+		}
+		changes = append(changes, model.ASNChange{
+			ASN:              rec.ASN,
+			ASNName:          rec.ASNName,
+			Country:          rec.Country,
+			Change:           change,
+			PreviousLevel:    prev.RiskLevel,
+			CurrentLevel:     rec.RiskLevel,
+			PreviousScore:    prev.RiskScore,
+			CurrentScore:     rec.RiskScore,
+			PreviousEvidence: prev.ObservedRecords,
+			CurrentEvidence:  rec.ObservedRecords,
+			EvidenceDelta:    delta,
+			BuiltAt:          builtAt.UTC().Format(time.RFC3339),
+		})
+	}
+	sort.Slice(changes, func(i, j int) bool {
+		ai := abs(changes[i].EvidenceDelta)
+		aj := abs(changes[j].EvidenceDelta)
+		if ai == aj {
+			return changes[i].ASN < changes[j].ASN
+		}
+		return ai > aj
+	})
+	return changes
+}
+
+func LoadLatestSnapshots(path string, builtAt time.Time) (map[int]Snapshot, error) {
+	snapshots, err := readSnapshots(path)
+	if err != nil {
+		return nil, err
+	}
+	today := dateOnly(builtAt)
+	out := map[int]Snapshot{}
+	for _, snapshot := range snapshots {
+		if snapshot.Date >= today {
+			continue
+		}
+		prev, ok := out[snapshot.ASN]
+		if !ok || snapshot.Date > prev.Date {
+			out[snapshot.ASN] = snapshot
+		}
+	}
+	return out, nil
+}
+
 func LoadSignals(path string, builtAt time.Time) (map[int]model.HistorySignal, error) {
 	snapshots, err := readSnapshots(path)
 	if err != nil {
@@ -165,4 +228,11 @@ func withinDays(date string, today string, days int) bool {
 
 func dateOnly(t time.Time) string {
 	return t.UTC().Format(time.DateOnly)
+}
+
+func abs(n int) int {
+	if n < 0 {
+		return -n
+	}
+	return n
 }

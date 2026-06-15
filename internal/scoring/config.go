@@ -9,6 +9,8 @@ type Config struct {
 	EvidenceWindowDays int            `json:"evidence_window_days"`
 	ThreatWeights      map[string]int `json:"threat_weights"`
 	LargeCloudASNs     []int          `json:"large_cloud_asns"`
+	ReviewASNs         []int          `json:"review_asns"`
+	ReviewNameKeywords []string       `json:"review_name_keywords"`
 	AllowlistASNs      []int          `json:"allowlist_asns"`
 	WatchlistASNs      []int          `json:"watchlist_asns"`
 }

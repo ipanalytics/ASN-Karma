@@ -30,6 +30,10 @@
         "unique_observed_cidrs": { "type": "integer", "minimum": 0 },
         "source_count": { "type": "integer", "minimum": 0 },
         "source_diversity": { "type": "integer", "minimum": 0 },
+        "source_breakdown": {
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 0 }
+        },
         "top_threat_labels": {
           "type": "object",
           "additionalProperties": { "type": "integer", "minimum": 0 }
@@ -46,6 +50,7 @@
         "expanded_prefix_count": { "type": "integer", "minimum": 0 },
         "expanded_prefixes_are_evidence": { "type": "boolean", "const": false },
         "large_cloud": { "type": "boolean" },
+        "review_required": { "type": "boolean" },
         "watchlist": { "type": "boolean" },
         "built_at": { "type": "string", "format": "date-time" }
       },

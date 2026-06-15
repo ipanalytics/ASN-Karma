@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ipanalytics/ASN-Karma/docs/schema/index.schema.json",
+  "title": "ASN Karma Release Index",
+  "type": "object",
+  "required": ["schema_version", "built_at", "record_count", "artifacts"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "built_at": { "type": "string", "format": "date-time" },
+    "record_count": { "type": "integer", "minimum": 0 },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "size", "sha256"],
+        "properties": {
+          "name": { "type": "string" },
+          "size": { "type": "integer", "minimum": 1 },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": true
+}

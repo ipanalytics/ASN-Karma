@@ -22,6 +22,7 @@ type ASNAggregate struct {
 	Records      int
 	UniqueCIDRs  map[string]bool
 	Sources      map[string]bool
+	SourceCounts map[string]int
 	Countries    map[string]int
 	ThreatCounts map[string]int
 }
@@ -39,6 +40,7 @@ type RiskRecord struct {
 	UniqueObservedCIDRs         int            `json:"unique_observed_cidrs"`
 	SourceCount                 int            `json:"source_count"`
 	SourceDiversity             int            `json:"source_diversity"`
+	SourceBreakdown             map[string]int `json:"source_breakdown"`
 	TopThreatLabels             map[string]int `json:"top_threat_labels"`
 	EvidenceWindowDays          int            `json:"evidence_window_days"`
 	PersistenceDays30D          int            `json:"persistence_days_30d"`
@@ -52,6 +54,7 @@ type RiskRecord struct {
 	ExpandedPrefixCount         int            `json:"expanded_prefix_count"`
 	ExpandedPrefixesAreEvidence bool           `json:"expanded_prefixes_are_evidence"`
 	LargeCloud                  bool           `json:"large_cloud"`
+	ReviewRequired              bool           `json:"review_required"`
 	Watchlist                   bool           `json:"watchlist"`
 	BuiltAt                     time.Time      `json:"built_at"`
 }
@@ -89,6 +92,21 @@ type BuildStats struct {
 	TopSources          map[string]int `json:"top_sources,omitempty"`
 }
 
+type ASNChange struct {
+	ASN              int    `json:"asn"`
+	ASNName          string `json:"asn_name,omitempty"`
+	Country          string `json:"country,omitempty"`
+	Change           string `json:"change"`
+	PreviousLevel    string `json:"previous_level,omitempty"`
+	CurrentLevel     string `json:"current_level,omitempty"`
+	PreviousScore    int    `json:"previous_score,omitempty"`
+	CurrentScore     int    `json:"current_score,omitempty"`
+	PreviousEvidence int    `json:"previous_evidence,omitempty"`
+	CurrentEvidence  int    `json:"current_evidence,omitempty"`
+	EvidenceDelta    int    `json:"evidence_delta"`
+	BuiltAt          string `json:"built_at"`
+}
+
 func AggregateRecords(records []ObservedRecord) []ASNAggregate {
 	byASN := map[int]*ASNAggregate{}
 	for _, rec := range records {
@@ -101,6 +119,7 @@ func AggregateRecords(records []ObservedRecord) []ASNAggregate {
 				ASN:          rec.ASN,
 				UniqueCIDRs:  map[string]bool{},
 				Sources:      map[string]bool{},
+				SourceCounts: map[string]int{},
 				Countries:    map[string]int{},
 				ThreatCounts: map[string]int{},
 			}
@@ -122,6 +141,7 @@ func AggregateRecords(records []ObservedRecord) []ASNAggregate {
 		}
 		if rec.Source != "" {
 			agg.Sources[rec.Source] = true
+			agg.SourceCounts[rec.Source]++
 		}
 		for _, label := range rec.ThreatLabels {
 			agg.ThreatCounts[label]++

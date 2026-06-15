@@ -4,6 +4,7 @@ import (
 	"context"
 	"math"
 	"sort"
+	"strings"
 	"time"
 
 	"asn-karma/internal/model"
@@ -11,14 +12,16 @@ import (
 
 func ScoreAll(_ context.Context, cfg Config, aggregates []model.ASNAggregate, historySignals map[int]model.HistorySignal, builtAt time.Time) []model.RiskRecord {
 	largeCloud := intSet(cfg.LargeCloudASNs)
+	reviewASN := intSet(cfg.ReviewASNs)
 	allowlist := intSet(cfg.AllowlistASNs)
 	watchlist := intSet(cfg.WatchlistASNs)
 
 	out := make([]model.RiskRecord, 0, len(aggregates))
 	for _, agg := range aggregates {
 		history := historySignals[agg.ASN]
+		reviewRequired := largeCloud[agg.ASN] || reviewASN[agg.ASN] || reviewByName(agg.ASNName, cfg.ReviewNameKeywords)
 		score := scoreASN(cfg, agg, history)
-		if largeCloud[agg.ASN] {
+		if reviewRequired {
 			score -= 20
 		}
 		if allowlist[agg.ASN] {
@@ -26,7 +29,15 @@ func ScoreAll(_ context.Context, cfg Config, aggregates []model.ASNAggregate, hi
 		}
 		score = clamp(score, 0, 100)
 
-		level, action := levelAndAction(score, len(agg.Sources), agg.ThreatCounts, largeCloud[agg.ASN])
+		if reviewRequired && score > 65 {
+			score = 65
+		}
+
+		level, action := levelAndAction(score, len(agg.Sources), agg.ThreatCounts, reviewRequired)
+		if reviewRequired && score >= 50 {
+			level = "watch"
+			action = "review_before_enforcement"
+		}
 		if watchlist[agg.ASN] && score < 50 {
 			level = "watch"
 			action = "enrichment_or_log_only"
@@ -54,6 +65,7 @@ func ScoreAll(_ context.Context, cfg Config, aggregates []model.ASNAggregate, hi
 			UniqueObservedCIDRs:         len(agg.UniqueCIDRs),
 			SourceCount:                 len(agg.Sources),
 			SourceDiversity:             len(agg.Sources),
+			SourceBreakdown:             topThreats(agg.SourceCounts, 12),
 			TopThreatLabels:             topThreats(agg.ThreatCounts, 8),
 			EvidenceWindowDays:          cfg.EvidenceWindowDays,
 			PersistenceDays30D:          active30,
@@ -67,6 +79,7 @@ func ScoreAll(_ context.Context, cfg Config, aggregates []model.ASNAggregate, hi
 			ExpandedPrefixCount:         0,
 			ExpandedPrefixesAreEvidence: false,
 			LargeCloud:                  largeCloud[agg.ASN],
+			ReviewRequired:              reviewRequired,
 			Watchlist:                   watchlist[agg.ASN],
 			BuiltAt:                     builtAt,
 		})
@@ -149,6 +162,17 @@ func levelAndAction(score, sourceDiversity int, threats map[string]int, largeClo
 		return "watch", "enrichment_or_log_only"
 	}
 	return "low", "no_action"
+}
+
+func reviewByName(name string, keywords []string) bool {
+	name = strings.ToLower(name)
+	for _, keyword := range keywords {
+		keyword = strings.ToLower(strings.TrimSpace(keyword))
+		if keyword != "" && strings.Contains(name, keyword) {
+			return true
+		}
+	}
+	return false
 }
 
 func topThreats(in map[string]int, limit int) map[string]int {
