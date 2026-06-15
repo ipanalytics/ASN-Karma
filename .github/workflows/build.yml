@@ -92,24 +92,36 @@ jobs:
           }
           find release -maxdepth 1 -type f -print -exec wc -c {} \;
 
+      - name: Prepare release metadata
+        run: |
+          stamp="$(date -u +'%Y-%m-%d-%H%MZ')"
+          title="$(date -u +'%Y-%m-%d %H:%M UTC')"
+          echo "RELEASE_TAG=asn-karma-${stamp}" >> "$GITHUB_ENV"
+          echo "RELEASE_NAME=ASN Karma Dataset - ${title}" >> "$GITHUB_ENV"
+
       - name: Publish release artifacts
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.run_number }}
-          name: ASN Karma dataset ${{ github.run_number }}
+          tag_name: ${{ env.RELEASE_TAG }}
+          name: ${{ env.RELEASE_NAME }}
           body_path: release/release-notes.md
           make_latest: true
           files: |
+            release/index.json
             release/asn-risk.jsonl
+            release/asn-changes.jsonl
             release/asn-summary.csv
             release/asn-evidence-table.md
             release/asn-profiles.tar.gz
+            release/source-impact.csv
+            release/country-risk.csv
             release/high-risk-asn-critical.txt
             release/high-risk-asn-high.txt
             release/high-risk-asn-watch.txt
             release/high-risk-asn-prefixes-critical.txt
             release/high-risk-asn-prefixes-high.txt
             release/high-risk-asn-prefixes-watch.txt
+            release/report.md
             release/release-notes.md
             release/run_stats.json
             release/checksums.txt
