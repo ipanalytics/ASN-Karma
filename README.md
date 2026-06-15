@@ -1,6 +1,6 @@
 # ASN Karma
 
-ASN Karma is a Go pipeline for building ASN-level risk datasets from observed BlackRoute evidence. It aggregates hostile IP/CIDR records by autonomous system, scores abuse exposure with an auditable rule set, and emits release artifacts for security analytics, fraud/risk enrichment, traffic policy, and network operations.
+ASN Karma is a Go pipeline for building ASN-level risk datasets from observed <a href="https://github.com/ipanalytics/BlackRoute">BlackRoute</a> evidence. It aggregates hostile IP/CIDR records by autonomous system, scores abuse exposure with an auditable rule set, and emits release artifacts for security analytics, fraud/risk enrichment, traffic policy, and network operations.
 
 <p align="center">
   <img src="./site/banner.png" alt="ASN Karma banner" width="100%">
@@ -50,7 +50,7 @@ _Last dataset build: `2026-06-15T14:58:01Z`_
 
 ## Overview
 
-ASN Karma consumes BlackRoute JSONL records and produces an ASN risk layer designed for operational use. The output is intentionally explainable: each ASN record includes score, tier, observed record counts, source diversity, top threat labels, and build metadata.
+ASN Karma consumes <a href="https://github.com/ipanalytics/BlackRoute">BlackRoute</a> JSONL records and produces an ASN risk layer designed for operational use. The output is intentionally explainable: each ASN record includes score, tier, observed record counts, source diversity, top threat labels, and build metadata.
 
 The project treats ASN expansion as derived intelligence. Source evidence comes from observed IP/CIDR records only; generated ASN prefix lists are output artifacts, not feedback into the evidence stream.
 
@@ -145,7 +145,7 @@ go build -o bin/asn-karma ./cmd/asn-karma
 
 ## Usage
 
-Run against a local BlackRoute export:
+Run against a local <a href="https://github.com/ipanalytics/BlackRoute">BlackRoute</a> export:
 
 ```sh
 asn-karma \
@@ -203,7 +203,7 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 
 ## Latest ASN Evidence
 
-The scheduled build updates this table from the current dataset. `Evidence` is the number of observed BlackRoute records aggregated for the ASN in the active build window. Country is populated when present in upstream records or enrichment data.
+The scheduled build updates this table from the current dataset. `Evidence` is the number of observed <a href="https://github.com/ipanalytics/BlackRoute">BlackRoute</a> records aggregated for the ASN in the active build window. Country is populated when present in upstream records or enrichment data.
 
 <!-- ASN_KARMA_TABLE_START -->
 _Last updated: `2026-06-15T14:58:01Z`_
