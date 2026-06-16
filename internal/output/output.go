@@ -300,7 +300,7 @@ func writeEvidenceTable(path string, records []model.RiskRecord, builtAt time.Ti
 	return os.WriteFile(path, []byte(table), 0o644)
 }
 
-func UpdateReadmeEvidenceTable(path string, records []model.RiskRecord, builtAt time.Time, limit int) error {
+func UpdateReadmeChangesTable(path string, changes []model.ASNChange, builtAt time.Time, limit int) error {
 	const start = "<!-- ASN_KARMA_TABLE_START -->"
 	const end = "<!-- ASN_KARMA_TABLE_END -->"
 
@@ -315,7 +315,7 @@ func UpdateReadmeEvidenceTable(path string, records []model.RiskRecord, builtAt 
 		return fmt.Errorf("README markers not found")
 	}
 
-	replacement := start + "\n" + renderEvidenceTable(records, builtAt, limit) + end
+	replacement := start + "\n" + renderReadmeChangesTable(changes, builtAt, limit) + end
 	updated := content[:startIdx] + replacement + content[endIdx+len(end):]
 	return os.WriteFile(path, []byte(updated), 0o644)
 }
@@ -396,17 +396,32 @@ func writeReport(path string, records []model.RiskRecord, changes []model.ASNCha
 
 func renderChangesTable(changes []model.ASNChange, limit int) string {
 	var b strings.Builder
-	b.WriteString("| ASN | Change | Previous | Current | Evidence Delta |\n")
-	b.WriteString("| --- | --- | ---: | ---: | ---: |\n")
+	b.WriteString("| ASN | Name | Country | Change | Previous | Current | Evidence Delta |\n")
+	b.WriteString("| --- | --- | --- | --- | ---: | ---: | ---: |\n")
 	if len(changes) == 0 {
-		b.WriteString("| - | no changes | 0 | 0 | 0 |\n\n")
+		b.WriteString("| - | - | - | no changes | 0 | 0 | 0 |\n\n")
 		return b.String()
 	}
 	for i := 0; i < len(changes) && i < limit; i++ {
 		change := changes[i]
-		fmt.Fprintf(&b, "| AS%d | `%s` | %d | %d | %+d |\n", change.ASN, change.Change, change.PreviousEvidence, change.CurrentEvidence, change.EvidenceDelta)
+		name := change.ASNName
+		if name == "" {
+			name = "-"
+		}
+		country := change.Country
+		if country == "" {
+			country = "-"
+		}
+		fmt.Fprintf(&b, "| AS%d | %s | %s | `%s` | %d | %d | %+d |\n", change.ASN, escapeMarkdownCell(name), escapeMarkdownCell(country), change.Change, change.PreviousEvidence, change.CurrentEvidence, change.EvidenceDelta)
 	}
 	b.WriteString("\n")
+	return b.String()
+}
+
+func renderReadmeChangesTable(changes []model.ASNChange, builtAt time.Time, limit int) string {
+	var b strings.Builder
+	fmt.Fprintf(&b, "_Last updated: `%s`_\n\n", builtAt.UTC().Format(time.RFC3339))
+	b.WriteString(renderChangesTable(changes, limit))
 	return b.String()
 }
 

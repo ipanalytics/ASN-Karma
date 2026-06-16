@@ -117,8 +117,8 @@ func main() {
 		log.Fatalf("update history: %v", err)
 	}
 	if *readmePath != "" {
-		if err := output.UpdateReadmeEvidenceTable(*readmePath, results, ts, 25); err != nil {
-			log.Fatalf("update readme evidence table: %v", err)
+		if err := output.UpdateReadmeChangesTable(*readmePath, changes, ts, 25); err != nil {
+			log.Fatalf("update readme changes table: %v", err)
 		}
 		if err := output.UpdateReadmeReleaseLinks(*readmePath, ts, *releaseURL); err != nil {
 			log.Fatalf("update readme release links: %v", err)

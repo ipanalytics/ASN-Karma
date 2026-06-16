@@ -1,6 +1,6 @@
 # ASN Karma
 
-ASN Karma is a Go pipeline for building ASN-level risk datasets from observed <a href="https://github.com/ipanalytics/BlackRoute">BlackRoute</a> evidence. It aggregates hostile IP/CIDR records by autonomous system, scores abuse exposure with an auditable rule set, and emits release artifacts for security analytics, fraud/risk enrichment, traffic policy, and network operations.
+ASN Karma is a Go pipeline for building ASN-level risk datasets from observed BlackRoute evidence. It aggregates hostile IP/CIDR records by autonomous system, scores abuse exposure with an auditable rule set, and emits release artifacts for security analytics, fraud/risk enrichment, traffic policy, and network operations.
 
 <p align="center">
   <img src="./site/banner.png" alt="ASN Karma banner" width="100%">
@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed <a
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-06-16T10:00:37Z`_
+_Last dataset build: `2026-06-15T00:00:00Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -50,7 +50,7 @@ _Last dataset build: `2026-06-16T10:00:37Z`_
 
 ## Overview
 
-ASN Karma consumes <a href="https://github.com/ipanalytics/BlackRoute">BlackRoute</a> JSONL records and produces an ASN risk layer designed for operational use. The output is intentionally explainable: each ASN record includes score, tier, observed record counts, source diversity, top threat labels, and build metadata.
+ASN Karma consumes BlackRoute JSONL records and produces an ASN risk layer designed for operational use. The output is intentionally explainable: each ASN record includes score, tier, observed record counts, source diversity, top threat labels, and build metadata.
 
 The project treats ASN expansion as derived intelligence. Source evidence comes from observed IP/CIDR records only; generated ASN prefix lists are output artifacts, not feedback into the evidence stream.
 
@@ -145,7 +145,7 @@ go build -o bin/asn-karma ./cmd/asn-karma
 
 ## Usage
 
-Run against a local <a href="https://github.com/ipanalytics/BlackRoute">BlackRoute</a> export:
+Run against a local BlackRoute export:
 
 ```sh
 asn-karma \
@@ -201,40 +201,17 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 | `run_stats.json` | JSON | Build metadata and tier counts |
 | `checksums.txt` | TXT | SHA256 checksums for release artifacts |
 
-## Latest ASN Evidence
+## Changes Since Previous Build
 
-The scheduled build updates this table from the current dataset. `Evidence` is the number of observed <a href="https://github.com/ipanalytics/BlackRoute">BlackRoute</a> records aggregated for the ASN in the active build window. Country is populated when present in upstream records or enrichment data.
+The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-06-16T10:00:37Z`_
+_Last updated: `2026-06-15T00:00:00Z`_
 
-| ASN | Name | Country | Evidence | Sources | Score | Tier | Review |
-| --- | --- | --- | ---: | ---: | ---: | --- | --- |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | 360959 | 34 | 65 | `watch` | true |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | 169742 | 34 | 65 | `watch` | true |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | 96454 | 23 | 65 | `watch` | true |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | 85728 | 32 | 65 | `watch` | true |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | 78169 | 32 | 65 | `watch` | true |
-| AS37963 | ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN | CN | 57004 | 25 | 65 | `watch` | true |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | 51545 | 33 | 65 | `watch` | true |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | 47084 | 32 | 65 | `watch` | true |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | 43901 | 12 | 65 | `watch` | true |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | 41447 | 31 | 65 | `watch` | true |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | 38236 | 31 | 65 | `watch` | true |
-| AS16276 | OVH - OVH SAS, FR | FR | 37021 | 32 | 65 | `watch` | true |
-| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | 29913 | 29 | 65 | `watch` | true |
-| AS36352 | AS-COLOCROSSING - HostPapa, US | US | 29491 | 30 | 65 | `watch` | true |
-| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | 23170 | 30 | 65 | `watch` | true |
-| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | 20518 | 24 | 65 | `watch` | true |
-| AS20473 | AS-VULTR - The Constant Company, LLC, US | US | 18902 | 24 | 65 | `watch` | true |
-| AS212238 | CDNEXT - Datacamp Limited, GB | GB | 17784 | 27 | 65 | `watch` | true |
-| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | 16741 | 28 | 65 | `watch` | true |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | 15868 | 18 | 85 | `high` | false |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | 13207 | 13 | 65 | `watch` | true |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | 12760 | 25 | 65 | `watch` | true |
-| AS51167 | CONTABO - Contabo GmbH, DE | DE | 12567 | 29 | 65 | `watch` | true |
-| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | 12488 | 27 | 65 | `watch` | true |
-| AS9829 | BSNL-NIB - National Internet Backbone, IN | IN | 11507 | 23 | 65 | `watch` | true |
+| ASN | Name | Country | Change | Previous | Current | Evidence Delta |
+| --- | --- | --- | --- | ---: | ---: | ---: |
+| AS64500 | Example Hosting | US | `new_asn` | 0 | 2 | +2 |
+| AS64501 | Example Network | NL | `new_asn` | 0 | 1 | +1 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
