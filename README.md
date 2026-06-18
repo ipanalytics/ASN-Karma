@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-06-17T09:23:39Z`_
+_Last dataset build: `2026-06-18T09:07:00Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-06-17T09:23:39Z`_
+_Last updated: `2026-06-18T09:07:00Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_increased` | 20518 | 21586 | +1068 |
-| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_decreased` | 1493 | 578 | -915 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 360959 | 361804 | +845 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 11353 | 12126 | +773 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 51545 | 50852 | -693 |
-| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_increased` | 29913 | 30600 | +687 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 37021 | 37604 | +583 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 169742 | 169190 | -552 |
-| AS19527 | GOOGLE-2 - Google LLC, US | US | `evidence_increased` | 315 | 817 | +502 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 78169 | 77770 | -399 |
-| AS15169 | GOOGLE - Google LLC, US | US | `evidence_increased` | 1036 | 1405 | +369 |
-| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_increased` | 11367 | 11713 | +346 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 336 | 2 | -334 |
-| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_increased` | 23170 | 23497 | +327 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 85728 | 86029 | +301 |
-| AS8560 | IONOS-AS - IONOS SE, DE | DE | `evidence_increased` | 4638 | 4923 | +285 |
-| AS197540 | netcup-AS - netcup GmbH, DE | DE | `evidence_increased` | 4656 | 4928 | +272 |
-| AS20326 | TERASWITCH - TeraSwitch Networks Inc., US | GB | `evidence_decreased` | 2600 | 2332 | -268 |
-| AS27385 | QUALYS - QUALYS, Inc., US | US | `evidence_increased` | 1785 | 2040 | +255 |
-| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_increased` | 29491 | 29736 | +245 |
-| AS44559 | ITHOSTLINE - IT HOSTLINE LTD, CY | SC | `evidence_increased` | 2362 | 2601 | +239 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 47084 | 47313 | +229 |
-| AS202656 | XServerCloud - Ivanov Vitaliy Sergeevich, UA | SC | `evidence_decreased` | 4273 | 4057 | -216 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 9386 | 9174 | -212 |
-| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_increased` | 12488 | 12673 | +185 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 96475 | 161757 | +65282 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 37604 | 36590 | -1014 |
+| AS272809 | AS272809 - THUNDERNET, C.A., VE | US | `evidence_decreased` | 5857 | 4968 | -889 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 77770 | 78438 | +668 |
+| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_increased` | 578 | 1164 | +586 |
+| AS19527 | GOOGLE-2 - Google LLC, US | US | `evidence_decreased` | 817 | 311 | -506 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 41342 | 41787 | +445 |
+| AS21769 | AS-COLOAM - Colocation America Corporation, US | US | `evidence_decreased` | 3514 | 3257 | -257 |
+| AS47007 | AS4-COLOAM - Colocation America Corporation, US | US | `evidence_increased` | 1716 | 1966 | +250 |
+| AS202656 | XServerCloud - Ivanov Vitaliy Sergeevich, UA | SC | `evidence_increased` | 4057 | 4289 | +232 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 169190 | 169404 | +214 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 50852 | 50663 | -189 |
+| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_increased` | 30600 | 30766 | +166 |
+| AS9829 | BSNL-NIB - National Internet Backbone, IN | IN | `evidence_decreased` | 11633 | 11479 | -154 |
+| AS214238 | iwihost - HOST TELECOM LTD, GB | SC | `risk_level_changed` | 390 | 252 | -138 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 3748 | 3623 | -125 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 12126 | 12248 | +122 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 12704 | 12824 | +120 |
+| AS199412 | ANARCHY-LAB-SRL - ANARCHY LAB S.R.L., RO | BG | `evidence_decreased` | 157 | 41 | -116 |
+| AS219429 | - | CZ | `new_asn` | 0 | 116 | +116 |
+| AS18186 | NEBULA-GLOBAL - Nebula Global LLC, US | US | `evidence_decreased` | 387 | 277 | -110 |
+| AS400956 | OPENMETAL-AS - OpenMetal, Inc., US | US | `evidence_increased` | 13 | 119 | +106 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | GB | `evidence_increased` | 17891 | 17993 | +102 |
+| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_increased` | 29736 | 29836 | +100 |
+| AS9051 | UNSPECIFIED - IncoNet Data Management sal, LB | LB | `evidence_increased` | 438 | 536 | +98 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
