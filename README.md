@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-06-20T08:14:15Z`_
+_Last dataset build: `2026-06-21T08:49:03Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-06-20T08:14:15Z`_
+_Last updated: `2026-06-21T08:49:03Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 169368 | 168458 | -910 |
-| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_increased` | 23557 | 24086 | +529 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 36533 | 36967 | +434 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 50344 | 50760 | +416 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 3270 | 3621 | +351 |
-| AS6789 | CRELCOM-NET - CRELCOM LLC, RU | RU | `evidence_decreased` | 4169 | 3833 | -336 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 362664 | 362997 | +333 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 78998 | 78670 | -328 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 18569 | 18252 | -317 |
-| AS202422 | GHOST - G-Core Labs S.A., LU | LU | `evidence_increased` | 619 | 864 | +245 |
-| AS8342 | RTCOMM-AS - JSC RTComm.RU, RU | RU | `evidence_increased` | 945 | 1187 | +242 |
-| AS7018 | ATT-INTERNET4 - AT&T Enterprises, LLC, US | US | `evidence_increased` | 1600 | 1828 | +228 |
-| AS51765 | CREANOVA-AS - Oy Crea Nova Hosting Solution Ltd, FI | GB | `evidence_increased` | 933 | 1137 | +204 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 13432 | 13626 | +194 |
-| AS395954 | LEASEWEB-USA-LAX - Leaseweb USA, Inc., US | US | `evidence_decreased` | 2622 | 2434 | -188 |
-| AS49813 | Innova - Innova Co S.A.R.L., LU | LU | `evidence_decreased` | 727 | 543 | -184 |
-| AS701 | UUNET - Verizon Business, US | US | `evidence_increased` | 1615 | 1798 | +183 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4105 | 4259 | +154 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 6599 | 6477 | -122 |
-| AS51167 | CONTABO - Contabo GmbH, DE | DE | `evidence_increased` | 12748 | 12854 | +106 |
-| AS18403 | FPT-VN - FPT Telecom Company, VN | VN | `evidence_decreased` | 1524 | 1419 | -105 |
-| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_increased` | 2667 | 2767 | +100 |
-| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_decreased` | 5101 | 5023 | -78 |
-| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_increased` | 12736 | 12811 | +75 |
-| AS5650 | FRONTIER-FRTR - Frontier Communications of America, Inc., US | US | `evidence_increased` | 1105 | 1177 | +72 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 362997 | 353847 | -9150 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 86359 | 77444 | -8915 |
+| AS205659 | CODE200-ISP2 - UAB code200, LT | GB | `evidence_decreased` | 1757 | 563 | -1194 |
+| AS62874 | WEB2OBJECTS - Web2Objects LLC, US | GB | `evidence_increased` | 285 | 1475 | +1190 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 168458 | 167585 | -873 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 36967 | 36313 | -654 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 4959 | 5542 | +583 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 50760 | 50177 | -583 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 9048 | 8473 | -575 |
+| AS30058 | FDCSERVERS - FDCservers.net, US | US | `evidence_increased` | 1724 | 2259 | +535 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 78670 | 78202 | -468 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 42277 | 42727 | +450 |
+| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_decreased` | 24086 | 23813 | -273 |
+| AS8560 | IONOS-AS - IONOS SE, DE | DE | `evidence_decreased` | 5001 | 4750 | -251 |
+| AS135629 | WESTCLOUDDATA - Ningxia West Cloud Data Technology Co.Ltd., CN | CN | `evidence_decreased` | 264 | 46 | -218 |
+| AS55960 | BJ-GUANGHUAN-AP - Beijing Guanghuan Xinwang Digital, CN | CN | `evidence_decreased` | 400 | 197 | -203 |
+| AS202468 | AbrArvan-AS - Noyan Abr Arvan Co. ( Private Joint Stock), IR | IR | `evidence_increased` | 3168 | 3359 | +191 |
+| AS197540 | netcup-AS - netcup GmbH, DE | DE | `evidence_decreased` | 5014 | 4830 | -184 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 44423 | 44601 | +178 |
+| AS42969 | ALPHASTRIKE - Alpha Strike Labs GmbH, DE | DE | `evidence_decreased` | 451 | 276 | -175 |
+| AS49813 | Innova - Innova Co S.A.R.L., LU | LU | `risk_level_changed` | 543 | 387 | -156 |
+| AS215778 | ALPHASTRIKE-HK - Alpha Strike Labs GmbH, DE | DE | `evidence_decreased` | 468 | 326 | -142 |
+| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_increased` | 2767 | 2908 | +141 |
+| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_decreased` | 12811 | 12682 | -129 |
+| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_increased` | 12092 | 12211 | +119 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
