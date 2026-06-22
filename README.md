@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-06-21T08:49:03Z`_
+_Last dataset build: `2026-06-22T10:29:31Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-06-21T08:49:03Z`_
+_Last updated: `2026-06-22T10:29:31Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 362997 | 353847 | -9150 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 86359 | 77444 | -8915 |
-| AS205659 | CODE200-ISP2 - UAB code200, LT | GB | `evidence_decreased` | 1757 | 563 | -1194 |
-| AS62874 | WEB2OBJECTS - Web2Objects LLC, US | GB | `evidence_increased` | 285 | 1475 | +1190 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 168458 | 167585 | -873 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 36967 | 36313 | -654 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 4959 | 5542 | +583 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 50760 | 50177 | -583 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 9048 | 8473 | -575 |
-| AS30058 | FDCSERVERS - FDCservers.net, US | US | `evidence_increased` | 1724 | 2259 | +535 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 78670 | 78202 | -468 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 42277 | 42727 | +450 |
-| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_decreased` | 24086 | 23813 | -273 |
-| AS8560 | IONOS-AS - IONOS SE, DE | DE | `evidence_decreased` | 5001 | 4750 | -251 |
-| AS135629 | WESTCLOUDDATA - Ningxia West Cloud Data Technology Co.Ltd., CN | CN | `evidence_decreased` | 264 | 46 | -218 |
-| AS55960 | BJ-GUANGHUAN-AP - Beijing Guanghuan Xinwang Digital, CN | CN | `evidence_decreased` | 400 | 197 | -203 |
-| AS202468 | AbrArvan-AS - Noyan Abr Arvan Co. ( Private Joint Stock), IR | IR | `evidence_increased` | 3168 | 3359 | +191 |
-| AS197540 | netcup-AS - netcup GmbH, DE | DE | `evidence_decreased` | 5014 | 4830 | -184 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 44423 | 44601 | +178 |
-| AS42969 | ALPHASTRIKE - Alpha Strike Labs GmbH, DE | DE | `evidence_decreased` | 451 | 276 | -175 |
-| AS49813 | Innova - Innova Co S.A.R.L., LU | LU | `risk_level_changed` | 543 | 387 | -156 |
-| AS215778 | ALPHASTRIKE-HK - Alpha Strike Labs GmbH, DE | DE | `evidence_decreased` | 468 | 326 | -142 |
-| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_increased` | 2767 | 2908 | +141 |
-| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_decreased` | 12811 | 12682 | -129 |
-| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_increased` | 12092 | 12211 | +119 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 353847 | 363669 | +9822 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 77444 | 86753 | +9309 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 5542 | 4948 | -594 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 167585 | 167017 | -568 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 44601 | 45161 | +560 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 4339 | 3820 | -519 |
+| AS26548 | PUREVOLTAGE-INC - PureVoltage Hosting Inc., US | US | `evidence_increased` | 7172 | 7633 | +461 |
+| AS49813 | Innova - Innova Co S.A.R.L., LU | LU | `risk_level_changed` | 387 | 1 | -386 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 78202 | 78544 | +342 |
+| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_increased` | 23813 | 24131 | +318 |
+| AS8560 | IONOS-AS - IONOS SE, DE | DE | `evidence_increased` | 4750 | 5010 | +260 |
+| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_increased` | 12211 | 12460 | +249 |
+| AS213954 | GTS-AS - Global Transit Systems LLC, US | US | `evidence_increased` | 3399 | 3642 | +243 |
+| AS44559 | ITHOSTLINE - IT HOSTLINE LTD, CY | SC | `evidence_increased` | 2543 | 2772 | +229 |
+| AS214238 | iwihost - HOST TELECOM LTD, GB | RU | `evidence_decreased` | 251 | 28 | -223 |
+| AS197540 | netcup-AS - netcup GmbH, DE | DE | `evidence_increased` | 4830 | 5050 | +220 |
+| AS135629 | WESTCLOUDDATA - Ningxia West Cloud Data Technology Co.Ltd., CN | CN | `evidence_increased` | 46 | 264 | +218 |
+| AS206065 | FDI - Tose_h Fanavari Ertebabat Pasargad Arian Co. PJS, IR | IR | `evidence_decreased` | 313 | 96 | -217 |
+| AS55960 | BJ-GUANGHUAN-AP - Beijing Guanghuan Xinwang Digital, CN | CN | `evidence_increased` | 197 | 400 | +203 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 13618 | 13812 | +194 |
+| AS49505 | SELECTEL - JSC Selectel, RU | RU | `evidence_increased` | 1972 | 2156 | +184 |
+| AS9829 | BSNL-NIB - National Internet Backbone, IN | IN | `evidence_decreased` | 11458 | 11275 | -183 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 12194 | 12025 | -169 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 18311 | 18480 | +169 |
+| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_decreased` | 2908 | 2741 | -167 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
