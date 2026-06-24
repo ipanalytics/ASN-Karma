@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-06-23T08:20:48Z`_
+_Last dataset build: `2026-06-24T08:05:46Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-06-23T08:20:48Z`_
+_Last updated: `2026-06-24T08:05:46Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 167017 | 165849 | -1168 |
-| AS62874 | WEB2OBJECTS - Web2Objects LLC, US | US | `evidence_decreased` | 1485 | 346 | -1139 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 36375 | 35494 | -881 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 78544 | 77670 | -874 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 363669 | 364342 | +673 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 4948 | 5555 | +607 |
-| AS13335 | CLOUDFLARENET - Cloudflare, Inc., US | US | `evidence_increased` | 3860 | 4372 | +512 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 3820 | 4303 | +483 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 86753 | 87150 | +397 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 45161 | 45521 | +360 |
-| AS6789 | CRELCOM-NET - CRELCOM LLC, RU | RU | `evidence_increased` | 3853 | 4196 | +343 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 42774 | 42499 | -275 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 18480 | 18729 | +249 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 50228 | 49988 | -240 |
-| AS203061 | itproximus - UAB code200, LT | FR | `evidence_increased` | 20 | 192 | +172 |
-| AS14789 | CLOUDFLARENET - Cloudflare, Inc., US | US | `evidence_increased` | 342 | 511 | +169 |
-| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_increased` | 2741 | 2905 | +164 |
-| AS44285 | SEFROYEKPARDAZENG-AS - Sefroyek Pardaz Engineering PJSC, IR | IR | `evidence_increased` | 123 | 280 | +157 |
-| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_decreased` | 10105 | 9952 | -153 |
-| AS47583 | AS-HOSTINGER - Hostinger International Limited, CY | LT | `evidence_increased` | 2936 | 3082 | +146 |
-| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 9698 | 9840 | +142 |
-| AS23961 | MNI-AS-AP - Misaka Network, Inc., US | DE | `evidence_increased` | 18 | 150 | +132 |
-| AS57695 | MISAKA - Misaka Network, Inc., US | DE | `evidence_decreased` | 224 | 92 | -132 |
-| AS132817 | DZCRD-AS-AP - DZCRD Networks Ltd, BD | BD | `evidence_increased` | 967 | 1095 | +128 |
-| AS22552 | ESITED - eSited Solutions, US | US | `evidence_increased` | 5438 | 5563 | +125 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 77670 | 143703 | +66033 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 42499 | 80623 | +38124 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 165849 | 199259 | +33410 |
+| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_increased` | 6640 | 28879 | +22239 |
+| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_increased` | 16931 | 36985 | +20054 |
+| AS9829 | BSNL-NIB - National Internet Backbone, IN | IN | `evidence_increased` | 11263 | 26422 | +15159 |
+| AS3462 | HINET - Data Communication Business Group, TW | TW | `evidence_increased` | 4972 | 20099 | +15127 |
+| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_increased` | 21674 | 33046 | +11372 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 6539 | 15092 | +8553 |
+| AS37963 | ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN | CN | `evidence_increased` | 57234 | 64051 | +6817 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 49988 | 55696 | +5708 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 35494 | 41000 | +5506 |
+| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_increased` | 12868 | 18368 | +5500 |
+| AS8151 | AS8151 - UNINET, MX | MX | `evidence_increased` | 3251 | 8490 | +5239 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 364342 | 368883 | +4541 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 12905 | 17286 | +4381 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 3557 | 7691 | +4134 |
+| AS8048 | AS8048 - CANTV Servicios, Venezuela, VE | VE | `evidence_increased` | 999 | 4816 | +3817 |
+| AS8452 | TE-AS - IDDQD-AS, EG | EG | `evidence_increased` | 2011 | 5814 | +3803 |
+| AS140292 | CHINATELECOM-JIANGSU-SUZHOU-5G-NETWORK - CHINATELECOM Jiangsu province Suzhou 5G network, CN | CN | `evidence_increased` | 1563 | 5321 | +3758 |
+| AS38365 | Baidu - Beijing Baidu Netcom Science and Technology Co., Ltd., CN | CN | `evidence_increased` | 1148 | 4729 | +3581 |
+| AS4713 | OCN - NTT DOCOMO BUSINESS,Inc., JP | JP | `evidence_increased` | 1111 | 4563 | +3452 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 4421 | 7840 | +3419 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 38213 | 41462 | +3249 |
+| AS7713 | telkomnet-as-ap - PT Telekomunikasi Indonesia, ID | ID | `evidence_increased` | 3488 | 6631 | +3143 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
