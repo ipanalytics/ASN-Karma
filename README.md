@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-06-25T08:05:02Z`_
+_Last dataset build: `2026-06-26T08:21:24Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-06-25T08:05:02Z`_
+_Last updated: `2026-06-26T08:21:24Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 143703 | 77104 | -66599 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 80623 | 42363 | -38260 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 199259 | 163689 | -35570 |
-| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `risk_level_changed` | 28879 | 6595 | -22284 |
-| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_decreased` | 36985 | 17019 | -19966 |
-| AS3462 | HINET - Data Communication Business Group, TW | TW | `risk_level_changed` | 20099 | 4995 | -15104 |
-| AS9829 | BSNL-NIB - National Internet Backbone, IN | IN | `evidence_decreased` | 26422 | 11338 | -15084 |
-| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_decreased` | 33046 | 21687 | -11359 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `risk_level_changed` | 15092 | 6519 | -8573 |
-| AS37963 | ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN | CN | `evidence_decreased` | 64051 | 57234 | -6817 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 41000 | 34921 | -6079 |
-| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_decreased` | 18368 | 12594 | -5774 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 55696 | 50235 | -5461 |
-| AS8151 | AS8151 - UNINET, MX | MX | `risk_level_changed` | 8490 | 3273 | -5217 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_decreased` | 17286 | 12867 | -4419 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `risk_level_changed` | 7691 | 3555 | -4136 |
-| AS8048 | AS8048 - CANTV Servicios, Venezuela, VE | VE | `risk_level_changed` | 4816 | 973 | -3843 |
-| AS8452 | TE-AS - IDDQD-AS, EG | EG | `risk_level_changed` | 5814 | 2007 | -3807 |
-| AS140292 | CHINATELECOM-JIANGSU-SUZHOU-5G-NETWORK - CHINATELECOM Jiangsu province Suzhou 5G network, CN | CN | `risk_level_changed` | 5321 | 1564 | -3757 |
-| AS38365 | Baidu - Beijing Baidu Netcom Science and Technology Co., Ltd., CN | CN | `risk_level_changed` | 4729 | 1147 | -3582 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `risk_level_changed` | 7840 | 4268 | -3572 |
-| AS4713 | OCN - NTT DOCOMO BUSINESS,Inc., JP | JP | `risk_level_changed` | 4563 | 1087 | -3476 |
-| AS7713 | telkomnet-as-ap - PT Telekomunikasi Indonesia, ID | ID | `risk_level_changed` | 6631 | 3423 | -3208 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_decreased` | 41462 | 38317 | -3145 |
-| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `risk_level_changed` | 8023 | 4882 | -3141 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 18854 | 19189 | +335 |
+| AS138915 | KAOPU-HK - Kaopu Cloud HK Limited, HK | US | `evidence_decreased` | 1786 | 1562 | -224 |
+| AS154177 | LIGHT4-AS-AP - LIGHT NODE LIMITED, HK | US | `evidence_increased` | 311 | 535 | +224 |
+| AS209 | CENTURYLINK-US-LEGACY-QWEST - CenturyLink Communications, LLC, US | US | `evidence_decreased` | 576 | 411 | -165 |
+| AS3356 | LEVEL3 - Level 3 Parent, LLC, US | US | `evidence_increased` | 2872 | 3037 | +165 |
+| AS264628 | AS264628 - CORPORACION FIBEX TELECOM, C.A., VE | VE | `evidence_increased` | 208 | 353 | +145 |
+| AS51396 | PFCLOUD - Pfcloud UG (haftungsbeschrankt), DE | DE | `evidence_decreased` | 604 | 487 | -117 |
+| AS197170 | TECHTIES-AS - TechTies Inc., SC | BG | `evidence_increased` | 662 | 779 | +117 |
+| AS29802 | HVC-AS - HIVELOCITY, Inc., US | US | `evidence_increased` | 4601 | 4711 | +110 |
+| AS50015 | HOLINET-AS - Aleksandr Butenko, RU | RU | `risk_level_changed` | 4 | 105 | +101 |
+| AS28459 | AS28459 - MICHELLE MORENO MORENO, MX | US | `risk_level_changed` | 101 | 3 | -98 |
+| AS206092 | SECFIREWALLAS - F.N.S. HOLDINGS LIMITED, CY | NL | `evidence_increased` | 8218 | 8293 | +75 |
+| AS133661 | NETPLUS-AS - Netplus Broadband Services Private Limited, IN | IN | `evidence_increased` | 2657 | 2715 | +58 |
+| AS34989 | SERVETHEWORLD-AS - ServeTheWorld AS, NO | NO | `evidence_decreased` | 758 | 703 | -55 |
+| AS7489 | HOSTUS-GLOBAL-AS - HostUS, HK | US | `evidence_decreased` | 150 | 101 | -49 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161289 | 161242 | -47 |
+| AS135771 | DCNIN-AS - Data Com Network71 Pvt Ltd, IN | CA | `new_asn` | 0 | 47 | +47 |
+| AS9304 | HUTCHISON-AS-AP - HGC Global Communications Limited, HK | HK | `evidence_decreased` | 1172 | 1135 | -37 |
+| AS21769 | AS-COLOAM - Colocation America Corporation, US | US | `evidence_decreased` | 3467 | 3430 | -37 |
+| AS200221 | WKY-AS - Kam Yiu Wong, HK | US | `evidence_increased` | 11 | 48 | +37 |
+| AS147006 | STARIT-AS-AP - Star IT, BD | BD | `evidence_decreased` | 74 | 38 | -36 |
+| AS272809 | AS272809 - THUNDERNET, C.A., VE | US | `evidence_increased` | 6071 | 6107 | +36 |
+| AS13213 | UK2NET-AS - THG HOSTING LIMITED, GB | GB | `evidence_decreased` | 1330 | 1300 | -30 |
+| AS25198 | ZetServers - INTERKVM HOST SRL, RO | RO | `evidence_decreased` | 524 | 494 | -30 |
+| AS63916 | IPTELECOM-AS-AP - IPTELECOM Global, HK | HK | `evidence_decreased` | 55 | 27 | -28 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
