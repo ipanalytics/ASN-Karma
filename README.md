@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-06-26T08:21:24Z`_
+_Last dataset build: `2026-06-27T07:40:29Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-06-26T08:21:24Z`_
+_Last updated: `2026-06-27T07:40:29Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 18854 | 19189 | +335 |
-| AS138915 | KAOPU-HK - Kaopu Cloud HK Limited, HK | US | `evidence_decreased` | 1786 | 1562 | -224 |
-| AS154177 | LIGHT4-AS-AP - LIGHT NODE LIMITED, HK | US | `evidence_increased` | 311 | 535 | +224 |
-| AS209 | CENTURYLINK-US-LEGACY-QWEST - CenturyLink Communications, LLC, US | US | `evidence_decreased` | 576 | 411 | -165 |
-| AS3356 | LEVEL3 - Level 3 Parent, LLC, US | US | `evidence_increased` | 2872 | 3037 | +165 |
-| AS264628 | AS264628 - CORPORACION FIBEX TELECOM, C.A., VE | VE | `evidence_increased` | 208 | 353 | +145 |
-| AS51396 | PFCLOUD - Pfcloud UG (haftungsbeschrankt), DE | DE | `evidence_decreased` | 604 | 487 | -117 |
-| AS197170 | TECHTIES-AS - TechTies Inc., SC | BG | `evidence_increased` | 662 | 779 | +117 |
-| AS29802 | HVC-AS - HIVELOCITY, Inc., US | US | `evidence_increased` | 4601 | 4711 | +110 |
-| AS50015 | HOLINET-AS - Aleksandr Butenko, RU | RU | `risk_level_changed` | 4 | 105 | +101 |
-| AS28459 | AS28459 - MICHELLE MORENO MORENO, MX | US | `risk_level_changed` | 101 | 3 | -98 |
-| AS206092 | SECFIREWALLAS - F.N.S. HOLDINGS LIMITED, CY | NL | `evidence_increased` | 8218 | 8293 | +75 |
-| AS133661 | NETPLUS-AS - Netplus Broadband Services Private Limited, IN | IN | `evidence_increased` | 2657 | 2715 | +58 |
-| AS34989 | SERVETHEWORLD-AS - ServeTheWorld AS, NO | NO | `evidence_decreased` | 758 | 703 | -55 |
-| AS7489 | HOSTUS-GLOBAL-AS - HostUS, HK | US | `evidence_decreased` | 150 | 101 | -49 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161289 | 161242 | -47 |
-| AS135771 | DCNIN-AS - Data Com Network71 Pvt Ltd, IN | CA | `new_asn` | 0 | 47 | +47 |
-| AS9304 | HUTCHISON-AS-AP - HGC Global Communications Limited, HK | HK | `evidence_decreased` | 1172 | 1135 | -37 |
-| AS21769 | AS-COLOAM - Colocation America Corporation, US | US | `evidence_decreased` | 3467 | 3430 | -37 |
-| AS200221 | WKY-AS - Kam Yiu Wong, HK | US | `evidence_increased` | 11 | 48 | +37 |
-| AS147006 | STARIT-AS-AP - Star IT, BD | BD | `evidence_decreased` | 74 | 38 | -36 |
-| AS272809 | AS272809 - THUNDERNET, C.A., VE | US | `evidence_increased` | 6071 | 6107 | +36 |
-| AS13213 | UK2NET-AS - THG HOSTING LIMITED, GB | GB | `evidence_decreased` | 1330 | 1300 | -30 |
-| AS25198 | ZetServers - INTERKVM HOST SRL, RO | RO | `evidence_decreased` | 524 | 494 | -30 |
-| AS63916 | IPTELECOM-AS-AP - IPTELECOM Global, HK | HK | `evidence_decreased` | 55 | 27 | -28 |
+| AS138915 | KAOPU-HK - Kaopu Cloud HK Limited, HK | US | `evidence_decreased` | 1562 | 1319 | -243 |
+| AS154177 | LIGHT4-AS-AP - LIGHT NODE LIMITED, HK | US | `evidence_increased` | 535 | 778 | +243 |
+| AS272809 | AS272809 - THUNDERNET, C.A., VE | US | `evidence_increased` | 6107 | 6307 | +200 |
+| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_increased` | 12110 | 12231 | +121 |
+| AS20473 | AS-VULTR - The Constant Company, LLC, US | US | `evidence_increased` | 19354 | 19474 | +120 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161242 | 161128 | -114 |
+| AS138997 | EDCL-AS-AP - Eons Data Communications Limited, HK | HK | `evidence_decreased` | 428 | 319 | -109 |
+| AS31924 | AS-1 - Lyicore Tech LLC, US | AE | `risk_level_changed` | 1 | 109 | +108 |
+| AS207343 | BOJING - BOJING CO., LIMITED, HK | AE | `risk_level_changed` | 1 | 100 | +99 |
+| AS28458 | AS28458 - IENTC S DE RL DE CV, MX | US | `evidence_decreased` | 274 | 184 | -90 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 13721 | 13654 | -67 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 19189 | 19256 | +67 |
+| AS398781 | OSL-188 - OCULUS NETWORKS INC, US | US | `evidence_decreased` | 166 | 123 | -43 |
+| AS54801 | ZILLION-NETWORK - Zillion Network Inc., US | SC | `evidence_decreased` | 527 | 486 | -41 |
+| AS139646 | HONG7-AS-AP - HONG KONG LIGHTLAYER TECHNOLOGY CO., LIMITED, HK | SC | `evidence_increased` | 53 | 94 | +41 |
+| AS19871 | NETWORK-SOLUTIONS-HOSTING - Network Solutions, LLC, US | US | `evidence_decreased` | 1010 | 973 | -37 |
+| AS147006 | STARIT-AS-AP - Star IT, BD | BD | `evidence_increased` | 38 | 74 | +36 |
+| AS402221 | NET - Exaserver LLC, US | AE | `new_asn` | 0 | 34 | +34 |
+| AS7489 | HOSTUS-GLOBAL-AS - HostUS, HK | US | `evidence_increased` | 101 | 131 | +30 |
+| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_increased` | 31086 | 31114 | +28 |
+| AS34989 | SERVETHEWORLD-AS - ServeTheWorld AS, NO | NO | `evidence_decreased` | 703 | 677 | -26 |
+| AS197572 | ASNCITYNET - CITYNET MARCIN SOBALA - PIOTR MISIUDA, PL | PL | `risk_level_changed` | 27 | 1 | -26 |
+| AS213683 | host-al-asn - Host.AL Shpk, AL | AL | `risk_level_changed` | 32 | 8 | -24 |
+| AS214238 | iwihost - HOST TELECOM LTD, GB | SC | `risk_level_changed` | 28 | 4 | -24 |
+| AS9304 | HUTCHISON-AS-AP - HGC Global Communications Limited, HK | HK | `evidence_decreased` | 1135 | 1115 | -20 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
