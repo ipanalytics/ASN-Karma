@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-06-29T09:19:13Z`_
+_Last dataset build: `2026-06-30T08:21:36Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-06-29T09:19:13Z`_
+_Last updated: `2026-06-30T08:21:36Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS8048 | AS8048 - CANTV Servicios, Venezuela, VE | VE | `evidence_decreased` | 4796 | 3645 | -1151 |
-| AS210976 | TWC-EU - Timeweb, LLP, KZ | US | `evidence_decreased` | 3065 | 2034 | -1031 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 5095 | 4312 | -783 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 143500 | 144237 | +737 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 40842 | 41486 | +644 |
-| AS63859 | MYREPUBLIC-AS-ID - PT. Eka Mas Republik, ID | ID | `evidence_decreased` | 1227 | 726 | -501 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 195938 | 195448 | -490 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 370817 | 371277 | +460 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 89046 | 89469 | +423 |
-| AS138886 | DBN-AS-ID - PT Data Buana Nusantara, ID | ID | `evidence_decreased` | 511 | 100 | -411 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5682 | 5277 | -405 |
-| AS263536 | AS263536 - MICROSET MAQUINAS E SERVICOS LTDA, BR | BR | `evidence_decreased` | 868 | 466 | -402 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 3 | 367 | +364 |
-| AS27699 | AS27699 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 2523 | 2242 | -281 |
-| AS9873 | TELECOM-LA-AS-AP - Lao Telecom Communication, LTC, LA | LA | `risk_level_changed` | 630 | 354 | -276 |
-| AS149877 | IJE-AS-ID - PT Integrasi Jaringan Ekosistem, ID | ID | `risk_level_changed` | 622 | 350 | -272 |
-| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_decreased` | 5910 | 5642 | -268 |
-| AS197540 | netcup-AS - netcup GmbH, DE | DE | `evidence_decreased` | 5335 | 5093 | -242 |
-| AS216154 | CLODO - CLODO CLOUD SERVICE CO. L.L.C, AE | AE | `evidence_decreased` | 546 | 306 | -240 |
-| AS56268 | SREERAM-NED1-IN - Northeast Dataa Network Pvt Ltd, IN | IN | `risk_level_changed` | 801 | 574 | -227 |
-| AS4538 | ERX-CERNET-BKB - China Education and Research Network Center, CN | CN | `evidence_decreased` | 1014 | 792 | -222 |
-| AS11830 | AS11830 - Instituto Costarricense de Electricidad y Telecom., CR | CR | `risk_level_changed` | 294 | 77 | -217 |
-| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 11873 | 11660 | -213 |
-| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 10476 | 10682 | +206 |
-| AS24441 | CITYLINK-AS-KH - CityLink Corporation, LTD, KH | KH | `risk_level_changed` | 230 | 35 | -195 |
+| AS25133 | MCLAUT-AS - LLC _McLaut-Invest_, UA | LV | `evidence_decreased` | 11314 | 9256 | -2058 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 371277 | 372892 | +1615 |
+| AS8048 | AS8048 - CANTV Servicios, Venezuela, VE | VE | `evidence_increased` | 3645 | 4841 | +1196 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 195448 | 194373 | -1075 |
+| AS210976 | TWC-EU - Timeweb, LLP, KZ | RU | `evidence_increased` | 2034 | 2925 | +891 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 4312 | 5180 | +868 |
+| AS56340 | UmnyeSeti-AS - Grand Ltd, RU | RU | `evidence_decreased` | 1801 | 980 | -821 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 144237 | 145014 | +777 |
+| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_decreased` | 25966 | 25210 | -756 |
+| AS197218 | ASLANPRO - PP Dmutrashko Evgeny Vitalievich, UA | UA | `evidence_decreased` | 866 | 195 | -671 |
+| AS51522 | ONLINE - ONLINE LLC, RU | RU | `evidence_decreased` | 1380 | 823 | -557 |
+| AS44382 | WhiteLabel - Fiba Cloud Operation Company, LLC, US | US | `evidence_increased` | 139 | 679 | +540 |
+| AS63859 | MYREPUBLIC-AS-ID - PT. Eka Mas Republik, ID | ID | `evidence_increased` | 726 | 1258 | +532 |
+| AS398324 | CENSYS-ARIN-01 - Censys, Inc., US | US | `evidence_decreased` | 2563 | 2052 | -511 |
+| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 11660 | 11165 | -495 |
+| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_increased` | 4147 | 4596 | +449 |
+| AS138886 | DBN-AS-ID - PT Data Buana Nusantara, ID | ID | `evidence_increased` | 100 | 516 | +416 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 41486 | 41900 | +414 |
+| AS27699 | AS27699 - TELEFONICA BRASIL S.A, BR | BR | `evidence_increased` | 2242 | 2652 | +410 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 56118 | 56528 | +410 |
+| AS263536 | AS263536 - MICROSET MAQUINAS E SERVICOS LTDA, BR | BR | `evidence_increased` | 466 | 868 | +402 |
+| AS15377 | FREGAT - TRADITIONAL LLC, UA | UA | `evidence_decreased` | 8092 | 7709 | -383 |
+| AS197831 | DISKUS-AS - Telekom Ltd, RU | RU | `evidence_decreased` | 552 | 180 | -372 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 367 | 7 | -360 |
+| AS210819 | Serverhino - Netversor GmbH, DE | DE | `evidence_increased` | 142 | 501 | +359 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
