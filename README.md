@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-07-01T08:40:36Z`_
+_Last dataset build: `2026-07-02T07:57:16Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-07-01T08:40:36Z`_
+_Last updated: `2026-07-02T07:57:16Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS25133 | MCLAUT-AS - LLC _McLaut-Invest_, UA | LV | `risk_level_changed` | 9256 | 11366 | +2110 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 372892 | 374024 | +1132 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 194373 | 193392 | -981 |
-| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_increased` | 25210 | 26070 | +860 |
-| AS56340 | UmnyeSeti-AS - Grand Ltd, RU | RU | `risk_level_changed` | 980 | 1802 | +822 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 145014 | 144234 | -780 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 56528 | 57288 | +760 |
-| AS197218 | ASLANPRO - PP Dmutrashko Evgeny Vitalievich, UA | UA | `evidence_increased` | 195 | 868 | +673 |
-| AS201907 | TOV-BITIORA - TOV Bitiora, UA | SI | `evidence_decreased` | 680 | 10 | -670 |
-| AS51522 | ONLINE - ONLINE LLC, RU | RU | `evidence_increased` | 823 | 1379 | +556 |
-| AS15377 | FREGAT - TRADITIONAL LLC, UA | UA | `risk_level_changed` | 7709 | 8130 | +421 |
-| AS197831 | DISKUS-AS - Telekom Ltd, RU | RU | `evidence_increased` | 180 | 556 | +376 |
-| AS328608 | Africa on Cloud - Africa on Cloud, ZA | SC | `risk_level_changed` | 2865 | 3223 | +358 |
-| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 3055 | 3398 | +343 |
-| AS46918 | GLPEER - GLOBALHOSTINGSOLUTIONS INC, US | MD | `evidence_increased` | 53 | 362 | +309 |
-| AS44382 | WhiteLabel - Fiba Cloud Operation Company, LLC, US | US | `evidence_increased` | 679 | 984 | +305 |
-| AS63099 | MADEALA TELECOM TECHNOLOGY - MADEALA TELECOM TECHNOLOGY INC, US | SC | `risk_level_changed` | 67 | 368 | +301 |
-| AS395793 | ARISK-COMMUNICATIONS-INC - Arisk Communications inc., US | SC | `risk_level_changed` | 1130 | 836 | -294 |
-| AS202412 | OMEGATECH-AS - Omegatech LTD, SC | TR | `evidence_increased` | 644 | 929 | +285 |
-| AS215721 | zn-as - Zinchenko Natalya, RU | RU | `evidence_increased` | 46 | 331 | +285 |
-| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 10879 | 11154 | +275 |
-| AS213412 | ONYPHE - ONYPHE SAS, FR | FR | `evidence_increased` | 1024 | 1280 | +256 |
-| AS21769 | AS-COLOAM - Colocation America Corporation, US | US | `risk_level_changed` | 3530 | 3777 | +247 |
-| AS48031 | XServerCloud - Ivanov Vitaliy Sergeevich, UA | RU | `risk_level_changed` | 823 | 1062 | +239 |
-| AS206092 | SECFIREWALLAS - F.N.S. HOLDINGS LIMITED, CY | NL | `evidence_increased` | 8216 | 8454 | +238 |
+| AS216071 | VDSINA - SERVERS TECH FZCO, AE | AE | `evidence_increased` | 4353 | 10319 | +5966 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 374024 | 379213 | +5189 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 89961 | 93075 | +3114 |
+| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_increased` | 18645 | 19717 | +1072 |
+| AS202759 | FairyHosting - RJ Network OU, EE | EE | `risk_level_changed` | 892 | 132 | -760 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5193 | 5840 | +647 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 144234 | 144877 | +643 |
+| AS2856 | BT-UK-AS - British Telecommunications PLC, GB | GB | `evidence_increased` | 2894 | 3479 | +585 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 5360 | 5899 | +539 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 81262 | 81597 | +335 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 41704 | 42034 | +330 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 42081 | 42402 | +321 |
+| AS55286 | SERVER-MANIA - B2 Net Solutions Inc., CA | US | `evidence_increased` | 5341 | 5645 | +304 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161334 | 161033 | -301 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 57288 | 57569 | +281 |
+| AS209693 | OC-NETWORK - OC NETWORKS LIMITED, GB | CZ | `evidence_decreased` | 828 | 576 | -252 |
+| AS216154 | CLODO - CLODO CLOUD SERVICE CO. L.L.C, AE | AE | `evidence_increased` | 306 | 557 | +251 |
+| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_increased` | 33125 | 33364 | +239 |
+| AS13332 | HYPEENT-SJ - Hype Enterprises, US | US | `evidence_increased` | 977 | 1205 | +228 |
+| AS26548 | PUREVOLTAGE-INC - PureVoltage Hosting Inc., US | US | `evidence_increased` | 7831 | 8056 | +225 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 8982 | 9195 | +213 |
+| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 10968 | 10774 | -194 |
+| AS21769 | AS-COLOAM - Colocation America Corporation, US | US | `evidence_decreased` | 3777 | 3590 | -187 |
+| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_decreased` | 762 | 578 | -184 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 46799 | 46978 | +179 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
