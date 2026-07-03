@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-07-02T07:57:16Z`_
+_Last dataset build: `2026-07-03T07:51:23Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-07-02T07:57:16Z`_
+_Last updated: `2026-07-03T07:51:23Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS216071 | VDSINA - SERVERS TECH FZCO, AE | AE | `evidence_increased` | 4353 | 10319 | +5966 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 374024 | 379213 | +5189 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 89961 | 93075 | +3114 |
-| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_increased` | 18645 | 19717 | +1072 |
-| AS202759 | FairyHosting - RJ Network OU, EE | EE | `risk_level_changed` | 892 | 132 | -760 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5193 | 5840 | +647 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 144234 | 144877 | +643 |
-| AS2856 | BT-UK-AS - British Telecommunications PLC, GB | GB | `evidence_increased` | 2894 | 3479 | +585 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 5360 | 5899 | +539 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 81262 | 81597 | +335 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 41704 | 42034 | +330 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 42081 | 42402 | +321 |
-| AS55286 | SERVER-MANIA - B2 Net Solutions Inc., CA | US | `evidence_increased` | 5341 | 5645 | +304 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161334 | 161033 | -301 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 57288 | 57569 | +281 |
-| AS209693 | OC-NETWORK - OC NETWORKS LIMITED, GB | CZ | `evidence_decreased` | 828 | 576 | -252 |
-| AS216154 | CLODO - CLODO CLOUD SERVICE CO. L.L.C, AE | AE | `evidence_increased` | 306 | 557 | +251 |
-| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_increased` | 33125 | 33364 | +239 |
-| AS13332 | HYPEENT-SJ - Hype Enterprises, US | US | `evidence_increased` | 977 | 1205 | +228 |
-| AS26548 | PUREVOLTAGE-INC - PureVoltage Hosting Inc., US | US | `evidence_increased` | 7831 | 8056 | +225 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 8982 | 9195 | +213 |
-| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 10968 | 10774 | -194 |
-| AS21769 | AS-COLOAM - Colocation America Corporation, US | US | `evidence_decreased` | 3777 | 3590 | -187 |
-| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_decreased` | 762 | 578 | -184 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 46799 | 46978 | +179 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 379213 | 380496 | +1283 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 144877 | 143811 | -1066 |
+| AS202759 | FairyHosting - RJ Network OU, EE | AT | `risk_level_changed` | 132 | 894 | +762 |
+| AS6789 | CRELCOM-NET - CRELCOM LLC, RU | RU | `evidence_increased` | 3917 | 4519 | +602 |
+| AS199707 | XINGTONGHUI - HONGKONG XING TONG HUI TECHNOLOGY CO., LIMITED, HK | PL | `evidence_decreased` | 393 | 7 | -386 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 57569 | 57227 | -342 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 81597 | 81326 | -271 |
+| AS209693 | OC-NETWORK - OC NETWORKS LIMITED, GB | CZ | `evidence_increased` | 576 | 834 | +258 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 9195 | 9452 | +257 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 2185 | 2424 | +239 |
+| AS62513 | GOCODEIT-INC - GoCodeIT Inc, CA | CA | `evidence_increased` | 522 | 740 | +218 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 42402 | 42618 | +216 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 8076 | 7872 | -204 |
+| AS835 | GOCODEIT-EDGE - GoCodeIT Inc, CA | CA | `evidence_decreased` | 264 | 66 | -198 |
+| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_decreased` | 9240 | 9050 | -190 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 42034 | 42215 | +181 |
+| AS63099 | MADEALA TELECOM TECHNOLOGY - MADEALA TELECOM TECHNOLOGY INC, US | SC | `evidence_increased` | 370 | 547 | +177 |
+| AS395793 | ARISK-COMMUNICATIONS-INC - Arisk Communications inc., US | SC | `evidence_decreased` | 857 | 680 | -177 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 46978 | 47153 | +175 |
+| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 10774 | 10600 | -174 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 193347 | 193178 | -169 |
+| AS44285 | SEFROYEKPARDAZENG-AS - Sefroyek Pardaz Engineering PJSC, IR | IR | `evidence_decreased` | 285 | 126 | -159 |
+| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 3364 | 3511 | +147 |
+| AS18779 | EGIHOSTING - EGIHosting, US | US | `evidence_decreased` | 5746 | 5608 | -138 |
+| AS402487 | HOSTCRAM - HostCram, US | AE | `risk_level_changed` | 5 | 134 | +129 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
