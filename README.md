@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-07-03T07:51:23Z`_
+_Last dataset build: `2026-07-04T07:29:57Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-07-03T07:51:23Z`_
+_Last updated: `2026-07-04T07:29:57Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 379213 | 380496 | +1283 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 144877 | 143811 | -1066 |
-| AS202759 | FairyHosting - RJ Network OU, EE | AT | `risk_level_changed` | 132 | 894 | +762 |
-| AS6789 | CRELCOM-NET - CRELCOM LLC, RU | RU | `evidence_increased` | 3917 | 4519 | +602 |
-| AS199707 | XINGTONGHUI - HONGKONG XING TONG HUI TECHNOLOGY CO., LIMITED, HK | PL | `evidence_decreased` | 393 | 7 | -386 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 57569 | 57227 | -342 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 81597 | 81326 | -271 |
-| AS209693 | OC-NETWORK - OC NETWORKS LIMITED, GB | CZ | `evidence_increased` | 576 | 834 | +258 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 9195 | 9452 | +257 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 2185 | 2424 | +239 |
-| AS62513 | GOCODEIT-INC - GoCodeIT Inc, CA | CA | `evidence_increased` | 522 | 740 | +218 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 42402 | 42618 | +216 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 8076 | 7872 | -204 |
-| AS835 | GOCODEIT-EDGE - GoCodeIT Inc, CA | CA | `evidence_decreased` | 264 | 66 | -198 |
-| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_decreased` | 9240 | 9050 | -190 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 42034 | 42215 | +181 |
-| AS63099 | MADEALA TELECOM TECHNOLOGY - MADEALA TELECOM TECHNOLOGY INC, US | SC | `evidence_increased` | 370 | 547 | +177 |
-| AS395793 | ARISK-COMMUNICATIONS-INC - Arisk Communications inc., US | SC | `evidence_decreased` | 857 | 680 | -177 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 46978 | 47153 | +175 |
-| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 10774 | 10600 | -174 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 193347 | 193178 | -169 |
-| AS44285 | SEFROYEKPARDAZENG-AS - Sefroyek Pardaz Engineering PJSC, IR | IR | `evidence_decreased` | 285 | 126 | -159 |
-| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 3364 | 3511 | +147 |
-| AS18779 | EGIHOSTING - EGIHosting, US | US | `evidence_decreased` | 5746 | 5608 | -138 |
-| AS402487 | HOSTCRAM - HostCram, US | AE | `risk_level_changed` | 5 | 134 | +129 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 380496 | 381762 | +1266 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 193178 | 192064 | -1114 |
+| AS2856 | BT-UK-AS - British Telecommunications Limited, GB | GB | `evidence_decreased` | 3496 | 2887 | -609 |
+| AS6789 | CRELCOM-NET - CRELCOM LLC, RU | RU | `evidence_decreased` | 4519 | 3920 | -599 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 81326 | 81686 | +360 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 143811 | 144073 | +262 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 47153 | 47342 | +189 |
+| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_decreased` | 9050 | 8892 | -158 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 57227 | 57384 | +157 |
+| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 10600 | 10450 | -150 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 93197 | 93346 | +149 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 13829 | 13968 | +139 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 2424 | 2557 | +133 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 9452 | 9572 | +120 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 51137 | 51254 | +117 |
+| AS394474 | WHITELABELCOLO393 - WhiteLabelColo, US | HN | `evidence_decreased` | 1735 | 1624 | -111 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 15405 | 15508 | +103 |
+| AS18419 | DADA-AS-TW - DaDa Broadband LTD., TW | TW | `evidence_increased` | 1323 | 1421 | +98 |
+| AS272809 | AS272809 - THUNDERNET, C.A., VE | US | `evidence_decreased` | 6637 | 6542 | -95 |
+| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 4084 | 4171 | +87 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 161065 | 161144 | +79 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 1675 | 1754 | +79 |
+| AS141642 | IDNIC-RINGNET-AS-ID - PT Ring Media Nusantara, ID | ID | `evidence_decreased` | 193 | 118 | -75 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 20409 | 20483 | +74 |
+| AS135097 | MYCLOUD-AS-AP - LUOGELANG (FRANCE) LIMITED, HK | SC | `evidence_increased` | 1470 | 1542 | +72 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
