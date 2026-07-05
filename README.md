@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-07-04T07:29:57Z`_
+_Last dataset build: `2026-07-05T07:49:38Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-07-04T07:29:57Z`_
+_Last updated: `2026-07-05T07:49:38Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 380496 | 381762 | +1266 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 193178 | 192064 | -1114 |
-| AS2856 | BT-UK-AS - British Telecommunications Limited, GB | GB | `evidence_decreased` | 3496 | 2887 | -609 |
-| AS6789 | CRELCOM-NET - CRELCOM LLC, RU | RU | `evidence_decreased` | 4519 | 3920 | -599 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 81326 | 81686 | +360 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 143811 | 144073 | +262 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 47153 | 47342 | +189 |
-| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_decreased` | 9050 | 8892 | -158 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 57227 | 57384 | +157 |
-| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 10600 | 10450 | -150 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 93197 | 93346 | +149 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 13829 | 13968 | +139 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 2424 | 2557 | +133 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 9452 | 9572 | +120 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 51137 | 51254 | +117 |
-| AS394474 | WHITELABELCOLO393 - WhiteLabelColo, US | HN | `evidence_decreased` | 1735 | 1624 | -111 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 15405 | 15508 | +103 |
-| AS18419 | DADA-AS-TW - DaDa Broadband LTD., TW | TW | `evidence_increased` | 1323 | 1421 | +98 |
-| AS272809 | AS272809 - THUNDERNET, C.A., VE | US | `evidence_decreased` | 6637 | 6542 | -95 |
-| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 4084 | 4171 | +87 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 161065 | 161144 | +79 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 1675 | 1754 | +79 |
-| AS141642 | IDNIC-RINGNET-AS-ID - PT Ring Media Nusantara, ID | ID | `evidence_decreased` | 193 | 118 | -75 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 20409 | 20483 | +74 |
-| AS135097 | MYCLOUD-AS-AP - LUOGELANG (FRANCE) LIMITED, HK | SC | `evidence_increased` | 1470 | 1542 | +72 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 192064 | 190762 | -1302 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 381762 | 382908 | +1146 |
+| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 10450 | 9568 | -882 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 5901 | 5332 | -569 |
+| AS210819 | Serverhino - Netversor GmbH, DE | DE | `evidence_decreased` | 502 | 12 | -490 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5895 | 5449 | -446 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 4 | 380 | +376 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 2557 | 2213 | -344 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 15508 | 15834 | +326 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 161144 | 161365 | +221 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 93346 | 93545 | +199 |
+| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_decreased` | 4084 | 3910 | -174 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 47342 | 47514 | +172 |
+| AS272809 | AS272809 - THUNDERNET, C.A., VE | US | `evidence_increased` | 6542 | 6713 | +171 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 42611 | 42776 | +165 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 20483 | 20318 | -165 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 144073 | 143910 | -163 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 13968 | 14120 | +152 |
+| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_decreased` | 8892 | 8755 | -137 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 57384 | 57266 | -118 |
+| AS62904 | AS62904 - Eonix Corporation, US | US | `evidence_increased` | 1878 | 1988 | +110 |
+| AS62744 | QUINTEX - Quintex Alliance Consulting, US | US | `evidence_decreased` | 212 | 113 | -99 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 297 | 202 | -95 |
+| AS8151 | AS8151 - UNINET, MX | MX | `evidence_increased` | 9039 | 9133 | +94 |
+| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_decreased` | 29831 | 29743 | -88 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
