@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-07-05T07:49:38Z`_
+_Last dataset build: `2026-07-06T08:51:35Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-07-05T07:49:38Z`_
+_Last updated: `2026-07-06T08:51:35Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 192064 | 190762 | -1302 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 381762 | 382908 | +1146 |
-| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 10450 | 9568 | -882 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 5901 | 5332 | -569 |
-| AS210819 | Serverhino - Netversor GmbH, DE | DE | `evidence_decreased` | 502 | 12 | -490 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5895 | 5449 | -446 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 4 | 380 | +376 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 2557 | 2213 | -344 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 15508 | 15834 | +326 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 161144 | 161365 | +221 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 93346 | 93545 | +199 |
-| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_decreased` | 4084 | 3910 | -174 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 47342 | 47514 | +172 |
-| AS272809 | AS272809 - THUNDERNET, C.A., VE | US | `evidence_increased` | 6542 | 6713 | +171 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 42611 | 42776 | +165 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 20483 | 20318 | -165 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 144073 | 143910 | -163 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 13968 | 14120 | +152 |
-| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_decreased` | 8892 | 8755 | -137 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 57384 | 57266 | -118 |
-| AS62904 | AS62904 - Eonix Corporation, US | US | `evidence_increased` | 1878 | 1988 | +110 |
-| AS62744 | QUINTEX - Quintex Alliance Consulting, US | US | `evidence_decreased` | 212 | 113 | -99 |
-| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 297 | 202 | -95 |
-| AS8151 | AS8151 - UNINET, MX | MX | `evidence_increased` | 9039 | 9133 | +94 |
-| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_decreased` | 29831 | 29743 | -88 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 15834 | 43592 | +27758 |
+| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_increased` | 8123 | 10046 | +1923 |
+| AS18403 | FPT-VN - FPT Telecom Company, VN | VN | `evidence_increased` | 3309 | 4157 | +848 |
+| AS8151 | AS8151 - UNINET, MX | MX | `evidence_increased` | 9133 | 9869 | +736 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 12026 | 12740 | +714 |
+| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_increased` | 1303 | 1839 | +536 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 42776 | 42309 | -467 |
+| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 4134 | 4589 | +455 |
+| AS36903 | Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM, MA | MA | `evidence_increased` | 2104 | 2475 | +371 |
+| AS7713 | telkomnet-as-ap - PT Telekomunikasi Indonesia, ID | ID | `evidence_increased` | 6800 | 7161 | +361 |
+| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_increased` | 2831 | 3174 | +343 |
+| AS199739 | Earthlink-DMCC-IQ - Earthlink Telecommunications Equipment Trading & Services DMCC, AE | AE | `evidence_increased` | 360 | 698 | +338 |
+| AS17072 | AS17072 - TOTAL PLAY TELECOMUNICACIONES, S.A.P.I. DE C.V., MX | MX | `evidence_increased` | 850 | 1184 | +334 |
+| AS24757 | Ethio Telecom - Ethio Telecom, ET | ET | `evidence_increased` | 1400 | 1732 | +332 |
+| AS13999 | AS13999 - Mega Cable, S.A. de C.V., MX | MX | `evidence_increased` | 849 | 1171 | +322 |
+| AS5384 | EMIRATES-INTERNET - EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC, AE | AE | `evidence_increased` | 1704 | 2000 | +296 |
+| AS11664 | AS11664 - Techtel LMDS Comunicaciones Interactivas S.A., AR | AR | `evidence_increased` | 643 | 936 | +293 |
+| AS27747 | AS27747 - Telecentro S.A., AR | AR | `evidence_increased` | 591 | 875 | +284 |
+| AS6057 | AS6057 - Administracion Nacional de Telecomunicaciones, UY | UY | `evidence_increased` | 1600 | 1865 | +265 |
+| AS36947 | Telecom Algeria - Telecom Algeria, DZ | DZ | `evidence_increased` | 1351 | 1610 | +259 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 57266 | 57518 | +252 |
+| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_increased` | 6015 | 6266 | +251 |
+| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_increased` | 2937 | 3178 | +241 |
+| AS10620 | AS10620 - Telmex Colombia S.A., CO | CO | `evidence_increased` | 699 | 938 | +239 |
+| AS3816 | AS3816 - COLOMBIA TELECOMUNICACIONES S.A. ESP BIC, CO | CO | `evidence_increased` | 1113 | 1351 | +238 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
