@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-07-06T08:51:35Z`_
+_Last dataset build: `2026-07-07T08:03:29Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-07-06T08:51:35Z`_
+_Last updated: `2026-07-07T08:03:29Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 15834 | 43592 | +27758 |
-| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_increased` | 8123 | 10046 | +1923 |
-| AS18403 | FPT-VN - FPT Telecom Company, VN | VN | `evidence_increased` | 3309 | 4157 | +848 |
-| AS8151 | AS8151 - UNINET, MX | MX | `evidence_increased` | 9133 | 9869 | +736 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 12026 | 12740 | +714 |
-| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_increased` | 1303 | 1839 | +536 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 42776 | 42309 | -467 |
-| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 4134 | 4589 | +455 |
-| AS36903 | Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM, MA | MA | `evidence_increased` | 2104 | 2475 | +371 |
-| AS7713 | telkomnet-as-ap - PT Telekomunikasi Indonesia, ID | ID | `evidence_increased` | 6800 | 7161 | +361 |
-| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_increased` | 2831 | 3174 | +343 |
-| AS199739 | Earthlink-DMCC-IQ - Earthlink Telecommunications Equipment Trading & Services DMCC, AE | AE | `evidence_increased` | 360 | 698 | +338 |
-| AS17072 | AS17072 - TOTAL PLAY TELECOMUNICACIONES, S.A.P.I. DE C.V., MX | MX | `evidence_increased` | 850 | 1184 | +334 |
-| AS24757 | Ethio Telecom - Ethio Telecom, ET | ET | `evidence_increased` | 1400 | 1732 | +332 |
-| AS13999 | AS13999 - Mega Cable, S.A. de C.V., MX | MX | `evidence_increased` | 849 | 1171 | +322 |
-| AS5384 | EMIRATES-INTERNET - EMIRATES TELECOMMUNICATIONS GROUP COMPANY (ETISALAT GROUP) PJSC, AE | AE | `evidence_increased` | 1704 | 2000 | +296 |
-| AS11664 | AS11664 - Techtel LMDS Comunicaciones Interactivas S.A., AR | AR | `evidence_increased` | 643 | 936 | +293 |
-| AS27747 | AS27747 - Telecentro S.A., AR | AR | `evidence_increased` | 591 | 875 | +284 |
-| AS6057 | AS6057 - Administracion Nacional de Telecomunicaciones, UY | UY | `evidence_increased` | 1600 | 1865 | +265 |
-| AS36947 | Telecom Algeria - Telecom Algeria, DZ | DZ | `evidence_increased` | 1351 | 1610 | +259 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 57266 | 57518 | +252 |
-| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_increased` | 6015 | 6266 | +251 |
-| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_increased` | 2937 | 3178 | +241 |
-| AS10620 | AS10620 - Telmex Colombia S.A., CO | CO | `evidence_increased` | 699 | 938 | +239 |
-| AS3816 | AS3816 - COLOMBIA TELECOMUNICACIONES S.A. ESP BIC, CO | CO | `evidence_increased` | 1113 | 1351 | +238 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 382899 | 386876 | +3977 |
+| AS48330 | GIGANET-UA-AS - Sinev Maksim Viktorovich, RU | RU | `evidence_decreased` | 2372 | 1055 | -1317 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 143996 | 144909 | +913 |
+| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 11234 | 11860 | +626 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 16413 | 17026 | +613 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 5500 | 6098 | +598 |
+| AS55286 | SERVER-MANIA - B2 Net Solutions Inc., CA | US | `evidence_increased` | 5678 | 6215 | +537 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 20315 | 20831 | +516 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 93553 | 94003 | +450 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 57518 | 57939 | +421 |
+| AS62874 | WEB2OBJECTS - Web2Objects LLC, US | US | `evidence_increased` | 388 | 783 | +395 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 47627 | 48014 | +387 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 380 | 4 | -376 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 42309 | 42668 | +359 |
+| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_increased` | 29751 | 30101 | +350 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 14120 | 14469 | +349 |
+| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 9567 | 9239 | -328 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 190539 | 190246 | -293 |
+| AS21769 | AS-COLOAM - Colocation America Corporation, US | US | `evidence_increased` | 3556 | 3839 | +283 |
+| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_decreased` | 8743 | 8474 | -269 |
+| AS396356 | LATITUDE-SH - Latitude.sh, US | UA | `evidence_increased` | 6529 | 6793 | +264 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 43592 | 43824 | +232 |
+| AS46516 | GLOBEIX - HostRoyale LLC, US | US | `evidence_increased` | 50 | 270 | +220 |
+| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_increased` | 6634 | 6847 | +213 |
+| AS272809 | AS272809 - THUNDERNET, C.A., VE | US | `evidence_increased` | 6570 | 6779 | +209 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
