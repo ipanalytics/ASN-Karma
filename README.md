@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-07-07T08:03:29Z`_
+_Last dataset build: `2026-07-08T07:16:18Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-07-07T08:03:29Z`_
+_Last updated: `2026-07-08T07:16:18Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 382899 | 386876 | +3977 |
-| AS48330 | GIGANET-UA-AS - Sinev Maksim Viktorovich, RU | RU | `evidence_decreased` | 2372 | 1055 | -1317 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 143996 | 144909 | +913 |
-| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 11234 | 11860 | +626 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 16413 | 17026 | +613 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 5500 | 6098 | +598 |
-| AS55286 | SERVER-MANIA - B2 Net Solutions Inc., CA | US | `evidence_increased` | 5678 | 6215 | +537 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 20315 | 20831 | +516 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 93553 | 94003 | +450 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 57518 | 57939 | +421 |
-| AS62874 | WEB2OBJECTS - Web2Objects LLC, US | US | `evidence_increased` | 388 | 783 | +395 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 47627 | 48014 | +387 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 380 | 4 | -376 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 42309 | 42668 | +359 |
-| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_increased` | 29751 | 30101 | +350 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 14120 | 14469 | +349 |
-| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 9567 | 9239 | -328 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 190539 | 190246 | -293 |
-| AS21769 | AS-COLOAM - Colocation America Corporation, US | US | `evidence_increased` | 3556 | 3839 | +283 |
-| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_decreased` | 8743 | 8474 | -269 |
-| AS396356 | LATITUDE-SH - Latitude.sh, US | UA | `evidence_increased` | 6529 | 6793 | +264 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 43592 | 43824 | +232 |
-| AS46516 | GLOBEIX - HostRoyale LLC, US | US | `evidence_increased` | 50 | 270 | +220 |
-| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_increased` | 6634 | 6847 | +213 |
-| AS272809 | AS272809 - THUNDERNET, C.A., VE | US | `evidence_increased` | 6570 | 6779 | +209 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 386876 | 389280 | +2404 |
+| AS44382 | WhiteLabel - Fiba Cloud Operation Company, LLC, US | TR | `evidence_decreased` | 983 | 286 | -697 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 144909 | 144345 | -564 |
+| AS48330 | GIGANET-UA-AS - Sinev Maksim Viktorovich, RU | RU | `evidence_increased` | 1055 | 1531 | +476 |
+| AS215730 | H2NEXUS-AS - H2NEXUS LTD, GB | US | `evidence_decreased` | 1562 | 1095 | -467 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 94003 | 94321 | +318 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 161481 | 161747 | +266 |
+| AS55286 | SERVER-MANIA - B2 Net Solutions Inc., CA | US | `evidence_decreased` | 6215 | 5949 | -266 |
+| AS395793 | ARISK-COMMUNICATIONS-INC - Arisk Communications inc., US | SC | `evidence_decreased` | 670 | 419 | -251 |
+| AS63099 | MADEALA TELECOM TECHNOLOGY - MADEALA TELECOM TECHNOLOGY INC, US | SC | `evidence_increased` | 538 | 787 | +249 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 43824 | 44072 | +248 |
+| AS8342 | RTCOMM-AS - JSC RTComm.RU, RU | RU | `evidence_decreased` | 1231 | 988 | -243 |
+| AS202422 | GHOST - G-Core Labs S.A., LU | LU | `evidence_decreased` | 964 | 727 | -237 |
+| AS213702 | QWINS-LTD - QWINS LTD, GB | US | `evidence_decreased` | 584 | 352 | -232 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 57939 | 58159 | +220 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 81782 | 81982 | +200 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 48014 | 48209 | +195 |
+| AS210078 | INFORMHOLDING-AS - _INFORM-HOLDING_ LTD., RU | RU | `risk_level_changed` | 81 | 263 | +182 |
+| AS6789 | CRELCOM-NET - CRELCOM LLC, RU | RU | `evidence_decreased` | 4115 | 3937 | -178 |
+| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 9239 | 9085 | -154 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 14469 | 14616 | +147 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 42237 | 42382 | +145 |
+| AS202226 | GreatFlower - Emil Vitukhnovskii trading as Great Flower, IL | US | `evidence_decreased` | 203 | 77 | -126 |
+| AS197893 | ELSUHD-AS - Elsuhd Company for Communications Services, Cybersecurity, Information Technology, Electronic Governance, and Commercial Agencies, Ltd., IQ | IQ | `evidence_decreased` | 248 | 126 | -122 |
+| AS201988 | VPSPay-ASN - VPSPay Networks LTD, GB | US | `evidence_decreased` | 172 | 50 | -122 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
