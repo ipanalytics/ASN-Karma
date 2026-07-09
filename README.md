@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-07-08T07:16:18Z`_
+_Last dataset build: `2026-07-09T08:14:34Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-07-08T07:16:18Z`_
+_Last updated: `2026-07-09T08:14:34Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 386876 | 389280 | +2404 |
-| AS44382 | WhiteLabel - Fiba Cloud Operation Company, LLC, US | TR | `evidence_decreased` | 983 | 286 | -697 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 144909 | 144345 | -564 |
-| AS48330 | GIGANET-UA-AS - Sinev Maksim Viktorovich, RU | RU | `evidence_increased` | 1055 | 1531 | +476 |
-| AS215730 | H2NEXUS-AS - H2NEXUS LTD, GB | US | `evidence_decreased` | 1562 | 1095 | -467 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 94003 | 94321 | +318 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 161481 | 161747 | +266 |
-| AS55286 | SERVER-MANIA - B2 Net Solutions Inc., CA | US | `evidence_decreased` | 6215 | 5949 | -266 |
-| AS395793 | ARISK-COMMUNICATIONS-INC - Arisk Communications inc., US | SC | `evidence_decreased` | 670 | 419 | -251 |
-| AS63099 | MADEALA TELECOM TECHNOLOGY - MADEALA TELECOM TECHNOLOGY INC, US | SC | `evidence_increased` | 538 | 787 | +249 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 43824 | 44072 | +248 |
-| AS8342 | RTCOMM-AS - JSC RTComm.RU, RU | RU | `evidence_decreased` | 1231 | 988 | -243 |
-| AS202422 | GHOST - G-Core Labs S.A., LU | LU | `evidence_decreased` | 964 | 727 | -237 |
-| AS213702 | QWINS-LTD - QWINS LTD, GB | US | `evidence_decreased` | 584 | 352 | -232 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 57939 | 58159 | +220 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 81782 | 81982 | +200 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 48014 | 48209 | +195 |
-| AS210078 | INFORMHOLDING-AS - _INFORM-HOLDING_ LTD., RU | RU | `risk_level_changed` | 81 | 263 | +182 |
-| AS6789 | CRELCOM-NET - CRELCOM LLC, RU | RU | `evidence_decreased` | 4115 | 3937 | -178 |
-| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 9239 | 9085 | -154 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 14469 | 14616 | +147 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 42237 | 42382 | +145 |
-| AS202226 | GreatFlower - Emil Vitukhnovskii trading as Great Flower, IL | US | `evidence_decreased` | 203 | 77 | -126 |
-| AS197893 | ELSUHD-AS - Elsuhd Company for Communications Services, Cybersecurity, Information Technology, Electronic Governance, and Commercial Agencies, Ltd., IQ | IQ | `evidence_decreased` | 248 | 126 | -122 |
-| AS201988 | VPSPay-ASN - VPSPay Networks LTD, GB | US | `evidence_decreased` | 172 | 50 | -122 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 389280 | 383999 | -5281 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 190276 | 188935 | -1341 |
+| AS62240 | Clouvider - Clouvider Limited, GB | GB | `evidence_decreased` | 9066 | 8430 | -636 |
+| AS206092 | SECFIREWALLAS - F.N.S. HOLDINGS LIMITED, CY | NL | `evidence_decreased` | 8629 | 8012 | -617 |
+| AS137409 | GSLNETWORKS-AS-AP - GSL Networks Pty LTD, AU | NL | `evidence_decreased` | 4032 | 3426 | -606 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 144345 | 144927 | +582 |
+| AS58087 | FlorianKolb - Florian Kolb, DE | DE | `evidence_decreased` | 853 | 283 | -570 |
+| AS48330 | GIGANET-UA-AS - Sinev Maksim Viktorovich, RU | RU | `evidence_increased` | 1531 | 2084 | +553 |
+| AS398324 | CENSYS-ARIN-01 - Censys, Inc., US | US | `evidence_increased` | 2051 | 2563 | +512 |
+| AS41745 | FORTIS-AS - Baykov Ilya Sergeevich, RU | RU | `evidence_decreased` | 6027 | 5551 | -476 |
+| AS215730 | H2NEXUS-AS - H2NEXUS LTD, GB | US | `evidence_increased` | 1095 | 1571 | +476 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 42594 | 42166 | -428 |
+| AS8570 | LES - PJSC Rostelecom, RU | RU | `evidence_increased` | 25 | 399 | +374 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_decreased` | 17639 | 17279 | -360 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 94321 | 94668 | +347 |
+| AS213954 | GTS-AS - Global Transit Systems LLC, US | US | `evidence_decreased` | 3777 | 3484 | -293 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 44072 | 44363 | +291 |
+| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_decreased` | 26270 | 25990 | -280 |
+| AS396356 | LATITUDE-SH - Latitude.sh, US | US | `evidence_decreased` | 6777 | 6507 | -270 |
+| AS59162 | UPCSPL-AS-IN - U.P. COMMUNICATION SERVICES PVT LTD, IN | IN | `evidence_decreased` | 713 | 446 | -267 |
+| AS209242 | CLOUDFLARESPECTRUM - Cloudflare London, LLC, US | US | `evidence_decreased` | 3507 | 3254 | -253 |
+| AS35048 | BITERIKA-AS - Biterika Group LLC, RU | CZ | `evidence_decreased` | 4865 | 4617 | -248 |
+| AS213702 | QWINS-LTD - QWINS LTD, GB | CY | `evidence_increased` | 352 | 593 | +241 |
+| AS8560 | IONOS-AS - IONOS SE, DE | DE | `evidence_decreased` | 5845 | 5610 | -235 |
+| AS401152 | ADCIL-ASN-01 - Ace Data Centers II, L.L.C., US | US | `evidence_increased` | 361 | 596 | +235 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
