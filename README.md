@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-07-09T08:14:34Z`_
+_Last dataset build: `2026-07-10T08:04:29Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-07-09T08:14:34Z`_
+_Last updated: `2026-07-10T08:04:29Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 389280 | 383999 | -5281 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 190276 | 188935 | -1341 |
-| AS62240 | Clouvider - Clouvider Limited, GB | GB | `evidence_decreased` | 9066 | 8430 | -636 |
-| AS206092 | SECFIREWALLAS - F.N.S. HOLDINGS LIMITED, CY | NL | `evidence_decreased` | 8629 | 8012 | -617 |
-| AS137409 | GSLNETWORKS-AS-AP - GSL Networks Pty LTD, AU | NL | `evidence_decreased` | 4032 | 3426 | -606 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 144345 | 144927 | +582 |
-| AS58087 | FlorianKolb - Florian Kolb, DE | DE | `evidence_decreased` | 853 | 283 | -570 |
-| AS48330 | GIGANET-UA-AS - Sinev Maksim Viktorovich, RU | RU | `evidence_increased` | 1531 | 2084 | +553 |
-| AS398324 | CENSYS-ARIN-01 - Censys, Inc., US | US | `evidence_increased` | 2051 | 2563 | +512 |
-| AS41745 | FORTIS-AS - Baykov Ilya Sergeevich, RU | RU | `evidence_decreased` | 6027 | 5551 | -476 |
-| AS215730 | H2NEXUS-AS - H2NEXUS LTD, GB | US | `evidence_increased` | 1095 | 1571 | +476 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 42594 | 42166 | -428 |
-| AS8570 | LES - PJSC Rostelecom, RU | RU | `evidence_increased` | 25 | 399 | +374 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_decreased` | 17639 | 17279 | -360 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 94321 | 94668 | +347 |
-| AS213954 | GTS-AS - Global Transit Systems LLC, US | US | `evidence_decreased` | 3777 | 3484 | -293 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 44072 | 44363 | +291 |
-| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_decreased` | 26270 | 25990 | -280 |
-| AS396356 | LATITUDE-SH - Latitude.sh, US | US | `evidence_decreased` | 6777 | 6507 | -270 |
-| AS59162 | UPCSPL-AS-IN - U.P. COMMUNICATION SERVICES PVT LTD, IN | IN | `evidence_decreased` | 713 | 446 | -267 |
-| AS209242 | CLOUDFLARESPECTRUM - Cloudflare London, LLC, US | US | `evidence_decreased` | 3507 | 3254 | -253 |
-| AS35048 | BITERIKA-AS - Biterika Group LLC, RU | CZ | `evidence_decreased` | 4865 | 4617 | -248 |
-| AS213702 | QWINS-LTD - QWINS LTD, GB | CY | `evidence_increased` | 352 | 593 | +241 |
-| AS8560 | IONOS-AS - IONOS SE, DE | DE | `evidence_decreased` | 5845 | 5610 | -235 |
-| AS401152 | ADCIL-ASN-01 - Ace Data Centers II, L.L.C., US | US | `evidence_increased` | 361 | 596 | +235 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 383999 | 391884 | +7885 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 3715 | 5763 | +2048 |
+| AS137409 | GSLNETWORKS-AS-AP - GSL Networks Pty LTD, AU | NL | `evidence_increased` | 3426 | 4020 | +594 |
+| AS58087 | FlorianKolb - Florian Kolb, DE | DE | `evidence_increased` | 283 | 859 | +576 |
+| AS206092 | SECFIREWALLAS - F.N.S. HOLDINGS LIMITED, CY | NL | `evidence_increased` | 8012 | 8580 | +568 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 144927 | 144423 | -504 |
+| AS62240 | Clouvider - Clouvider Limited, GB | GB | `evidence_increased` | 8430 | 8910 | +480 |
+| AS41745 | FORTIS-AS - Baykov Ilya Sergeevich, RU | RU | `evidence_increased` | 5551 | 6029 | +478 |
+| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_decreased` | 1561 | 1119 | -442 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 44363 | 44776 | +413 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 6195 | 5792 | -403 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 188935 | 188542 | -393 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 2 | 392 | +390 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 94668 | 95039 | +371 |
+| AS15169 | GOOGLE - Google LLC, US | US | `evidence_increased` | 1124 | 1482 | +358 |
+| AS396356 | LATITUDE-SH - Latitude.sh, US | UA | `evidence_increased` | 6507 | 6799 | +292 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 58311 | 58601 | +290 |
+| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_increased` | 25990 | 26278 | +288 |
+| AS213954 | GTS-AS - Global Transit Systems LLC, US | US | `evidence_increased` | 3484 | 3772 | +288 |
+| AS209242 | CLOUDFLARESPECTRUM - Cloudflare London, LLC, US | US | `evidence_increased` | 3254 | 3519 | +265 |
+| AS197540 | netcup-AS - netcup GmbH, DE | DE | `evidence_increased` | 5247 | 5501 | +254 |
+| AS35048 | BITERIKA-AS - Biterika Group LLC, RU | CZ | `evidence_increased` | 4617 | 4865 | +248 |
+| AS8560 | IONOS-AS - IONOS SE, DE | DE | `evidence_increased` | 5610 | 5854 | +244 |
+| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 3606 | 3844 | +238 |
+| AS43641 | Sollutium-NL - SOLLUTIUM EU Sp z.o.o., PL | UA | `evidence_increased` | 277 | 509 | +232 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
