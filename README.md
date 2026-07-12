@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-07-11T06:59:05Z`_
+_Last dataset build: `2026-07-12T07:17:10Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-07-11T06:59:05Z`_
+_Last updated: `2026-07-12T07:17:10Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 144423 | 145544 | +1121 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 391884 | 392877 | +993 |
-| AS36924 | GVA Cote d_Ivoire SAS - GVA Cote d_Ivoire SAS, CI | TG | `evidence_decreased` | 1113 | 339 | -774 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 44776 | 45129 | +353 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 95039 | 95379 | +340 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 14945 | 15249 | +304 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 58601 | 58895 | +294 |
-| AS26548 | PUREVOLTAGE-INC - PureVoltage Hosting Inc., US | US | `evidence_increased` | 8133 | 8397 | +264 |
-| AS984 | OWS-NETWORK - OCTOPUS WEB SOLUTION INC, US | US | `evidence_increased` | 3806 | 4068 | +262 |
-| AS9137 | ASN-UNO - Uno Communications SpA, IT | IT | `risk_level_changed` | 2 | 214 | +212 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 188542 | 188337 | -205 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 17319 | 17513 | +194 |
-| AS202736 | WISDOM - WISDOM CLOUD INTERNET TECHNOLOGY PTE. LTD., SG | JP | `evidence_decreased` | 369 | 180 | -189 |
-| AS23969 | TOT-NET - TOT Public Company Limited, TH | TH | `evidence_increased` | 4319 | 4499 | +180 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 20939 | 20773 | -166 |
-| AS43444 | BNS-AS - Fast Servers (Pty) Ltd, ZA | SC | `evidence_increased` | 1760 | 1918 | +158 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 48543 | 48683 | +140 |
-| AS402487 | HOSTCRAM - HostCram, US | FR | `risk_level_changed` | 134 | 5 | -129 |
-| AS3462 | HINET - Data Communication Business Group, TW | TW | `evidence_increased` | 20052 | 20176 | +124 |
-| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `risk_level_changed` | 8122 | 8000 | -122 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82155 | 82275 | +120 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 17157 | 17276 | +119 |
-| AS200019 | AlexHost - ALEXHOST SRL, MD | RU | `evidence_decreased` | 2634 | 2520 | -114 |
-| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_increased` | 6955 | 7064 | +109 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 7871 | 7978 | +107 |
+| AS6849 | UKRTELNET - JSC _Ukrtelecom_, UA | UA | `evidence_decreased` | 8908 | 522 | -8386 |
+| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_increased` | 30037 | 32271 | +2234 |
+| AS396356 | LATITUDE-SH - Latitude.sh, US | US | `evidence_decreased` | 6795 | 5846 | -949 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 188337 | 187417 | -920 |
+| AS49100 | IR-THR-PTE - Pishgaman Toseeh Ertebatat Company (Private Joint Stock), IR | IR | `evidence_decreased` | 1538 | 648 | -890 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 392877 | 393735 | +858 |
+| AS29802 | HVC-AS - HIVELOCITY, Inc., US | US | `evidence_decreased` | 5031 | 4211 | -820 |
+| AS36924 | GVA Cote d_Ivoire SAS - GVA Cote d_Ivoire SAS, CI | CI | `evidence_increased` | 339 | 1131 | +792 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 20773 | 20104 | -669 |
+| AS206388 | ertebatatazinkia - Gostaresh Ertebat Azin Kia Company PJSC, IR | IR | `risk_level_changed` | 575 | 15 | -560 |
+| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_decreased` | 7064 | 6556 | -508 |
+| AS262287 | AS262287 - Latitude.sh LTDA, BR | US | `evidence_decreased` | 3221 | 2726 | -495 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 5774 | 6241 | +467 |
+| AS41268 | LANTA-AS - Sesameware FZ-LLC, AE | AE | `evidence_decreased` | 1849 | 1400 | -449 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 393 | 2 | -391 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 95379 | 95719 | +340 |
+| AS214143 | skydigital-telecom - SKYDIGITAL TELECOM LTD, GB | SC | `evidence_decreased` | 1129 | 802 | -327 |
+| AS50304 | BLIX - Blix Solutions AS, NO | GB | `evidence_decreased` | 1401 | 1077 | -324 |
+| AS8796 | FD-298-8796 - FASTNET DATA INC, US | US | `evidence_decreased` | 879 | 556 | -323 |
+| AS402506 | ZENIX - Zenixcloud, US | SC | `evidence_increased` | 13 | 334 | +321 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 2370 | 2065 | -305 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 42015 | 41714 | -301 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161755 | 161455 | -300 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 58895 | 58602 | -293 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 82275 | 82005 | -270 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
