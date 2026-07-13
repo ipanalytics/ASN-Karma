@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-07-12T07:17:10Z`_
+_Last dataset build: `2026-07-13T07:54:53Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-07-12T07:17:10Z`_
+_Last updated: `2026-07-13T07:54:53Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS6849 | UKRTELNET - JSC _Ukrtelecom_, UA | UA | `evidence_decreased` | 8908 | 522 | -8386 |
-| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_increased` | 30037 | 32271 | +2234 |
-| AS396356 | LATITUDE-SH - Latitude.sh, US | US | `evidence_decreased` | 6795 | 5846 | -949 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 188337 | 187417 | -920 |
-| AS49100 | IR-THR-PTE - Pishgaman Toseeh Ertebatat Company (Private Joint Stock), IR | IR | `evidence_decreased` | 1538 | 648 | -890 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 392877 | 393735 | +858 |
-| AS29802 | HVC-AS - HIVELOCITY, Inc., US | US | `evidence_decreased` | 5031 | 4211 | -820 |
-| AS36924 | GVA Cote d_Ivoire SAS - GVA Cote d_Ivoire SAS, CI | CI | `evidence_increased` | 339 | 1131 | +792 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 20773 | 20104 | -669 |
-| AS206388 | ertebatatazinkia - Gostaresh Ertebat Azin Kia Company PJSC, IR | IR | `risk_level_changed` | 575 | 15 | -560 |
-| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_decreased` | 7064 | 6556 | -508 |
-| AS262287 | AS262287 - Latitude.sh LTDA, BR | US | `evidence_decreased` | 3221 | 2726 | -495 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 5774 | 6241 | +467 |
-| AS41268 | LANTA-AS - Sesameware FZ-LLC, AE | AE | `evidence_decreased` | 1849 | 1400 | -449 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 393 | 2 | -391 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 95379 | 95719 | +340 |
-| AS214143 | skydigital-telecom - SKYDIGITAL TELECOM LTD, GB | SC | `evidence_decreased` | 1129 | 802 | -327 |
-| AS50304 | BLIX - Blix Solutions AS, NO | GB | `evidence_decreased` | 1401 | 1077 | -324 |
-| AS8796 | FD-298-8796 - FASTNET DATA INC, US | US | `evidence_decreased` | 879 | 556 | -323 |
-| AS402506 | ZENIX - Zenixcloud, US | SC | `evidence_increased` | 13 | 334 | +321 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 2370 | 2065 | -305 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 42015 | 41714 | -301 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161755 | 161455 | -300 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 58895 | 58602 | -293 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 82275 | 82005 | -270 |
+| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_decreased` | 32271 | 30032 | -2239 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 393735 | 395879 | +2144 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 145621 | 146824 | +1203 |
+| AS49100 | IR-THR-PTE - Pishgaman Toseeh Ertebatat Company (Private Joint Stock), IR | IR | `evidence_increased` | 648 | 1540 | +892 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 187417 | 186735 | -682 |
+| AS206388 | ertebatatazinkia - Gostaresh Ertebat Azin Kia Company PJSC, IR | IR | `risk_level_changed` | 15 | 575 | +560 |
+| AS41268 | LANTA-AS - Sesameware FZ-LLC, AE | AE | `evidence_increased` | 1400 | 1867 | +467 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 95719 | 96168 | +449 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 2065 | 2420 | +355 |
+| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 11910 | 12259 | +349 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82005 | 82321 | +316 |
+| AS26548 | PUREVOLTAGE-INC - PureVoltage Hosting Inc., US | US | `evidence_decreased` | 8383 | 8108 | -275 |
+| AS6282 | FONL-6282 - Fiber Optical Network LLC, US | US | `risk_level_changed` | 1 | 249 | +248 |
+| AS56791 | CT-AS - CityTelekom Ltd., RU | RU | `risk_level_changed` | 28 | 266 | +238 |
+| AS41985 | STARGROUP-UA-AS - Stargroup LLC, UA | NL | `evidence_increased` | 117 | 353 | +236 |
+| AS219329 | ASN-FEIT - FLASH EDGE INFORMATION TECHNOLOGY LLC, AE | US | `risk_level_changed` | 1 | 222 | +221 |
+| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 315 | 517 | +202 |
+| AS43444 | BNS-AS - Fast Servers (Pty) Ltd, ZA | SC | `evidence_decreased` | 1933 | 1736 | -197 |
+| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_increased` | 6556 | 6747 | +191 |
+| AS205889 | giganineveh - Giga Nineveh for internet services Ltd, IQ | IQ | `risk_level_changed` | 10 | 200 | +190 |
+| AS62904 | AS62904 - Eonix Corporation, US | US | `evidence_decreased` | 2473 | 2285 | -188 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 15170 | 15348 | +178 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161455 | 161281 | -174 |
+| AS49981 | WorldStream - WorldStream B.V., NL | NL | `evidence_increased` | 2252 | 2422 | +170 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 48854 | 49018 | +164 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
