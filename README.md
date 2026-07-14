@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-07-13T07:54:53Z`_
+_Last dataset build: `2026-07-14T06:57:51Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-07-13T07:54:53Z`_
+_Last updated: `2026-07-14T06:57:51Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_decreased` | 32271 | 30032 | -2239 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 393735 | 395879 | +2144 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 145621 | 146824 | +1203 |
-| AS49100 | IR-THR-PTE - Pishgaman Toseeh Ertebatat Company (Private Joint Stock), IR | IR | `evidence_increased` | 648 | 1540 | +892 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 187417 | 186735 | -682 |
-| AS206388 | ertebatatazinkia - Gostaresh Ertebat Azin Kia Company PJSC, IR | IR | `risk_level_changed` | 15 | 575 | +560 |
-| AS41268 | LANTA-AS - Sesameware FZ-LLC, AE | AE | `evidence_increased` | 1400 | 1867 | +467 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 95719 | 96168 | +449 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 2065 | 2420 | +355 |
-| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 11910 | 12259 | +349 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82005 | 82321 | +316 |
-| AS26548 | PUREVOLTAGE-INC - PureVoltage Hosting Inc., US | US | `evidence_decreased` | 8383 | 8108 | -275 |
-| AS6282 | FONL-6282 - Fiber Optical Network LLC, US | US | `risk_level_changed` | 1 | 249 | +248 |
-| AS56791 | CT-AS - CityTelekom Ltd., RU | RU | `risk_level_changed` | 28 | 266 | +238 |
-| AS41985 | STARGROUP-UA-AS - Stargroup LLC, UA | NL | `evidence_increased` | 117 | 353 | +236 |
-| AS219329 | ASN-FEIT - FLASH EDGE INFORMATION TECHNOLOGY LLC, AE | US | `risk_level_changed` | 1 | 222 | +221 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 315 | 517 | +202 |
-| AS43444 | BNS-AS - Fast Servers (Pty) Ltd, ZA | SC | `evidence_decreased` | 1933 | 1736 | -197 |
-| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_increased` | 6556 | 6747 | +191 |
-| AS205889 | giganineveh - Giga Nineveh for internet services Ltd, IQ | IQ | `risk_level_changed` | 10 | 200 | +190 |
-| AS62904 | AS62904 - Eonix Corporation, US | US | `evidence_decreased` | 2473 | 2285 | -188 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 15170 | 15348 | +178 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161455 | 161281 | -174 |
-| AS49981 | WorldStream - WorldStream B.V., NL | NL | `evidence_increased` | 2252 | 2422 | +170 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 48854 | 49018 | +164 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 395879 | 398050 | +2171 |
+| AS46783 | EL-US - EASY LINK LLC, US | US | `evidence_increased` | 127 | 1150 | +1023 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 186735 | 185879 | -856 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161281 | 160493 | -788 |
+| AS55990 | HWCSNET - Huawei Cloud Service data center, CN | CN | `evidence_decreased` | 3745 | 3276 | -469 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82321 | 82770 | +449 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 6285 | 5843 | -442 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 41761 | 41340 | -421 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 96168 | 96561 | +393 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 2 | 395 | +393 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 15348 | 15613 | +265 |
+| AS23969 | TOT-NET - TOT Public Company Limited, TH | TH | `evidence_increased` | 4773 | 5037 | +264 |
+| AS13335 | CLOUDFLARENET - Cloudflare, Inc., US | US | `evidence_decreased` | 5878 | 5655 | -223 |
+| AS9137 | ASN-UNO - Uno Communications SpA, IT | IT | `risk_level_changed` | 214 | 2 | -212 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 17530 | 17706 | +176 |
+| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 517 | 676 | +159 |
+| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 12259 | 12412 | +153 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 49018 | 49167 | +149 |
+| AS8866 | VIVACOM-AS - Vivacom Bulgaria EAD, BG | BG | `evidence_increased` | 541 | 686 | +145 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 50895 | 51035 | +140 |
+| AS63567 | PGYIDC - Suqian Pugongying Network Service Co.,Ltd, CN | CN | `risk_level_changed` | 11 | 151 | +140 |
+| AS20326 | TERASWITCH - TeraSwitch Networks Inc., US | GB | `evidence_decreased` | 2312 | 2176 | -136 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 313 | 202 | -111 |
+| AS43205 | BULSATCOM-BG-AS - Vivacom Bulgaria EAD, BG | BG | `risk_level_changed` | 160 | 51 | -109 |
+| AS137655 | AANS-AS-IN - Angel Air Network Solutions Pvt. Ltd., IN | IN | `evidence_increased` | 221 | 328 | +107 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
