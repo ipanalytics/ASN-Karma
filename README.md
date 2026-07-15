@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-07-14T06:57:51Z`_
+_Last dataset build: `2026-07-15T07:00:32Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-07-14T06:57:51Z`_
+_Last updated: `2026-07-15T07:00:32Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 395879 | 398050 | +2171 |
-| AS46783 | EL-US - EASY LINK LLC, US | US | `evidence_increased` | 127 | 1150 | +1023 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 186735 | 185879 | -856 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161281 | 160493 | -788 |
-| AS55990 | HWCSNET - Huawei Cloud Service data center, CN | CN | `evidence_decreased` | 3745 | 3276 | -469 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82321 | 82770 | +449 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 6285 | 5843 | -442 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 41761 | 41340 | -421 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 96168 | 96561 | +393 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 2 | 395 | +393 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 15348 | 15613 | +265 |
-| AS23969 | TOT-NET - TOT Public Company Limited, TH | TH | `evidence_increased` | 4773 | 5037 | +264 |
-| AS13335 | CLOUDFLARENET - Cloudflare, Inc., US | US | `evidence_decreased` | 5878 | 5655 | -223 |
-| AS9137 | ASN-UNO - Uno Communications SpA, IT | IT | `risk_level_changed` | 214 | 2 | -212 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 17530 | 17706 | +176 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 517 | 676 | +159 |
-| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 12259 | 12412 | +153 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 49018 | 49167 | +149 |
-| AS8866 | VIVACOM-AS - Vivacom Bulgaria EAD, BG | BG | `evidence_increased` | 541 | 686 | +145 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 50895 | 51035 | +140 |
-| AS63567 | PGYIDC - Suqian Pugongying Network Service Co.,Ltd, CN | CN | `risk_level_changed` | 11 | 151 | +140 |
-| AS20326 | TERASWITCH - TeraSwitch Networks Inc., US | GB | `evidence_decreased` | 2312 | 2176 | -136 |
-| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 313 | 202 | -111 |
-| AS43205 | BULSATCOM-BG-AS - Vivacom Bulgaria EAD, BG | BG | `risk_level_changed` | 160 | 51 | -109 |
-| AS137655 | AANS-AS-IN - Angel Air Network Solutions Pvt. Ltd., IN | IN | `evidence_increased` | 221 | 328 | +107 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 398050 | 399422 | +1372 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 185879 | 184685 | -1194 |
+| AS46783 | EL-US - EASY LINK LLC, US | US | `evidence_decreased` | 1150 | 125 | -1025 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 160493 | 161408 | +915 |
+| AS328608 | Africa on Cloud - Africa on Cloud, ZA | SC | `evidence_decreased` | 3254 | 2480 | -774 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 146867 | 147588 | +721 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 17706 | 18357 | +651 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 12577 | 12868 | +291 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 96561 | 96819 | +258 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 2420 | 2659 | +239 |
+| AS20326 | TERASWITCH - TeraSwitch Networks Inc., US | GB | `evidence_decreased` | 2176 | 1973 | -203 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 15613 | 15812 | +199 |
+| AS205759 | GHOSTYNETWORKS - Ghosty Networks LLC, US | PK | `evidence_decreased` | 633 | 459 | -174 |
+| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_increased` | 4641 | 4800 | +159 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 6542 | 6695 | +153 |
+| AS152179 | GCNL-AS-AP - GLOBAL COMMUNICATION NETWORK LIMITED, HK | US | `evidence_increased` | 920 | 1067 | +147 |
+| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_increased` | 6846 | 6990 | +144 |
+| AS63567 | PGYIDC - Suqian Pugongying Network Service Co.,Ltd, CN | CN | `risk_level_changed` | 151 | 14 | -137 |
+| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 12412 | 12538 | +126 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 41340 | 41460 | +120 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 49167 | 49285 | +118 |
+| AS219329 | ASN-FEIT - FLASH EDGE INFORMATION TECHNOLOGY LLC, AE | US | `evidence_increased` | 294 | 412 | +118 |
+| AS25159 | SONICDUO-AS - PJSC MegaFon, RU | RU | `evidence_increased` | 389 | 497 | +108 |
+| AS21769 | AS-COLOAM - Colocation America Corporation, US | US | `evidence_increased` | 3738 | 3836 | +98 |
+| AS55990 | HWCSNET - Huawei Cloud Service data center, CN | CN | `evidence_decreased` | 3276 | 3178 | -98 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
