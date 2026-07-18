@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-07-17T07:04:12Z`_
+_Last dataset build: `2026-07-18T06:33:13Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-07-17T07:04:12Z`_
+_Last updated: `2026-07-18T06:33:13Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 178429 | 183513 | +5084 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 397672 | 401605 | +3933 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 47599 | 49625 | +2026 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 147813 | 149166 | +1353 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 9501 | 10757 | +1256 |
-| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_increased` | 32693 | 33826 | +1133 |
-| AS59651 | AS-QualityNetwork - Alex Largman, IL | HK | `evidence_increased` | 1585 | 2607 | +1022 |
-| AS62904 | AS62904 - Eonix Corporation, US | US | `evidence_increased` | 1371 | 2209 | +838 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 17852 | 18634 | +782 |
-| AS199739 | Earthlink-DMCC-IQ - Earthlink Telecommunications Equipment Trading & Services DMCC, AE | AE | `evidence_increased` | 84 | 788 | +704 |
-| AS714 | APPLE-ENGINEERING - Apple Inc., US | US | `risk_level_changed` | 12 | 664 | +652 |
-| AS135905 | VNPT-AS-VN - VIETNAM POSTS AND TELECOMMUNICATIONS GROUP, VN | VN | `evidence_increased` | 5055 | 5692 | +637 |
-| AS7871 | SEIDATA - SEI Data, Inc., US | US | `evidence_increased` | 361 | 967 | +606 |
-| AS32709 | 1-JOINK - Joink, LLC, US | US | `evidence_increased` | 233 | 728 | +495 |
-| AS394474 | WHITELABELCOLO393 - WhiteLabelColo, US | HN | `evidence_increased` | 1106 | 1576 | +470 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 19520 | 19986 | +466 |
-| AS13489 | AS13489 - UNE EPM TELECOMUNICACIONES S.A., CO | CO | `evidence_increased` | 1048 | 1488 | +440 |
-| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_increased` | 19934 | 20356 | +422 |
-| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_increased` | 29733 | 30116 | +383 |
-| AS205964 | code200-180 - UAB code200, LT | GB | `evidence_increased` | 678 | 1054 | +376 |
-| AS6789 | CRELCOM-NET - CRELCOM LLC, RU | RU | `evidence_increased` | 3968 | 4317 | +349 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 15696 | 16044 | +348 |
-| AS23860 | ALLIANCE-GATEWAY-AS-AP - Alliance Broadband Services Pvt. Ltd., IN | IN | `evidence_increased` | 474 | 796 | +322 |
-| AS36351 | SOFTLAYER - IBM Cloud, US | US | `evidence_increased` | 966 | 1264 | +298 |
-| AS219329 | ASN-FEIT - FLASH EDGE INFORMATION TECHNOLOGY LLC, AE | US | `evidence_increased` | 513 | 796 | +283 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 401605 | 403226 | +1621 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 183513 | 182620 | -893 |
+| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_decreased` | 33826 | 32962 | -864 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 41574 | 42318 | +744 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6404 | 5883 | -521 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 6390 | 5989 | -401 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 2 | 399 | +397 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 149166 | 148789 | -377 |
+| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_increased` | 2479 | 2849 | +370 |
+| AS3491 | PCCWG-APAC-HK - PCCW Global (HK) Ltd., HK | GB | `evidence_increased` | 1286 | 1628 | +342 |
+| AS6789 | CRELCOM-NET - CRELCOM LLC, RU | RU | `evidence_decreased` | 4317 | 3980 | -337 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 97278 | 97600 | +322 |
+| AS8193 | BRM-AS - _Uzbektelekom_ Joint Stock Company, UZ | UZ | `evidence_decreased` | 1749 | 1463 | -286 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 10757 | 11039 | +282 |
+| AS136907 | HWCLOUDS-AS-AP - HUAWEI CLOUDS, HK | SG | `evidence_increased` | 4022 | 4277 | +255 |
+| AS216067 | AS216067 - BHS Solutions GmbH, DE | DE | `risk_level_changed` | 257 | 3 | -254 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 82616 | 82375 | -241 |
+| AS1299 | TWELVE99 - Arelion Sweden AB, SE | US | `evidence_increased` | 1258 | 1487 | +229 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 59019 | 59245 | +226 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 16044 | 16252 | +208 |
+| AS209 | CENTURYLINK-US-LEGACY-QWEST - CenturyLink Communications, LLC, US | US | `evidence_decreased` | 1738 | 1563 | -175 |
+| AS3356 | LEVEL3 - Level 3 Parent, LLC, US | US | `evidence_increased` | 3124 | 3293 | +169 |
+| AS11798 | ACEDATACENTERS-AS-1 - Ace Data Centers, Inc., US | US | `evidence_increased` | 1432 | 1601 | +169 |
+| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_decreased` | 4029 | 3867 | -162 |
+| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_decreased` | 7521 | 7368 | -153 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
