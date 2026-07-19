@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-07-18T06:33:13Z`_
+_Last dataset build: `2026-07-19T07:16:20Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
 
@@ -206,35 +206,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-07-18T06:33:13Z`_
+_Last updated: `2026-07-19T07:16:20Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 401605 | 403226 | +1621 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 183513 | 182620 | -893 |
-| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_decreased` | 33826 | 32962 | -864 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 41574 | 42318 | +744 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6404 | 5883 | -521 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 6390 | 5989 | -401 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 2 | 399 | +397 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 149166 | 148789 | -377 |
-| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_increased` | 2479 | 2849 | +370 |
-| AS3491 | PCCWG-APAC-HK - PCCW Global (HK) Ltd., HK | GB | `evidence_increased` | 1286 | 1628 | +342 |
-| AS6789 | CRELCOM-NET - CRELCOM LLC, RU | RU | `evidence_decreased` | 4317 | 3980 | -337 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 97278 | 97600 | +322 |
-| AS8193 | BRM-AS - _Uzbektelekom_ Joint Stock Company, UZ | UZ | `evidence_decreased` | 1749 | 1463 | -286 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 10757 | 11039 | +282 |
-| AS136907 | HWCLOUDS-AS-AP - HUAWEI CLOUDS, HK | SG | `evidence_increased` | 4022 | 4277 | +255 |
-| AS216067 | AS216067 - BHS Solutions GmbH, DE | DE | `risk_level_changed` | 257 | 3 | -254 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 82616 | 82375 | -241 |
-| AS1299 | TWELVE99 - Arelion Sweden AB, SE | US | `evidence_increased` | 1258 | 1487 | +229 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 59019 | 59245 | +226 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 16044 | 16252 | +208 |
-| AS209 | CENTURYLINK-US-LEGACY-QWEST - CenturyLink Communications, LLC, US | US | `evidence_decreased` | 1738 | 1563 | -175 |
-| AS3356 | LEVEL3 - Level 3 Parent, LLC, US | US | `evidence_increased` | 3124 | 3293 | +169 |
-| AS11798 | ACEDATACENTERS-AS-1 - Ace Data Centers, Inc., US | US | `evidence_increased` | 1432 | 1601 | +169 |
-| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_decreased` | 4029 | 3867 | -162 |
-| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_decreased` | 7521 | 7368 | -153 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 403226 | 404858 | +1632 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 148789 | 150052 | +1263 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 182620 | 181566 | -1054 |
+| AS136907 | HWCLOUDS-AS-AP - HUAWEI CLOUDS, HK | SG | `evidence_increased` | 4277 | 5289 | +1012 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_decreased` | 42510 | 41664 | -846 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 2908 | 3683 | +775 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5883 | 6654 | +771 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 11039 | 11716 | +677 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 5989 | 6564 | +575 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82375 | 82917 | +542 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 399 | 2 | -397 |
+| AS3491 | PCCWG-APAC-HK - PCCW Global (HK) Ltd., HK | GB | `evidence_increased` | 1628 | 1982 | +354 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 16252 | 16538 | +286 |
+| AS1299 | TWELVE99 - Arelion Sweden AB, SE | US | `evidence_increased` | 1487 | 1751 | +264 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 5949 | 6207 | +258 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 97600 | 97856 | +256 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 49748 | 49944 | +196 |
+| AS30860 | YURTEH-AS - Virtual Systems LLC, UA | GB | `evidence_increased` | 2370 | 2562 | +192 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 7004 | 6853 | -151 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 297 | 439 | +142 |
+| AS29802 | HVC-AS - HIVELOCITY, Inc., US | US | `evidence_increased` | 4264 | 4406 | +142 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 19943 | 20073 | +130 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | US | `evidence_increased` | 203 | 324 | +121 |
+| AS11798 | ACEDATACENTERS-AS-1 - Ace Data Centers, Inc., US | US | `evidence_increased` | 1601 | 1721 | +120 |
+| AS36849 | SAEOL-1-ASN - 1st Amendment Encrypted Openness LLC, US | US | `risk_level_changed` | 142 | 260 | +118 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
