@@ -21,30 +21,31 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-07-20T07:46:10Z`_
+_Last dataset build: `2026-08-03T14:11:17Z`_
 
-[Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)
+[Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
 | Artifact | Download | Description |
 | --- | --- | --- |
-| `index.json` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/index.json) | Machine-readable release manifest |
-| `asn-risk.jsonl` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/asn-risk.jsonl) | Primary JSONL risk dataset |
-| `asn-changes.jsonl` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/asn-changes.jsonl) | ASN delta feed since previous build |
-| `asn-summary.csv` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/asn-summary.csv) | CSV summary for review and reporting |
-| `asn-evidence-table.md` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/asn-evidence-table.md) | Markdown table of top ASN evidence counts |
-| `asn-profiles.tar.gz` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/asn-profiles.tar.gz) | Per-ASN JSON profiles |
-| `source-impact.csv` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/source-impact.csv) | Source contribution breakdown |
-| `country-risk.csv` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/country-risk.csv) | Country-level operational rollup |
-| `high-risk-asn-critical.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/high-risk-asn-critical.txt) | Critical ASN tier |
-| `high-risk-asn-high.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/high-risk-asn-high.txt) | High ASN tier |
-| `high-risk-asn-watch.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/high-risk-asn-watch.txt) | Watch ASN tier |
-| `high-risk-asn-prefixes-critical.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/high-risk-asn-prefixes-critical.txt) | Derived critical ASN announced prefixes |
-| `high-risk-asn-prefixes-high.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/high-risk-asn-prefixes-high.txt) | Derived high ASN announced prefixes |
-| `high-risk-asn-prefixes-watch.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/high-risk-asn-prefixes-watch.txt) | Derived watch ASN announced prefixes |
-| `report.md` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/report.md) | Markdown dataset report |
-| `release-notes.md` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/release-notes.md) | Release summary and top ASN table |
-| `run_stats.json` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/run_stats.json) | Build metadata and tier counts |
-| `checksums.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/latest/download/checksums.txt) | SHA256 checksums for release artifacts |
+| `index.json` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/index.json) | Machine-readable release manifest |
+| `asn-risk.jsonl` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/asn-risk.jsonl) | Primary JSONL risk dataset |
+| `asn-changes.jsonl` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/asn-changes.jsonl) | ASN delta feed since previous build |
+| `asn-summary.csv` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/asn-summary.csv) | CSV summary for review and reporting |
+| `asn-evidence-table.md` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/asn-evidence-table.md) | Markdown table of top ASN evidence counts |
+| `asn-history.jsonl.gz` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/asn-history.jsonl.gz) | Compressed history state used by the next scheduled build |
+| `asn-profiles.tar.gz` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/asn-profiles.tar.gz) | Per-ASN JSON profiles |
+| `source-impact.csv` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/source-impact.csv) | Source contribution breakdown |
+| `country-risk.csv` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/country-risk.csv) | Country-level operational rollup |
+| `high-risk-asn-critical.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/high-risk-asn-critical.txt) | Critical ASN tier |
+| `high-risk-asn-high.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/high-risk-asn-high.txt) | High ASN tier |
+| `high-risk-asn-watch.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/high-risk-asn-watch.txt) | Watch ASN tier |
+| `high-risk-asn-prefixes-critical.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/high-risk-asn-prefixes-critical.txt) | Derived critical ASN announced prefixes |
+| `high-risk-asn-prefixes-high.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/high-risk-asn-prefixes-high.txt) | Derived high ASN announced prefixes |
+| `high-risk-asn-prefixes-watch.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/high-risk-asn-prefixes-watch.txt) | Derived watch ASN announced prefixes |
+| `report.md` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/report.md) | Markdown dataset report |
+| `release-notes.md` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/release-notes.md) | Release summary and top ASN table |
+| `run_stats.json` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/run_stats.json) | Build metadata and tier counts |
+| `checksums.txt` | [download](https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/checksums.txt) | SHA256 checksums for release artifacts |
 
 <!-- ASN_KARMA_RELEASE_END -->
 
@@ -206,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-07-20T07:46:10Z`_
+_Last updated: `2026-08-03T14:11:17Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 50928 | 54321 | +3393 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 404858 | 406999 | +2141 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 181566 | 180075 | -1491 |
-| AS60647 | MERT-TURKOGLU-DATAHOST-INTERNET-VE-BILISIM-TEKNOLOJILERI - MERT TURKOGLU trading as DATAHOST INTERNET VE BILISIM TEKNOLOJILERI, TR | BG | `risk_level_changed` | 12 | 931 | +919 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 150052 | 149461 | -591 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_decreased` | 41664 | 41102 | -562 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6654 | 6142 | -512 |
-| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_decreased` | 2864 | 2362 | -502 |
-| AS211851 | WEB9-YAZILIM-BILISIM-HIZMETLERI - SECKIN CAN CELENK trading as RODOS MEDYA, TR | TR | `risk_level_changed` | 1 | 466 | +465 |
-| AS37963 | ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN | CN | `evidence_increased` | 64364 | 64788 | +424 |
-| AS206092 | SECFIREWALLAS - F.N.S. HOLDINGS LIMITED, CY | NL | `evidence_decreased` | 8383 | 7993 | -390 |
-| AS3491 | PCCWG-APAC-HK - PCCW Global (HK) Ltd., HK | GB | `evidence_increased` | 1982 | 2368 | +386 |
-| AS8193 | BRM-AS - _Uzbektelekom_ Joint Stock Company, UZ | UZ | `evidence_decreased` | 1468 | 1090 | -378 |
-| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_increased` | 37178 | 37466 | +288 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 16538 | 16799 | +261 |
-| AS1299 | TWELVE99 - Arelion Sweden AB, SE | US | `evidence_increased` | 1751 | 2010 | +259 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 59198 | 59441 | +243 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 97856 | 98089 | +233 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 11716 | 11944 | +228 |
-| AS150436 | BYTEPLUS-AS-AP - Byteplus Pte. Ltd., SG | SG | `evidence_decreased` | 3974 | 3757 | -217 |
-| AS58309 | LANGATE-AS - Langate Ltd, UA | UA | `evidence_increased` | 2018 | 2228 | +210 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 42303 | 42491 | +188 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 49944 | 50123 | +179 |
-| AS23969 | TOT-NET - TOT Public Company Limited, TH | TH | `evidence_decreased` | 5081 | 4911 | -170 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 6853 | 6706 | -147 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 406999 | 419859 | +12860 |
+| AS3491 | PCCWG-APAC-HK - PCCW Global (HK) Ltd., HK | GB | `evidence_increased` | 2368 | 10504 | +8136 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 11944 | 19866 | +7922 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 3651 | 11199 | +7548 |
+| AS21334 | ASN-ONE-HU - 2Connect Telecommunications Infrastructure & Network Services Ltd., HU | HU | `evidence_increased` | 344 | 5587 | +5243 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 59441 | 64545 | +5104 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 180075 | 175378 | -4697 |
+| AS1299 | TWELVE99 - Arelion Sweden AB, SE | US | `evidence_increased` | 2010 | 6540 | +4530 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 149461 | 153891 | +4430 |
+| AS37963 | ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN | CN | `evidence_increased` | 64788 | 68919 | +4131 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 54321 | 50809 | -3512 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 16799 | 20294 | +3495 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 6162 | 9538 | +3376 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 98089 | 101255 | +3166 |
+| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_increased` | 528 | 3327 | +2799 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 6142 | 8309 | +2167 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 50123 | 52139 | +2016 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 2731 | 4475 | +1744 |
+| AS8881 | VERSATEL - 1&1 Versatel GmbH, DE | US | `evidence_increased` | 1654 | 3240 | +1586 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 19933 | 21266 | +1333 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 6660 | 7748 | +1088 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 423 | 1502 | +1079 |
+| AS207326 | HostLAB - HostLAB Bilisim Teknolojileri A.S., TR | TR | `evidence_increased` | 55 | 1086 | +1031 |
+| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_increased` | 4774 | 5778 | +1004 |
+| AS30860 | YURTEH-AS - Virtual Systems LLC, UA | GB | `evidence_increased` | 2582 | 3558 | +976 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
