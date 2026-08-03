@@ -52,26 +52,37 @@ jobs:
             -o data/blackroute_exports.tar.gz
           tar -xzf data/blackroute_exports.tar.gz -C data blackroute.jsonl
 
+      - name: Restore ASN history state
+        run: |
+          mkdir -p data/history
+          if curl -fsSL \
+            https://github.com/ipanalytics/ASN-Karma/releases/latest/download/asn-history.jsonl.gz \
+            -o data/history/asn-history.jsonl.gz; then
+            gzip -dc data/history/asn-history.jsonl.gz > data/history/asn_daily.jsonl
+          else
+            echo "No previous ASN history release artifact found; starting with empty history."
+          fi
+
       - name: Build ASN risk
         run: go run ./cmd/asn-karma -input data/blackroute.jsonl -out release -readme README.md -cymru-batch 25000 -prefix-limit 100
 
       - name: Commit README dataset links
         run: |
-          if [ -n "$(git status --porcelain README.md data/history/asn_daily.jsonl)" ]; then
+          if [ -n "$(git status --porcelain README.md)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-            git stash push --include-untracked -m "asn-karma generated dataset state" -- README.md data/history/asn_daily.jsonl
+            git stash push -m "asn-karma generated README state" -- README.md
             git pull --rebase origin "${GITHUB_REF_NAME}"
             git stash pop
 
-            if [ -z "$(git status --porcelain README.md data/history/asn_daily.jsonl)" ]; then
-              echo "No README/history changes remain after rebase."
+            if [ -z "$(git status --porcelain README.md)" ]; then
+              echo "No README changes remain after rebase."
               exit 0
             fi
 
-            git add README.md data/history/asn_daily.jsonl
-            git commit -m "Update ASN dataset state"
+            git add README.md
+            git commit -m "Update ASN dataset links"
 
             for attempt in 1 2 3; do
               if git push; then
@@ -94,10 +105,15 @@ jobs:
 
       - name: Prepare release metadata
         run: |
-          stamp="$(date -u +'%Y-%m-%d-%H%MZ')"
           title="$(date -u +'%Y-%m-%d %H:%M UTC')"
-          echo "RELEASE_TAG=asn-karma-${stamp}" >> "$GITHUB_ENV"
+          echo "RELEASE_TAG=asn-karma-latest" >> "$GITHUB_ENV"
           echo "RELEASE_NAME=ASN Karma Dataset - ${title}" >> "$GITHUB_ENV"
+          echo "RELEASE_BODY_HEADER=Latest dataset build: ${title}" >> "$GITHUB_ENV"
+
+      - name: Move latest release tag
+        run: |
+          git tag -f "${RELEASE_TAG}"
+          git push --force origin "refs/tags/${RELEASE_TAG}"
 
       - name: Publish release artifacts
         uses: softprops/action-gh-release@v2
@@ -106,12 +122,14 @@ jobs:
           name: ${{ env.RELEASE_NAME }}
           body_path: release/release-notes.md
           make_latest: true
+          overwrite_files: true
           files: |
             release/index.json
             release/asn-risk.jsonl
             release/asn-changes.jsonl
             release/asn-summary.csv
             release/asn-evidence-table.md
+            release/asn-history.jsonl.gz
             release/asn-profiles.tar.gz
             release/source-impact.csv
             release/country-risk.csv
