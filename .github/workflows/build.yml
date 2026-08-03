@@ -56,7 +56,7 @@ jobs:
         run: |
           mkdir -p data/history
           if curl -fsSL \
-            https://github.com/ipanalytics/ASN-Karma/releases/latest/download/asn-history.jsonl.gz \
+            https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest/asn-history.jsonl.gz \
             -o data/history/asn-history.jsonl.gz; then
             gzip -dc data/history/asn-history.jsonl.gz > data/history/asn_daily.jsonl
           else
@@ -65,34 +65,6 @@ jobs:
 
       - name: Build ASN risk
         run: go run ./cmd/asn-karma -input data/blackroute.jsonl -out release -readme README.md -cymru-batch 25000 -prefix-limit 100
-
-      - name: Commit README dataset links
-        run: |
-          if [ -n "$(git status --porcelain README.md)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-            git stash push -m "asn-karma generated README state" -- README.md
-            git pull --rebase origin "${GITHUB_REF_NAME}"
-            git stash pop
-
-            if [ -z "$(git status --porcelain README.md)" ]; then
-              echo "No README changes remain after rebase."
-              exit 0
-            fi
-
-            git add README.md
-            git commit -m "Update ASN dataset links"
-
-            for attempt in 1 2 3; do
-              if git push; then
-                exit 0
-              fi
-              echo "Push failed; rebasing and retrying (${attempt}/3)."
-              git pull --rebase origin "${GITHUB_REF_NAME}"
-            done
-            git push
-          fi
 
       - name: Validate release artifacts
         run: |
@@ -143,3 +115,46 @@ jobs:
             release/release-notes.md
             release/run_stats.json
             release/checksums.txt
+
+      - name: Delete old dataset releases
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release list --repo "${GITHUB_REPOSITORY}" --limit 100 --json tagName --jq '.[].tagName | select(. != "asn-karma-latest")' |
+            while read -r tag; do
+              [ -n "$tag" ] || continue
+              echo "Deleting old release $tag"
+              gh release delete "$tag" --repo "${GITHUB_REPOSITORY}" --cleanup-tag -y || true
+            done
+
+      - name: Commit README dataset links
+        continue-on-error: true
+        run: |
+          if [ -n "$(git status --porcelain README.md)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+            cp README.md "${RUNNER_TEMP}/README.generated"
+            git reset --hard HEAD
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            cp "${RUNNER_TEMP}/README.generated" README.md
+            git rm --cached --ignore-unmatch data/history/asn_daily.jsonl
+
+            if [ -z "$(git status --porcelain README.md data/history/asn_daily.jsonl)" ]; then
+              echo "No README/history index changes remain after rebase."
+              exit 0
+            fi
+
+            git add README.md
+            git commit -m "Update ASN dataset links"
+
+            for attempt in 1 2 3; do
+              if git push; then
+                exit 0
+              fi
+              echo "Push failed; rebasing and retrying (${attempt}/3)."
+              git pull --rebase origin "${GITHUB_REF_NAME}"
+            done
+            git push
+          fi
