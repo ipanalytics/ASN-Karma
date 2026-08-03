@@ -25,7 +25,7 @@ func main() {
 		configPath   = flag.String("config", "configs/scoring.json", "path to scoring config")
 		historyPath  = flag.String("history", "data/history/asn_daily.jsonl", "path to persisted ASN daily history")
 		readmePath   = flag.String("readme", "", "optional README path to update with the latest ASN evidence table")
-		releaseURL   = flag.String("release-url", "https://github.com/ipanalytics/ASN-Karma/releases/latest/download", "base URL for README release artifact links")
+		releaseURL   = flag.String("release-url", "https://github.com/ipanalytics/ASN-Karma/releases/download/asn-karma-latest", "base URL for README release artifact links")
 		asnEnrich    = flag.Bool("asn-enrich", true, "enrich records without ASN using Team Cymru bulk whois")
 		cymruAddr    = flag.String("cymru-addr", "whois.cymru.com:43", "Team Cymru whois address")
 		cymruBatch   = flag.Int("cymru-batch", 10000, "Team Cymru enrichment batch size")
@@ -110,11 +110,11 @@ func main() {
 	stats = finalizeStats(stats, records, results, expandedPrefixes, startedAt)
 	changes := history.BuildChanges(results, previousSnapshots, ts)
 
-	if err := output.WriteArtifacts(*outputDir, results, changes, expandedPrefixes, stats); err != nil {
-		log.Fatalf("write artifacts: %v", err)
-	}
 	if err := history.Update(*historyPath, *historyPath, results, ts, 90); err != nil {
 		log.Fatalf("update history: %v", err)
+	}
+	if err := output.WriteArtifacts(*outputDir, results, changes, expandedPrefixes, stats, *historyPath); err != nil {
+		log.Fatalf("write artifacts: %v", err)
 	}
 	if *readmePath != "" {
 		if err := output.UpdateReadmeChangesTable(*readmePath, changes, ts, 25); err != nil {

@@ -18,7 +18,7 @@ import (
 	"asn-karma/internal/model"
 )
 
-func WriteArtifacts(dir string, records []model.RiskRecord, changes []model.ASNChange, expandedPrefixes map[int][]string, stats model.BuildStats) error {
+func WriteArtifacts(dir string, records []model.RiskRecord, changes []model.ASNChange, expandedPrefixes map[int][]string, stats model.BuildStats, historyPath string) error {
 	if err := os.MkdirAll(dir, 0o755); err != nil {
 		return err
 	}
@@ -43,6 +43,9 @@ func WriteArtifacts(dir string, records []model.RiskRecord, changes []model.ASNC
 		return err
 	}
 	if err := writeEvidenceTable(filepath.Join(dir, "asn-evidence-table.md"), records, stats.BuiltAt, 50); err != nil {
+		return err
+	}
+	if err := writeHistoryArchive(filepath.Join(dir, "asn-history.jsonl.gz"), historyPath); err != nil {
 		return err
 	}
 	if err := writeReport(filepath.Join(dir, "report.md"), records, changes, stats); err != nil {
@@ -82,6 +85,29 @@ func WriteArtifacts(dir string, records []model.RiskRecord, changes []model.ASNC
 		return err
 	}
 	return writeChecksums(filepath.Join(dir, "checksums.txt"), dir)
+}
+
+func writeHistoryArchive(path string, historyPath string) error {
+	in, err := os.Open(historyPath)
+	if err != nil {
+		if os.IsNotExist(err) {
+			return os.WriteFile(path, []byte(""), 0o644)
+		}
+		return err
+	}
+	defer in.Close()
+
+	out, err := os.Create(path)
+	if err != nil {
+		return err
+	}
+	defer out.Close()
+	gz := gzip.NewWriter(out)
+	if _, err := io.Copy(gz, in); err != nil {
+		_ = gz.Close()
+		return err
+	}
+	return gz.Close()
 }
 
 func writeJSONL(path string, records []model.RiskRecord) error {
@@ -586,6 +612,7 @@ func releaseArtifacts() []releaseArtifact {
 		{"asn-changes.jsonl", "ASN delta feed since previous build"},
 		{"asn-summary.csv", "CSV summary for review and reporting"},
 		{"asn-evidence-table.md", "Markdown table of top ASN evidence counts"},
+		{"asn-history.jsonl.gz", "Compressed history state used by the next scheduled build"},
 		{"asn-profiles.tar.gz", "Per-ASN JSON profiles"},
 		{"source-impact.csv", "Source contribution breakdown"},
 		{"country-risk.csv", "Country-level operational rollup"},
@@ -607,7 +634,7 @@ func renderReleaseLinks(builtAt time.Time, releaseBaseURL string) string {
 
 	var b strings.Builder
 	fmt.Fprintf(&b, "_Last dataset build: `%s`_\n\n", builtAt.UTC().Format(time.RFC3339))
-	b.WriteString("[Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/latest)\n\n")
+	b.WriteString("[Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)\n\n")
 	b.WriteString("| Artifact | Download | Description |\n")
 	b.WriteString("| --- | --- | --- |\n")
 	for _, artifact := range releaseArtifacts() {
