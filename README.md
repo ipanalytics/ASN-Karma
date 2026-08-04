@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-03T14:11:17Z`_
+_Last dataset build: `2026-08-04T07:25:03Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-03T14:11:17Z`_
+_Last updated: `2026-08-04T07:25:03Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 406999 | 419859 | +12860 |
-| AS3491 | PCCWG-APAC-HK - PCCW Global (HK) Ltd., HK | GB | `evidence_increased` | 2368 | 10504 | +8136 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 11944 | 19866 | +7922 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 3651 | 11199 | +7548 |
-| AS21334 | ASN-ONE-HU - 2Connect Telecommunications Infrastructure & Network Services Ltd., HU | HU | `evidence_increased` | 344 | 5587 | +5243 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 59441 | 64545 | +5104 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 180075 | 175378 | -4697 |
-| AS1299 | TWELVE99 - Arelion Sweden AB, SE | US | `evidence_increased` | 2010 | 6540 | +4530 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 149461 | 153891 | +4430 |
-| AS37963 | ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN | CN | `evidence_increased` | 64788 | 68919 | +4131 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 54321 | 50809 | -3512 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 16799 | 20294 | +3495 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 6162 | 9538 | +3376 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 98089 | 101255 | +3166 |
-| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_increased` | 528 | 3327 | +2799 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 6142 | 8309 | +2167 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 50123 | 52139 | +2016 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 2731 | 4475 | +1744 |
-| AS8881 | VERSATEL - 1&1 Versatel GmbH, DE | US | `evidence_increased` | 1654 | 3240 | +1586 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 19933 | 21266 | +1333 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 6660 | 7748 | +1088 |
-| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 423 | 1502 | +1079 |
-| AS207326 | HostLAB - HostLAB Bilisim Teknolojileri A.S., TR | TR | `evidence_increased` | 55 | 1086 | +1031 |
-| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_increased` | 4774 | 5778 | +1004 |
-| AS30860 | YURTEH-AS - Virtual Systems LLC, UA | GB | `evidence_increased` | 2582 | 3558 | +976 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 153891 | 153140 | -751 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 419859 | 420571 | +712 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 175378 | 174827 | -551 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 2 | 420 | +418 |
+| AS47329 | WDM-AS - WDM Sp. z o.o., PL | PL | `risk_level_changed` | 8 | 277 | +269 |
+| AS9299 | IPG-AS-AP - Philippine Long Distance Telephone Company, PH | PH | `evidence_decreased` | 3109 | 2882 | -227 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 4475 | 4651 | +176 |
+| AS8151 | AS8151 - UNINET, MX | MX | `evidence_decreased` | 11089 | 10916 | -173 |
+| AS197620 | EZ-BIT-AS - ezbit sp. z o.o., PL | PL | `risk_level_changed` | 3 | 167 | +164 |
+| AS135761 | ULNPLSUM-AS - Userlinks Netcom Pvt. Ltd., IN | IN | `evidence_increased` | 67 | 226 | +159 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 43106 | 42955 | -151 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 160498 | 160640 | +142 |
+| AS58232 | haderan - Parsun Network Solutions PTY LTD, AU | IR | `evidence_decreased` | 183 | 42 | -141 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 83050 | 82910 | -140 |
+| AS32043 | NEO-FIBER-01 - NeoFiber Communications inc., US | SC | `evidence_decreased` | 436 | 297 | -139 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 64545 | 64680 | +135 |
+| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_decreased` | 4827 | 4693 | -134 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 7632 | 7505 | -127 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 52139 | 52264 | +125 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 101255 | 101377 | +122 |
+| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_decreased` | 8035 | 7920 | -115 |
+| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_decreased` | 5778 | 5673 | -105 |
+| AS401152 | ADCIL-ASN-01 - Ace Data Centers II, L.L.C., US | US | `evidence_increased` | 361 | 465 | +104 |
+| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_decreased` | 6005 | 5904 | -101 |
+| AS17639 | CONVERGE-AS - Converge ICT Solutions Inc., PH | PH | `evidence_decreased` | 1214 | 1132 | -82 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
