@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-05T07:25:40Z`_
+_Last dataset build: `2026-08-06T07:26:17Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-05T07:25:40Z`_
+_Last updated: `2026-08-06T07:26:17Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 11197 | 3730 | -7467 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 19887 | 14333 | -5554 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 20278 | 14784 | -5494 |
-| AS1299 | TWELVE99 - Arelion Sweden AB, SE | US | `evidence_decreased` | 6540 | 1471 | -5069 |
-| AS3491 | PCCWG-APAC-HK - PCCW Global (HK) Ltd., HK | GB | `evidence_decreased` | 10499 | 7884 | -2615 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 420571 | 422884 | +2313 |
-| AS8881 | VERSATEL - 1&1 Versatel GmbH, DE | DE | `evidence_decreased` | 3218 | 1006 | -2212 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 8268 | 6144 | -2124 |
-| AS984 | OWS-NETWORK - OCTOPUS WEB SOLUTION INC, US | US | `evidence_decreased` | 3810 | 1917 | -1893 |
-| AS42473 | AS-ANEXIA - Anexia Cloud Solutions GmbH, AT | AT | `evidence_increased` | 104 | 1812 | +1708 |
-| AS214996 | netcup - netcup GmbH, DE | DE | `evidence_decreased` | 1782 | 74 | -1708 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 160640 | 159327 | -1313 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82910 | 84137 | +1227 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 153140 | 154298 | +1158 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_decreased` | 9522 | 8366 | -1156 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 1442 | 426 | -1016 |
-| AS8916 | PORTFAST - Portfast Ltd, GB | GB | `risk_level_changed` | 6 | 1005 | +999 |
-| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_decreased` | 1502 | 715 | -787 |
-| AS204170 | awasr - Awaser Oman LLC, OM | DE | `evidence_increased` | 1307 | 2026 | +719 |
-| AS262259 | AS262259 - StarNetworks, AR | AR | `risk_level_changed` | 646 | 19 | -627 |
-| AS272066 | AS272066 - FIBRAZUL INTERNET S.R.L., AR | US | `risk_level_changed` | 13 | 578 | +565 |
-| AS9002 | RETN-AS - RETN Limited, GB | RU | `evidence_decreased` | 710 | 160 | -550 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 174827 | 175346 | +519 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 101377 | 101885 | +508 |
-| AS401152 | ADCIL-ASN-01 - Ace Data Centers II, L.L.C., US | US | `evidence_increased` | 465 | 961 | +496 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 422884 | 429489 | +6605 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 7696 | 4856 | -2840 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 3730 | 1475 | -2255 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 101885 | 103299 | +1414 |
+| AS984 | OWS-NETWORK - OCTOPUS WEB SOLUTION INC, US | AE | `evidence_decreased` | 1917 | 712 | -1205 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6144 | 5059 | -1085 |
+| AS1299 | TWELVE99 - Arelion Sweden AB, SE | SE | `evidence_decreased` | 1471 | 399 | -1072 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 14333 | 13385 | -948 |
+| AS30058 | FDCSERVERS - FDCservers.net, US | US | `evidence_decreased` | 4073 | 3176 | -897 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 154298 | 153645 | -653 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 65089 | 65535 | +446 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 4580 | 4139 | -441 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 1 | 421 | +420 |
+| AS49100 | IR-THR-PTE - Pishgaman Toseeh Ertebatat Company (Private Joint Stock), IR | IR | `evidence_increased` | 1329 | 1678 | +349 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_decreased` | 715 | 390 | -325 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_decreased` | 8366 | 8076 | -290 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 14784 | 14558 | -226 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 52406 | 52579 | +173 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 175346 | 175177 | -169 |
+| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_decreased` | 12691 | 12528 | -163 |
+| AS5065 | BUNNY-COMMUNICATIONS-GLOBAL - Bunny Communications, US | US | `evidence_decreased` | 1087 | 929 | -158 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 348 | 201 | -147 |
+| AS150423 | SERVER-AS-AP - Server Galactic Private Limited, SG | US | `evidence_decreased` | 225 | 89 | -136 |
+| AS42969 | ALPHASTRIKE - Alpha Strike Labs GmbH, DE | DE | `evidence_decreased` | 465 | 336 | -129 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 50795 | 50673 | -122 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
