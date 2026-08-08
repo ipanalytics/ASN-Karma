@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-07T06:00:25Z`_
+_Last dataset build: `2026-08-08T05:27:39Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-07T06:00:25Z`_
+_Last updated: `2026-08-08T05:27:39Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS6849 | UKRTELNET - JSC _Ukrtelecom_, UA | UA | `evidence_increased` | 891 | 10835 | +9944 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 13385 | 16470 | +3085 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 429489 | 431326 | +1837 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 84253 | 82793 | -1460 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 153645 | 152344 | -1301 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 175177 | 176362 | +1185 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 14558 | 15597 | +1039 |
-| AS207326 | HostLAB - HostLAB Bilisim Teknolojileri A.S., TR | TR | `evidence_decreased` | 1084 | 71 | -1013 |
-| AS396356 | LATITUDE-SH - Latitude.sh, US | US | `evidence_increased` | 5728 | 6701 | +973 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 20845 | 21782 | +937 |
-| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_increased` | 7954 | 8862 | +908 |
-| AS137266 | CHINATELECOM-HUBEI-WUHAN-5G-NETWORK - CHINATELECOM Hubei province Wuhan 5G network, CN | CN | `evidence_increased` | 1444 | 2328 | +884 |
-| AS29802 | HVC-AS - HIVELOCITY, Inc., US | US | `evidence_increased` | 3983 | 4708 | +725 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 404 | 1116 | +712 |
-| AS8048 | AS8048 - CANTV Servicios, Venezuela, VE | VE | `evidence_decreased` | 5039 | 4369 | -670 |
-| AS34665 | PINDC-AS - Petersburg Internet Network ltd., RU | RU | `evidence_increased` | 1582 | 2190 | +608 |
-| AS262287 | AS262287 - Latitude.sh LTDA, BR | US | `evidence_increased` | 2738 | 3212 | +474 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 103299 | 103734 | +435 |
-| AS63023 | AS-GLOBALTELEHOST - GTHost, US | US | `evidence_decreased` | 3351 | 3001 | -350 |
-| AS7015 | COMCAST-7015 - Comcast Cable Communications, LLC, US | US | `risk_level_changed` | 348 | 1 | -347 |
-| AS214143 | skydigital-telecom - SKYDIGITAL TELECOM LTD, GB | SC | `evidence_increased` | 884 | 1204 | +320 |
-| AS9304 | HUTCHISON-AS-AP - HGC Global Communications Limited, HK | HK | `evidence_increased` | 1374 | 1680 | +306 |
-| AS50304 | BLIX - Blix Solutions AS, NO | GB | `evidence_increased` | 1090 | 1325 | +235 |
-| AS47692 | NESSUS - Nessus GmbH, AT | UA | `evidence_increased` | 87 | 315 | +228 |
-| AS3356 | LEVEL3 - Level 3 Parent, LLC, US | US | `evidence_increased` | 3407 | 3613 | +206 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 1476 | 3731 | +2255 |
+| AS984 | OWS-NETWORK - OCTOPUS WEB SOLUTION INC, US | US | `evidence_increased` | 748 | 2588 | +1840 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 159523 | 160790 | +1267 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5078 | 6165 | +1087 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 16470 | 17428 | +958 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 4194 | 5070 | +876 |
+| AS8048 | AS8048 - CANTV Servicios, Venezuela, VE | VE | `evidence_increased` | 4369 | 5067 | +698 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 176362 | 175782 | -580 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 431326 | 431832 | +506 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4809 | 5280 | +471 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 421 | 1 | -420 |
+| AS34665 | PINDC-AS - Petersburg Internet Network ltd., RU | RU | `evidence_decreased` | 2190 | 1771 | -419 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 65739 | 66125 | +386 |
+| AS7015 | COMCAST-7015 - Comcast Cable Communications, LLC, US | US | `risk_level_changed` | 1 | 349 | +348 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 390 | 715 | +325 |
+| AS58895 | EBONE1-PK - Ebone Network (PVT.) Limited, PK | PK | `evidence_decreased` | 660 | 336 | -324 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 152344 | 152161 | -183 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82793 | 82968 | +175 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 42833 | 42676 | -157 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | US | `evidence_increased` | 200 | 354 | +154 |
+| AS6849 | UKRTELNET - JSC _Ukrtelecom_, UA | UA | `evidence_increased` | 10835 | 10977 | +142 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 52739 | 52881 | +142 |
+| AS53184 | AS53184 - VERO S.A, BR | BR | `evidence_increased` | 47 | 181 | +134 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 8234 | 8367 | +133 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 21782 | 21909 | +127 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
