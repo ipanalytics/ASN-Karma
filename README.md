@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-09T05:35:20Z`_
+_Last dataset build: `2026-08-10T06:01:59Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-09T05:35:20Z`_
+_Last updated: `2026-08-10T06:01:59Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_decreased` | 3324 | 783 | -2541 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 3731 | 1494 | -2237 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 17428 | 16292 | -1136 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6165 | 5029 | -1136 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 5070 | 4366 | -704 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 8188 | 7500 | -688 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 175782 | 175102 | -680 |
-| AS701 | UUNET - Verizon Business, US | US | `evidence_decreased` | 3594 | 2996 | -598 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 152161 | 152745 | +584 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5280 | 4739 | -541 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_decreased` | 8367 | 7826 | -541 |
-| AS27385 | QUALYS - QUALYS, Inc., US | US | `evidence_decreased` | 2550 | 2040 | -510 |
-| AS400402 | HOSTING-BOT - Hosting Bot, LLC, US | US | `evidence_increased` | 213 | 711 | +498 |
-| AS401152 | ADCIL-ASN-01 - Ace Data Centers II, L.L.C., US | US | `evidence_decreased` | 749 | 252 | -497 |
-| AS209 | CENTURYLINK-US-LEGACY-QWEST - CenturyLink Communications, LLC, US | US | `evidence_decreased` | 1583 | 1103 | -480 |
-| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_decreased` | 3805 | 3332 | -473 |
-| AS19901 | BRIGHTSPEED - Brightspeed, US | US | `evidence_decreased` | 1010 | 568 | -442 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 1 | 423 | +422 |
-| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_decreased` | 715 | 390 | -325 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82968 | 83231 | +263 |
-| AS11427 | TWC-11427-TEXAS - Charter Communications Inc, US | US | `evidence_decreased` | 1098 | 835 | -263 |
-| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_decreased` | 3931 | 3673 | -258 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 66125 | 66381 | +256 |
-| AS7018 | ATT-INTERNET4 - AT&T Enterprises, LLC, US | US | `evidence_decreased` | 3713 | 3491 | -222 |
-| AS32097 | WII - WholeSale Internet, Inc., US | US | `evidence_decreased` | 640 | 419 | -221 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 175102 | 170659 | -4443 |
+| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_increased` | 783 | 3324 | +2541 |
+| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_decreased` | 20574 | 18208 | -2366 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 1494 | 3746 | +2252 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 431840 | 430298 | -1542 |
+| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_decreased` | 34427 | 33019 | -1408 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5029 | 6086 | +1057 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 16292 | 15305 | -987 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 66381 | 67270 | +889 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 152745 | 151882 | -863 |
+| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_decreased` | 26883 | 26145 | -738 |
+| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_decreased` | 5426 | 4740 | -686 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 7500 | 8162 | +662 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 83231 | 82589 | -642 |
+| AS204170 | awasr - Awaser Oman LLC, OM | US | `evidence_decreased` | 2096 | 1525 | -571 |
+| AS701 | UUNET - Verizon Business, US | US | `evidence_increased` | 2996 | 3564 | +568 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 7826 | 8354 | +528 |
+| AS27385 | QUALYS - QUALYS, Inc., US | US | `evidence_increased` | 2040 | 2550 | +510 |
+| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_decreased` | 37869 | 37391 | -478 |
+| AS209 | CENTURYLINK-US-LEGACY-QWEST - CenturyLink Communications, LLC, US | US | `evidence_increased` | 1103 | 1577 | +474 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4739 | 5198 | +459 |
+| AS19901 | BRIGHTSPEED - Brightspeed, US | US | `evidence_increased` | 568 | 1007 | +439 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 423 | 1 | -422 |
+| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_decreased` | 3332 | 3000 | -332 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 390 | 715 | +325 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
