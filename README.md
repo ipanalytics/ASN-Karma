@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-10T06:01:59Z`_
+_Last dataset build: `2026-08-11T05:42:05Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-10T06:01:59Z`_
+_Last updated: `2026-08-11T05:42:05Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 175102 | 170659 | -4443 |
-| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_increased` | 783 | 3324 | +2541 |
-| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_decreased` | 20574 | 18208 | -2366 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 1494 | 3746 | +2252 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 431840 | 430298 | -1542 |
-| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_decreased` | 34427 | 33019 | -1408 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5029 | 6086 | +1057 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 16292 | 15305 | -987 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 66381 | 67270 | +889 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 152745 | 151882 | -863 |
-| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_decreased` | 26883 | 26145 | -738 |
-| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_decreased` | 5426 | 4740 | -686 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 7500 | 8162 | +662 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 83231 | 82589 | -642 |
-| AS204170 | awasr - Awaser Oman LLC, OM | US | `evidence_decreased` | 2096 | 1525 | -571 |
-| AS701 | UUNET - Verizon Business, US | US | `evidence_increased` | 2996 | 3564 | +568 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 7826 | 8354 | +528 |
-| AS27385 | QUALYS - QUALYS, Inc., US | US | `evidence_increased` | 2040 | 2550 | +510 |
-| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_decreased` | 37869 | 37391 | -478 |
-| AS209 | CENTURYLINK-US-LEGACY-QWEST - CenturyLink Communications, LLC, US | US | `evidence_increased` | 1103 | 1577 | +474 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4739 | 5198 | +459 |
-| AS19901 | BRIGHTSPEED - Brightspeed, US | US | `evidence_increased` | 568 | 1007 | +439 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 423 | 1 | -422 |
-| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_decreased` | 3332 | 3000 | -332 |
-| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 390 | 715 | +325 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 170659 | 175974 | +5315 |
+| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_increased` | 18208 | 20685 | +2477 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 15305 | 17510 | +2205 |
+| AS42473 | AS-ANEXIA - Anexia Cloud Solutions GmbH, AT | AT | `evidence_decreased` | 1820 | 105 | -1715 |
+| AS214996 | netcup - netcup GmbH, DE | AT | `evidence_increased` | 82 | 1797 | +1715 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 430298 | 431969 | +1671 |
+| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_increased` | 33019 | 34510 | +1491 |
+| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_increased` | 3000 | 3810 | +810 |
+| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_increased` | 26145 | 26895 | +750 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 160840 | 161480 | +640 |
+| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_increased` | 4740 | 5365 | +625 |
+| AS204170 | awasr - Awaser Oman LLC, OM | DE | `evidence_increased` | 1525 | 2114 | +589 |
+| AS271942 | AS271942 - CV HOTSPOT, S.R.L., DO | US | `risk_level_changed` | 514 | 2 | -512 |
+| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_increased` | 37391 | 37873 | +482 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82589 | 82981 | +392 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 21559 | 21939 | +380 |
+| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_increased` | 4442 | 4752 | +310 |
+| AS203622 | gsp - GSP LLC, AZ | AZ | `risk_level_changed` | 26 | 325 | +299 |
+| AS263880 | AS263880 - WANTEL TECNOLOGIA LTDA. EPP, BR | BR | `evidence_increased` | 267 | 541 | +274 |
+| AS200019 | AlexHost - ALEXHOST SRL, MD | RU | `evidence_decreased` | 2848 | 2590 | -258 |
+| AS263042 | AS263042 - DELTA TELECOM, BR | BR | `evidence_increased` | 198 | 387 | +189 |
+| AS60068 | CDN77 - Datacamp Limited, GB | GB | `evidence_increased` | 2098 | 2255 | +157 |
+| AS41745 | FORTIS-AS - Baykov Ilya Sergeevich, RU | RU | `evidence_increased` | 6014 | 6170 | +156 |
+| AS55990 | HWCSNET - Huawei Cloud Service data center, CN | CN | `evidence_increased` | 2990 | 3142 | +152 |
+| AS4773 | MOBILEONELTD-AS-AP - MobileOne Ltd. Mobile/Internet Service Provider Singapore, SG | SG | `evidence_increased` | 259 | 385 | +126 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
