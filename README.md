@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-11T05:42:05Z`_
+_Last dataset build: `2026-08-12T06:05:02Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-11T05:42:05Z`_
+_Last updated: `2026-08-12T06:05:02Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 170659 | 175974 | +5315 |
-| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_increased` | 18208 | 20685 | +2477 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 15305 | 17510 | +2205 |
-| AS42473 | AS-ANEXIA - Anexia Cloud Solutions GmbH, AT | AT | `evidence_decreased` | 1820 | 105 | -1715 |
-| AS214996 | netcup - netcup GmbH, DE | AT | `evidence_increased` | 82 | 1797 | +1715 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 430298 | 431969 | +1671 |
-| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_increased` | 33019 | 34510 | +1491 |
-| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_increased` | 3000 | 3810 | +810 |
-| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_increased` | 26145 | 26895 | +750 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 160840 | 161480 | +640 |
-| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_increased` | 4740 | 5365 | +625 |
-| AS204170 | awasr - Awaser Oman LLC, OM | DE | `evidence_increased` | 1525 | 2114 | +589 |
-| AS271942 | AS271942 - CV HOTSPOT, S.R.L., DO | US | `risk_level_changed` | 514 | 2 | -512 |
-| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_increased` | 37391 | 37873 | +482 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82589 | 82981 | +392 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 21559 | 21939 | +380 |
-| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_increased` | 4442 | 4752 | +310 |
-| AS203622 | gsp - GSP LLC, AZ | AZ | `risk_level_changed` | 26 | 325 | +299 |
-| AS263880 | AS263880 - WANTEL TECNOLOGIA LTDA. EPP, BR | BR | `evidence_increased` | 267 | 541 | +274 |
-| AS200019 | AlexHost - ALEXHOST SRL, MD | RU | `evidence_decreased` | 2848 | 2590 | -258 |
-| AS263042 | AS263042 - DELTA TELECOM, BR | BR | `evidence_increased` | 198 | 387 | +189 |
-| AS60068 | CDN77 - Datacamp Limited, GB | GB | `evidence_increased` | 2098 | 2255 | +157 |
-| AS41745 | FORTIS-AS - Baykov Ilya Sergeevich, RU | RU | `evidence_increased` | 6014 | 6170 | +156 |
-| AS55990 | HWCSNET - Huawei Cloud Service data center, CN | CN | `evidence_increased` | 2990 | 3142 | +152 |
-| AS4773 | MOBILEONELTD-AS-AP - MobileOne Ltd. Mobile/Internet Service Provider Singapore, SG | SG | `evidence_increased` | 259 | 385 | +126 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 3746 | 1535 | -2211 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 175974 | 177567 | +1593 |
+| AS39435 | EVOLGOGRAD-AS - JSC _ER-Telecom Holding_, RU | RU | `evidence_increased` | 106 | 1544 | +1438 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6176 | 5090 | -1086 |
+| AS36849 | SAEOL-1-ASN - 1st Amendment Encrypted Openness LLC, US | US | `evidence_increased` | 104 | 1046 | +942 |
+| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | CA | `evidence_decreased` | 2361 | 1464 | -897 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 67270 | 68108 | +838 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 17510 | 16696 | -814 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 431969 | 432753 | +784 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 151866 | 152547 | +681 |
+| AS272066 | AS272066 - FIBRAZUL INTERNET S.R.L., AR | US | `risk_level_changed` | 660 | 40 | -620 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82981 | 83529 | +548 |
+| AS263579 | AS263579 - ISUPER TELECOMUNICACOES INFO LTDA, BR | BR | `evidence_increased` | 1045 | 1485 | +440 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 44507 | 44081 | -426 |
+| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_increased` | 1229 | 1578 | +349 |
+| AS15169 | GOOGLE - Google LLC, US | US | `evidence_decreased` | 1468 | 1130 | -338 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 53156 | 53493 | +337 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_decreased` | 715 | 390 | -325 |
+| AS42831 | UKSERVERS-AS - UK Dedicated Servers Limited, GB | GB | `evidence_decreased` | 1245 | 929 | -316 |
+| AS199741 | TRANSITX-BYOIP-Customers - TransitX Ltd, GB | NL | `risk_level_changed` | 2 | 317 | +315 |
+| AS3462 | HINET - Data Communication Business Group, TW | TW | `evidence_increased` | 20186 | 20494 | +308 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 21939 | 22199 | +260 |
+| AS202422 | GHOST - G-Core Labs S.A., LU | LU | `evidence_increased` | 775 | 1023 | +248 |
+| AS8342 | RTCOMM-AS - JSC RTComm.RU, RU | RU | `evidence_increased` | 998 | 1244 | +246 |
+| AS5713 | Telkom SA Ltd. - Telkom SA Ltd., ZA | ZA | `evidence_increased` | 213 | 453 | +240 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
