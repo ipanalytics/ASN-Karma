@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-12T06:05:02Z`_
+_Last dataset build: `2026-08-13T06:05:57Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-12T06:05:02Z`_
+_Last updated: `2026-08-13T06:05:57Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 3746 | 1535 | -2211 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 175974 | 177567 | +1593 |
-| AS39435 | EVOLGOGRAD-AS - JSC _ER-Telecom Holding_, RU | RU | `evidence_increased` | 106 | 1544 | +1438 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6176 | 5090 | -1086 |
-| AS36849 | SAEOL-1-ASN - 1st Amendment Encrypted Openness LLC, US | US | `evidence_increased` | 104 | 1046 | +942 |
-| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | CA | `evidence_decreased` | 2361 | 1464 | -897 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 67270 | 68108 | +838 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 17510 | 16696 | -814 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 431969 | 432753 | +784 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 151866 | 152547 | +681 |
-| AS272066 | AS272066 - FIBRAZUL INTERNET S.R.L., AR | US | `risk_level_changed` | 660 | 40 | -620 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82981 | 83529 | +548 |
-| AS263579 | AS263579 - ISUPER TELECOMUNICACOES INFO LTDA, BR | BR | `evidence_increased` | 1045 | 1485 | +440 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 44507 | 44081 | -426 |
-| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_increased` | 1229 | 1578 | +349 |
-| AS15169 | GOOGLE - Google LLC, US | US | `evidence_decreased` | 1468 | 1130 | -338 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 53156 | 53493 | +337 |
-| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_decreased` | 715 | 390 | -325 |
-| AS42831 | UKSERVERS-AS - UK Dedicated Servers Limited, GB | GB | `evidence_decreased` | 1245 | 929 | -316 |
-| AS199741 | TRANSITX-BYOIP-Customers - TransitX Ltd, GB | NL | `risk_level_changed` | 2 | 317 | +315 |
-| AS3462 | HINET - Data Communication Business Group, TW | TW | `evidence_increased` | 20186 | 20494 | +308 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 21939 | 22199 | +260 |
-| AS202422 | GHOST - G-Core Labs S.A., LU | LU | `evidence_increased` | 775 | 1023 | +248 |
-| AS8342 | RTCOMM-AS - JSC RTComm.RU, RU | RU | `evidence_increased` | 998 | 1244 | +246 |
-| AS5713 | Telkom SA Ltd. - Telkom SA Ltd., ZA | ZA | `evidence_increased` | 213 | 453 | +240 |
+| AS13194 | BITE - UAB _Bite Lietuva_, LT | LT | `evidence_decreased` | 1702 | 79 | -1623 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 152547 | 154099 | +1552 |
+| AS20910 | BALTKOM-AS - SIA _BITE Latvija_, LV | LV | `evidence_decreased` | 1629 | 128 | -1501 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 13131 | 12291 | -840 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 432753 | 433493 | +740 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161655 | 161091 | -564 |
+| AS271942 | AS271942 - CV HOTSPOT, S.R.L., DO | US | `risk_level_changed` | 2 | 514 | +512 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 177567 | 177160 | -407 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 44081 | 43687 | -394 |
+| AS210906 | BITE-US - UAB _Bite Lietuva_, LT | LT | `evidence_decreased` | 1069 | 686 | -383 |
+| AS42689 | Glide - Glide Student & Residential Limited, GB | GB | `evidence_increased` | 336 | 637 | +301 |
+| AS207223 | GLOBALCON - Global Connections Network LLC, US | LV | `risk_level_changed` | 300 | 1 | -299 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_decreased` | 18731 | 18439 | -292 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 42604 | 42338 | -266 |
+| AS215174 | pronow - ProNow Tech CO. L.L.C, AE | AE | `risk_level_changed` | 258 | 3 | -255 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 68108 | 68354 | +246 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 83529 | 83764 | +235 |
+| AS200863 | KAMDEX-AS - Przedsiebiorstwo Handlowo Uslugowe _ Kamdex_ Grzegorz Sztuczka, PL | PL | `risk_level_changed` | 241 | 9 | -232 |
+| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | CA | `evidence_increased` | 1464 | 1667 | +203 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5090 | 5283 | +193 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 16696 | 16881 | +185 |
+| AS51396 | PFCLOUD - Pfcloud UG (haftungsbeschrankt), DE | DE | `evidence_increased` | 492 | 675 | +183 |
+| AS5511 | Opentransit - Orange S.A., FR | US | `evidence_decreased` | 1135 | 963 | -172 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 53493 | 53657 | +164 |
+| AS9294 | GNETINC-AS-AP - GNET INC., US | SC | `evidence_decreased` | 366 | 220 | -146 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
