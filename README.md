@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-13T06:05:57Z`_
+_Last dataset build: `2026-08-14T06:04:49Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-13T06:05:57Z`_
+_Last updated: `2026-08-14T06:04:49Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS13194 | BITE - UAB _Bite Lietuva_, LT | LT | `evidence_decreased` | 1702 | 79 | -1623 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 152547 | 154099 | +1552 |
-| AS20910 | BALTKOM-AS - SIA _BITE Latvija_, LV | LV | `evidence_decreased` | 1629 | 128 | -1501 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 13131 | 12291 | -840 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 432753 | 433493 | +740 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161655 | 161091 | -564 |
-| AS271942 | AS271942 - CV HOTSPOT, S.R.L., DO | US | `risk_level_changed` | 2 | 514 | +512 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 177567 | 177160 | -407 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 44081 | 43687 | -394 |
-| AS210906 | BITE-US - UAB _Bite Lietuva_, LT | LT | `evidence_decreased` | 1069 | 686 | -383 |
-| AS42689 | Glide - Glide Student & Residential Limited, GB | GB | `evidence_increased` | 336 | 637 | +301 |
-| AS207223 | GLOBALCON - Global Connections Network LLC, US | LV | `risk_level_changed` | 300 | 1 | -299 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_decreased` | 18731 | 18439 | -292 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 42604 | 42338 | -266 |
-| AS215174 | pronow - ProNow Tech CO. L.L.C, AE | AE | `risk_level_changed` | 258 | 3 | -255 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 68108 | 68354 | +246 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 83529 | 83764 | +235 |
-| AS200863 | KAMDEX-AS - Przedsiebiorstwo Handlowo Uslugowe _ Kamdex_ Grzegorz Sztuczka, PL | PL | `risk_level_changed` | 241 | 9 | -232 |
-| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | CA | `evidence_increased` | 1464 | 1667 | +203 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5090 | 5283 | +193 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 16696 | 16881 | +185 |
-| AS51396 | PFCLOUD - Pfcloud UG (haftungsbeschrankt), DE | DE | `evidence_increased` | 492 | 675 | +183 |
-| AS5511 | Opentransit - Orange S.A., FR | US | `evidence_decreased` | 1135 | 963 | -172 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 53493 | 53657 | +164 |
-| AS9294 | GNETINC-AS-AP - GNET INC., US | SC | `evidence_decreased` | 366 | 220 | -146 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 15805 | 16816 | +1011 |
+| AS62513 | GOCODEIT-INC - GoCodeIT Inc, CA | CA | `evidence_decreased` | 1440 | 432 | -1008 |
+| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_increased` | 1667 | 2645 | +978 |
+| AS3816 | AS3816 - COLOMBIA TELECOMUNICACIONES S.A. ESP BIC, CO | CO | `evidence_decreased` | 1449 | 964 | -485 |
+| AS15169 | GOOGLE - Google LLC, US | US | `evidence_increased` | 1131 | 1476 | +345 |
+| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_decreased` | 1578 | 1233 | -345 |
+| AS20326 | TERASWITCH - TeraSwitch Networks Inc., US | GB | `evidence_increased` | 1987 | 2253 | +266 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 12291 | 12062 | -229 |
+| AS5713 | Telkom SA Ltd. - Telkom SA Ltd., ZA | ZA | `evidence_decreased` | 435 | 207 | -228 |
+| AS37457 | Telkom SA Ltd. - Telkom SA Ltd., ZA | ZA | `evidence_increased` | 683 | 911 | +228 |
+| AS142240 | HOSTNOST-AS-AP - HostNost, BD | SC | `risk_level_changed` | 152 | 10 | -142 |
+| AS52368 | AS52368 - ZAM LTDA., CL | CL | `evidence_increased` | 272 | 407 | +135 |
+| AS402288 | EEF - Envision EdgeFlow LLC, US | UA | `evidence_increased` | 23 | 157 | +134 |
+| AS134548 | DXTL-HK - DXTL Tseung Kwan O Service, HK | SC | `evidence_decreased` | 893 | 763 | -130 |
+| AS152868 | THX-NET - THX Corp., JP | AE | `evidence_increased` | 154 | 278 | +124 |
+| AS41745 | FORTIS-AS - Baykov Ilya Sergeevich, RU | RU | `evidence_decreased` | 6182 | 6069 | -113 |
+| AS219427 | VERTEXCORE-PTE-LTD - VERTEXCORE. PTE. LTD., SG | UA | `evidence_increased` | 71 | 179 | +108 |
+| AS6762 | SEABONE-NET - TELECOM ITALIA SPARKLE S.p.A., IT | US | `evidence_increased` | 319 | 424 | +105 |
+| AS399359 | MAX - Maxcy, US | UA | `evidence_increased` | 24 | 128 | +104 |
+| AS149617 | DIGIANA-AS-IN - Digiana Speed Net Private Limited, IN | IN | `risk_level_changed` | 113 | 15 | -98 |
+| AS402268 | YUGS-2 - YUGS Networks Ltd., US | UA | `evidence_increased` | 14 | 110 | +96 |
+| AS40065 | CNSERVERS - CNSERVERS LLC, US | US | `evidence_decreased` | 1937 | 1853 | -84 |
+| AS270062 | AS270062 - FIBERNET TV SAS, CO | CO | `evidence_decreased` | 105 | 27 | -78 |
+| AS263702 | AS263702 - GRUPO ZGH SPA, CL | US | `evidence_decreased` | 481 | 407 | -74 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 161091 | 161164 | +73 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
