@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-15T05:02:58Z`_
+_Last dataset build: `2026-08-16T05:08:11Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-15T05:02:58Z`_
+_Last updated: `2026-08-16T05:08:11Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS37963 | ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN | CN | `evidence_decreased` | 68833 | 56111 | -12722 |
-| AS3816 | AS3816 - COLOMBIA TELECOMUNICACIONES S.A. ESP BIC, CO | CO | `evidence_increased` | 964 | 1449 | +485 |
-| AS37347 | NGCOM - NGCOM, NG | NG | `risk_level_changed` | 518 | 181 | -337 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161164 | 160998 | -166 |
-| AS142240 | HOSTNOST-AS-AP - HostNost, BD | LT | `risk_level_changed` | 10 | 159 | +149 |
-| AS41745 | FORTIS-AS - Baykov Ilya Sergeevich, RU | RU | `evidence_increased` | 6069 | 6201 | +132 |
-| AS198566 | MAMUTRAHAL - MAMUT RAHAL SOFTWARE - FZCO, AE | CZ | `evidence_increased` | 125 | 238 | +113 |
-| AS265586 | AS265586 - INBTEL SA DE CV, MX | MX | `risk_level_changed` | 86 | 5 | -81 |
-| AS270062 | AS270062 - FIBERNET TV SAS, CO | US | `evidence_increased` | 27 | 105 | +78 |
-| AS207728 | Virterion - EUROHOSTER Ltd., BG | BG | `evidence_decreased` | 155 | 97 | -58 |
-| AS401362 | HOST4NERD - HOST4NERD LLC, US | DE | `evidence_increased` | 62 | 114 | +52 |
-| AS60345 | IXNET - icixs networks GmbH, DE | DE | `risk_level_changed` | 52 | 3 | -49 |
-| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_decreased` | 6096 | 6050 | -46 |
-| AS200019 | AlexHost - ALEXHOST SRL, MD | RU | `evidence_decreased` | 2669 | 2623 | -46 |
-| AS202423 | MGNHost-AS - Tyurin Viktor Mihaylovich, RU | RU | `evidence_decreased` | 212 | 168 | -44 |
-| AS397630 | AS-BLAZINGSEO - Blazing SEO, LLC, US | US | `evidence_decreased` | 790 | 747 | -43 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 154074 | 154034 | -40 |
-| AS140292 | CHINATELECOM-JIANGSU-SUZHOU-5G-NETWORK - CHINATELECOM Jiangsu province Suzhou 5G network, CN | CN | `evidence_increased` | 5812 | 5852 | +40 |
-| AS30689 | FLOW-NET - FLOW, JM | JM | `evidence_increased` | 366 | 402 | +36 |
-| AS216300 | AbkhazMedia-As - Closed Joint Stock Company _AbkhazMedia_, GE | AM | `evidence_decreased` | 212 | 188 | -24 |
-| AS402265 | MUTANET - Mutanet LLC, US | FR | `evidence_increased` | 118 | 142 | +24 |
-| AS48347 | MTW-AS - MTW-AS, RU | CZ | `evidence_increased` | 766 | 788 | +22 |
-| AS201814 | Mevspace - MEVSPACE sp. z o.o., PL | PL | `evidence_decreased` | 1215 | 1197 | -18 |
-| AS211486 | AAA-AS - Alferov Aleksey Aleksandrovich, RU | RU | `risk_level_changed` | 39 | 57 | +18 |
-| AS54252 | SP-NYJ - Sprious LLC, US | AE | `evidence_decreased` | 120 | 103 | -17 |
+| AS37963 | ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN | CN | `evidence_increased` | 56111 | 68502 | +12391 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 83764 | 87713 | +3949 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 433495 | 436261 | +2766 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 154034 | 156156 | +2122 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 42338 | 43264 | +926 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 177160 | 176479 | -681 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5014 | 4359 | -655 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 43687 | 43166 | -521 |
+| AS41268 | LANTA-AS - Sesameware FZ-LLC, AE | AE | `evidence_decreased` | 1940 | 1437 | -503 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 104073 | 104573 | +500 |
+| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 12705 | 13197 | +492 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 1 | 428 | +427 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 53657 | 54075 | +418 |
+| AS37347 | NGCOM - NGCOM, NG | NG | `risk_level_changed` | 181 | 518 | +337 |
+| AS47165 | OMKC-AS - Omskie kabelnye seti Ltd., RU | RU | `evidence_increased` | 82 | 382 | +300 |
+| AS203622 | gsp - GSP LLC, AZ | AZ | `risk_level_changed` | 324 | 25 | -299 |
+| AS395954 | LEASEWEB-USA-LAX - Leaseweb USA, Inc., US | US | `evidence_increased` | 2937 | 3212 | +275 |
+| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_increased` | 6915 | 7188 | +273 |
+| AS24444 | CMNET-V4shandong-AS-AP - Shandong Mobile Communication Company Limited, CN | CN | `evidence_increased` | 1546 | 1814 | +268 |
+| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_increased` | 31776 | 32026 | +250 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 22289 | 22529 | +240 |
+| AS18779 | EGIHOSTING - EGIHosting, US | US | `evidence_increased` | 5933 | 6168 | +235 |
+| AS21769 | AS-COLOAM - Colocation America Corporation, US | US | `evidence_decreased` | 4355 | 4135 | -220 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 8352 | 8567 | +215 |
+| AS6849 | UKRTELNET - JSC _Ukrtelecom_, UA | UA | `evidence_increased` | 11487 | 11698 | +211 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
