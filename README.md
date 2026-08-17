@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-16T05:08:11Z`_
+_Last dataset build: `2026-08-17T05:21:44Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-16T05:08:11Z`_
+_Last updated: `2026-08-17T05:21:44Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS37963 | ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN | CN | `evidence_increased` | 56111 | 68502 | +12391 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 83764 | 87713 | +3949 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 433495 | 436261 | +2766 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 154034 | 156156 | +2122 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 42338 | 43264 | +926 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 177160 | 176479 | -681 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5014 | 4359 | -655 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 43687 | 43166 | -521 |
-| AS41268 | LANTA-AS - Sesameware FZ-LLC, AE | AE | `evidence_decreased` | 1940 | 1437 | -503 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 104073 | 104573 | +500 |
-| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 12705 | 13197 | +492 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 1 | 428 | +427 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 53657 | 54075 | +418 |
-| AS37347 | NGCOM - NGCOM, NG | NG | `risk_level_changed` | 181 | 518 | +337 |
-| AS47165 | OMKC-AS - Omskie kabelnye seti Ltd., RU | RU | `evidence_increased` | 82 | 382 | +300 |
-| AS203622 | gsp - GSP LLC, AZ | AZ | `risk_level_changed` | 324 | 25 | -299 |
-| AS395954 | LEASEWEB-USA-LAX - Leaseweb USA, Inc., US | US | `evidence_increased` | 2937 | 3212 | +275 |
-| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_increased` | 6915 | 7188 | +273 |
-| AS24444 | CMNET-V4shandong-AS-AP - Shandong Mobile Communication Company Limited, CN | CN | `evidence_increased` | 1546 | 1814 | +268 |
-| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_increased` | 31776 | 32026 | +250 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 22289 | 22529 | +240 |
-| AS18779 | EGIHOSTING - EGIHosting, US | US | `evidence_increased` | 5933 | 6168 | +235 |
-| AS21769 | AS-COLOAM - Colocation America Corporation, US | US | `evidence_decreased` | 4355 | 4135 | -220 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 8352 | 8567 | +215 |
-| AS6849 | UKRTELNET - JSC _Ukrtelecom_, UA | UA | `evidence_increased` | 11487 | 11698 | +211 |
+| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 8565 | 7822 | -743 |
+| AS18978 | ENZUINC-US - Enzu Inc, US | US | `evidence_increased` | 2687 | 3236 | +549 |
+| AS216067 | AS216067 - BHS Solutions GmbH, DE | DE | `risk_level_changed` | 1 | 168 | +167 |
+| AS140607 | SIGNINN-AS-AP - Sign In (PVT) LTD, PK | PK | `evidence_decreased` | 209 | 102 | -107 |
+| AS3920 | PUSHPKT - PUSHPKT OU, EE | EE | `risk_level_changed` | 92 | 39 | -53 |
+| AS61254 | ESTOXY-OU - ESTOXY OU, EE | EE | `evidence_increased` | 382 | 435 | +53 |
+| AS149766 | YUT-AS-AP - Y.U.T Corporate Company Limited, TH | IR | `evidence_decreased` | 83 | 37 | -46 |
+| AS21769 | AS-COLOAM - Colocation America Corporation, US | US | `evidence_decreased` | 4135 | 4090 | -45 |
+| AS40676 | AS40676 - Psychz Networks, US | US | `evidence_increased` | 2229 | 2274 | +45 |
+| AS138590 | PRIMENETWORKS-AS-AP - Prime Networks, PK | SC | `evidence_decreased` | 243 | 207 | -36 |
+| AS49392 | ASBAXETN - LLC Baxet, RU | AE | `evidence_decreased` | 166 | 133 | -33 |
+| AS271799 | AS271799 - TELERY NETWORKS, S.R.L, DO | AE | `risk_level_changed` | 36 | 68 | +32 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 12065 | 12093 | +28 |
+| AS219393 | Deep-Blue-Edge-Limited - Deep Blue Edge Limited, HK | GB | `evidence_decreased` | 53 | 30 | -23 |
+| AS57131 | IP-OSTERAKER - IP Osteraker AB, SE | SE | `risk_level_changed` | 3 | 22 | +19 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 16831 | 16849 | +18 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 160979 | 160995 | +16 |
+| AS55453 | SKYTELECOM-AS-PK - House # 39 Street 38 F10 /4, PK | PK | `risk_level_changed` | 24 | 9 | -15 |
+| AS270207 | AS270207 - MULTICARRIER JE S. DE R.L. DE C.V., MX | US | `evidence_decreased` | 296 | 285 | -11 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 436261 | 436271 | +10 |
+| AS28220 | AS28220 - Alares Cabo Servicos de Telecomunicacoes S.A., BR | BR | `evidence_decreased` | 387 | 377 | -10 |
+| AS262493 | - | BR | `risk_level_changed` | 5 | 15 | +10 |
+| AS267919 | AS267919 - NET&COM LTDA., CO | CO | `risk_level_changed` | 9 | 19 | +10 |
+| AS55933 | CLOUDIE-AS-AP - Cloudie Limited, HK | HK | `evidence_decreased` | 781 | 773 | -8 |
+| AS138156 | CSNE-NETPLAY-AS - CSNE Co., Ltd., TH | TH | `evidence_decreased` | 30 | 22 | -8 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
