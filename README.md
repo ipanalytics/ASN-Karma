@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-19T05:14:14Z`_
+_Last dataset build: `2026-08-20T05:15:26Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-19T05:14:14Z`_
+_Last updated: `2026-08-20T05:15:26Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161150 | 160976 | -174 |
-| AS18779 | EGIHOSTING - EGIHosting, US | US | `evidence_decreased` | 6168 | 6019 | -149 |
-| AS267846 | AS267846 - Cable Onda Oriental, SRL, DO | US | `evidence_increased` | 7 | 135 | +128 |
-| AS8570 | LES - PJSC Rostelecom, RU | RU | `evidence_decreased` | 501 | 399 | -102 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 19097 | 19199 | +102 |
-| AS34989 | SERVETHEWORLD-AS - ServeTheWorld AS, NO | NO | `evidence_decreased` | 707 | 632 | -75 |
-| AS402857 | HTOCSL - Highland, US | AE | `evidence_increased` | 10 | 83 | +73 |
-| AS8851 | EDGE - GCI Network Solutions Limited, GB | GB | `evidence_increased` | 325 | 395 | +70 |
-| AS205489 | CODEASSET - CODE ASSET LTD, GB | UA | `evidence_decreased` | 371 | 306 | -65 |
-| AS48282 | VDSINA-AS - Hosting technology LTD, RU | RU | `evidence_increased` | 644 | 708 | +64 |
-| AS153897 | IRINN-IPLUSNPL-AS-IN - I PLUS NETWORKS PRIVATE LIMITED, IN | IN | `risk_level_changed` | 21 | 83 | +62 |
-| AS198550 | nodehost-as - NODE HOST LIMITED, GB | US | `evidence_increased` | 434 | 493 | +59 |
-| AS135225 | SMARTNET16-AS - SMART NET INDIA PVT LTD, IN | IN | `risk_level_changed` | 32 | 88 | +56 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 16897 | 16952 | +55 |
-| AS42861 | FOTONTELECOM-TRANSIT-AS - Foton Telecom CJSC, RU | RU | `evidence_decreased` | 151 | 109 | -42 |
-| AS200293 | estelecom - ES TELECOM LLC, RU | GE | `risk_level_changed` | 17 | 59 | +42 |
-| AS63099 | MADEALA TELECOM TECHNOLOGY - MADEALA TELECOM TECHNOLOGY INC, US | SC | `evidence_increased` | 943 | 980 | +37 |
-| AS214143 | skydigital-telecom - SKYDIGITAL TELECOM LTD, GB | SC | `evidence_decreased` | 1291 | 1254 | -37 |
-| AS20473 | AS-VULTR - The Constant Company, LLC, US | US | `evidence_increased` | 20736 | 20769 | +33 |
-| AS401362 | HOST4NERD - HOST4NERD LLC, US | DE | `evidence_increased` | 83 | 114 | +31 |
-| AS199152 | VDC-USA - Virtual Data Center Inc, US | RU | `evidence_increased` | 91 | 120 | +29 |
-| AS210976 | TWC-EU - Timeweb, LLP, KZ | RU | `evidence_decreased` | 3439 | 3412 | -27 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 156137 | 156114 | -23 |
-| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_decreased` | 32026 | 32003 | -23 |
-| AS140292 | CHINATELECOM-JIANGSU-SUZHOU-5G-NETWORK - CHINATELECOM Jiangsu province Suzhou 5G network, CN | CN | `evidence_increased` | 5889 | 5912 | +23 |
+| AS8916 | PORTFAST - Portfast Ltd, GB | GB | `risk_level_changed` | 5 | 1005 | +1000 |
+| AS219427 | VERTEXCORE-PTE-LTD - VERTEXCORE. PTE. LTD., SG | GB | `risk_level_changed` | 180 | 2 | -178 |
+| AS142240 | HOSTNOST-AS-AP - HostNost, BD | LT | `evidence_increased` | 24 | 200 | +176 |
+| AS152868 | THX-NET - THX Corp., JP | NL | `risk_level_changed` | 277 | 124 | -153 |
+| AS34876 | smart-systems - _SMART SISTEMZ TECHNOLOJI_ MMM, AZ | AZ | `evidence_increased` | 319 | 467 | +148 |
+| AS399359 | MAX - Maxcy, US | AE | `risk_level_changed` | 148 | 5 | -143 |
+| AS402265 | MUTANET - Mutanet LLC, US | RO | `risk_level_changed` | 156 | 43 | -113 |
+| AS49592 | PIPE-NET - Pipe Networks LTD, GB | US | `evidence_decreased` | 151 | 66 | -85 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 160976 | 161046 | +70 |
+| AS3816 | AS3816 - COLOMBIA TELECOMUNICACIONES S.A. ESP BIC, CO | CO | `evidence_decreased` | 1481 | 1427 | -54 |
+| AS402133 | NOVOSERVE-LLC-CUSTOMERS-AS - NovoServe LLC, US | US | `risk_level_changed` | 1 | 48 | +47 |
+| AS273250 | AS273250 - SOLUCIONES DE TECNOLOGIA JAH SA DE CV, MX | MX | `risk_level_changed` | 94 | 49 | -45 |
+| AS17404 | AS-UPTIMEPIPE - Pipe Networks LLC, US | GB | `risk_level_changed` | 44 | 2 | -42 |
+| AS14956 | ROUTERHOSTING - RouterHosting LLC, US | US | `evidence_increased` | 3111 | 3149 | +38 |
+| AS152179 | GCNL-AS-AP - GLOBAL COMMUNICATION NETWORK LIMITED, HK | US | `evidence_increased` | 1065 | 1095 | +30 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 436273 | 436249 | -24 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_decreased` | 8251 | 8228 | -23 |
+| AS59744 | RU-CRIMEANET-AS - Nemerov Evgeniy Vladimirovish PE, RU | RU | `risk_level_changed` | 4 | 26 | +22 |
+| AS44803 | WEBDOCK-AS - Webdock.io ApS, DK | SE | `evidence_increased` | 264 | 284 | +20 |
+| AS47939 | YALTANET - TDV _Teleradio company _Yalta_ LLC, RU | AE | `risk_level_changed` | 2 | 22 | +20 |
+| AS44094 | WEBHOST1-AS - Webhost LLC, RU | RU | `evidence_decreased` | 79 | 61 | -18 |
+| AS44213 | NewStarMAX-ASN - Thaer A. T. Abuyousef trading as Abuyousef Co & Partners For General Trade, PS | PS | `risk_level_changed` | 19 | 2 | -17 |
+| AS215294 | luminabroadband - Lumina broadband UAB, LT | UA | `risk_level_changed` | 11 | 28 | +17 |
+| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_increased` | 9105 | 9121 | +16 |
+| AS21769 | AS-COLOAM - Colocation America Corporation, US | US | `evidence_increased` | 4090 | 4106 | +16 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
