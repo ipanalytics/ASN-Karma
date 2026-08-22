@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-21T05:16:30Z`_
+_Last dataset build: `2026-08-22T05:05:25Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-21T05:16:30Z`_
+_Last updated: `2026-08-22T05:05:25Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_increased` | 7822 | 8565 | +743 |
-| AS18978 | ENZUINC-US - Enzu Inc, US | US | `evidence_decreased` | 3236 | 2687 | -549 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 156114 | 155765 | -349 |
-| AS140292 | CHINATELECOM-JIANGSU-SUZHOU-5G-NETWORK - CHINATELECOM Jiangsu province Suzhou 5G network, CN | CN | `evidence_increased` | 5912 | 6252 | +340 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161046 | 160944 | -102 |
-| AS134928 | SPIDERLINK-AS - Spiderlink Networks Pvt Ltd, IN | IN | `evidence_decreased` | 147 | 59 | -88 |
-| AS62240 | Clouvider - Clouvider Limited, GB | GB | `evidence_increased` | 8935 | 8991 | +56 |
-| AS8866 | VIVACOM-AS - Vivacom Bulgaria EAD, BG | BG | `evidence_increased` | 697 | 748 | +51 |
-| AS199412 | ANARCHY-LAB-SRL - ANARCHY LAB S.R.L., RO | BG | `risk_level_changed` | 62 | 12 | -50 |
-| AS28271 | AS28271 - DataCorpore Servicos e Representacoes, BR | BR | `evidence_increased` | 58 | 105 | +47 |
-| AS213881 | OUR - OUR Technology LLC, AZ | AZ | `risk_level_changed` | 55 | 8 | -47 |
-| AS273250 | AS273250 - SOLUCIONES DE TECNOLOGIA JAH SA DE CV, MX | MX | `risk_level_changed` | 49 | 94 | +45 |
-| AS401362 | HOST4NERD - HOST4NERD LLC, US | GB | `evidence_increased` | 113 | 158 | +45 |
-| AS31082 | AS-Kuali_Digital - Valor Information Technologies, S.L., ES | ES | `risk_level_changed` | 46 | 4 | -42 |
-| AS30058 | FDCSERVERS - FDCservers.net, US | US | `evidence_decreased` | 3482 | 3446 | -36 |
-| AS200019 | AlexHost - ALEXHOST SRL, MD | RU | `evidence_decreased` | 2732 | 2700 | -32 |
-| AS199152 | VDC-USA - Virtual Data Center Inc, US | RU | `evidence_decreased` | 120 | 91 | -29 |
-| AS34876 | smart-systems - _SMART SISTEMZ TECHNOLOJI_ MMM, AZ | AZ | `evidence_decreased` | 467 | 440 | -27 |
-| AS204986 | Sparktel - Sparktel LLC, AZ | AZ | `risk_level_changed` | 3 | 30 | +27 |
-| AS33771 | Safaricom Limited - Safaricom Limited, KE | KE | `evidence_decreased` | 379 | 354 | -25 |
-| AS37061 | Safaricom Limited - Safaricom Limited, KE | KE | `evidence_increased` | 360 | 385 | +25 |
-| AS197574 | EXPRESSHOST - ExpressHost Ltd, GB | SC | `evidence_decreased` | 290 | 267 | -23 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 436249 | 436270 | +21 |
-| AS33993 | UFO-AS - UFO Hosting LLC, RU | CY | `evidence_decreased` | 450 | 430 | -20 |
-| AS202984 | team-host - Chernyshov Aleksandr Aleksandrovich, RU | RU | `risk_level_changed` | 36 | 56 | +20 |
+| AS2518 | BIGLOBE - BIGLOBE Inc., JP | JP | `evidence_decreased` | 2901 | 356 | -2545 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_decreased` | 18472 | 16177 | -2295 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 176479 | 174200 | -2279 |
+| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_decreased` | 34692 | 33324 | -1368 |
+| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_decreased` | 9121 | 8238 | -883 |
+| AS24282 | KIR - KAGOYA JAPAN Inc., JP | JP | `risk_level_changed` | 589 | 19 | -570 |
+| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_decreased` | 37947 | 37500 | -447 |
+| AS200019 | AlexHost - ALEXHOST SRL, MD | RU | `evidence_decreased` | 2700 | 2348 | -352 |
+| AS216472 | HS-SYR - High Speed For Internet Services L.L.C, SY | TR | `evidence_decreased` | 902 | 617 | -285 |
+| AS29066 | VELIANET-AS - velia.net Internetdienste GmbH, DE | DE | `evidence_decreased` | 1972 | 1693 | -279 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 12092 | 11826 | -266 |
+| AS398101 | GO-DADDY-COM-LLC - GoDaddy.com, LLC, US | US | `evidence_decreased` | 1753 | 1508 | -245 |
+| AS54801 | ZILLION-NETWORK - Zillion Network Inc., US | SC | `evidence_increased` | 766 | 1006 | +240 |
+| AS2519 | VECTANT - ARTERIA Networks Corporation, JP | JP | `evidence_decreased` | 1566 | 1368 | -198 |
+| AS135375 | TCC-AS-AP - Today Communication Co.,Ltd, KH | KH | `evidence_increased` | 216 | 409 | +193 |
+| AS265919 | AS265919 - BB Host LTDA, BR | US | `evidence_decreased` | 237 | 46 | -191 |
+| AS30058 | FDCSERVERS - FDCservers.net, US | US | `evidence_decreased` | 3446 | 3271 | -175 |
+| AS7684 | SAKURA-A - SAKURA Internet Inc., JP | JP | `evidence_decreased` | 456 | 289 | -167 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 50888 | 50725 | -163 |
+| AS44559 | ITHOSTLINE - IT HOSTLINE LTD, CY | SC | `evidence_decreased` | 3279 | 3120 | -159 |
+| AS264381 | AS264381 - VIBE PROVEDOR DE INTERNET LTDA, BR | BR | `risk_level_changed` | 189 | 30 | -159 |
+| AS2907 | SINET-AS - Research Organization of Information and Systems, National Institute of Informatics, JP | JP | `evidence_decreased` | 296 | 138 | -158 |
+| AS213702 | QWINS-LTD - QWINS LTD, GB | US | `evidence_decreased` | 717 | 564 | -153 |
+| AS932 | XNNET - XNNET LLC, US | HK | `evidence_decreased` | 261 | 115 | -146 |
+| AS42960 | VH-GLOBAL - VH Global Limited, HK | US | `evidence_increased` | 153 | 299 | +146 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
