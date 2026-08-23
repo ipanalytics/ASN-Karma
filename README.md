@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-22T05:05:25Z`_
+_Last dataset build: `2026-08-23T05:12:48Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-22T05:05:25Z`_
+_Last updated: `2026-08-23T05:12:48Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS2518 | BIGLOBE - BIGLOBE Inc., JP | JP | `evidence_decreased` | 2901 | 356 | -2545 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_decreased` | 18472 | 16177 | -2295 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 176479 | 174200 | -2279 |
-| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_decreased` | 34692 | 33324 | -1368 |
-| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_decreased` | 9121 | 8238 | -883 |
-| AS24282 | KIR - KAGOYA JAPAN Inc., JP | JP | `risk_level_changed` | 589 | 19 | -570 |
-| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_decreased` | 37947 | 37500 | -447 |
-| AS200019 | AlexHost - ALEXHOST SRL, MD | RU | `evidence_decreased` | 2700 | 2348 | -352 |
-| AS216472 | HS-SYR - High Speed For Internet Services L.L.C, SY | TR | `evidence_decreased` | 902 | 617 | -285 |
-| AS29066 | VELIANET-AS - velia.net Internetdienste GmbH, DE | DE | `evidence_decreased` | 1972 | 1693 | -279 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 12092 | 11826 | -266 |
-| AS398101 | GO-DADDY-COM-LLC - GoDaddy.com, LLC, US | US | `evidence_decreased` | 1753 | 1508 | -245 |
-| AS54801 | ZILLION-NETWORK - Zillion Network Inc., US | SC | `evidence_increased` | 766 | 1006 | +240 |
-| AS2519 | VECTANT - ARTERIA Networks Corporation, JP | JP | `evidence_decreased` | 1566 | 1368 | -198 |
-| AS135375 | TCC-AS-AP - Today Communication Co.,Ltd, KH | KH | `evidence_increased` | 216 | 409 | +193 |
-| AS265919 | AS265919 - BB Host LTDA, BR | US | `evidence_decreased` | 237 | 46 | -191 |
-| AS30058 | FDCSERVERS - FDCservers.net, US | US | `evidence_decreased` | 3446 | 3271 | -175 |
-| AS7684 | SAKURA-A - SAKURA Internet Inc., JP | JP | `evidence_decreased` | 456 | 289 | -167 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 50888 | 50725 | -163 |
-| AS44559 | ITHOSTLINE - IT HOSTLINE LTD, CY | SC | `evidence_decreased` | 3279 | 3120 | -159 |
-| AS264381 | AS264381 - VIBE PROVEDOR DE INTERNET LTDA, BR | BR | `risk_level_changed` | 189 | 30 | -159 |
-| AS2907 | SINET-AS - Research Organization of Information and Systems, National Institute of Informatics, JP | JP | `evidence_decreased` | 296 | 138 | -158 |
-| AS213702 | QWINS-LTD - QWINS LTD, GB | US | `evidence_decreased` | 717 | 564 | -153 |
-| AS932 | XNNET - XNNET LLC, US | HK | `evidence_decreased` | 261 | 115 | -146 |
-| AS42960 | VH-GLOBAL - VH Global Limited, HK | US | `evidence_increased` | 153 | 299 | +146 |
+| AS2518 | BIGLOBE - BIGLOBE Inc., JP | JP | `evidence_increased` | 356 | 2901 | +2545 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 16177 | 18472 | +2295 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 174200 | 176479 | +2279 |
+| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_increased` | 33324 | 34690 | +1366 |
+| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_increased` | 8238 | 9121 | +883 |
+| AS24282 | KIR - KAGOYA JAPAN Inc., JP | JP | `risk_level_changed` | 19 | 589 | +570 |
+| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_increased` | 37500 | 37947 | +447 |
+| AS200019 | AlexHost - ALEXHOST SRL, MD | RU | `evidence_increased` | 2348 | 2700 | +352 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 155663 | 155330 | -333 |
+| AS216472 | HS-SYR - High Speed For Internet Services L.L.C, SY | TR | `evidence_increased` | 617 | 902 | +285 |
+| AS29066 | VELIANET-AS - velia.net Internetdienste GmbH, DE | DE | `evidence_increased` | 1693 | 1972 | +279 |
+| AS398101 | GO-DADDY-COM-LLC - GoDaddy.com, LLC, US | US | `evidence_increased` | 1508 | 1753 | +245 |
+| AS140292 | CHINATELECOM-JIANGSU-SUZHOU-5G-NETWORK - CHINATELECOM Jiangsu province Suzhou 5G network, CN | CN | `evidence_increased` | 6354 | 6584 | +230 |
+| AS2519 | VECTANT - ARTERIA Networks Corporation, JP | JP | `evidence_increased` | 1368 | 1566 | +198 |
+| AS265919 | AS265919 - BB Host LTDA, BR | BR | `evidence_increased` | 46 | 237 | +191 |
+| AS30058 | FDCSERVERS - FDCservers.net, US | US | `evidence_increased` | 3271 | 3446 | +175 |
+| AS7684 | SAKURA-A - SAKURA Internet Inc., JP | JP | `evidence_increased` | 289 | 456 | +167 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 50725 | 50888 | +163 |
+| AS264381 | AS264381 - VIBE PROVEDOR DE INTERNET LTDA, BR | BR | `risk_level_changed` | 30 | 189 | +159 |
+| AS2907 | SINET-AS - Research Organization of Information and Systems, National Institute of Informatics, JP | JP | `evidence_increased` | 138 | 296 | +158 |
+| AS213702 | QWINS-LTD - QWINS LTD, GB | CY | `evidence_increased` | 564 | 717 | +153 |
+| AS52485 | AS52485 - networksdelmanana.com, HN | HN | `evidence_increased` | 339 | 471 | +132 |
+| AS152194 | CTGSERVERLIMITED-AS-AP - CTG Server Limited, HK | SG | `evidence_increased` | 883 | 1006 | +123 |
+| AS154177 | LIGHT4-AS-AP - LIGHT NODE LIMITED, HK | US | `evidence_increased` | 1818 | 1932 | +114 |
+| AS262744 | AS262744 - ICENET TELECOMUNICACOES LTDA - ME, BR | BR | `risk_level_changed` | 92 | 203 | +111 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
