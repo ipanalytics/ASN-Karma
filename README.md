@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-23T05:12:48Z`_
+_Last dataset build: `2026-08-24T05:25:00Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-23T05:12:48Z`_
+_Last updated: `2026-08-24T05:25:00Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS2518 | BIGLOBE - BIGLOBE Inc., JP | JP | `evidence_increased` | 356 | 2901 | +2545 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 16177 | 18472 | +2295 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 174200 | 176479 | +2279 |
-| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_increased` | 33324 | 34690 | +1366 |
-| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_increased` | 8238 | 9121 | +883 |
-| AS24282 | KIR - KAGOYA JAPAN Inc., JP | JP | `risk_level_changed` | 19 | 589 | +570 |
-| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_increased` | 37500 | 37947 | +447 |
-| AS200019 | AlexHost - ALEXHOST SRL, MD | RU | `evidence_increased` | 2348 | 2700 | +352 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 155663 | 155330 | -333 |
-| AS216472 | HS-SYR - High Speed For Internet Services L.L.C, SY | TR | `evidence_increased` | 617 | 902 | +285 |
-| AS29066 | VELIANET-AS - velia.net Internetdienste GmbH, DE | DE | `evidence_increased` | 1693 | 1972 | +279 |
-| AS398101 | GO-DADDY-COM-LLC - GoDaddy.com, LLC, US | US | `evidence_increased` | 1508 | 1753 | +245 |
-| AS140292 | CHINATELECOM-JIANGSU-SUZHOU-5G-NETWORK - CHINATELECOM Jiangsu province Suzhou 5G network, CN | CN | `evidence_increased` | 6354 | 6584 | +230 |
-| AS2519 | VECTANT - ARTERIA Networks Corporation, JP | JP | `evidence_increased` | 1368 | 1566 | +198 |
-| AS265919 | AS265919 - BB Host LTDA, BR | BR | `evidence_increased` | 46 | 237 | +191 |
-| AS30058 | FDCSERVERS - FDCservers.net, US | US | `evidence_increased` | 3271 | 3446 | +175 |
-| AS7684 | SAKURA-A - SAKURA Internet Inc., JP | JP | `evidence_increased` | 289 | 456 | +167 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 50725 | 50888 | +163 |
-| AS264381 | AS264381 - VIBE PROVEDOR DE INTERNET LTDA, BR | BR | `risk_level_changed` | 30 | 189 | +159 |
-| AS2907 | SINET-AS - Research Organization of Information and Systems, National Institute of Informatics, JP | JP | `evidence_increased` | 138 | 296 | +158 |
-| AS213702 | QWINS-LTD - QWINS LTD, GB | CY | `evidence_increased` | 564 | 717 | +153 |
-| AS52485 | AS52485 - networksdelmanana.com, HN | HN | `evidence_increased` | 339 | 471 | +132 |
-| AS152194 | CTGSERVERLIMITED-AS-AP - CTG Server Limited, HK | SG | `evidence_increased` | 883 | 1006 | +123 |
-| AS154177 | LIGHT4-AS-AP - LIGHT NODE LIMITED, HK | US | `evidence_increased` | 1818 | 1932 | +114 |
-| AS262744 | AS262744 - ICENET TELECOMUNICACOES LTDA - ME, BR | BR | `risk_level_changed` | 92 | 203 | +111 |
+| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_increased` | 5307 | 5735 | +428 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 16845 | 16444 | -401 |
+| AS402288 | EEF - Envision EdgeFlow LLC, US | US | `risk_level_changed` | 172 | 1 | -171 |
+| AS21859 | ZEN-ECN - Zenlayer Inc, US | US | `evidence_increased` | 5924 | 6047 | +123 |
+| AS135377 | UCLOUD-HK-AS-AP - UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED, HK | HK | `evidence_increased` | 5076 | 5175 | +99 |
+| AS197974 | PLYM-AS - Vladislav Nitsenko, EE | CA | `risk_level_changed` | 97 | 1 | -96 |
+| AS134928 | SPIDERLINK-AS - Spiderlink Networks Pvt Ltd, IN | IN | `evidence_decreased` | 152 | 59 | -93 |
+| AS44559 | ITHOSTLINE - IT HOSTLINE LTD, CY | SC | `evidence_increased` | 3194 | 3279 | +85 |
+| AS1299 | TWELVE99 - Arelion Sweden AB, SE | SE | `evidence_increased` | 404 | 481 | +77 |
+| AS21334 | ASN-ONE-HU - 2Connect Telecommunications Infrastructure & Network Services Ltd., HU | HU | `evidence_decreased` | 6134 | 6057 | -77 |
+| AS216078 | KREMER-AS - Liam Kremer, DE | LT | `risk_level_changed` | 77 | 147 | +70 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 16962 | 16899 | -63 |
+| AS210554 | METEORCLOUD - Meteor Cloud LTDA, BR | AE | `risk_level_changed` | 1 | 64 | +63 |
+| AS219427 | VERTEXCORE-PTE-LTD - VERTEXCORE. PTE. LTD., SG | GB | `risk_level_changed` | 6 | 33 | +27 |
+| AS3741 | Dimension Data - Dimension Data, ZA | ZA | `evidence_decreased` | 4372 | 4349 | -23 |
+| AS37542 | Iclix (PTY) Ltd - Iclix (PTY) Ltd, ZA | ZA | `evidence_increased` | 15 | 38 | +23 |
+| AS205960 | HDT - HDTIDC LIMITED, HK | US | `risk_level_changed` | 12 | 28 | +16 |
+| AS152565 | JOYSVC-AS-IN - JOY SERVICES, IN | IN | `evidence_increased` | 64 | 79 | +15 |
+| AS214483 | FIBERPOWER-AS - FiberPower LLC, US | US | `evidence_increased` | 1315 | 1330 | +15 |
+| AS140499 | KTPL-AS-AP - Khan Telecom, PK | PK | `evidence_increased` | 178 | 192 | +14 |
+| AS150371 | PTABPL-AS-AP - Pace Telecom and Brodcasting Private Limited, PK | PK | `evidence_decreased` | 196 | 182 | -14 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 436257 | 436270 | +13 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161063 | 161054 | -9 |
+| AS205489 | CODEASSET - CODE ASSET LTD, GB | LT | `evidence_decreased` | 225 | 217 | -8 |
+| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_decreased` | 2686 | 2679 | -7 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
