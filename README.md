@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-26T05:17:06Z`_
+_Last dataset build: `2026-08-27T15:32:27Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-26T05:17:06Z`_
+_Last updated: `2026-08-27T15:32:27Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS20473 | AS-VULTR - The Constant Company, LLC, US | US | `evidence_increased` | 20776 | 21218 | +442 |
-| AS402265 | MUTANET - Mutanet LLC, US | NL | `evidence_increased` | 101 | 349 | +248 |
-| AS30058 | FDCSERVERS - FDCservers.net, US | US | `evidence_decreased` | 3446 | 3272 | -174 |
-| AS152179 | GCNL-AS-AP - GLOBAL COMMUNICATION NETWORK LIMITED, HK | US | `evidence_increased` | 1041 | 1198 | +157 |
-| AS205489 | CODEASSET - CODE ASSET LTD, GB | LT | `risk_level_changed` | 215 | 73 | -142 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 16899 | 17026 | +127 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 5269 | 5142 | -127 |
-| AS56655 | GIGAHOST - Gigahost AS, NO | NO | `evidence_increased` | 494 | 617 | +123 |
-| AS54801 | ZILLION-NETWORK - Zillion Network Inc., US | SC | `evidence_increased` | 907 | 1009 | +102 |
-| AS20326 | TERASWITCH - TeraSwitch Networks Inc., US | GB | `evidence_increased` | 2232 | 2316 | +84 |
-| AS3223 | VOXILITY - Voxility LLP, GB | GB | `evidence_decreased` | 361 | 298 | -63 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 1012 | 953 | -59 |
-| AS219060 | Mizbani-Mehr-Hamin - Mizbani Mehr Hamin PJSC, IR | IR | `new_asn` | 0 | 56 | +56 |
-| AS139646 | HONG7-AS-AP - HONG KONG LIGHTLAYER TECHNOLOGY CO., LIMITED, HK | SG | `evidence_decreased` | 105 | 51 | -54 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 16438 | 16488 | +50 |
-| AS21769 | AS-COLOAM - Colocation America Corporation, US | US | `evidence_decreased` | 4111 | 4067 | -44 |
-| AS18381 | RSL-AS-AP - RedSwitches, AU | US | `evidence_increased` | 27 | 64 | +37 |
-| AS34876 | smart-systems - _SMART SISTEMZ TECHNOLOJI_ MMM, AZ | AZ | `evidence_decreased` | 440 | 408 | -32 |
-| AS197328 | ISTANBULDC1 - GEOCOM LLC, GE | SC | `evidence_decreased` | 58 | 26 | -32 |
-| AS204986 | Sparktel - Sparktel LLC, AZ | AZ | `evidence_increased` | 30 | 62 | +32 |
-| AS219021 | EXBONORTH-AS - Eksbo Sever LLC, RU | HK | `new_asn` | 0 | 30 | +30 |
-| AS41745 | FORTIS-AS - Baykov Ilya Sergeevich, RU | RU | `evidence_increased` | 6250 | 6277 | +27 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 161081 | 161107 | +26 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_decreased` | 8248 | 8225 | -23 |
-| AS219394 | Red-Seek-Limited - Red Seek Limited, HK | CA | `risk_level_changed` | 1 | 24 | +23 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 1590 | 37621 | +36031 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 17026 | 50865 | +33839 |
+| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 953 | 19059 | +18106 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 390 | 8729 | +8339 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5142 | 13255 | +8113 |
+| AS8881 | VERSATEL - 1&1 Versatel GmbH, DE | US | `evidence_increased` | 837 | 7429 | +6592 |
+| AS1299 | TWELVE99 - Arelion Sweden AB, SE | US | `evidence_increased` | 404 | 6609 | +6205 |
+| AS21334 | ASN-ONE-HU - 2Connect Telecommunications Infrastructure & Network Services Ltd., HU | HU | `evidence_decreased` | 6134 | 361 | -5773 |
+| AS20001 | TWC-20001-PACWEST - Charter Communications Inc, US | US | `evidence_increased` | 3271 | 8997 | +5726 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 176479 | 181460 | +4981 |
+| AS11427 | TWC-11427-TEXAS - Charter Communications Inc, US | US | `evidence_increased` | 1125 | 5969 | +4844 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 8225 | 12489 | +4264 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 68469 | 72686 | +4217 |
+| AS37963 | ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN | CN | `evidence_decreased` | 68502 | 64615 | -3887 |
+| AS3491 | PCCWG-APAC-HK - PCCW Global (HK) Ltd., HK | GB | `evidence_increased` | 7861 | 11287 | +3426 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | US | `evidence_increased` | 4359 | 7708 | +3349 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 436268 | 439191 | +2923 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 43263 | 45527 | +2264 |
+| AS216472 | HS-SYR - High Speed For Internet Services L.L.C, SY | TR | `evidence_increased` | 902 | 2855 | +1953 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 50888 | 52330 | +1442 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 155335 | 156772 | +1437 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 54075 | 55423 | +1348 |
+| AS41931 | AS-EURONET-PL - AS-EURONET-PL, PL | PL | `evidence_increased` | 8 | 1162 | +1154 |
+| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `risk_level_changed` | 7188 | 8299 | +1111 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 104573 | 105623 | +1050 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
