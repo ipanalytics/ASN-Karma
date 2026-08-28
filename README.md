@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-27T15:32:27Z`_
+_Last dataset build: `2026-08-28T16:56:15Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-27T15:32:27Z`_
+_Last updated: `2026-08-28T16:56:15Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 1590 | 37621 | +36031 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 17026 | 50865 | +33839 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 953 | 19059 | +18106 |
-| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 390 | 8729 | +8339 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5142 | 13255 | +8113 |
-| AS8881 | VERSATEL - 1&1 Versatel GmbH, DE | US | `evidence_increased` | 837 | 7429 | +6592 |
-| AS1299 | TWELVE99 - Arelion Sweden AB, SE | US | `evidence_increased` | 404 | 6609 | +6205 |
-| AS21334 | ASN-ONE-HU - 2Connect Telecommunications Infrastructure & Network Services Ltd., HU | HU | `evidence_decreased` | 6134 | 361 | -5773 |
-| AS20001 | TWC-20001-PACWEST - Charter Communications Inc, US | US | `evidence_increased` | 3271 | 8997 | +5726 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 176479 | 181460 | +4981 |
-| AS11427 | TWC-11427-TEXAS - Charter Communications Inc, US | US | `evidence_increased` | 1125 | 5969 | +4844 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 8225 | 12489 | +4264 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 68469 | 72686 | +4217 |
-| AS37963 | ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN | CN | `evidence_decreased` | 68502 | 64615 | -3887 |
-| AS3491 | PCCWG-APAC-HK - PCCW Global (HK) Ltd., HK | GB | `evidence_increased` | 7861 | 11287 | +3426 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | US | `evidence_increased` | 4359 | 7708 | +3349 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 436268 | 439191 | +2923 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 43263 | 45527 | +2264 |
-| AS216472 | HS-SYR - High Speed For Internet Services L.L.C, SY | TR | `evidence_increased` | 902 | 2855 | +1953 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 50888 | 52330 | +1442 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 155335 | 156772 | +1437 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 54075 | 55423 | +1348 |
-| AS41931 | AS-EURONET-PL - AS-EURONET-PL, PL | PL | `evidence_increased` | 8 | 1162 | +1154 |
-| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `risk_level_changed` | 7188 | 8299 | +1111 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 104573 | 105623 | +1050 |
+| AS50780 | ISP-EASTNET-AS - EAST-NET Ltd, UA | UA | `risk_level_changed` | 9 | 950 | +941 |
+| AS59478 | IPSERVICE-AS - LLC IP SERVICE, UA | UA | `risk_level_changed` | 971 | 30 | -941 |
+| AS19527 | GOOGLE-2 - Google LLC, US | US | `evidence_increased` | 358 | 883 | +525 |
+| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_decreased` | 1223 | 698 | -525 |
+| AS30860 | YURTEH-AS - Virtual Systems LLC, UA | GB | `evidence_decreased` | 3399 | 2896 | -503 |
+| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_decreased` | 5930 | 5620 | -310 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 16500 | 16777 | +277 |
+| AS132768 | FIVENETWORK-AS-IN - Five network Broadband Solution Pvt Ltd, IN | IN | `evidence_decreased` | 463 | 224 | -239 |
+| AS214483 | FIBERPOWER-AS - FiberPower LLC, US | US | `risk_level_changed` | 1528 | 1322 | -206 |
+| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_decreased` | 2517 | 2363 | -154 |
+| AS146966 | CHINANET-YANGZHOUNORTH-IDC - China Telecom, CN | CN | `evidence_increased` | 151 | 251 | +100 |
+| AS401362 | HOST4NERD - HOST4NERD LLC, US | US | `evidence_decreased` | 146 | 55 | -91 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161560 | 161472 | -88 |
+| AS402857 | HTOCSL - Highland, US | AE | `evidence_decreased` | 95 | 19 | -76 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 11686 | 11753 | +67 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 22835 | 22768 | -67 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 50865 | 50925 | +60 |
+| AS263947 | AS263947 - VirtualSpace Telecom, BR | BR | `evidence_decreased` | 285 | 230 | -55 |
+| AS27712 | AS27712 - Paulo Dias de Araujo Filho, BR | BR | `evidence_increased` | 439 | 493 | +54 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 156772 | 156724 | -48 |
+| AS9123 | TimeWeb-AS - JSC _TIMEWEB_, RU | RU | `evidence_decreased` | 4880 | 4833 | -47 |
+| AS152179 | GCNL-AS-AP - GLOBAL COMMUNICATION NETWORK LIMITED, HK | US | `evidence_increased` | 1220 | 1267 | +47 |
+| AS211507 | Aluy - Julian Achter, DE | DE | `evidence_increased` | 153 | 197 | +44 |
+| AS131325 | CHINATELECOM-JIANGSU-NANTONG-MAN - CHINATELECOM JIANGSU province NANTONG MAN network, CN | CN | `risk_level_changed` | 115 | 78 | -37 |
+| AS209733 | PIT - prospective information technology ltd, IQ | IQ | `evidence_decreased` | 45 | 11 | -34 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
