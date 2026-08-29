@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-28T16:56:15Z`_
+_Last dataset build: `2026-08-29T11:22:11Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-28T16:56:15Z`_
+_Last updated: `2026-08-29T11:22:11Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS50780 | ISP-EASTNET-AS - EAST-NET Ltd, UA | UA | `risk_level_changed` | 9 | 950 | +941 |
-| AS59478 | IPSERVICE-AS - LLC IP SERVICE, UA | UA | `risk_level_changed` | 971 | 30 | -941 |
-| AS19527 | GOOGLE-2 - Google LLC, US | US | `evidence_increased` | 358 | 883 | +525 |
-| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_decreased` | 1223 | 698 | -525 |
-| AS30860 | YURTEH-AS - Virtual Systems LLC, UA | GB | `evidence_decreased` | 3399 | 2896 | -503 |
-| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_decreased` | 5930 | 5620 | -310 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 16500 | 16777 | +277 |
-| AS132768 | FIVENETWORK-AS-IN - Five network Broadband Solution Pvt Ltd, IN | IN | `evidence_decreased` | 463 | 224 | -239 |
-| AS214483 | FIBERPOWER-AS - FiberPower LLC, US | US | `risk_level_changed` | 1528 | 1322 | -206 |
-| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_decreased` | 2517 | 2363 | -154 |
-| AS146966 | CHINANET-YANGZHOUNORTH-IDC - China Telecom, CN | CN | `evidence_increased` | 151 | 251 | +100 |
-| AS401362 | HOST4NERD - HOST4NERD LLC, US | US | `evidence_decreased` | 146 | 55 | -91 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 161560 | 161472 | -88 |
-| AS402857 | HTOCSL - Highland, US | AE | `evidence_decreased` | 95 | 19 | -76 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 11686 | 11753 | +67 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 22835 | 22768 | -67 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 50865 | 50925 | +60 |
-| AS263947 | AS263947 - VirtualSpace Telecom, BR | BR | `evidence_decreased` | 285 | 230 | -55 |
-| AS27712 | AS27712 - Paulo Dias de Araujo Filho, BR | BR | `evidence_increased` | 439 | 493 | +54 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 156772 | 156724 | -48 |
-| AS9123 | TimeWeb-AS - JSC _TIMEWEB_, RU | RU | `evidence_decreased` | 4880 | 4833 | -47 |
-| AS152179 | GCNL-AS-AP - GLOBAL COMMUNICATION NETWORK LIMITED, HK | US | `evidence_increased` | 1220 | 1267 | +47 |
-| AS211507 | Aluy - Julian Achter, DE | DE | `evidence_increased` | 153 | 197 | +44 |
-| AS131325 | CHINATELECOM-JIANGSU-NANTONG-MAN - CHINATELECOM JIANGSU province NANTONG MAN network, CN | CN | `risk_level_changed` | 115 | 78 | -37 |
-| AS209733 | PIT - prospective information technology ltd, IQ | IQ | `evidence_decreased` | 45 | 11 | -34 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 72686 | 74574 | +1888 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 50925 | 52643 | +1718 |
+| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 19059 | 20470 | +1411 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 181460 | 182837 | +1377 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 52330 | 53379 | +1049 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 11753 | 10762 | -991 |
+| AS50780 | ISP-EASTNET-AS - EAST-NET Ltd, UA | UA | `risk_level_changed` | 950 | 9 | -941 |
+| AS59478 | IPSERVICE-AS - LLC IP SERVICE, UA | UA | `risk_level_changed` | 30 | 971 | +941 |
+| AS11798 | ACEDATACENTERS-AS-1 - Ace Data Centers, Inc., US | US | `risk_level_changed` | 1982 | 1061 | -921 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 45527 | 44736 | -791 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 156724 | 157511 | +787 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 161472 | 162245 | +773 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 439193 | 439808 | +615 |
+| AS272809 | AS272809 - THUNDERNET, C.A., VE | US | `evidence_decreased` | 8480 | 7897 | -583 |
+| AS216472 | HS-SYR - High Speed For Internet Services L.L.C, SY | TR | `evidence_decreased` | 2855 | 2330 | -525 |
+| AS41297 | ABAKS-AS - Adam Dlugosz trading as ABAKS, PL | PL | `evidence_decreased` | 544 | 119 | -425 |
+| AS6830 | LibertyGlobal - Liberty Global Europe Holding B.V., NL | GB | `evidence_increased` | 204 | 626 | +422 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 9243 | 8833 | -410 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 41397 | 41795 | +398 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 105623 | 106018 | +395 |
+| AS13335 | CLOUDFLARENET - Cloudflare, Inc., US | US | `evidence_increased` | 5937 | 6306 | +369 |
+| AS30689 | FLOW-NET - FLOW, JM | JM | `evidence_increased` | 460 | 730 | +270 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 19646 | 19908 | +262 |
+| AS22612 | NAMECHEAP-NET - Namecheap, Inc., US | US | `evidence_increased` | 1427 | 1680 | +253 |
+| AS401696 | COGNETCLOUD - cognetcloud INC, US | HK | `evidence_increased` | 1104 | 1351 | +247 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
