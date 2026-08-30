@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-29T11:22:11Z`_
+_Last dataset build: `2026-08-30T10:08:07Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-29T11:22:11Z`_
+_Last updated: `2026-08-30T10:08:07Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 72686 | 74574 | +1888 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 50925 | 52643 | +1718 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 19059 | 20470 | +1411 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 181460 | 182837 | +1377 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 52330 | 53379 | +1049 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 11753 | 10762 | -991 |
-| AS50780 | ISP-EASTNET-AS - EAST-NET Ltd, UA | UA | `risk_level_changed` | 950 | 9 | -941 |
-| AS59478 | IPSERVICE-AS - LLC IP SERVICE, UA | UA | `risk_level_changed` | 30 | 971 | +941 |
-| AS11798 | ACEDATACENTERS-AS-1 - Ace Data Centers, Inc., US | US | `risk_level_changed` | 1982 | 1061 | -921 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 45527 | 44736 | -791 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 156724 | 157511 | +787 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 161472 | 162245 | +773 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 439193 | 439808 | +615 |
-| AS272809 | AS272809 - THUNDERNET, C.A., VE | US | `evidence_decreased` | 8480 | 7897 | -583 |
-| AS216472 | HS-SYR - High Speed For Internet Services L.L.C, SY | TR | `evidence_decreased` | 2855 | 2330 | -525 |
-| AS41297 | ABAKS-AS - Adam Dlugosz trading as ABAKS, PL | PL | `evidence_decreased` | 544 | 119 | -425 |
-| AS6830 | LibertyGlobal - Liberty Global Europe Holding B.V., NL | GB | `evidence_increased` | 204 | 626 | +422 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 9243 | 8833 | -410 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 41397 | 41795 | +398 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 105623 | 106018 | +395 |
-| AS13335 | CLOUDFLARENET - Cloudflare, Inc., US | US | `evidence_increased` | 5937 | 6306 | +369 |
-| AS30689 | FLOW-NET - FLOW, JM | JM | `evidence_increased` | 460 | 730 | +270 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 19646 | 19908 | +262 |
-| AS22612 | NAMECHEAP-NET - Namecheap, Inc., US | US | `evidence_increased` | 1427 | 1680 | +253 |
-| AS401696 | COGNETCLOUD - cognetcloud INC, US | HK | `evidence_increased` | 1104 | 1351 | +247 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 12584 | 13928 | +1344 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 157511 | 158802 | +1291 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 10762 | 11753 | +991 |
+| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 20470 | 21195 | +725 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 44736 | 45161 | +425 |
+| AS216472 | HS-SYR - High Speed For Internet Services L.L.C, SY | TR | `evidence_decreased` | 2330 | 2060 | -270 |
+| AS402265 | MUTANET - Mutanet LLC, US | NL | `evidence_increased` | 353 | 620 | +267 |
+| AS401701 | COGNETCLOUD-2 - cognetcloud INC, US | SC | `evidence_increased` | 571 | 816 | +245 |
+| AS401696 | COGNETCLOUD - cognetcloud INC, US | HK | `evidence_decreased` | 1351 | 1118 | -233 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 87887 | 88119 | +232 |
+| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_decreased` | 6347 | 6115 | -232 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 7764 | 7545 | -219 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 439808 | 440019 | +211 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 52643 | 52853 | +210 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 22986 | 23184 | +198 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 3964 | 4144 | +180 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 182837 | 183014 | +177 |
+| AS22516 | CHARTER-22516-CENTRAL-CA-C3 - Charter Communications LLC, US | SC | `risk_level_changed` | 18 | 172 | +154 |
+| AS38264 | WATEEN-IMS-PK-AS-AP - National WiMAX/IMS environment, PK | PK | `evidence_decreased` | 1143 | 989 | -154 |
+| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 5397 | 5542 | +145 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 16947 | 16805 | -142 |
+| AS216475 | nktelecom - NKtelecom INC, US | US | `evidence_increased` | 401 | 517 | +116 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 55647 | 55758 | +111 |
+| AS152698 | ZORN-AS-AP - Zorn Technologies, BD | GB | `risk_level_changed` | 137 | 247 | +110 |
+| AS9829 | BSNL-NIB - National Internet Backbone, IN | IN | `evidence_decreased` | 27076 | 26975 | -101 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
