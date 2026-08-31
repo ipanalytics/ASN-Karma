@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-08-30T10:08:07Z`_
+_Last dataset build: `2026-08-31T11:09:29Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-08-30T10:08:07Z`_
+_Last updated: `2026-08-31T11:09:29Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 12584 | 13928 | +1344 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 157511 | 158802 | +1291 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 10762 | 11753 | +991 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 20470 | 21195 | +725 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 44736 | 45161 | +425 |
-| AS216472 | HS-SYR - High Speed For Internet Services L.L.C, SY | TR | `evidence_decreased` | 2330 | 2060 | -270 |
-| AS402265 | MUTANET - Mutanet LLC, US | NL | `evidence_increased` | 353 | 620 | +267 |
-| AS401701 | COGNETCLOUD-2 - cognetcloud INC, US | SC | `evidence_increased` | 571 | 816 | +245 |
-| AS401696 | COGNETCLOUD - cognetcloud INC, US | HK | `evidence_decreased` | 1351 | 1118 | -233 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 87887 | 88119 | +232 |
-| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_decreased` | 6347 | 6115 | -232 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 7764 | 7545 | -219 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 439808 | 440019 | +211 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 52643 | 52853 | +210 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 22986 | 23184 | +198 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 3964 | 4144 | +180 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 182837 | 183014 | +177 |
-| AS22516 | CHARTER-22516-CENTRAL-CA-C3 - Charter Communications LLC, US | SC | `risk_level_changed` | 18 | 172 | +154 |
-| AS38264 | WATEEN-IMS-PK-AS-AP - National WiMAX/IMS environment, PK | PK | `evidence_decreased` | 1143 | 989 | -154 |
-| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 5397 | 5542 | +145 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 16947 | 16805 | -142 |
-| AS216475 | nktelecom - NKtelecom INC, US | US | `evidence_increased` | 401 | 517 | +116 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 55647 | 55758 | +111 |
-| AS152698 | ZORN-AS-AP - Zorn Technologies, BD | GB | `risk_level_changed` | 137 | 247 | +110 |
-| AS9829 | BSNL-NIB - National Internet Backbone, IN | IN | `evidence_decreased` | 27076 | 26975 | -101 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 158802 | 139395 | -19407 |
+| AS6849 | UKRTELNET - JSC _Ukrtelecom_, UA | UA | `evidence_decreased` | 12367 | 1030 | -11337 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 88119 | 83389 | -4730 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 11753 | 7785 | -3968 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 55758 | 59498 | +3740 |
+| AS12322 | PROXAD - Free SAS, FR | FR | `evidence_increased` | 2440 | 5396 | +2956 |
+| AS39435 | EVOLGOGRAD-AS - JSC _ER-Telecom Holding_, RU | RU | `evidence_decreased` | 1810 | 102 | -1708 |
+| AS10474 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 1522 | 2680 | +1158 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 45161 | 44225 | -936 |
+| AS328029 | Web Telecom Services (PTY) Ltd - Web Telecom Services (PTY) Ltd, ZA | ZA | `evidence_increased` | 40 | 864 | +824 |
+| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_decreased` | 9398 | 8807 | -591 |
+| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_increased` | 701 | 1228 | +527 |
+| AS19527 | GOOGLE-2 - Google LLC, US | US | `evidence_decreased` | 885 | 361 | -524 |
+| AS271942 | AS271942 - CV HOTSPOT, S.R.L., DO | US | `risk_level_changed` | 515 | 3 | -512 |
+| AS216472 | HS-SYR - High Speed For Internet Services L.L.C, SY | TR | `evidence_decreased` | 2060 | 1604 | -456 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 1 | 435 | +434 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 4144 | 3726 | -418 |
+| AS17816 | CHINA169-GZ - China Unicom IP network China169 Guangdong province, CN | CN | `evidence_decreased` | 3197 | 2785 | -412 |
+| AS54936 | WGL-107-ZONA-WYYERD - Wyyerd Group, US | US | `risk_level_changed` | 414 | 33 | -381 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 16805 | 16443 | -362 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 440019 | 440378 | +359 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 74630 | 74982 | +352 |
+| AS4812 | CHINANET-SH-AP - China Telecom (Group), CN | CN | `evidence_decreased` | 3571 | 3230 | -341 |
+| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 21195 | 21483 | +288 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 183014 | 183291 | +277 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
