@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-01T09:36:33Z`_
+_Last dataset build: `2026-09-02T09:04:47Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-01T09:36:33Z`_
+_Last updated: `2026-09-02T09:04:47Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 7785 | 9738 | +1953 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 139395 | 141037 | +1642 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 74982 | 76212 | +1230 |
-| AS36849 | SAEOL-1-ASN - 1st Amendment Encrypted Openness LLC, US | US | `risk_level_changed` | 1019 | 106 | -913 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 83389 | 83984 | +595 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 435 | 1 | -434 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 106157 | 106427 | +270 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 440378 | 440643 | +265 |
-| AS54801 | ZILLION-NETWORK - Zillion Network Inc., US | SC | `evidence_decreased` | 968 | 727 | -241 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 21483 | 21719 | +236 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 183291 | 183511 | +220 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 44225 | 44029 | -196 |
-| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_increased` | 8418 | 8610 | +192 |
-| AS209242 | CLOUDFLARESPECTRUM - Cloudflare London, LLC, US | US | `evidence_decreased` | 3471 | 3283 | -188 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 59498 | 59681 | +183 |
-| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | US | `evidence_increased` | 201 | 377 | +176 |
-| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 5435 | 5588 | +153 |
-| AS152179 | GCNL-AS-AP - GLOBAL COMMUNICATION NETWORK LIMITED, HK | US | `evidence_increased` | 1201 | 1349 | +148 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 8872 | 9002 | +130 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 23207 | 23327 | +120 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 3726 | 3607 | -119 |
-| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_decreased` | 285 | 167 | -118 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 13323 | 13207 | -116 |
-| AS7713 | telkomnet-as-ap - PT Telekomunikasi Indonesia, ID | ID | `evidence_increased` | 7972 | 8085 | +113 |
-| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_increased` | 35434 | 35541 | +107 |
+| AS50467 | BESKID-MEDIA-AS - Beskid Media Sp. z o.o., PL | PL | `evidence_increased` | 93 | 1352 | +1259 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 76212 | 77193 | +981 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 141037 | 140061 | -976 |
+| AS27747 | AS27747 - Telecentro S.A., AR | AR | `evidence_increased` | 2238 | 3152 | +914 |
+| AS36849 | SAEOL-1-ASN - 1st Amendment Encrypted Openness LLC, US | US | `evidence_increased` | 106 | 1016 | +910 |
+| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_increased` | 4125 | 4707 | +582 |
+| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_decreased` | 1999 | 1442 | -557 |
+| AS8193 | BRM-AS - _Uzbektelekom_ Joint Stock Company, UZ | UZ | `evidence_increased` | 2271 | 2797 | +526 |
+| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_increased` | 5583 | 6040 | +457 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 1 | 441 | +440 |
+| AS42772 | A1-BY-AS - Unitary enterprise A1, BY | BY | `evidence_decreased` | 555 | 142 | -413 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 20065 | 20420 | +355 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 183511 | 183845 | +334 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 44029 | 43752 | -277 |
+| AS42969 | ALPHASTRIKE - Alpha Strike Labs GmbH, DE | DE | `evidence_increased` | 256 | 505 | +249 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 440643 | 440888 | +245 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 52710 | 52945 | +235 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 9738 | 9510 | -228 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 13980 | 14182 | +202 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 16509 | 16706 | +197 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 59681 | 59877 | +196 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 377 | 200 | -177 |
+| AS43060 | IPLUS-AS - IPLUS LLC, UZ | UZ | `evidence_increased` | 202 | 370 | +168 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 7630 | 7794 | +164 |
+| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 21719 | 21865 | +146 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
