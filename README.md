@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-02T09:04:47Z`_
+_Last dataset build: `2026-09-03T09:12:40Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-02T09:04:47Z`_
+_Last updated: `2026-09-03T09:12:40Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS50467 | BESKID-MEDIA-AS - Beskid Media Sp. z o.o., PL | PL | `evidence_increased` | 93 | 1352 | +1259 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 76212 | 77193 | +981 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 141037 | 140061 | -976 |
-| AS27747 | AS27747 - Telecentro S.A., AR | AR | `evidence_increased` | 2238 | 3152 | +914 |
-| AS36849 | SAEOL-1-ASN - 1st Amendment Encrypted Openness LLC, US | US | `evidence_increased` | 106 | 1016 | +910 |
-| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_increased` | 4125 | 4707 | +582 |
-| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_decreased` | 1999 | 1442 | -557 |
-| AS8193 | BRM-AS - _Uzbektelekom_ Joint Stock Company, UZ | UZ | `evidence_increased` | 2271 | 2797 | +526 |
-| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_increased` | 5583 | 6040 | +457 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 1 | 441 | +440 |
-| AS42772 | A1-BY-AS - Unitary enterprise A1, BY | BY | `evidence_decreased` | 555 | 142 | -413 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 20065 | 20420 | +355 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 183511 | 183845 | +334 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 44029 | 43752 | -277 |
-| AS42969 | ALPHASTRIKE - Alpha Strike Labs GmbH, DE | DE | `evidence_increased` | 256 | 505 | +249 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 440643 | 440888 | +245 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 52710 | 52945 | +235 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 9738 | 9510 | -228 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 13980 | 14182 | +202 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 16509 | 16706 | +197 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 59681 | 59877 | +196 |
-| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 377 | 200 | -177 |
-| AS43060 | IPLUS-AS - IPLUS LLC, UZ | UZ | `evidence_increased` | 202 | 370 | +168 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 7630 | 7794 | +164 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 21719 | 21865 | +146 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 140061 | 141496 | +1435 |
+| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_increased` | 4707 | 5729 | +1022 |
+| AS59815 | TRINITY-AS - Trinity Ltd, RU | RU | `risk_level_changed` | 24 | 698 | +674 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 52945 | 53534 | +589 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 77193 | 77710 | +517 |
+| AS34665 | PINDC-AS - Petersburg Internet Network ltd., RU | RU | `evidence_increased` | 1776 | 2260 | +484 |
+| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_decreased` | 1442 | 988 | -454 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 20420 | 20858 | +438 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | NL | `risk_level_changed` | 441 | 5 | -436 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 183845 | 183410 | -435 |
+| AS25299 | TRINITY-AS - Trinity Ltd, RU | RU | `risk_level_changed` | 10 | 445 | +435 |
+| AS13335 | CLOUDFLARENET - Cloudflare, Inc., US | US | `evidence_decreased` | 6382 | 5988 | -394 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 16706 | 17056 | +350 |
+| AS15169 | GOOGLE - Google LLC, US | US | `evidence_decreased` | 1519 | 1172 | -347 |
+| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_increased` | 1231 | 1570 | +339 |
+| AS402265 | MUTANET - Mutanet LLC, US | NL | `risk_level_changed` | 636 | 324 | -312 |
+| AS132768 | FIVENETWORK-AS-IN - Five network Broadband Solution Pvt Ltd, IN | IN | `evidence_increased` | 223 | 463 | +240 |
+| AS5713 | Telkom SA Ltd. - Telkom SA Ltd., ZA | ZA | `evidence_increased` | 229 | 467 | +238 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 9510 | 9287 | -223 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 59877 | 60100 | +223 |
+| AS35695 | FALCON-AS - F-NET sp. z o.o., PL | PL | `risk_level_changed` | 1 | 220 | +219 |
+| AS37457 | Telkom SA Ltd. - Telkom SA Ltd., ZA | ZA | `evidence_decreased` | 943 | 725 | -218 |
+| AS36903 | Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM, MA | MA | `evidence_increased` | 3396 | 3607 | +211 |
+| AS834 | IPXO - IPXO LLC, US | AE | `risk_level_changed` | 200 | 3 | -197 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | US | `evidence_increased` | 200 | 383 | +183 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
