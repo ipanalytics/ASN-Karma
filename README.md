@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-03T09:12:40Z`_
+_Last dataset build: `2026-09-04T09:04:57Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-03T09:12:40Z`_
+_Last updated: `2026-09-04T09:04:57Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 140061 | 141496 | +1435 |
-| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_increased` | 4707 | 5729 | +1022 |
-| AS59815 | TRINITY-AS - Trinity Ltd, RU | RU | `risk_level_changed` | 24 | 698 | +674 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 52945 | 53534 | +589 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 77193 | 77710 | +517 |
-| AS34665 | PINDC-AS - Petersburg Internet Network ltd., RU | RU | `evidence_increased` | 1776 | 2260 | +484 |
-| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_decreased` | 1442 | 988 | -454 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 20420 | 20858 | +438 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | NL | `risk_level_changed` | 441 | 5 | -436 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 183845 | 183410 | -435 |
-| AS25299 | TRINITY-AS - Trinity Ltd, RU | RU | `risk_level_changed` | 10 | 445 | +435 |
-| AS13335 | CLOUDFLARENET - Cloudflare, Inc., US | US | `evidence_decreased` | 6382 | 5988 | -394 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 16706 | 17056 | +350 |
-| AS15169 | GOOGLE - Google LLC, US | US | `evidence_decreased` | 1519 | 1172 | -347 |
-| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_increased` | 1231 | 1570 | +339 |
-| AS402265 | MUTANET - Mutanet LLC, US | NL | `risk_level_changed` | 636 | 324 | -312 |
-| AS132768 | FIVENETWORK-AS-IN - Five network Broadband Solution Pvt Ltd, IN | IN | `evidence_increased` | 223 | 463 | +240 |
-| AS5713 | Telkom SA Ltd. - Telkom SA Ltd., ZA | ZA | `evidence_increased` | 229 | 467 | +238 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 9510 | 9287 | -223 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 59877 | 60100 | +223 |
-| AS35695 | FALCON-AS - F-NET sp. z o.o., PL | PL | `risk_level_changed` | 1 | 220 | +219 |
-| AS37457 | Telkom SA Ltd. - Telkom SA Ltd., ZA | ZA | `evidence_decreased` | 943 | 725 | -218 |
-| AS36903 | Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM, MA | MA | `evidence_increased` | 3396 | 3607 | +211 |
-| AS834 | IPXO - IPXO LLC, US | AE | `risk_level_changed` | 200 | 3 | -197 |
-| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | US | `evidence_increased` | 200 | 383 | +183 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_decreased` | 60100 | 53835 | -6265 |
+| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 21907 | 17947 | -3960 |
+| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_decreased` | 6280 | 4189 | -2091 |
+| AS197540 | netcup-AS - netcup GmbH, DE | DE | `evidence_decreased` | 6081 | 4130 | -1951 |
+| AS214996 | netcup - netcup GmbH, DE | DE | `evidence_decreased` | 1844 | 108 | -1736 |
+| AS135377 | UCLOUD-HK-AS-AP - UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED, HK | HK | `evidence_decreased` | 5201 | 3761 | -1440 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 183410 | 181977 | -1433 |
+| AS43420 | ELTRONIK-AS - Eltronik Sp. z o.o., PL | PL | `evidence_increased` | 37 | 1429 | +1392 |
+| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_decreased` | 35670 | 34673 | -997 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 141496 | 140513 | -983 |
+| AS197697 | PL-LUB-DERKOM-AS - Dariusz Klimczuk trading as DERKOM Sp. J., PL | PL | `risk_level_changed` | 1 | 929 | +928 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 77710 | 78557 | +847 |
+| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_decreased` | 37756 | 37039 | -717 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 17056 | 16492 | -564 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 84024 | 83545 | -479 |
+| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_increased` | 988 | 1438 | +450 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 43772 | 43357 | -415 |
+| AS55286 | SERVER-MANIA - B2 Net Solutions Inc., CA | US | `evidence_decreased` | 6267 | 5877 | -390 |
+| AS149089 | CLOUDFLY-VN - CLOUDFLY CORPORATION, VN | VN | `evidence_decreased` | 388 | 48 | -340 |
+| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_decreased` | 1570 | 1233 | -337 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 53534 | 53860 | +326 |
+| AS15169 | GOOGLE - Google LLC, US | US | `evidence_increased` | 1172 | 1496 | +324 |
+| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_decreased` | 5610 | 5295 | -315 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 9287 | 9586 | +299 |
+| AS5713 | Telkom SA Ltd. - Telkom SA Ltd., ZA | ZA | `evidence_decreased` | 467 | 229 | -238 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
