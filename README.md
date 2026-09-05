@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-04T09:04:57Z`_
+_Last dataset build: `2026-09-05T08:37:00Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-04T09:04:57Z`_
+_Last updated: `2026-09-05T08:37:00Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_decreased` | 60100 | 53835 | -6265 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 21907 | 17947 | -3960 |
-| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_decreased` | 6280 | 4189 | -2091 |
-| AS197540 | netcup-AS - netcup GmbH, DE | DE | `evidence_decreased` | 6081 | 4130 | -1951 |
-| AS214996 | netcup - netcup GmbH, DE | DE | `evidence_decreased` | 1844 | 108 | -1736 |
-| AS135377 | UCLOUD-HK-AS-AP - UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED, HK | HK | `evidence_decreased` | 5201 | 3761 | -1440 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 183410 | 181977 | -1433 |
-| AS43420 | ELTRONIK-AS - Eltronik Sp. z o.o., PL | PL | `evidence_increased` | 37 | 1429 | +1392 |
-| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_decreased` | 35670 | 34673 | -997 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 141496 | 140513 | -983 |
-| AS197697 | PL-LUB-DERKOM-AS - Dariusz Klimczuk trading as DERKOM Sp. J., PL | PL | `risk_level_changed` | 1 | 929 | +928 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 77710 | 78557 | +847 |
-| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_decreased` | 37756 | 37039 | -717 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 17056 | 16492 | -564 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 84024 | 83545 | -479 |
-| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_increased` | 988 | 1438 | +450 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 43772 | 43357 | -415 |
-| AS55286 | SERVER-MANIA - B2 Net Solutions Inc., CA | US | `evidence_decreased` | 6267 | 5877 | -390 |
-| AS149089 | CLOUDFLY-VN - CLOUDFLY CORPORATION, VN | VN | `evidence_decreased` | 388 | 48 | -340 |
-| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_decreased` | 1570 | 1233 | -337 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 53534 | 53860 | +326 |
-| AS15169 | GOOGLE - Google LLC, US | US | `evidence_increased` | 1172 | 1496 | +324 |
-| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_decreased` | 5610 | 5295 | -315 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 9287 | 9586 | +299 |
-| AS5713 | Telkom SA Ltd. - Telkom SA Ltd., ZA | ZA | `evidence_decreased` | 467 | 229 | -238 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 53835 | 60434 | +6599 |
+| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_increased` | 4189 | 6205 | +2016 |
+| AS197540 | netcup-AS - netcup GmbH, DE | DE | `evidence_increased` | 4130 | 6085 | +1955 |
+| AS214996 | netcup - netcup GmbH, DE | AT | `evidence_increased` | 108 | 1849 | +1741 |
+| AS135377 | UCLOUD-HK-AS-AP - UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED, HK | HK | `evidence_increased` | 3761 | 5195 | +1434 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 78557 | 79916 | +1359 |
+| AS34984 | TELLCOM-AS - Superonline Iletisim Hizmetleri A.S., TR | TR | `evidence_increased` | 1642 | 2875 | +1233 |
+| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_increased` | 34673 | 35853 | +1180 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 181977 | 182953 | +976 |
+| AS198401 | GECKONET-AS - Geckonet Sp. z o. o., PL | PL | `risk_level_changed` | 4 | 877 | +873 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 140513 | 141320 | +807 |
+| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_increased` | 37039 | 37730 | +691 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 53860 | 54506 | +646 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 440896 | 441481 | +585 |
+| AS6830 | LibertyGlobal - Liberty Global Europe Holding B.V., NL | IE | `evidence_decreased` | 660 | 209 | -451 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 5 | 443 | +438 |
+| AS55286 | SERVER-MANIA - B2 Net Solutions Inc., CA | US | `evidence_increased` | 5877 | 6279 | +402 |
+| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 5295 | 5613 | +318 |
+| AS401661 | EMBNEX-AS - EMBNEX, LLC, US | US | `risk_level_changed` | 13 | 261 | +248 |
+| AS135905 | VNPT-AS-VN - VIETNAM POSTS AND TELECOMMUNICATIONS GROUP, VN | VN | `evidence_decreased` | 5907 | 5669 | -238 |
+| AS210328 | ALMAZ - AO ALMAZ, RU | KZ | `evidence_increased` | 23 | 256 | +233 |
+| AS26599 | AS26599 - TELEFONICA BRASIL S.A, BR | BR | `evidence_increased` | 3374 | 3597 | +223 |
+| AS213388 | IIC-AS - IIC RAIL LIMITED, GB | RO | `evidence_increased` | 47 | 256 | +209 |
+| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_increased` | 165 | 373 | +208 |
+| AS9465 | AGOTOZPTELTD-AS-AP - AGOTOZ PTE. LTD., SG | SC | `evidence_increased` | 68 | 256 | +188 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
