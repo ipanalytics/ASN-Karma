@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-05T08:37:00Z`_
+_Last dataset build: `2026-09-06T08:56:58Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-05T08:37:00Z`_
+_Last updated: `2026-09-06T08:56:58Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 53835 | 60434 | +6599 |
-| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_increased` | 4189 | 6205 | +2016 |
-| AS197540 | netcup-AS - netcup GmbH, DE | DE | `evidence_increased` | 4130 | 6085 | +1955 |
-| AS214996 | netcup - netcup GmbH, DE | AT | `evidence_increased` | 108 | 1849 | +1741 |
-| AS135377 | UCLOUD-HK-AS-AP - UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED, HK | HK | `evidence_increased` | 3761 | 5195 | +1434 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 78557 | 79916 | +1359 |
-| AS34984 | TELLCOM-AS - Superonline Iletisim Hizmetleri A.S., TR | TR | `evidence_increased` | 1642 | 2875 | +1233 |
-| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_increased` | 34673 | 35853 | +1180 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 181977 | 182953 | +976 |
-| AS198401 | GECKONET-AS - Geckonet Sp. z o. o., PL | PL | `risk_level_changed` | 4 | 877 | +873 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 140513 | 141320 | +807 |
-| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_increased` | 37039 | 37730 | +691 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 53860 | 54506 | +646 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 440896 | 441481 | +585 |
-| AS6830 | LibertyGlobal - Liberty Global Europe Holding B.V., NL | IE | `evidence_decreased` | 660 | 209 | -451 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 5 | 443 | +438 |
-| AS55286 | SERVER-MANIA - B2 Net Solutions Inc., CA | US | `evidence_increased` | 5877 | 6279 | +402 |
-| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 5295 | 5613 | +318 |
-| AS401661 | EMBNEX-AS - EMBNEX, LLC, US | US | `risk_level_changed` | 13 | 261 | +248 |
-| AS135905 | VNPT-AS-VN - VIETNAM POSTS AND TELECOMMUNICATIONS GROUP, VN | VN | `evidence_decreased` | 5907 | 5669 | -238 |
-| AS210328 | ALMAZ - AO ALMAZ, RU | KZ | `evidence_increased` | 23 | 256 | +233 |
-| AS26599 | AS26599 - TELEFONICA BRASIL S.A, BR | BR | `evidence_increased` | 3374 | 3597 | +223 |
-| AS213388 | IIC-AS - IIC RAIL LIMITED, GB | RO | `evidence_increased` | 47 | 256 | +209 |
-| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_increased` | 165 | 373 | +208 |
-| AS9465 | AGOTOZPTELTD-AS-AP - AGOTOZ PTE. LTD., SG | SC | `evidence_increased` | 68 | 256 | +188 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 38143 | 30430 | -7713 |
+| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_increased` | 32293 | 34582 | +2289 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 141320 | 140054 | -1266 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 79916 | 81040 | +1124 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | NL | `risk_level_changed` | 443 | 5 | -438 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 3740 | 3320 | -420 |
+| AS198401 | GECKONET-AS - Geckonet Sp. z o. o., PL | PL | `evidence_decreased` | 877 | 488 | -389 |
+| AS20326 | TERASWITCH - TeraSwitch Networks Inc., US | GB | `evidence_decreased` | 2311 | 2049 | -262 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 54506 | 54757 | +251 |
+| AS135259 | SKYSIKAR-AS - SKYLINE INFONET PRIVATE LIMITED, IN | IN | `evidence_increased` | 36 | 283 | +247 |
+| AS213474 | HOMELINE-AS - HomeLine Broadband LLC, US | GB | `evidence_increased` | 33 | 269 | +236 |
+| AS210328 | ALMAZ - AO ALMAZ, RU | KZ | `evidence_decreased` | 256 | 21 | -235 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 83556 | 83322 | -234 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 43489 | 43261 | -228 |
+| AS213388 | IIC-AS - IIC RAIL LIMITED, GB | RO | `evidence_decreased` | 256 | 47 | -209 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_decreased` | 41652 | 41446 | -206 |
+| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 3986 | 4189 | +203 |
+| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_decreased` | 373 | 171 | -202 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 182953 | 182762 | -191 |
+| AS9465 | AGOTOZPTELTD-AS-AP - AGOTOZ PTE. LTD., SG | SC | `evidence_decreased` | 256 | 68 | -188 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 60434 | 60622 | +188 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 53661 | 53480 | -181 |
+| AS62904 | AS62904 - Eonix Corporation, US | US | `evidence_increased` | 2153 | 2333 | +180 |
+| AS402265 | MUTANET - Mutanet LLC, US | NL | `evidence_decreased` | 429 | 258 | -171 |
+| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_decreased` | 6205 | 6036 | -169 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
