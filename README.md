@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-06T08:56:58Z`_
+_Last dataset build: `2026-09-07T09:45:49Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-06T08:56:58Z`_
+_Last updated: `2026-09-07T09:45:49Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 38143 | 30430 | -7713 |
-| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_increased` | 32293 | 34582 | +2289 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 141320 | 140054 | -1266 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 79916 | 81040 | +1124 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | NL | `risk_level_changed` | 443 | 5 | -438 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 3740 | 3320 | -420 |
-| AS198401 | GECKONET-AS - Geckonet Sp. z o. o., PL | PL | `evidence_decreased` | 877 | 488 | -389 |
-| AS20326 | TERASWITCH - TeraSwitch Networks Inc., US | GB | `evidence_decreased` | 2311 | 2049 | -262 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 54506 | 54757 | +251 |
-| AS135259 | SKYSIKAR-AS - SKYLINE INFONET PRIVATE LIMITED, IN | IN | `evidence_increased` | 36 | 283 | +247 |
-| AS213474 | HOMELINE-AS - HomeLine Broadband LLC, US | GB | `evidence_increased` | 33 | 269 | +236 |
-| AS210328 | ALMAZ - AO ALMAZ, RU | KZ | `evidence_decreased` | 256 | 21 | -235 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 83556 | 83322 | -234 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 43489 | 43261 | -228 |
-| AS213388 | IIC-AS - IIC RAIL LIMITED, GB | RO | `evidence_decreased` | 256 | 47 | -209 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_decreased` | 41652 | 41446 | -206 |
-| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 3986 | 4189 | +203 |
-| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_decreased` | 373 | 171 | -202 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 182953 | 182762 | -191 |
-| AS9465 | AGOTOZPTELTD-AS-AP - AGOTOZ PTE. LTD., SG | SC | `evidence_decreased` | 256 | 68 | -188 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 60434 | 60622 | +188 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 53661 | 53480 | -181 |
-| AS62904 | AS62904 - Eonix Corporation, US | US | `evidence_increased` | 2153 | 2333 | +180 |
-| AS402265 | MUTANET - Mutanet LLC, US | NL | `evidence_decreased` | 429 | 258 | -171 |
-| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_decreased` | 6205 | 6036 | -169 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 81040 | 86121 | +5081 |
+| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_decreased` | 34582 | 32379 | -2203 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 182762 | 184536 | +1774 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 106638 | 107741 | +1103 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 441474 | 442262 | +788 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 9345 | 9965 | +620 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 3320 | 3900 | +580 |
+| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_increased` | 30361 | 30935 | +574 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 41446 | 42012 | +566 |
+| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_increased` | 5643 | 6181 | +538 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 18820 | 19285 | +465 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 140054 | 140486 | +432 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 20807 | 21195 | +388 |
+| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_increased` | 2478 | 2866 | +388 |
+| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 5510 | 5878 | +368 |
+| AS6789 | CRELCOM-NET - CRELCOM LLC, RU | RU | `evidence_increased` | 4111 | 4474 | +363 |
+| AS31520 | Datagroup-Retail - PRIVATE JOINT STOCK COMPANY _DATAGROUP_, UA | UA | `evidence_decreased` | 477 | 144 | -333 |
+| AS62874 | WEB2OBJECTS - Web2Objects LLC, US | US | `evidence_increased` | 793 | 1110 | +317 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 54757 | 55014 | +257 |
+| AS701 | UUNET - Verizon Business, US | US | `evidence_increased` | 3790 | 4045 | +255 |
+| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_increased` | 5678 | 5933 | +255 |
+| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 13115 | 13352 | +237 |
+| AS36903 | Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM, MA | MA | `evidence_increased` | 3567 | 3804 | +237 |
+| AS7713 | telkomnet-as-ap - PT Telekomunikasi Indonesia, ID | ID | `evidence_increased` | 7878 | 8114 | +236 |
+| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_increased` | 6320 | 6551 | +231 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
