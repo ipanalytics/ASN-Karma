@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-07T09:45:49Z`_
+_Last dataset build: `2026-09-08T09:07:09Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-07T09:45:49Z`_
+_Last updated: `2026-09-08T09:07:09Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 81040 | 86121 | +5081 |
-| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_decreased` | 34582 | 32379 | -2203 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 182762 | 184536 | +1774 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 106638 | 107741 | +1103 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 441474 | 442262 | +788 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 9345 | 9965 | +620 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 3320 | 3900 | +580 |
-| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_increased` | 30361 | 30935 | +574 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 41446 | 42012 | +566 |
-| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_increased` | 5643 | 6181 | +538 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 18820 | 19285 | +465 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 140054 | 140486 | +432 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 20807 | 21195 | +388 |
-| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_increased` | 2478 | 2866 | +388 |
-| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 5510 | 5878 | +368 |
-| AS6789 | CRELCOM-NET - CRELCOM LLC, RU | RU | `evidence_increased` | 4111 | 4474 | +363 |
-| AS31520 | Datagroup-Retail - PRIVATE JOINT STOCK COMPANY _DATAGROUP_, UA | UA | `evidence_decreased` | 477 | 144 | -333 |
-| AS62874 | WEB2OBJECTS - Web2Objects LLC, US | US | `evidence_increased` | 793 | 1110 | +317 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 54757 | 55014 | +257 |
-| AS701 | UUNET - Verizon Business, US | US | `evidence_increased` | 3790 | 4045 | +255 |
-| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_increased` | 5678 | 5933 | +255 |
-| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 13115 | 13352 | +237 |
-| AS36903 | Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM, MA | MA | `evidence_increased` | 3567 | 3804 | +237 |
-| AS7713 | telkomnet-as-ap - PT Telekomunikasi Indonesia, ID | ID | `evidence_increased` | 7878 | 8114 | +236 |
-| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_increased` | 6320 | 6551 | +231 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 86121 | 88803 | +2682 |
+| AS9829 | BSNL-NIB - National Internet Backbone, IN | IN | `evidence_decreased` | 27128 | 24979 | -2149 |
+| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_increased` | 30935 | 31903 | +968 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 140486 | 141213 | +727 |
+| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_increased` | 6181 | 6904 | +723 |
+| AS8151 | AS8151 - UNINET, MX | MX | `evidence_increased` | 11897 | 12607 | +710 |
+| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_increased` | 6263 | 6852 | +589 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 7799 | 8330 | +531 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 184536 | 185048 | +512 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 442262 | 442698 | +436 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 83346 | 83781 | +435 |
+| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_increased` | 6672 | 7105 | +433 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 43412 | 43831 | +419 |
+| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_increased` | 2866 | 3278 | +412 |
+| AS6057 | AS6057 - Administracion Nacional de Telecomunicaciones, UY | UY | `evidence_increased` | 2191 | 2578 | +387 |
+| AS396356 | LATITUDE-SH - Latitude.sh, US | US | `evidence_decreased` | 7095 | 6712 | -383 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 21195 | 21562 | +367 |
+| AS26599 | AS26599 - TELEFONICA BRASIL S.A, BR | BR | `evidence_increased` | 3632 | 3955 | +323 |
+| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 5878 | 6192 | +314 |
+| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_decreased` | 32379 | 32071 | -308 |
+| AS7418 | AS7418 - TELEFONICA CHILE S.A., CL | CL | `evidence_increased` | 1289 | 1581 | +292 |
+| AS36903 | Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM, MA | MA | `evidence_increased` | 3804 | 4081 | +277 |
+| AS25019 | SAUDINETSTC-AS - Saudi Telecom Company JSC, SA | SA | `evidence_increased` | 1855 | 2129 | +274 |
+| AS3816 | AS3816 - COLOMBIA TELECOMUNICACIONES S.A. ESP BIC, CO | CO | `evidence_increased` | 1607 | 1875 | +268 |
+| AS64080 | SYN-UK - SYN LTD, GB | GB | `evidence_decreased` | 2490 | 2225 | -265 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
