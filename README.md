@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-08T09:07:09Z`_
+_Last dataset build: `2026-09-09T09:12:52Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-08T09:07:09Z`_
+_Last updated: `2026-09-09T09:12:52Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 86121 | 88803 | +2682 |
-| AS9829 | BSNL-NIB - National Internet Backbone, IN | IN | `evidence_decreased` | 27128 | 24979 | -2149 |
-| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_increased` | 30935 | 31903 | +968 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 140486 | 141213 | +727 |
-| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_increased` | 6181 | 6904 | +723 |
-| AS8151 | AS8151 - UNINET, MX | MX | `evidence_increased` | 11897 | 12607 | +710 |
-| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_increased` | 6263 | 6852 | +589 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 7799 | 8330 | +531 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 184536 | 185048 | +512 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 442262 | 442698 | +436 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 83346 | 83781 | +435 |
-| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_increased` | 6672 | 7105 | +433 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 43412 | 43831 | +419 |
-| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_increased` | 2866 | 3278 | +412 |
-| AS6057 | AS6057 - Administracion Nacional de Telecomunicaciones, UY | UY | `evidence_increased` | 2191 | 2578 | +387 |
-| AS396356 | LATITUDE-SH - Latitude.sh, US | US | `evidence_decreased` | 7095 | 6712 | -383 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 21195 | 21562 | +367 |
-| AS26599 | AS26599 - TELEFONICA BRASIL S.A, BR | BR | `evidence_increased` | 3632 | 3955 | +323 |
-| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 5878 | 6192 | +314 |
-| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_decreased` | 32379 | 32071 | -308 |
-| AS7418 | AS7418 - TELEFONICA CHILE S.A., CL | CL | `evidence_increased` | 1289 | 1581 | +292 |
-| AS36903 | Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM, MA | MA | `evidence_increased` | 3804 | 4081 | +277 |
-| AS25019 | SAUDINETSTC-AS - Saudi Telecom Company JSC, SA | SA | `evidence_increased` | 1855 | 2129 | +274 |
-| AS3816 | AS3816 - COLOMBIA TELECOMUNICACIONES S.A. ESP BIC, CO | CO | `evidence_increased` | 1607 | 1875 | +268 |
-| AS64080 | SYN-UK - SYN LTD, GB | GB | `evidence_decreased` | 2490 | 2225 | -265 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 55022 | 21572 | -33450 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 30508 | 6394 | -24114 |
+| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 17977 | 6623 | -11354 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 13181 | 5203 | -7978 |
+| AS8881 | VERSATEL - 1&1 Versatel GmbH, DE | DE | `evidence_decreased` | 7520 | 844 | -6676 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_decreased` | 8815 | 2367 | -6448 |
+| AS1299 | TWELVE99 - Arelion Sweden AB, SE | SE | `evidence_decreased` | 6699 | 423 | -6276 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 442698 | 446945 | +4247 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 7825 | 4013 | -3812 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 141213 | 137403 | -3810 |
+| AS3491 | PCCWG-APAC-HK - PCCW Global (HK) Ltd., HK | GB | `evidence_decreased` | 11501 | 8123 | -3378 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 88803 | 92033 | +3230 |
+| AS9829 | BSNL-NIB - National Internet Backbone, IN | IN | `evidence_increased` | 24979 | 26928 | +1949 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_decreased` | 14562 | 13029 | -1533 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 9873 | 11252 | +1379 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 185048 | 183816 | -1232 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 83781 | 82681 | -1100 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 107903 | 108780 | +877 |
+| AS271951 | AS271951 - 4 EVER PLUG,C.A., VE | US | `evidence_decreased` | 924 | 78 | -846 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 3952 | 4666 | +714 |
+| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_increased` | 3278 | 3923 | +645 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 21562 | 22196 | +634 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 9041 | 8414 | -627 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 23449 | 24037 | +588 |
+| AS211301 | UNESTY - Collin Schneeweiss trading as Unesty Company, DE | AE | `evidence_increased` | 32 | 587 | +555 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
