@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-09T09:12:52Z`_
+_Last dataset build: `2026-09-10T09:12:01Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-09T09:12:52Z`_
+_Last updated: `2026-09-10T09:12:01Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 55022 | 21572 | -33450 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 30508 | 6394 | -24114 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 17977 | 6623 | -11354 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 13181 | 5203 | -7978 |
-| AS8881 | VERSATEL - 1&1 Versatel GmbH, DE | DE | `evidence_decreased` | 7520 | 844 | -6676 |
-| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_decreased` | 8815 | 2367 | -6448 |
-| AS1299 | TWELVE99 - Arelion Sweden AB, SE | SE | `evidence_decreased` | 6699 | 423 | -6276 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 442698 | 446945 | +4247 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 7825 | 4013 | -3812 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 141213 | 137403 | -3810 |
-| AS3491 | PCCWG-APAC-HK - PCCW Global (HK) Ltd., HK | GB | `evidence_decreased` | 11501 | 8123 | -3378 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 88803 | 92033 | +3230 |
-| AS9829 | BSNL-NIB - National Internet Backbone, IN | IN | `evidence_increased` | 24979 | 26928 | +1949 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_decreased` | 14562 | 13029 | -1533 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 9873 | 11252 | +1379 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 185048 | 183816 | -1232 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 83781 | 82681 | -1100 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 107903 | 108780 | +877 |
-| AS271951 | AS271951 - 4 EVER PLUG,C.A., VE | US | `evidence_decreased` | 924 | 78 | -846 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 3952 | 4666 | +714 |
-| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_increased` | 3278 | 3923 | +645 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 21562 | 22196 | +634 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 9041 | 8414 | -627 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 23449 | 24037 | +588 |
-| AS211301 | UNESTY - Collin Schneeweiss trading as Unesty Company, DE | AE | `evidence_increased` | 32 | 587 | +555 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 446945 | 448627 | +1682 |
+| AS198525 | CLIMAX-AS - ClimaxNET sp. z o.o., PL | PL | `new_asn` | 0 | 1360 | +1360 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 183816 | 182528 | -1288 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 137403 | 136320 | -1083 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 92033 | 93033 | +1000 |
+| AS135905 | VNPT-AS-VN - VIETNAM POSTS AND TELECOMMUNICATIONS GROUP, VN | VN | `evidence_increased` | 5692 | 6490 | +798 |
+| AS47516 | DEHOST - DEHOST INTERNET VE BILISIM TEKNOLOJILERI SANAYI TICARET LIMITED SIRKETI, TR | US | `evidence_increased` | 567 | 1263 | +696 |
+| AS211301 | UNESTY - Collin Schneeweiss trading as Unesty Company, DE | AE | `risk_level_changed` | 587 | 1280 | +693 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 11252 | 11651 | +399 |
+| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_decreased` | 7067 | 6724 | -343 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 21572 | 21865 | +293 |
+| AS398113 | GATEWAY-FIBER - Gateway Fiber LLC, US | US | `risk_level_changed` | 16 | 302 | +286 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4013 | 4270 | +257 |
+| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_decreased` | 3582 | 3331 | -251 |
+| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_decreased` | 6247 | 6002 | -245 |
+| AS218785 | TC-DATACENTER - TC DATACENTER LIMITED, HK | BG | `risk_level_changed` | 13 | 256 | +243 |
+| AS51396 | PFCLOUD - Pfcloud UG (haftungsbeschrankt), DE | DE | `evidence_increased` | 588 | 826 | +238 |
+| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_decreased` | 492 | 255 | -237 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 162697 | 162489 | -208 |
+| AS9304 | HUTCHISON-AS-AP - HGC Global Communications Limited, HK | HK | `evidence_increased` | 1816 | 2017 | +201 |
+| AS34984 | TELLCOM-AS - Superonline Iletisim Hizmetleri A.S., TR | TR | `evidence_increased` | 3055 | 3250 | +195 |
+| AS199929 | emircanapak-hostvera - Emircan Apak, TR | TR | `evidence_increased` | 50 | 243 | +193 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82681 | 82872 | +191 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 108780 | 108963 | +183 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 61251 | 61427 | +176 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
