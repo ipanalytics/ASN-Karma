@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-10T09:12:01Z`_
+_Last dataset build: `2026-09-11T09:09:54Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-10T09:12:01Z`_
+_Last updated: `2026-09-11T09:09:54Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 446945 | 448627 | +1682 |
-| AS198525 | CLIMAX-AS - ClimaxNET sp. z o.o., PL | PL | `new_asn` | 0 | 1360 | +1360 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 183816 | 182528 | -1288 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 137403 | 136320 | -1083 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 92033 | 93033 | +1000 |
-| AS135905 | VNPT-AS-VN - VIETNAM POSTS AND TELECOMMUNICATIONS GROUP, VN | VN | `evidence_increased` | 5692 | 6490 | +798 |
-| AS47516 | DEHOST - DEHOST INTERNET VE BILISIM TEKNOLOJILERI SANAYI TICARET LIMITED SIRKETI, TR | US | `evidence_increased` | 567 | 1263 | +696 |
-| AS211301 | UNESTY - Collin Schneeweiss trading as Unesty Company, DE | AE | `risk_level_changed` | 587 | 1280 | +693 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 11252 | 11651 | +399 |
-| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_decreased` | 7067 | 6724 | -343 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 21572 | 21865 | +293 |
-| AS398113 | GATEWAY-FIBER - Gateway Fiber LLC, US | US | `risk_level_changed` | 16 | 302 | +286 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4013 | 4270 | +257 |
-| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_decreased` | 3582 | 3331 | -251 |
-| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_decreased` | 6247 | 6002 | -245 |
-| AS218785 | TC-DATACENTER - TC DATACENTER LIMITED, HK | BG | `risk_level_changed` | 13 | 256 | +243 |
-| AS51396 | PFCLOUD - Pfcloud UG (haftungsbeschrankt), DE | DE | `evidence_increased` | 588 | 826 | +238 |
-| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_decreased` | 492 | 255 | -237 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 162697 | 162489 | -208 |
-| AS9304 | HUTCHISON-AS-AP - HGC Global Communications Limited, HK | HK | `evidence_increased` | 1816 | 2017 | +201 |
-| AS34984 | TELLCOM-AS - Superonline Iletisim Hizmetleri A.S., TR | TR | `evidence_increased` | 3055 | 3250 | +195 |
-| AS199929 | emircanapak-hostvera - Emircan Apak, TR | TR | `evidence_increased` | 50 | 243 | +193 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82681 | 82872 | +191 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 108780 | 108963 | +183 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 61251 | 61427 | +176 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 182528 | 177177 | -5351 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 448627 | 452866 | +4239 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 93033 | 95476 | +2443 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 11651 | 13851 | +2200 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 136320 | 138159 | +1839 |
+| AS13335 | CLOUDFLARENET - Cloudflare, Inc., US | US | `evidence_increased` | 5818 | 6830 | +1012 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82872 | 83802 | +930 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 21865 | 21058 | -807 |
+| AS701 | UUNET - Verizon Business, US | US | `evidence_increased` | 4682 | 5435 | +753 |
+| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_decreased` | 6724 | 6043 | -681 |
+| AS8053 | AS8053 - IFX Networks Venezuela C.A., VE | VE | `evidence_decreased` | 723 | 134 | -589 |
+| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 6633 | 7115 | +482 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 108963 | 109439 | +476 |
+| AS7018 | ATT-INTERNET4 - AT&T Enterprises, LLC, US | US | `evidence_increased` | 4708 | 5155 | +447 |
+| AS397006 | MULLCLOUD - Mullcloud LLC, US | CO | `risk_level_changed` | 2 | 441 | +439 |
+| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_increased` | 4003 | 4441 | +438 |
+| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_increased` | 4583 | 5009 | +426 |
+| AS8151 | AS8151 - UNINET, MX | MX | `evidence_increased` | 13071 | 13476 | +405 |
+| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_increased` | 7291 | 7696 | +405 |
+| AS5089 | NTL - Virgin Media Limited, GB | GB | `evidence_increased` | 2062 | 2459 | +397 |
+| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_decreased` | 6002 | 5627 | -375 |
+| AS199739 | Earthlink-DMCC-IQ - Earthlink Telecommunications Equipment Trading & Services DMCC, AE | AE | `evidence_decreased` | 1034 | 702 | -332 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 43447 | 43765 | +318 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 17018 | 16703 | -315 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 13035 | 13340 | +305 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
