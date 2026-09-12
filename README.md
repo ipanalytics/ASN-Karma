@@ -21,7 +21,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-11T09:09:54Z`_
+_Last dataset build: `2026-09-12T08:51:27Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -207,35 +207,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-11T09:09:54Z`_
+_Last updated: `2026-09-12T08:51:27Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 182528 | 177177 | -5351 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 448627 | 452866 | +4239 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 93033 | 95476 | +2443 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 11651 | 13851 | +2200 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 136320 | 138159 | +1839 |
-| AS13335 | CLOUDFLARENET - Cloudflare, Inc., US | US | `evidence_increased` | 5818 | 6830 | +1012 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82872 | 83802 | +930 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 21865 | 21058 | -807 |
-| AS701 | UUNET - Verizon Business, US | US | `evidence_increased` | 4682 | 5435 | +753 |
-| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_decreased` | 6724 | 6043 | -681 |
-| AS8053 | AS8053 - IFX Networks Venezuela C.A., VE | VE | `evidence_decreased` | 723 | 134 | -589 |
-| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 6633 | 7115 | +482 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 108963 | 109439 | +476 |
-| AS7018 | ATT-INTERNET4 - AT&T Enterprises, LLC, US | US | `evidence_increased` | 4708 | 5155 | +447 |
-| AS397006 | MULLCLOUD - Mullcloud LLC, US | CO | `risk_level_changed` | 2 | 441 | +439 |
-| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_increased` | 4003 | 4441 | +438 |
-| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_increased` | 4583 | 5009 | +426 |
-| AS8151 | AS8151 - UNINET, MX | MX | `evidence_increased` | 13071 | 13476 | +405 |
-| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_increased` | 7291 | 7696 | +405 |
-| AS5089 | NTL - Virgin Media Limited, GB | GB | `evidence_increased` | 2062 | 2459 | +397 |
-| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_decreased` | 6002 | 5627 | -375 |
-| AS199739 | Earthlink-DMCC-IQ - Earthlink Telecommunications Equipment Trading & Services DMCC, AE | AE | `evidence_decreased` | 1034 | 702 | -332 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 43447 | 43765 | +318 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 17018 | 16703 | -315 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 13035 | 13340 | +305 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 138159 | 154808 | +16649 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 83802 | 88417 | +4615 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_decreased` | 61588 | 57308 | -4280 |
+| AS12322 | PROXAD - Free SAS, FR | FR | `evidence_decreased` | 6483 | 3166 | -3317 |
+| AS39435 | EVOLGOGRAD-AS - JSC _ER-Telecom Holding_, RU | RU | `evidence_increased` | 110 | 2141 | +2031 |
+| AS10474 | Dimension Data - Dimension Data, ZA | ZA | `evidence_decreased` | 2926 | 1531 | -1395 |
+| AS328029 | Web Telecom Services (PTY) Ltd - Web Telecom Services (PTY) Ltd, ZA | ZA | `evidence_decreased` | 947 | 37 | -910 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 95476 | 96243 | +767 |
+| AS21928 | T-MOBILE-AS21928 - T-Mobile USA, Inc., US | US | `evidence_decreased` | 1590 | 838 | -752 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 452866 | 453580 | +714 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 177177 | 176468 | -709 |
+| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_decreased` | 11367 | 10801 | -566 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4454 | 5012 | +558 |
+| AS19527 | GOOGLE-2 - Google LLC, US | US | `evidence_increased` | 363 | 905 | +542 |
+| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_decreased` | 1267 | 728 | -539 |
+| AS271942 | AS271942 - CV HOTSPOT, S.R.L., DO | US | `risk_level_changed` | 4 | 516 | +512 |
+| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_decreased` | 22143 | 21637 | -506 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | NL | `risk_level_changed` | 445 | 4 | -441 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 13851 | 14287 | +436 |
+| AS51396 | PFCLOUD - Pfcloud UG (haftungsbeschrankt), DE | DE | `evidence_decreased` | 1049 | 636 | -413 |
+| AS54936 | WGL-107-ZONA-WYYERD - Wyyerd Group, US | US | `evidence_increased` | 60 | 444 | +384 |
+| AS17816 | CHINA169-GZ - China Unicom IP network China169 Guangdong province, CN | CN | `evidence_increased` | 2844 | 3174 | +330 |
+| AS5410 | BOUYGTEL-ISP - Bouygues Telecom SA, FR | FR | `evidence_decreased` | 1259 | 947 | -312 |
+| AS4812 | CHINANET-SH-AP - China Telecom (Group), CN | CN | `evidence_increased` | 3290 | 3597 | +307 |
+| AS398113 | GATEWAY-FIBER - Gateway Fiber LLC, US | US | `risk_level_changed` | 17 | 303 | +286 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
