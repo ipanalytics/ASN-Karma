@@ -1,5 +1,7 @@
 # ASN Karma
 
+_Русская версия: [README.ru.md](README.ru.md)_
+
 ASN Karma is a Go pipeline for building ASN-level risk datasets from observed BlackRoute evidence. It aggregates hostile IP/CIDR records by autonomous system, scores abuse exposure with an auditable rule set, and emits release artifacts for security analytics, fraud/risk enrichment, traffic policy, and network operations.
 
 <p align="center">
