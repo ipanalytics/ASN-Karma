@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-12T08:51:27Z`_
+_Last dataset build: `2026-09-13T09:45:15Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-12T08:51:27Z`_
+_Last updated: `2026-09-13T09:45:15Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 138159 | 154808 | +16649 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 83802 | 88417 | +4615 |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_decreased` | 61588 | 57308 | -4280 |
-| AS12322 | PROXAD - Free SAS, FR | FR | `evidence_decreased` | 6483 | 3166 | -3317 |
-| AS39435 | EVOLGOGRAD-AS - JSC _ER-Telecom Holding_, RU | RU | `evidence_increased` | 110 | 2141 | +2031 |
-| AS10474 | Dimension Data - Dimension Data, ZA | ZA | `evidence_decreased` | 2926 | 1531 | -1395 |
-| AS328029 | Web Telecom Services (PTY) Ltd - Web Telecom Services (PTY) Ltd, ZA | ZA | `evidence_decreased` | 947 | 37 | -910 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 95476 | 96243 | +767 |
-| AS21928 | T-MOBILE-AS21928 - T-Mobile USA, Inc., US | US | `evidence_decreased` | 1590 | 838 | -752 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 452866 | 453580 | +714 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 177177 | 176468 | -709 |
-| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_decreased` | 11367 | 10801 | -566 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4454 | 5012 | +558 |
-| AS19527 | GOOGLE-2 - Google LLC, US | US | `evidence_increased` | 363 | 905 | +542 |
-| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_decreased` | 1267 | 728 | -539 |
-| AS271942 | AS271942 - CV HOTSPOT, S.R.L., DO | US | `risk_level_changed` | 4 | 516 | +512 |
-| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_decreased` | 22143 | 21637 | -506 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | NL | `risk_level_changed` | 445 | 4 | -441 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 13851 | 14287 | +436 |
-| AS51396 | PFCLOUD - Pfcloud UG (haftungsbeschrankt), DE | DE | `evidence_decreased` | 1049 | 636 | -413 |
-| AS54936 | WGL-107-ZONA-WYYERD - Wyyerd Group, US | US | `evidence_increased` | 60 | 444 | +384 |
-| AS17816 | CHINA169-GZ - China Unicom IP network China169 Guangdong province, CN | CN | `evidence_increased` | 2844 | 3174 | +330 |
-| AS5410 | BOUYGTEL-ISP - Bouygues Telecom SA, FR | FR | `evidence_decreased` | 1259 | 947 | -312 |
-| AS4812 | CHINANET-SH-AP - China Telecom (Group), CN | CN | `evidence_increased` | 3290 | 3597 | +307 |
-| AS398113 | GATEWAY-FIBER - Gateway Fiber LLC, US | US | `risk_level_changed` | 17 | 303 | +286 |
+| AS55286 | SERVER-MANIA - B2 Net Solutions Inc., CA | CA | `evidence_decreased` | 6124 | 1687 | -4437 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 154808 | 156535 | +1727 |
+| AS26599 | AS26599 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 4092 | 2825 | -1267 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 96243 | 97429 | +1186 |
+| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_decreased` | 7690 | 6865 | -825 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 88417 | 89173 | +756 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 176468 | 175829 | -639 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 14287 | 14883 | +596 |
+| AS18881 | AS18881 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 3265 | 2695 | -570 |
+| AS26548 | PUREVOLTAGE-INC - PureVoltage Hosting Inc., US | US | `evidence_decreased` | 9306 | 8736 | -570 |
+| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_increased` | 728 | 1272 | +544 |
+| AS19527 | GOOGLE-2 - Google LLC, US | US | `evidence_decreased` | 905 | 364 | -541 |
+| AS13999 | AS13999 - Mega Cable, S.A. de C.V., MX | MX | `evidence_decreased` | 2018 | 1519 | -499 |
+| AS37577 | Orange Burkina Faso - Orange Burkina Faso, BF | US | `evidence_increased` | 274 | 711 | +437 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5012 | 4608 | -404 |
+| AS27699 | AS27699 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 4331 | 3944 | -387 |
+| AS46475 | LIMESTONENETWORKS - Limestone Networks, Inc., US | US | `evidence_increased` | 2611 | 2967 | +356 |
+| AS7713 | telkomnet-as-ap - PT Telekomunikasi Indonesia, ID | ID | `evidence_decreased` | 8974 | 8642 | -332 |
+| AS23201 | AS23201 - Telecel S.A., PY | PY | `evidence_decreased` | 1001 | 683 | -318 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 43870 | 44155 | +285 |
+| AS211607 | RECORDEDFUTURE - Securitytrails, LLC, US | US | `evidence_increased` | 22 | 266 | +244 |
+| AS13489 | AS13489 - UNE EPM TELECOMUNICACIONES S.A., CO | CO | `evidence_decreased` | 2257 | 2018 | -239 |
+| AS202425 | INT-NETWORK - IP Volume inc, SC | NL | `evidence_decreased` | 1157 | 928 | -229 |
+| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_increased` | 7762 | 7981 | +219 |
+| AS26615 | AS26615 - TIM S/A, BR | BR | `evidence_decreased` | 885 | 667 | -218 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
