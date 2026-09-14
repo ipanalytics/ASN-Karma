@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-13T09:45:15Z`_
+_Last dataset build: `2026-09-14T10:08:09Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-13T09:45:15Z`_
+_Last updated: `2026-09-14T10:08:09Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS55286 | SERVER-MANIA - B2 Net Solutions Inc., CA | CA | `evidence_decreased` | 6124 | 1687 | -4437 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 154808 | 156535 | +1727 |
-| AS26599 | AS26599 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 4092 | 2825 | -1267 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 96243 | 97429 | +1186 |
-| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_decreased` | 7690 | 6865 | -825 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 88417 | 89173 | +756 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 176468 | 175829 | -639 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 14287 | 14883 | +596 |
-| AS18881 | AS18881 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 3265 | 2695 | -570 |
-| AS26548 | PUREVOLTAGE-INC - PureVoltage Hosting Inc., US | US | `evidence_decreased` | 9306 | 8736 | -570 |
-| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_increased` | 728 | 1272 | +544 |
-| AS19527 | GOOGLE-2 - Google LLC, US | US | `evidence_decreased` | 905 | 364 | -541 |
-| AS13999 | AS13999 - Mega Cable, S.A. de C.V., MX | MX | `evidence_decreased` | 2018 | 1519 | -499 |
-| AS37577 | Orange Burkina Faso - Orange Burkina Faso, BF | US | `evidence_increased` | 274 | 711 | +437 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5012 | 4608 | -404 |
-| AS27699 | AS27699 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 4331 | 3944 | -387 |
-| AS46475 | LIMESTONENETWORKS - Limestone Networks, Inc., US | US | `evidence_increased` | 2611 | 2967 | +356 |
-| AS7713 | telkomnet-as-ap - PT Telekomunikasi Indonesia, ID | ID | `evidence_decreased` | 8974 | 8642 | -332 |
-| AS23201 | AS23201 - Telecel S.A., PY | PY | `evidence_decreased` | 1001 | 683 | -318 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 43870 | 44155 | +285 |
-| AS211607 | RECORDEDFUTURE - Securitytrails, LLC, US | US | `evidence_increased` | 22 | 266 | +244 |
-| AS13489 | AS13489 - UNE EPM TELECOMUNICACIONES S.A., CO | CO | `evidence_decreased` | 2257 | 2018 | -239 |
-| AS202425 | INT-NETWORK - IP Volume inc, SC | NL | `evidence_decreased` | 1157 | 928 | -229 |
-| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_increased` | 7762 | 7981 | +219 |
-| AS26615 | AS26615 - TIM S/A, BR | BR | `evidence_decreased` | 885 | 667 | -218 |
+| AS43764 | SEVLUSH-AS - LLC _Electron-sevlush_, UA | UA | `risk_level_changed` | 1957 | 23 | -1934 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 156535 | 155106 | -1429 |
+| AS6461 | ZAYO-6461 - Zayo Bandwidth, US | GB | `evidence_decreased` | 2827 | 1457 | -1370 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 453502 | 454771 | +1269 |
+| AS29190 | OVERTA-AS - MTS PJSC, RU | RU | `evidence_decreased` | 1089 | 72 | -1017 |
+| AS397423 | TIER-NET - Tier.Net Technologies LLC, US | US | `evidence_decreased` | 2440 | 1550 | -890 |
+| AS35816 | SEVSTAR - Lancom Ltd., RU | RU | `evidence_decreased` | 6299 | 5472 | -827 |
+| AS50174 | INTEXCOM-AS - Intexcom OOO, RU | RU | `evidence_decreased` | 933 | 130 | -803 |
+| AS56971 | AS56971 - CGI GLOBAL LIMITED, HK | CZ | `evidence_decreased` | 2118 | 1374 | -744 |
+| AS213702 | QWINS-LTD - QWINS LTD, GB | CY | `evidence_decreased` | 841 | 260 | -581 |
+| AS28753 | LEASEWEB-DE-FRA-10 - Leaseweb Deutschland GmbH, DE | DE | `evidence_decreased` | 1940 | 1397 | -543 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4608 | 5119 | +511 |
+| AS218731 | Andris-Jakovlevs - Andris Jakovlevs, LV | CY | `new_asn` | 0 | 474 | +474 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 175829 | 176300 | +471 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 24389 | 23918 | -471 |
+| AS12406 | BN-AS - Business Network Ltd, BY | BY | `evidence_decreased` | 2155 | 1711 | -444 |
+| AS205544 | LEASEWEB-UK-LON-11 - Leaseweb UK Limited, GB | GB | `evidence_decreased` | 598 | 199 | -399 |
+| AS47397 | BASE-AS - Base Ltd., RU | RU | `risk_level_changed` | 669 | 297 | -372 |
+| AS47583 | AS-HOSTINGER - Hostinger International Limited, CY | DE | `evidence_decreased` | 3980 | 3638 | -342 |
+| AS50581 | UTG - Ukrainian Telecommunication Group LLC, UA | UA | `evidence_decreased` | 545 | 233 | -312 |
+| AS215439 | PLAY2GO-NET - PLAY2GO INTERNATIONAL LIMITED, GB | US | `evidence_decreased` | 2606 | 2295 | -311 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 97429 | 97730 | +301 |
+| AS64267 | AS-SPRIOUS - Sprious LLC, US | US | `evidence_decreased` | 1180 | 886 | -294 |
+| AS11798 | ACEDATACENTERS-AS-1 - Ace Data Centers, Inc., US | US | `evidence_decreased` | 1392 | 1105 | -287 |
+| AS51167 | CONTABO - Contabo GmbH, DE | DE | `evidence_decreased` | 17079 | 16801 | -278 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
