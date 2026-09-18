@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-17T09:39:59Z`_
+_Last dataset build: `2026-09-18T09:13:40Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-17T09:39:59Z`_
+_Last updated: `2026-09-18T09:13:40Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS327991 | Megasurf Wireless Internet CC - Megasurf Wireless Internet CC, ZA | ZA | `evidence_increased` | 816 | 6788 | +5972 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 149940 | 154712 | +4772 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 44548 | 46099 | +1551 |
-| AS56812 | ASZARKO - CHP Zarko Alexandr Ivanovich, UA | UA | `evidence_increased` | 644 | 2108 | +1464 |
-| AS262417 | AS262417 - UltraTelecom Provedora de Internet, BR | BR | `evidence_increased` | 278 | 1726 | +1448 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 110502 | 111780 | +1278 |
-| AS52490 | AS52490 - COOPERATIVA DE ELECTRICIDAD DE PEDRO LURO, AR | AR | `evidence_increased` | 348 | 1550 | +1202 |
-| AS27947 | AS27947 - Telconet S.A, EC | EC | `evidence_increased` | 927 | 1735 | +808 |
-| AS8048 | AS8048 - CANTV Servicios, Venezuela, VE | VE | `evidence_decreased` | 5160 | 4490 | -670 |
-| AS197218 | ASLANPRO - PP Dmutrashko Evgeny Vitalievich, UA | UA | `evidence_increased` | 349 | 911 | +562 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 55521 | 56078 | +557 |
-| AS3255 | UARNET-AS - LLC EKSINTECH, UA | UA | `evidence_increased` | 827 | 1346 | +519 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 6552 | 7051 | +499 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5292 | 4796 | -496 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 16932 | 16455 | -477 |
-| AS49289 | Media-Veneto - Omegacom S.R.L.S., IT | IT | `risk_level_changed` | 711 | 1178 | +467 |
-| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_decreased` | 4715 | 4256 | -459 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 3 | 446 | +443 |
-| AS265879 | AS265879 - COOPERATIVA DE OBRAS Y SERVICIOS PUBLICOS DE CANALS LIMITADA, AR | AR | `risk_level_changed` | 182 | 571 | +389 |
-| AS18779 | EGIHOSTING - EGIHosting, US | US | `evidence_increased` | 5984 | 6367 | +383 |
-| AS263230 | AS263230 - COOPERATIVAS DE CALAMUCHITA - CONSORCIO DE COOPERACION, AR | AR | `evidence_increased` | 226 | 601 | +375 |
-| AS28202 | AS28202 - MASTER S/A, BR | BR | `evidence_increased` | 1688 | 2024 | +336 |
-| AS264643 | AS264643 - Enredes S.A., AR | AR | `risk_level_changed` | 142 | 466 | +324 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 8382 | 8066 | -316 |
-| AS37284 | Aljeel Aljadeed For Technology - Aljeel Aljadeed For Technology, LY | LY | `evidence_increased` | 978 | 1286 | +308 |
+| AS219329 | ASN-FEIT - FLASH EDGE INFORMATION TECHNOLOGY LLC, AE | UA | `risk_level_changed` | 319 | 3835 | +3516 |
+| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_increased` | 5367 | 6514 | +1147 |
+| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_increased` | 31686 | 32747 | +1061 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 111780 | 112450 | +670 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 46099 | 46667 | +568 |
+| AS400619 | AROSS-AS - AROSSCLOUD INC., US | SC | `evidence_decreased` | 2767 | 2276 | -491 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 15591 | 16066 | +475 |
+| AS36903 | Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM, MA | MA | `evidence_increased` | 4764 | 5113 | +349 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 177353 | 177693 | +340 |
+| AS197170 | TECHTIES-AS - TechTies Inc., SC | BG | `evidence_decreased` | 966 | 643 | -323 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 8653 | 8941 | +288 |
+| AS59642 | CHERRYSERVERS2-AS - UAB _Cherry Servers_, LT | LT | `evidence_increased` | 638 | 893 | +255 |
+| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_decreased` | 3590 | 3339 | -251 |
+| AS17622 | CNCGROUP-GZ - China Unicom Guangzhou network, CN | CN | `evidence_increased` | 1214 | 1452 | +238 |
+| AS210328 | ALMAZ - AO ALMAZ, RU | KZ | `evidence_increased` | 48 | 278 | +230 |
+| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_increased` | 11148 | 11363 | +215 |
+| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_increased` | 6934 | 7148 | +214 |
+| AS138415 | YANCYLIMITED-AS-HK - Yancy Limited, HK | US | `evidence_decreased` | 595 | 396 | -199 |
+| AS701 | UUNET - Verizon Business, US | US | `evidence_increased` | 5961 | 6157 | +196 |
+| AS49870 | AS49870-BV - Alsycon B.V., NL | SC | `evidence_increased` | 383 | 560 | +177 |
+| AS9829 | BSNL-NIB - National Internet Backbone, IN | IN | `evidence_increased` | 27486 | 27654 | +168 |
+| AS8048 | AS8048 - CANTV Servicios, Venezuela, VE | VE | `evidence_increased` | 4490 | 4657 | +167 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 13872 | 14033 | +161 |
+| AS26548 | PUREVOLTAGE-INC - PureVoltage Hosting Inc., US | US | `evidence_increased` | 9071 | 9219 | +148 |
+| AS401362 | HOST4NERD - HOST4NERD LLC, US | SC | `evidence_increased` | 171 | 311 | +140 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
