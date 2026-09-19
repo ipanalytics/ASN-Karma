@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-18T09:13:40Z`_
+_Last dataset build: `2026-09-19T08:59:40Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-18T09:13:40Z`_
+_Last updated: `2026-09-19T08:59:40Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS219329 | ASN-FEIT - FLASH EDGE INFORMATION TECHNOLOGY LLC, AE | UA | `risk_level_changed` | 319 | 3835 | +3516 |
-| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_increased` | 5367 | 6514 | +1147 |
-| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_increased` | 31686 | 32747 | +1061 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 111780 | 112450 | +670 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 46099 | 46667 | +568 |
-| AS400619 | AROSS-AS - AROSSCLOUD INC., US | SC | `evidence_decreased` | 2767 | 2276 | -491 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 15591 | 16066 | +475 |
-| AS36903 | Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM, MA | MA | `evidence_increased` | 4764 | 5113 | +349 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 177353 | 177693 | +340 |
-| AS197170 | TECHTIES-AS - TechTies Inc., SC | BG | `evidence_decreased` | 966 | 643 | -323 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 8653 | 8941 | +288 |
-| AS59642 | CHERRYSERVERS2-AS - UAB _Cherry Servers_, LT | LT | `evidence_increased` | 638 | 893 | +255 |
-| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_decreased` | 3590 | 3339 | -251 |
-| AS17622 | CNCGROUP-GZ - China Unicom Guangzhou network, CN | CN | `evidence_increased` | 1214 | 1452 | +238 |
-| AS210328 | ALMAZ - AO ALMAZ, RU | KZ | `evidence_increased` | 48 | 278 | +230 |
-| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_increased` | 11148 | 11363 | +215 |
-| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_increased` | 6934 | 7148 | +214 |
-| AS138415 | YANCYLIMITED-AS-HK - Yancy Limited, HK | US | `evidence_decreased` | 595 | 396 | -199 |
-| AS701 | UUNET - Verizon Business, US | US | `evidence_increased` | 5961 | 6157 | +196 |
-| AS49870 | AS49870-BV - Alsycon B.V., NL | SC | `evidence_increased` | 383 | 560 | +177 |
-| AS9829 | BSNL-NIB - National Internet Backbone, IN | IN | `evidence_increased` | 27486 | 27654 | +168 |
-| AS8048 | AS8048 - CANTV Servicios, Venezuela, VE | VE | `evidence_increased` | 4490 | 4657 | +167 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 13872 | 14033 | +161 |
-| AS26548 | PUREVOLTAGE-INC - PureVoltage Hosting Inc., US | US | `evidence_increased` | 9071 | 9219 | +148 |
-| AS401362 | HOST4NERD - HOST4NERD LLC, US | SC | `evidence_increased` | 171 | 311 | +140 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 45300 | 44010 | -1290 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 469278 | 470508 | +1230 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 56133 | 54917 | -1216 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 46667 | 47704 | +1037 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 177693 | 176796 | -897 |
+| AS8048 | AS8048 - CANTV Servicios, Venezuela, VE | VE | `evidence_increased` | 4657 | 5498 | +841 |
+| AS24757 | Ethio Telecom - Ethio Telecom, ET | ET | `evidence_decreased` | 2577 | 1822 | -755 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 23030 | 23687 | +657 |
+| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_increased` | 32747 | 33393 | +646 |
+| AS57789 | HOMENET - HomeNet Technologies Sp. z o.o., PL | PL | `evidence_increased` | 18 | 615 | +597 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 16066 | 16627 | +561 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 89707 | 90265 | +558 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 112450 | 112991 | +541 |
+| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_increased` | 8492 | 9015 | +523 |
+| AS8452 | TE-AS - IDDQD-AS, EG | EG | `evidence_decreased` | 7540 | 7019 | -521 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 110411 | 110867 | +456 |
+| AS397006 | MULLCLOUD - Mullcloud LLC, US | CO | `evidence_decreased` | 503 | 53 | -450 |
+| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_increased` | 6514 | 6927 | +413 |
+| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_decreased` | 5629 | 5251 | -378 |
+| AS197170 | TECHTIES-AS - TechTies Inc., SC | BG | `evidence_increased` | 643 | 974 | +331 |
+| AS9299 | IPG-AS-AP - Philippine Long Distance Telephone Company, PH | PH | `evidence_increased` | 4669 | 4982 | +313 |
+| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_decreased` | 7148 | 6842 | -306 |
+| AS37492 | Orange Tunisie - Orange Tunisie, TN | TN | `evidence_decreased` | 717 | 414 | -303 |
+| AS37705 | TOPNET - TOPNET, TN | TN | `evidence_decreased` | 1505 | 1233 | -272 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 6611 | 6871 | +260 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
