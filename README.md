@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-20T09:28:21Z`_
+_Last dataset build: `2026-09-21T10:13:34Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-20T09:28:21Z`_
+_Last updated: `2026-09-21T10:13:34Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 176796 | 175011 | -1785 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 470508 | 472006 | +1498 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 154875 | 154059 | -816 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4996 | 5708 | +712 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 16627 | 17324 | +697 |
-| AS8151 | AS8151 - UNINET, MX | MX | `evidence_decreased` | 10318 | 9769 | -549 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 450 | 6 | -444 |
-| AS27699 | AS27699 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 3076 | 2655 | -421 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 9185 | 9603 | +418 |
-| AS7738 | AS7738 - V tal, BR | BR | `evidence_decreased` | 1141 | 756 | -385 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 23687 | 24063 | +376 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 5912 | 6256 | +344 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_decreased` | 19864 | 19522 | -342 |
-| AS17639 | CONVERGE-AS - Converge ICT Solutions Inc., PH | PH | `evidence_decreased` | 1855 | 1515 | -340 |
-| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_increased` | 9015 | 9340 | +325 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 110867 | 111183 | +316 |
-| AS20473 | AS-VULTR - The Constant Company, LLC, US | US | `evidence_decreased` | 22044 | 21732 | -312 |
-| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_increased` | 11522 | 11825 | +303 |
-| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_decreased` | 3258 | 2956 | -302 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 8859 | 9147 | +288 |
-| AS8167 | AS8167 - V tal, BR | BR | `evidence_decreased` | 1123 | 839 | -284 |
-| AS8048 | AS8048 - CANTV Servicios, Venezuela, VE | VE | `evidence_decreased` | 5498 | 5223 | -275 |
-| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_increased` | 6842 | 7115 | +273 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 24562 | 24816 | +254 |
-| AS701 | UUNET - Verizon Business, US | US | `evidence_increased` | 6301 | 6548 | +247 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 112790 | 118490 | +5700 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 175011 | 176111 | +1100 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 9147 | 8213 | -934 |
+| AS35362 | BEST - LIMITED LIABILITY COMPANY _BEST SOLUTIONS_, UA | UA | `evidence_decreased` | 915 | 117 | -798 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 472006 | 472795 | +789 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 17324 | 17835 | +511 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 90503 | 89995 | -508 |
+| AS45609 | BHARTI-MOBILITY-AS-AP - Bharti Airtel Ltd. AS for GPRS Service, IN | IN | `evidence_decreased` | 2689 | 2191 | -498 |
+| AS8814 | AS-AZTELEKOM - Aztelekom LLC, AZ | AZ | `evidence_decreased` | 670 | 260 | -410 |
+| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_decreased` | 5251 | 4845 | -406 |
+| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_decreased` | 33522 | 33124 | -398 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 6256 | 6648 | +392 |
+| AS45758 | TTBP-AS-AP - Triple T Broadband Public Company Limited, TH | TH | `evidence_decreased` | 2370 | 2029 | -341 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 154059 | 153732 | -327 |
+| AS17813 | MTNL-AP - Mahanagar Telephone Nigam Limited, IN | IN | `evidence_decreased` | 1593 | 1297 | -296 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 24816 | 25085 | +269 |
+| AS21859 | ZEN-ECN - Zenlayer Inc, US | US | `evidence_decreased` | 6573 | 6328 | -245 |
+| AS219474 | GRAV-AS - GravHosting LLC, US | BG | `evidence_increased` | 21 | 265 | +244 |
+| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_increased` | 9340 | 9582 | +242 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 47507 | 47277 | -230 |
+| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_increased` | 7157 | 7385 | +228 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 111183 | 111401 | +218 |
+| AS3215 | AS3215 - Orange S.A., FR | FR | `evidence_increased` | 4354 | 4566 | +212 |
+| AS9299 | IPG-AS-AP - Philippine Long Distance Telephone Company, PH | PH | `evidence_increased` | 5204 | 5404 | +200 |
+| AS8560 | IONOS-AS - IONOS SE, DE | DE | `evidence_decreased` | 6549 | 6355 | -194 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
