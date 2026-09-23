@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-22T09:29:34Z`_
+_Last dataset build: `2026-09-23T09:33:51Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-22T09:29:34Z`_
+_Last updated: `2026-09-23T09:33:51Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 118490 | 124770 | +6280 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 472795 | 470399 | -2396 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 153732 | 151734 | -1998 |
-| AS398721 | OXIO-ASN-01 - OXIO, CA | US | `evidence_increased` | 96 | 1078 | +982 |
-| AS56153 | LUUTRUSO-AS-VN - Digital Storage Company Limited, VN | VN | `evidence_increased` | 844 | 1608 | +764 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 89995 | 89334 | -661 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 111401 | 110762 | -639 |
-| AS11878 | TZULO - tzulo, inc., US | US | `evidence_decreased` | 2691 | 2076 | -615 |
-| AS133481 | AIS-Fibre-AS-AP - AIS Fibre, TH | TH | `evidence_decreased` | 1596 | 1025 | -571 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 25085 | 25569 | +484 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 162780 | 163258 | +478 |
-| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_decreased` | 11931 | 11489 | -442 |
-| AS137266 | CHINATELECOM-HUBEI-WUHAN-5G-NETWORK - CHINATELECOM Hubei province Wuhan 5G network, CN | CN | `evidence_decreased` | 3020 | 2642 | -378 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 8213 | 8584 | +371 |
-| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_increased` | 6949 | 7320 | +371 |
-| AS43444 | BNS-AS - Fast Servers (Pty) Ltd, ZA | SC | `evidence_increased` | 1953 | 2282 | +329 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 44219 | 43891 | -328 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 17835 | 17517 | -318 |
-| AS17813 | MTNL-AP - Mahanagar Telephone Nigam Limited, IN | IN | `evidence_increased` | 1297 | 1605 | +308 |
-| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 13814 | 14120 | +306 |
-| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_increased` | 9582 | 9883 | +301 |
-| AS58061 | SCALAXY-AS - Scalaxy B.V., LV | US | `evidence_decreased` | 1546 | 1262 | -284 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 47277 | 47559 | +282 |
-| AS201501 | isec-asn - ISECLAYER INC, MH | MH | `new_asn` | 0 | 270 | +270 |
-| AS6128 | CABLE-NET-1 - Cablevision Systems Corp., US | US | `evidence_decreased` | 2421 | 2156 | -265 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 176135 | 171873 | -4262 |
+| AS2518 | BIGLOBE - BIGLOBE Inc., JP | JP | `evidence_decreased` | 3174 | 385 | -2789 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 6702 | 8984 | +2282 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_decreased` | 19562 | 17312 | -2250 |
+| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_decreased` | 36272 | 34700 | -1572 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 470399 | 471745 | +1346 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5240 | 6336 | +1096 |
+| AS34984 | TELLCOM-AS - Superonline Iletisim Hizmetleri A.S., TR | TR | `evidence_decreased` | 3094 | 1998 | -1096 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 151734 | 150670 | -1064 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 21559 | 22507 | +948 |
+| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_decreased` | 8694 | 7811 | -883 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 89334 | 88512 | -822 |
+| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_decreased` | 37987 | 37239 | -748 |
+| AS24282 | KIR - KAGOYA JAPAN Inc., JP | JP | `evidence_decreased` | 581 | 17 | -564 |
+| AS202656 | XServerCloud - Ivanov Vitaliy Sergeevich, UA | SC | `evidence_decreased` | 6864 | 6368 | -496 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 55164 | 54760 | -404 |
+| AS200019 | AlexHost - ALEXHOST SRL, MD | RU | `evidence_decreased` | 3095 | 2707 | -388 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 9762 | 10129 | +367 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 2479 | 2811 | +332 |
+| AS8851 | EDGE - GCI Network Solutions Limited, GB | GB | `evidence_increased` | 418 | 707 | +289 |
+| AS29066 | VELIANET-AS - velia.net Internetdienste GmbH, DE | DE | `evidence_decreased` | 1974 | 1696 | -278 |
+| AS29484 | RUB-AS - Ruhr-Universitaet Bochum, DE | DE | `risk_level_changed` | 264 | 3 | -261 |
+| AS269741 | AS269741 - INVERSIONES RED NET 2030, C.A, VE | US | `risk_level_changed` | 3 | 259 | +256 |
+| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_increased` | 3338 | 3592 | +254 |
+| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 4333 | 4580 | +247 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
