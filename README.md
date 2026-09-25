@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-24T09:33:45Z`_
+_Last dataset build: `2026-09-25T09:48:49Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-24T09:33:45Z`_
+_Last updated: `2026-09-25T09:48:49Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 124927 | 109110 | -15817 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 43782 | 30046 | -13736 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 471745 | 461847 | -9898 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 171873 | 180351 | +8478 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 17335 | 10877 | -6458 |
-| AS8151 | AS8151 - UNINET, MX | MX | `evidence_increased` | 9725 | 12891 | +3166 |
-| AS2518 | BIGLOBE - BIGLOBE Inc., JP | JP | `evidence_increased` | 385 | 3185 | +2800 |
-| AS30860 | YURTEH-AS - Virtual Systems LLC, UA | UA | `evidence_decreased` | 2879 | 133 | -2746 |
-| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_increased` | 4868 | 7294 | +2426 |
-| AS701 | UUNET - Verizon Business, US | US | `evidence_decreased` | 6825 | 4424 | -2401 |
-| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_decreased` | 5535 | 3143 | -2392 |
-| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_decreased` | 10105 | 8005 | -2100 |
-| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_increased` | 34700 | 36747 | +2047 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 17312 | 19081 | +1769 |
-| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_increased` | 3054 | 4719 | +1665 |
-| AS7018 | ATT-INTERNET4 - AT&T Enterprises, LLC, US | US | `evidence_decreased` | 6426 | 4796 | -1630 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 54760 | 56221 | +1461 |
-| AS27699 | AS27699 - TELEFONICA BRASIL S.A, BR | BR | `evidence_increased` | 2591 | 4052 | +1461 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 150670 | 149266 | -1404 |
-| AS26599 | AS26599 - TELEFONICA BRASIL S.A, BR | BR | `evidence_increased` | 2429 | 3831 | +1402 |
-| AS34984 | TELLCOM-AS - Superonline Iletisim Hizmetleri A.S., TR | TR | `evidence_increased` | 1998 | 3340 | +1342 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6336 | 5021 | -1315 |
-| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 5889 | 7153 | +1264 |
-| AS5089 | NTL - Virgin Media Limited, GB | GB | `evidence_decreased` | 3253 | 2000 | -1253 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_decreased` | 14470 | 13297 | -1173 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 30046 | 43316 | +13270 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 149266 | 152509 | +3243 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 180351 | 181757 | +1406 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 109110 | 108369 | -741 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 461847 | 462577 | +730 |
+| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_increased` | 21642 | 22200 | +558 |
+| AS21928 | T-MOBILE-AS21928 - T-Mobile USA, Inc., US | US | `evidence_increased` | 941 | 1431 | +490 |
+| AS55824 | NKN-CORE-NW - NKN Core Network, IN | IN | `evidence_increased` | 33 | 499 | +466 |
+| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_increased` | 10900 | 11343 | +443 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 10877 | 11304 | +427 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 25619 | 25227 | -392 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 47266 | 46887 | -379 |
+| AS8851 | EDGE - GCI Network Solutions Limited, GB | GB | `evidence_decreased` | 723 | 356 | -367 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 9258 | 9575 | +317 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 87593 | 87904 | +311 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 163297 | 163010 | -287 |
+| AS6698 | virtualsystems - Virtual Systems LLC, UA | UA | `evidence_decreased` | 284 | 44 | -240 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 5684 | 5450 | -234 |
+| AS29802 | HVC-AS - HIVELOCITY, Inc., US | US | `evidence_increased` | 4646 | 4876 | +230 |
+| AS26548 | PUREVOLTAGE-INC - PureVoltage Hosting Inc., US | US | `evidence_increased` | 10223 | 10451 | +228 |
+| AS48031 | XServerCloud - Ivanov Vitaliy Sergeevich, UA | RU | `evidence_decreased` | 1597 | 1371 | -226 |
+| AS54252 | SP-NYJ - Sprious LLC, US | US | `evidence_increased` | 231 | 456 | +225 |
+| AS46475 | LIMESTONENETWORKS - Limestone Networks, Inc., US | US | `evidence_decreased` | 3163 | 2940 | -223 |
+| AS401560 | ONECABLE - OneCable Network LLC, US | US | `evidence_increased` | 376 | 597 | +221 |
+| AS397630 | AS-BLAZINGSEO - Blazing SEO, LLC, US | US | `evidence_increased` | 880 | 1100 | +220 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
