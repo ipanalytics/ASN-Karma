@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-26T09:32:32Z`_
+_Last dataset build: `2026-09-27T10:13:30Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-26T09:32:32Z`_
+_Last updated: `2026-09-27T10:13:30Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 8454 | 6343 | -2111 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 152509 | 151064 | -1445 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 462577 | 463602 | +1025 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 181757 | 180886 | -871 |
-| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_decreased` | 6676 | 5967 | -709 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 5450 | 6080 | +630 |
-| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_decreased` | 22200 | 21638 | -562 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 46887 | 46331 | -556 |
-| AS21928 | T-MOBILE-AS21928 - T-Mobile USA, Inc., US | US | `evidence_decreased` | 1431 | 938 | -493 |
-| AS59686 | GEMINI-PL - Gemini Internet Sp. z o.o., PL | PL | `risk_level_changed` | 4 | 494 | +490 |
-| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_decreased` | 11343 | 10899 | -444 |
-| AS6939 | HURRICANE - Hurricane Electric LLC, US | US | `evidence_increased` | 2303 | 2682 | +379 |
-| AS55201 | SKYQUANTUM-INTERNET-SERVICE - SkyQuantum Internet Service, US | US | `evidence_decreased` | 630 | 257 | -373 |
-| AS132817 | DZCRD-AS-AP - DZCRD Networks Ltd, BD | BD | `evidence_decreased` | 1596 | 1244 | -352 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 25227 | 25577 | +350 |
-| AS150436 | BYTEPLUS-AS-AP - Byteplus Pte. Ltd., SG | SG | `evidence_increased` | 3655 | 3993 | +338 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 87904 | 87582 | -322 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 108369 | 108678 | +309 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 22956 | 23236 | +280 |
-| AS396356 | LATITUDE-SH - Latitude.sh, US | US | `evidence_decreased` | 6466 | 6186 | -280 |
-| AS397630 | AS-BLAZINGSEO - Blazing SEO, LLC, US | US | `evidence_increased` | 1100 | 1357 | +257 |
-| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_increased` | 9320 | 9574 | +254 |
-| AS198566 | MAMUTRAHAL - MAMUT RAHAL SOFTWARE - FZCO, AE | NL | `evidence_increased` | 527 | 779 | +252 |
-| AS30860 | YURTEH-AS - Virtual Systems LLC, UA | UA | `evidence_increased` | 153 | 393 | +240 |
-| AS134771 | CHINATELECOM-ZHEJIANG-WENZHOU-IDC - WENZHOU, ZHEJIANG Province, P.R.China., CN | CN | `evidence_increased` | 153 | 392 | +239 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_decreased` | 58870 | 50710 | -8160 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 180886 | 179442 | -1444 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 23236 | 24383 | +1147 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5051 | 6161 | +1110 |
+| AS26599 | AS26599 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 3742 | 2653 | -1089 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 108678 | 109679 | +1001 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 151064 | 152019 | +955 |
+| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_decreased` | 33309 | 32409 | -900 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 46331 | 45531 | -800 |
+| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_decreased` | 7108 | 6373 | -735 |
+| AS207156 | KAMPINOS-AS - LAITO Sp. Z O. O., PL | PL | `risk_level_changed` | 3 | 522 | +519 |
+| AS18881 | AS18881 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 2994 | 2501 | -493 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 87582 | 88039 | +457 |
+| AS8151 | AS8151 - UNINET, MX | MX | `evidence_increased` | 12952 | 13364 | +412 |
+| AS36903 | Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM, MA | MA | `evidence_decreased` | 4309 | 3904 | -405 |
+| AS3741 | Dimension Data - Dimension Data, ZA | ZA | `evidence_decreased` | 4683 | 4297 | -386 |
+| AS13999 | AS13999 - Mega Cable, S.A. de C.V., MX | MX | `evidence_decreased` | 1866 | 1481 | -385 |
+| AS59686 | GEMINI-PL - Gemini Internet Sp. z o.o., PL | PL | `evidence_decreased` | 494 | 117 | -377 |
+| AS37492 | Orange Tunisie - Orange Tunisie, TN | TN | `evidence_decreased` | 609 | 238 | -371 |
+| AS58065 | PacketExchange - Orion Network Limited, GB | SC | `evidence_decreased` | 631 | 278 | -353 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 2370 | 2702 | +332 |
+| AS27699 | AS27699 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 3920 | 3591 | -329 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 9684 | 9377 | -307 |
+| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 7090 | 7384 | +294 |
+| AS28649 | AS28649 - Desktop Sigmanet Comunicacao Multimidia SA, BR | BR | `evidence_decreased` | 1009 | 729 | -280 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
