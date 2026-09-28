@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-27T10:13:30Z`_
+_Last dataset build: `2026-09-28T11:14:53Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-27T10:13:30Z`_
+_Last updated: `2026-09-28T11:14:53Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_decreased` | 58870 | 50710 | -8160 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 180886 | 179442 | -1444 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 23236 | 24383 | +1147 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5051 | 6161 | +1110 |
-| AS26599 | AS26599 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 3742 | 2653 | -1089 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 108678 | 109679 | +1001 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 151064 | 152019 | +955 |
-| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_decreased` | 33309 | 32409 | -900 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 46331 | 45531 | -800 |
-| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_decreased` | 7108 | 6373 | -735 |
-| AS207156 | KAMPINOS-AS - LAITO Sp. Z O. O., PL | PL | `risk_level_changed` | 3 | 522 | +519 |
-| AS18881 | AS18881 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 2994 | 2501 | -493 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 87582 | 88039 | +457 |
-| AS8151 | AS8151 - UNINET, MX | MX | `evidence_increased` | 12952 | 13364 | +412 |
-| AS36903 | Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM, MA | MA | `evidence_decreased` | 4309 | 3904 | -405 |
-| AS3741 | Dimension Data - Dimension Data, ZA | ZA | `evidence_decreased` | 4683 | 4297 | -386 |
-| AS13999 | AS13999 - Mega Cable, S.A. de C.V., MX | MX | `evidence_decreased` | 1866 | 1481 | -385 |
-| AS59686 | GEMINI-PL - Gemini Internet Sp. z o.o., PL | PL | `evidence_decreased` | 494 | 117 | -377 |
-| AS37492 | Orange Tunisie - Orange Tunisie, TN | TN | `evidence_decreased` | 609 | 238 | -371 |
-| AS58065 | PacketExchange - Orion Network Limited, GB | SC | `evidence_decreased` | 631 | 278 | -353 |
-| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 2370 | 2702 | +332 |
-| AS27699 | AS27699 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 3920 | 3591 | -329 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 9684 | 9377 | -307 |
-| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 7090 | 7384 | +294 |
-| AS28649 | AS28649 - Desktop Sigmanet Comunicacao Multimidia SA, BR | BR | `evidence_decreased` | 1009 | 729 | -280 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 50710 | 59110 | +8400 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 179442 | 181114 | +1672 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6161 | 5092 | -1069 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 152019 | 151036 | -983 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 24383 | 23486 | -897 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 109679 | 110565 | +886 |
+| AS198537 | PL-KAMNET - Kamil Turon trading as KAMNET, PL | PL | `risk_level_changed` | 619 | 18 | -601 |
+| AS26599 | AS26599 - TELEFONICA BRASIL S.A, BR | BR | `evidence_increased` | 2653 | 3176 | +523 |
+| AS37492 | Orange Tunisie - Orange Tunisie, TN | TN | `evidence_increased` | 238 | 646 | +408 |
+| AS3741 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 4297 | 4693 | +396 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 9377 | 9001 | -376 |
+| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 4382 | 4742 | +360 |
+| AS58065 | PacketExchange - Orion Network Limited, GB | SC | `evidence_increased` | 278 | 637 | +359 |
+| AS8151 | AS8151 - UNINET, MX | MX | `evidence_decreased` | 13364 | 13011 | -353 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_decreased` | 2702 | 2367 | -335 |
+| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_increased` | 6373 | 6630 | +257 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 11181 | 10936 | -245 |
+| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_decreased` | 7892 | 7657 | -235 |
+| AS44589 | NTservers - DIGITAL NETWORK S.R.L., MD | GB | `risk_level_changed` | 31 | 256 | +225 |
+| AS397630 | AS-BLAZINGSEO - Blazing SEO, LLC, US | US | `evidence_increased` | 1563 | 1778 | +215 |
+| AS8452 | TE-AS - IDDQD-AS, EG | EG | `evidence_increased` | 6923 | 7132 | +209 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 23145 | 23351 | +206 |
+| AS28649 | AS28649 - Desktop Sigmanet Comunicacao Multimidia SA, BR | BR | `evidence_increased` | 729 | 927 | +198 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 7688 | 7495 | -193 |
+| AS54252 | SP-NYJ - Sprious LLC, US | US | `evidence_increased` | 923 | 1103 | +180 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
