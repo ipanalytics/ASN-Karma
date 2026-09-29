@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-28T11:14:53Z`_
+_Last dataset build: `2026-09-29T10:55:14Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-28T11:14:53Z`_
+_Last updated: `2026-09-29T10:55:14Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 50710 | 59110 | +8400 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 179442 | 181114 | +1672 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6161 | 5092 | -1069 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 152019 | 151036 | -983 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 24383 | 23486 | -897 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 109679 | 110565 | +886 |
-| AS198537 | PL-KAMNET - Kamil Turon trading as KAMNET, PL | PL | `risk_level_changed` | 619 | 18 | -601 |
-| AS26599 | AS26599 - TELEFONICA BRASIL S.A, BR | BR | `evidence_increased` | 2653 | 3176 | +523 |
-| AS37492 | Orange Tunisie - Orange Tunisie, TN | TN | `evidence_increased` | 238 | 646 | +408 |
-| AS3741 | Dimension Data - Dimension Data, ZA | ZA | `evidence_increased` | 4297 | 4693 | +396 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 9377 | 9001 | -376 |
-| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 4382 | 4742 | +360 |
-| AS58065 | PacketExchange - Orion Network Limited, GB | SC | `evidence_increased` | 278 | 637 | +359 |
-| AS8151 | AS8151 - UNINET, MX | MX | `evidence_decreased` | 13364 | 13011 | -353 |
-| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_decreased` | 2702 | 2367 | -335 |
-| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_increased` | 6373 | 6630 | +257 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 11181 | 10936 | -245 |
-| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_decreased` | 7892 | 7657 | -235 |
-| AS44589 | NTservers - DIGITAL NETWORK S.R.L., MD | GB | `risk_level_changed` | 31 | 256 | +225 |
-| AS397630 | AS-BLAZINGSEO - Blazing SEO, LLC, US | US | `evidence_increased` | 1563 | 1778 | +215 |
-| AS8452 | TE-AS - IDDQD-AS, EG | EG | `evidence_increased` | 6923 | 7132 | +209 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 23145 | 23351 | +206 |
-| AS28649 | AS28649 - Desktop Sigmanet Comunicacao Multimidia SA, BR | BR | `evidence_increased` | 729 | 927 | +198 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 7688 | 7495 | -193 |
-| AS54252 | SP-NYJ - Sprious LLC, US | US | `evidence_increased` | 923 | 1103 | +180 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 6322 | 12939 | +6617 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 151036 | 152397 | +1361 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 110565 | 111586 | +1021 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 463560 | 464355 | +795 |
+| AS26599 | AS26599 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 3176 | 2495 | -681 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 88016 | 88677 | +661 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5013 | 4399 | -614 |
+| AS40676 | AS40676 - Psychz Networks, US | US | `evidence_decreased` | 2462 | 1893 | -569 |
+| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_decreased` | 6630 | 6164 | -466 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 5 | 454 | +449 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 163245 | 163649 | +404 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 6056 | 6448 | +392 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 13326 | 13614 | +288 |
+| AS36898 | Black Currant Consultant cc - Black Currant Consultant cc, ZA | SC | `risk_level_changed` | 3 | 285 | +282 |
+| AS10753 | LUMEN-LEGACY-L3-CUSTOMER-SHARED-USE - Level 3 Parent, LLC, US | US | `evidence_increased` | 2407 | 2675 | +268 |
+| AS203003 | magna-capax - Magna Capax Finland Oy, FI | FI | `evidence_increased` | 36 | 300 | +264 |
+| AS7713 | telkomnet-as-ap - PT Telekomunikasi Indonesia, ID | ID | `evidence_decreased` | 8935 | 8674 | -261 |
+| AS50304 | BLIX - Blix Solutions AS, NO | GB | `evidence_decreased` | 1407 | 1147 | -260 |
+| AS211607 | RECORDEDFUTURE - Securitytrails, LLC, US | US | `evidence_decreased` | 266 | 21 | -245 |
+| AS28649 | AS28649 - Desktop Sigmanet Comunicacao Multimidia SA, BR | BR | `evidence_decreased` | 927 | 684 | -243 |
+| AS44559 | ITHOSTLINE - IT HOSTLINE LTD, CY | SC | `evidence_decreased` | 3505 | 3269 | -236 |
+| AS209372 | WSTelecom_Customers - WS Telecom Inc, US | RU | `evidence_increased` | 928 | 1164 | +236 |
+| AS210006 | ASKZ - Shereverov Marat Ahmedovich, KZ | DE | `evidence_increased` | 45 | 278 | +233 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 56105 | 56324 | +219 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 413 | 197 | -216 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
