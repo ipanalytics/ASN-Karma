@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-29T10:55:14Z`_
+_Last dataset build: `2026-09-30T10:45:29Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-29T10:55:14Z`_
+_Last updated: `2026-09-30T10:45:29Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 6322 | 12939 | +6617 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 151036 | 152397 | +1361 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 110565 | 111586 | +1021 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 463560 | 464355 | +795 |
-| AS26599 | AS26599 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 3176 | 2495 | -681 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 88016 | 88677 | +661 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5013 | 4399 | -614 |
-| AS40676 | AS40676 - Psychz Networks, US | US | `evidence_decreased` | 2462 | 1893 | -569 |
-| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_decreased` | 6630 | 6164 | -466 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 5 | 454 | +449 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 163245 | 163649 | +404 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 6056 | 6448 | +392 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 13326 | 13614 | +288 |
-| AS36898 | Black Currant Consultant cc - Black Currant Consultant cc, ZA | SC | `risk_level_changed` | 3 | 285 | +282 |
-| AS10753 | LUMEN-LEGACY-L3-CUSTOMER-SHARED-USE - Level 3 Parent, LLC, US | US | `evidence_increased` | 2407 | 2675 | +268 |
-| AS203003 | magna-capax - Magna Capax Finland Oy, FI | FI | `evidence_increased` | 36 | 300 | +264 |
-| AS7713 | telkomnet-as-ap - PT Telekomunikasi Indonesia, ID | ID | `evidence_decreased` | 8935 | 8674 | -261 |
-| AS50304 | BLIX - Blix Solutions AS, NO | GB | `evidence_decreased` | 1407 | 1147 | -260 |
-| AS211607 | RECORDEDFUTURE - Securitytrails, LLC, US | US | `evidence_decreased` | 266 | 21 | -245 |
-| AS28649 | AS28649 - Desktop Sigmanet Comunicacao Multimidia SA, BR | BR | `evidence_decreased` | 927 | 684 | -243 |
-| AS44559 | ITHOSTLINE - IT HOSTLINE LTD, CY | SC | `evidence_decreased` | 3505 | 3269 | -236 |
-| AS209372 | WSTelecom_Customers - WS Telecom Inc, US | RU | `evidence_increased` | 928 | 1164 | +236 |
-| AS210006 | ASKZ - Shereverov Marat Ahmedovich, KZ | DE | `evidence_increased` | 45 | 278 | +233 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 56105 | 56324 | +219 |
-| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 413 | 197 | -216 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 464355 | 467114 | +2759 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 9050 | 11412 | +2362 |
+| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_decreased` | 7376 | 6588 | -788 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 152397 | 153070 | +673 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 180947 | 181568 | +621 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 111586 | 112179 | +593 |
+| AS40676 | AS40676 - Psychz Networks, US | US | `evidence_increased` | 1893 | 2456 | +563 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 88677 | 89238 | +561 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 43701 | 44241 | +540 |
+| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_increased` | 8672 | 9149 | +477 |
+| AS56041 | CMNET-Zhejiang-AP - China Mobile communications corporation, CN | CN | `evidence_increased` | 1488 | 1912 | +424 |
+| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_increased` | 3687 | 4088 | +401 |
+| AS23693 | TELKOMSEL-ASN-ID - PT. Telekomunikasi Selular, ID | ID | `evidence_decreased` | 1503 | 1119 | -384 |
+| AS210328 | ALMAZ - AO ALMAZ, RU | KZ | `evidence_increased` | 69 | 432 | +363 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_decreased` | 19138 | 18780 | -358 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 23196 | 23549 | +353 |
+| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_decreased` | 5843 | 5492 | -351 |
+| AS24445 | CMNET-V4henan-AS-AP - Henan Mobile Communications Co.,Ltd, CN | CN | `evidence_increased` | 1074 | 1421 | +347 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 110585 | 110903 | +318 |
+| AS24444 | CMNET-V4shandong-AS-AP - Shandong Mobile Communication Company Limited, CN | CN | `evidence_increased` | 1836 | 2137 | +301 |
+| AS203003 | magna-capax - Magna Capax Finland Oy, FI | FI | `risk_level_changed` | 300 | 1 | -299 |
+| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_decreased` | 4875 | 4586 | -289 |
+| AS50304 | BLIX - Blix Solutions AS, NO | NO | `evidence_increased` | 1147 | 1402 | +255 |
+| AS199457 | SolidCore - SolidCore Hosting LTD, VG | HK | `evidence_increased` | 5 | 256 | +251 |
+| AS216067 | AS216067 - BHS Solutions GmbH, DE | DE | `risk_level_changed` | 252 | 1 | -251 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
