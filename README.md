@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-09-30T10:45:29Z`_
+_Last dataset build: `2026-10-01T11:11:44Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-09-30T10:45:29Z`_
+_Last updated: `2026-10-01T11:11:44Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 464355 | 467114 | +2759 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 9050 | 11412 | +2362 |
-| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_decreased` | 7376 | 6588 | -788 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 152397 | 153070 | +673 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 180947 | 181568 | +621 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 111586 | 112179 | +593 |
-| AS40676 | AS40676 - Psychz Networks, US | US | `evidence_increased` | 1893 | 2456 | +563 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 88677 | 89238 | +561 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 43701 | 44241 | +540 |
-| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_increased` | 8672 | 9149 | +477 |
-| AS56041 | CMNET-Zhejiang-AP - China Mobile communications corporation, CN | CN | `evidence_increased` | 1488 | 1912 | +424 |
-| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_increased` | 3687 | 4088 | +401 |
-| AS23693 | TELKOMSEL-ASN-ID - PT. Telekomunikasi Selular, ID | ID | `evidence_decreased` | 1503 | 1119 | -384 |
-| AS210328 | ALMAZ - AO ALMAZ, RU | KZ | `evidence_increased` | 69 | 432 | +363 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_decreased` | 19138 | 18780 | -358 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 23196 | 23549 | +353 |
-| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_decreased` | 5843 | 5492 | -351 |
-| AS24445 | CMNET-V4henan-AS-AP - Henan Mobile Communications Co.,Ltd, CN | CN | `evidence_increased` | 1074 | 1421 | +347 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 110585 | 110903 | +318 |
-| AS24444 | CMNET-V4shandong-AS-AP - Shandong Mobile Communication Company Limited, CN | CN | `evidence_increased` | 1836 | 2137 | +301 |
-| AS203003 | magna-capax - Magna Capax Finland Oy, FI | FI | `risk_level_changed` | 300 | 1 | -299 |
-| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_decreased` | 4875 | 4586 | -289 |
-| AS50304 | BLIX - Blix Solutions AS, NO | NO | `evidence_increased` | 1147 | 1402 | +255 |
-| AS199457 | SolidCore - SolidCore Hosting LTD, VG | HK | `evidence_increased` | 5 | 256 | +251 |
-| AS216067 | AS216067 - BHS Solutions GmbH, DE | DE | `risk_level_changed` | 252 | 1 | -251 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 467114 | 471753 | +4639 |
+| AS59686 | GEMINI-PL - Gemini Internet Sp. z o.o., PL | PL | `risk_level_changed` | 1 | 2837 | +2836 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 6502 | 7928 | +1426 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 11412 | 12712 | +1300 |
+| AS47516 | DEHOST - DEHOST INTERNET VE BILISIM TEKNOLOJILERI SANAYI TICARET LIMITED SIRKETI, TR | US | `evidence_decreased` | 1553 | 339 | -1214 |
+| AS8151 | AS8151 - UNINET, MX | MX | `evidence_decreased` | 12817 | 11752 | -1065 |
+| AS198525 | CLIMAX-AS - ClimaxNET sp. z o.o., PL | PL | `evidence_decreased` | 1260 | 207 | -1053 |
+| AS49715 | PL-WLANTECH-AS - PTU WLAN-TECH PLUS JACEK SOLTYS, PL | PL | `risk_level_changed` | 2 | 966 | +964 |
+| AS135905 | VNPT-AS-VN - VIETNAM POSTS AND TELECOMMUNICATIONS GROUP, VN | VN | `evidence_decreased` | 6674 | 5738 | -936 |
+| AS211301 | UNESTY - Collin Schneeweiss trading as Unesty Company, DE | AE | `evidence_decreased` | 1305 | 445 | -860 |
+| AS131423 | LVHN-AS-VN - Branch of Long Van System Solution JSC - Hanoi, VN | VN | `evidence_increased` | 119 | 882 | +763 |
+| AS56153 | LUUTRUSO-AS-VN - Digital Storage Company Limited, VN | VN | `evidence_decreased` | 1609 | 864 | -745 |
+| AS17072 | AS17072 - TOTAL PLAY TELECOMUNICACIONES, S.A.P.I. DE C.V., MX | MX | `evidence_decreased` | 2329 | 1631 | -698 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 181568 | 182184 | +616 |
+| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_decreased` | 6078 | 5543 | -535 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 89238 | 89747 | +509 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 153070 | 152609 | -461 |
+| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_decreased` | 4586 | 4148 | -438 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 11047 | 11476 | +429 |
+| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_increased` | 6236 | 6658 | +422 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 7663 | 8032 | +369 |
+| AS15169 | GOOGLE - Google LLC, US | US | `evidence_decreased` | 1569 | 1206 | -363 |
+| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_increased` | 1272 | 1631 | +359 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 45522 | 45228 | -294 |
+| AS48090 | DMZHOST - TECHOFF SRV LIMITED, GB | BG | `evidence_increased` | 326 | 601 | +275 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
