@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-03T10:04:09Z`_
+_Last dataset build: `2026-10-04T10:46:30Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-03T10:04:09Z`_
+_Last updated: `2026-10-04T10:46:30Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 474758 | 480727 | +5969 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 150997 | 152318 | +1321 |
-| AS204161 | TRITEL-MSK-204161 - KRYMSVYAZ LTD, RU | RU | `evidence_decreased` | 899 | 5 | -894 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 89569 | 90428 | +859 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | CN | `evidence_decreased` | 7771 | 6942 | -829 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 111554 | 112147 | +593 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 163561 | 164106 | +545 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 112718 | 113232 | +514 |
-| AS61254 | ESTOXY-OU - ESTOXY OU, EE | EE | `evidence_decreased` | 952 | 464 | -488 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | NL | `risk_level_changed` | 457 | 5 | -452 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 12810 | 12414 | -396 |
-| AS835 | GOCODEIT-EDGE - GoCodeIT Inc, CA | CA | `risk_level_changed` | 20 | 389 | +369 |
-| AS20473 | AS-VULTR - The Constant Company, LLC, US | US | `evidence_increased` | 22232 | 22584 | +352 |
-| AS272809 | AS272809 - THUNDERNET, C.A., VE | US | `evidence_decreased` | 9103 | 8756 | -347 |
-| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `risk_level_changed` | 5 | 340 | +335 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 182711 | 183040 | +329 |
-| AS36903 | Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM, MA | MA | `evidence_decreased` | 4334 | 4024 | -310 |
-| AS24757 | Ethio Telecom - Ethio Telecom, ET | ET | `evidence_decreased` | 2294 | 1992 | -302 |
-| AS15169 | GOOGLE - Google LLC, US | US | `evidence_increased` | 1192 | 1452 | +260 |
-| AS50304 | BLIX - Blix Solutions AS, NO | GB | `evidence_decreased` | 1400 | 1145 | -255 |
-| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_decreased` | 1559 | 1308 | -251 |
-| AS216014 | BestDC-Limited - BestDC Limited, GB | BG | `risk_level_changed` | 6 | 256 | +250 |
-| AS60781 | LEASEWEB-NL-AMS-01 - LeaseWeb Netherlands B.V., NL | NL | `evidence_increased` | 2691 | 2938 | +247 |
-| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_decreased` | 482 | 249 | -233 |
-| AS8151 | AS8151 - UNINET, MX | MX | `evidence_increased` | 10216 | 10440 | +224 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 480727 | 483306 | +2579 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 12977 | 15264 | +2287 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 152318 | 151092 | -1226 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5346 | 6439 | +1093 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 23851 | 24813 | +962 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 56420 | 55508 | -912 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 12414 | 11622 | -792 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4697 | 5243 | +546 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 2373 | 2705 | +332 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | CN | `evidence_decreased` | 6942 | 6612 | -330 |
+| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_decreased` | 340 | 16 | -324 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 183040 | 182747 | -293 |
+| AS50304 | BLIX - Blix Solutions AS, NO | NO | `evidence_increased` | 1145 | 1400 | +255 |
+| AS8452 | TE-AS - IDDQD-AS, EG | EG | `evidence_decreased` | 7302 | 7052 | -250 |
+| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_increased` | 249 | 483 | +234 |
+| AS9198 | KAZTELECOM-AS - JSC Kazakhtelecom, KZ | KZ | `evidence_decreased` | 2153 | 1922 | -231 |
+| AS44589 | NTservers - DIGITAL NETWORK S.R.L., MD | GB | `risk_level_changed` | 34 | 256 | +222 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | US | `evidence_increased` | 198 | 414 | +216 |
+| AS37105 | RAIN GROUP HOLDINGS (PTY) LTD - RAIN GROUP HOLDINGS (PTY) LTD, ZA | ZA | `evidence_decreased` | 664 | 457 | -207 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 113232 | 113051 | -181 |
+| AS49870 | AS49870-BV - Alsycon B.V., NL | SC | `evidence_increased` | 343 | 517 | +174 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 13515 | 13664 | +149 |
+| AS198566 | MAMUTRAHAL - MAMUT RAHAL SOFTWARE - FZCO, AE | NL | `evidence_increased` | 1066 | 1209 | +143 |
+| AS56041 | CMNET-Zhejiang-AP - China Mobile communications corporation, CN | CN | `evidence_decreased` | 2006 | 1864 | -142 |
+| AS24445 | CMNET-V4henan-AS-AP - Henan Mobile Communications Co.,Ltd, CN | CN | `evidence_decreased` | 1653 | 1513 | -140 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
