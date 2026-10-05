@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-04T10:46:30Z`_
+_Last dataset build: `2026-10-05T11:51:34Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-04T10:46:30Z`_
+_Last updated: `2026-10-05T11:51:34Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 480727 | 483306 | +2579 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 12977 | 15264 | +2287 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 152318 | 151092 | -1226 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5346 | 6439 | +1093 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 23851 | 24813 | +962 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 56420 | 55508 | -912 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 12414 | 11622 | -792 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4697 | 5243 | +546 |
-| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 2373 | 2705 | +332 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | CN | `evidence_decreased` | 6942 | 6612 | -330 |
-| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_decreased` | 340 | 16 | -324 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 183040 | 182747 | -293 |
-| AS50304 | BLIX - Blix Solutions AS, NO | NO | `evidence_increased` | 1145 | 1400 | +255 |
-| AS8452 | TE-AS - IDDQD-AS, EG | EG | `evidence_decreased` | 7302 | 7052 | -250 |
-| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_increased` | 249 | 483 | +234 |
-| AS9198 | KAZTELECOM-AS - JSC Kazakhtelecom, KZ | KZ | `evidence_decreased` | 2153 | 1922 | -231 |
-| AS44589 | NTservers - DIGITAL NETWORK S.R.L., MD | GB | `risk_level_changed` | 34 | 256 | +222 |
-| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | US | `evidence_increased` | 198 | 414 | +216 |
-| AS37105 | RAIN GROUP HOLDINGS (PTY) LTD - RAIN GROUP HOLDINGS (PTY) LTD, ZA | ZA | `evidence_decreased` | 664 | 457 | -207 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 113232 | 113051 | -181 |
-| AS49870 | AS49870-BV - Alsycon B.V., NL | SC | `evidence_increased` | 343 | 517 | +174 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 13515 | 13664 | +149 |
-| AS198566 | MAMUTRAHAL - MAMUT RAHAL SOFTWARE - FZCO, AE | NL | `evidence_increased` | 1066 | 1209 | +143 |
-| AS56041 | CMNET-Zhejiang-AP - China Mobile communications corporation, CN | CN | `evidence_decreased` | 2006 | 1864 | -142 |
-| AS24445 | CMNET-V4henan-AS-AP - Henan Mobile Communications Co.,Ltd, CN | CN | `evidence_decreased` | 1653 | 1513 | -140 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 15264 | 13020 | -2244 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 113051 | 114684 | +1633 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 151092 | 152243 | +1151 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6439 | 5345 | -1094 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 182747 | 183760 | +1013 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 24813 | 23829 | -984 |
+| AS8151 | AS8151 - UNINET, MX | MX | `evidence_decreased` | 10515 | 10051 | -464 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 4 | 461 | +457 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5243 | 4827 | -416 |
+| AS208142 | Rocket-Telecom-AS - LLC Rocket Telecom, RU | AE | `risk_level_changed` | 368 | 1 | -367 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_decreased` | 2705 | 2374 | -331 |
+| AS27699 | AS27699 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 2881 | 2573 | -308 |
+| AS202596 | GNETWORK - GNC Realisations 2026 Limited, GB | GB | `evidence_decreased` | 471 | 215 | -256 |
+| AS44559 | ITHOSTLINE - IT HOSTLINE LTD, CY | SC | `evidence_decreased` | 3410 | 3155 | -255 |
+| AS11878 | TZULO - tzulo, inc., US | US | `evidence_increased` | 2913 | 3163 | +250 |
+| AS50304 | BLIX - Blix Solutions AS, NO | GB | `evidence_decreased` | 1400 | 1154 | -246 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 483306 | 483548 | +242 |
+| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 4476 | 4710 | +234 |
+| AS7738 | AS7738 - V tal, BR | BR | `evidence_decreased` | 1004 | 771 | -233 |
+| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_decreased` | 483 | 253 | -230 |
+| AS8167 | AS8167 - V tal, BR | BR | `evidence_decreased` | 1035 | 811 | -224 |
+| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_increased` | 28028 | 28251 | +223 |
+| AS44589 | NTservers - DIGITAL NETWORK S.R.L., MD | GB | `risk_level_changed` | 256 | 34 | -222 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 414 | 202 | -212 |
+| AS6939 | HURRICANE - Hurricane Electric LLC, US | US | `evidence_increased` | 2698 | 2900 | +202 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
