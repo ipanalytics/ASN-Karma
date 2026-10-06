@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-05T11:51:34Z`_
+_Last dataset build: `2026-10-06T11:32:47Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-05T11:51:34Z`_
+_Last updated: `2026-10-06T11:32:47Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 15264 | 13020 | -2244 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 113051 | 114684 | +1633 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 151092 | 152243 | +1151 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6439 | 5345 | -1094 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 182747 | 183760 | +1013 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 24813 | 23829 | -984 |
-| AS8151 | AS8151 - UNINET, MX | MX | `evidence_decreased` | 10515 | 10051 | -464 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `risk_level_changed` | 4 | 461 | +457 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5243 | 4827 | -416 |
-| AS208142 | Rocket-Telecom-AS - LLC Rocket Telecom, RU | AE | `risk_level_changed` | 368 | 1 | -367 |
-| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_decreased` | 2705 | 2374 | -331 |
-| AS27699 | AS27699 - TELEFONICA BRASIL S.A, BR | BR | `evidence_decreased` | 2881 | 2573 | -308 |
-| AS202596 | GNETWORK - GNC Realisations 2026 Limited, GB | GB | `evidence_decreased` | 471 | 215 | -256 |
-| AS44559 | ITHOSTLINE - IT HOSTLINE LTD, CY | SC | `evidence_decreased` | 3410 | 3155 | -255 |
-| AS11878 | TZULO - tzulo, inc., US | US | `evidence_increased` | 2913 | 3163 | +250 |
-| AS50304 | BLIX - Blix Solutions AS, NO | GB | `evidence_decreased` | 1400 | 1154 | -246 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 483306 | 483548 | +242 |
-| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 4476 | 4710 | +234 |
-| AS7738 | AS7738 - V tal, BR | BR | `evidence_decreased` | 1004 | 771 | -233 |
-| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_decreased` | 483 | 253 | -230 |
-| AS8167 | AS8167 - V tal, BR | BR | `evidence_decreased` | 1035 | 811 | -224 |
-| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_increased` | 28028 | 28251 | +223 |
-| AS44589 | NTservers - DIGITAL NETWORK S.R.L., MD | GB | `risk_level_changed` | 256 | 34 | -222 |
-| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 414 | 202 | -212 |
-| AS6939 | HURRICANE - Hurricane Electric LLC, US | US | `evidence_increased` | 2698 | 2900 | +202 |
+| AS214101 | EU-SOVEREIGN-CLOUD - Amazon Data Services European Sovereign Cloud GmbH, DE | DE | `new_asn` | 0 | 7051 | +7051 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 483548 | 479386 | -4162 |
+| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_increased` | 38 | 2553 | +2515 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 13020 | 15315 | +2295 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 23829 | 26104 | +2275 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 152243 | 150911 | -1332 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 16336 | 15062 | -1274 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 6775 | 7967 | +1192 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5345 | 6465 | +1120 |
+| AS56153 | LUUTRUSO-AS-VN - Digital Storage Company Limited, VN | VN | `evidence_decreased` | 820 | 127 | -693 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 114684 | 115334 | +650 |
+| AS56582 | NETFACTOR-ASN - Netfactor Telekominikasyon ve Teknoloji Hizmetleri San. ve Tic. A.S., TR | TR | `risk_level_changed` | 14 | 663 | +649 |
+| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_decreased` | 35405 | 34786 | -619 |
+| AS131423 | LVHN-AS-VN - Branch of Long Van System Solution JSC - Hanoi, VN | VN | `evidence_decreased` | 883 | 294 | -589 |
+| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_increased` | 6490 | 6955 | +465 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4827 | 5285 | +458 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | NL | `risk_level_changed` | 461 | 5 | -456 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 8053 | 8503 | +450 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 90500 | 90054 | -446 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 112169 | 112590 | +421 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 11814 | 11403 | -411 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 183760 | 183405 | -355 |
+| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_increased` | 1255 | 1596 | +341 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 44554 | 44215 | -339 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 2374 | 2707 | +333 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
