@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-09T11:31:38Z`_
+_Last dataset build: `2026-10-10T10:49:28Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-09T11:31:38Z`_
+_Last updated: `2026-10-10T10:49:28Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 115927 | 111526 | -4401 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 15361 | 13091 | -2270 |
-| AS197838 | CHEELOO-AS - CHEELOO-AS, PL | PL | `risk_level_changed` | 19 | 1893 | +1874 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 147303 | 148873 | +1570 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 183569 | 184945 | +1376 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6490 | 5367 | -1123 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 7962 | 6906 | -1056 |
-| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_increased` | 2550 | 3574 | +1024 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 165051 | 166012 | +961 |
-| AS984 | OWS-NETWORK - OCTOPUS WEB SOLUTION INC, US | US | `evidence_decreased` | 4321 | 3416 | -905 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 26150 | 25266 | -884 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 19329 | 20077 | +748 |
-| AS49729 | MODULBANK-AS - Open Joint Stock Company Commercial Bank _Modulbank_, RU | RU | `new_asn` | 0 | 737 | +737 |
-| AS8053 | AS8053 - IFX Networks Venezuela C.A., VE | VE | `evidence_increased` | 122 | 701 | +579 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 44700 | 44124 | -576 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5260 | 4688 | -572 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 480995 | 481545 | +550 |
-| AS202656 | XServerCloud - Ivanov Vitaliy Sergeevich, UA | SC | `evidence_increased` | 6083 | 6575 | +492 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 44901 | 45376 | +475 |
-| AS219329 | ASN-FEIT - FLASH EDGE INFORMATION TECHNOLOGY LLC, AE | UA | `evidence_decreased` | 2716 | 2301 | -415 |
-| AS207990 | HR-CUSTOMER - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 748 | 1149 | +401 |
-| AS204957 | GREENFLOID-AS - ROUTE 95 LLC, US | US | `evidence_increased` | 803 | 1190 | +387 |
-| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_decreased` | 2710 | 2373 | -337 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 88829 | 89151 | +322 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 10143 | 9828 | -315 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 111526 | 96472 | -15054 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 113122 | 107297 | -5825 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 481545 | 477109 | -4436 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 13091 | 15425 | +2334 |
+| AS59686 | GEMINI-PL - Gemini Internet Sp. z o.o., PL | PL | `evidence_decreased` | 2853 | 847 | -2006 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 11979 | 13963 | +1984 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5367 | 6541 | +1174 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 25266 | 26388 | +1122 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 45376 | 44306 | -1070 |
+| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 4822 | 5880 | +1058 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 9828 | 10768 | +940 |
+| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_increased` | 11228 | 12001 | +773 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 89151 | 89918 | +767 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 148873 | 148197 | -676 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4688 | 5300 | +612 |
+| AS197838 | CHEELOO-AS - CHEELOO-AS, PL | PL | `risk_level_changed` | 1893 | 2498 | +605 |
+| AS45609 | BHARTI-MOBILITY-AS-AP - Bharti Airtel Ltd. AS for GPRS Service, IN | IN | `evidence_increased` | 2147 | 2741 | +594 |
+| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_increased` | 8024 | 8608 | +584 |
+| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_increased` | 5109 | 5679 | +570 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 8676 | 9196 | +520 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 166012 | 166507 | +495 |
+| AS701 | UUNET - Verizon Business, US | US | `evidence_increased` | 5225 | 5706 | +481 |
+| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_increased` | 5434 | 5915 | +481 |
+| AS202004 | GREENLAN-AS - GreenLan Fiber Sp. z o.o. Sp.k., PL | PL | `risk_level_changed` | 5 | 477 | +472 |
+| AS18403 | FPT-VN - FPT Telecom Company, VN | VN | `evidence_increased` | 4905 | 5347 | +442 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
