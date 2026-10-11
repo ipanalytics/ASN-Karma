@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-10T10:49:28Z`_
+_Last dataset build: `2026-10-11T11:02:08Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-10T10:49:28Z`_
+_Last updated: `2026-10-11T11:02:08Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 111526 | 96472 | -15054 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 113122 | 107297 | -5825 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 481545 | 477109 | -4436 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 13091 | 15425 | +2334 |
-| AS59686 | GEMINI-PL - Gemini Internet Sp. z o.o., PL | PL | `evidence_decreased` | 2853 | 847 | -2006 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 11979 | 13963 | +1984 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5367 | 6541 | +1174 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 25266 | 26388 | +1122 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 45376 | 44306 | -1070 |
-| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 4822 | 5880 | +1058 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 9828 | 10768 | +940 |
-| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_increased` | 11228 | 12001 | +773 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 89151 | 89918 | +767 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 148873 | 148197 | -676 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4688 | 5300 | +612 |
-| AS197838 | CHEELOO-AS - CHEELOO-AS, PL | PL | `risk_level_changed` | 1893 | 2498 | +605 |
-| AS45609 | BHARTI-MOBILITY-AS-AP - Bharti Airtel Ltd. AS for GPRS Service, IN | IN | `evidence_increased` | 2147 | 2741 | +594 |
-| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_increased` | 8024 | 8608 | +584 |
-| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_increased` | 5109 | 5679 | +570 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 8676 | 9196 | +520 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 166012 | 166507 | +495 |
-| AS701 | UUNET - Verizon Business, US | US | `evidence_increased` | 5225 | 5706 | +481 |
-| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_increased` | 5434 | 5915 | +481 |
-| AS202004 | GREENLAN-AS - GreenLan Fiber Sp. z o.o. Sp.k., PL | PL | `risk_level_changed` | 5 | 477 | +472 |
-| AS18403 | FPT-VN - FPT Telecom Company, VN | VN | `evidence_increased` | 4905 | 5347 | +442 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 107297 | 112631 | +5334 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 477109 | 481623 | +4514 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 15425 | 13160 | -2265 |
+| AS16276 | OVH, FR | FR | `evidence_increased` | 44306 | 45737 | +1431 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 96472 | 95113 | -1359 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6541 | 5415 | -1126 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 26388 | 25469 | -919 |
+| AS7713 | TELKOMNET-AS-AP PT Telekomunikasi Indonesia, ID | ID | `evidence_decreased` | 9774 | 8969 | -805 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 148197 | 148739 | +542 |
+| AS45609 | BHARTI-MOBILITY-AS-AP - Bharti Airtel Ltd. AS for GPRS Service, IN | IN | `evidence_decreased` | 2741 | 2212 | -529 |
+| AS203020 | HOSTROYALE, IN | US | `evidence_decreased` | 20219 | 19738 | -481 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 9196 | 8723 | -473 |
+| AS203003 | MAGNA-CAPAX, FI | FI | `evidence_increased` | 143 | 614 | +471 |
+| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_decreased` | 33645 | 33179 | -466 |
+| AS28573 | Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_decreased` | 5679 | 5236 | -443 |
+| AS7552 | VIETEL-AS-AP Viettel Group, VN | VN | `evidence_decreased` | 12001 | 11570 | -431 |
+| AS6789 | CRELCOM-NET, RU | RU | `evidence_increased` | 4232 | 4598 | +366 |
+| AS4637 | ASN-TELSTRA-GLOBAL Telstra Global, HK | US | `evidence_decreased` | 2709 | 2378 | -331 |
+| AS45899 | VNPT-AS-VN VNPT Corp, VN | VN | `evidence_decreased` | 44317 | 44033 | -284 |
+| AS219521 | VERSADC VersaDC - Server Hosting & Colocation Network, TR | TR | `new_asn` | 0 | 274 | +274 |
+| AS59686 | GEMINI-, PL | PL | `evidence_decreased` | 847 | 582 | -265 |
+| AS29484 | RUB-AS - Ruhr-Universitaet Bochum, DE | DE | `evidence_decreased` | 260 | 9 | -251 |
+| AS216014 | BESTDC-LIMITED, GB | BG | `risk_level_changed` | 256 | 7 | -249 |
+| AS50304 | BLIX, NO | GB | `evidence_decreased` | 1410 | 1170 | -240 |
+| AS207990 | HR-CUSTOMER, IN | US | `evidence_decreased` | 1169 | 931 | -238 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
