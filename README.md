@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-12T12:28:22Z`_
+_Last dataset build: `2026-10-13T12:12:09Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-12T12:28:22Z`_
+_Last updated: `2026-10-13T12:12:09Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS60446 | datema - Datema Bilisim Ticaret Anonim Sirketi, TR | TR | `evidence_increased` | 118 | 3409 | +3291 |
-| AS203545 | NERZEN-BILISIM-TEKNOLOJILERI - Savas Anac, TR | US | `risk_level_changed` | 26 | 1956 | +1930 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 13731 | 12516 | -1215 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 148739 | 147626 | -1113 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 10761 | 9973 | -788 |
-| AS20473 | AS-VULTR - The Constant Company, LLC, US | US | `evidence_decreased` | 22851 | 22090 | -761 |
-| AS34987 | bafistaas1 - eva bilgi teknolojileri san ve tic ltd sti, TR | TR | `risk_level_changed` | 180 | 906 | +726 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 184803 | 185495 | +692 |
-| AS48925 | VIBEGAMES - VibeGAMES B.V., NL | US | `evidence_increased` | 74 | 582 | +508 |
-| AS3209 | VODANET - Vodafone GmbH, DE | DE | `risk_level_changed` | 2132 | 2611 | +479 |
-| AS219521 | VERSADC - VERSADC VERI MERKEZI HIZMETLERI LIMITED SIRKETI, TR | UA | `risk_level_changed` | 274 | 735 | +461 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `evidence_increased` | 8 | 465 | +457 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 90007 | 89569 | -438 |
-| AS211539 | VERSA-ASN - YUSUF OZTURK, TR | AE | `risk_level_changed` | 122 | 493 | +371 |
-| AS6789 | CRELCOM-NET - CRELCOM LLC, RU | RU | `evidence_decreased` | 4598 | 4231 | -367 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 45737 | 46060 | +323 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 6959 | 7222 | +263 |
-| AS216014 | BestDC-Limited - BestDC Limited, GB | BG | `risk_level_changed` | 7 | 256 | +249 |
-| AS701 | UUNET - Verizon Business, US | US | `evidence_decreased` | 5578 | 5332 | -246 |
-| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_decreased` | 8654 | 8424 | -230 |
-| AS209474 | EKIPHOST - EKIPHOST BILISIM TEKNOLOJILERI TICARET VE SANAYI LIMITED SIRKETI, TR | LT | `risk_level_changed` | 112 | 337 | +225 |
-| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 417 | 194 | -223 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 44033 | 43824 | -209 |
-| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_decreased` | 5763 | 5557 | -206 |
-| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_decreased` | 539 | 333 | -206 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 46060 | 47916 | +1856 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 95065 | 95852 | +787 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 185495 | 186158 | +663 |
+| AS49715 | PL-WLANTECH-AS - PTU WLAN-TECH PLUS JACEK SOLTYS, PL | PL | `evidence_decreased` | 1017 | 382 | -635 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 55842 | 56353 | +511 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 166767 | 167097 | +330 |
+| AS138415 | YANCYLIMITED-AS-HK - Yancy Limited, HK | US | `evidence_decreased` | 352 | 71 | -281 |
+| AS39287 | materialism - Materialism s.r.l., RO | RO | `evidence_increased` | 234 | 487 | +253 |
+| AS3223 | VOXILITY - Voxility LLP, GB | AE | `evidence_increased` | 323 | 563 | +240 |
+| AS41268 | SESAMEWARE-AS - Sesameware FZ-LLC, AE | AE | `evidence_decreased` | 1442 | 1202 | -240 |
+| AS267578 | AS267578 - WILLIAN MENDES DE OLIVEIRA ME, BR | BR | `evidence_decreased` | 318 | 79 | -239 |
+| AS44589 | NTservers - DIGITAL NETWORK S.R.L., MD | GB | `evidence_decreased` | 256 | 36 | -220 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 147626 | 147842 | +216 |
+| AS47154 | HUSAM-Network - HUSAM A. H. HIJAZI, PS | HK | `evidence_increased` | 79 | 256 | +177 |
+| AS136621 | CUBICHOSTING-AS-AP - Cubic Hosting, BD | US | `evidence_increased` | 47 | 204 | +157 |
+| AS27839 | AS27839 - Comteco Ltda, BO | BO | `evidence_increased` | 234 | 388 | +154 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 89569 | 89721 | +152 |
+| AS201341 | Centurion-Internet-services - trafficforce, UAB, LT | ID | `evidence_increased` | 139 | 287 | +148 |
+| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_decreased` | 5804 | 5669 | -135 |
+| AS131471 | LOGINMEPVTLTD-AS-AP - Login.Me (Pvt) Ltd, PK | PK | `evidence_decreased` | 948 | 813 | -135 |
+| AS401152 | ADCIL-ASN-01 - Ace Data Centers II, L.L.C., US | US | `evidence_decreased` | 1073 | 957 | -116 |
+| AS62240 | Clouvider - Clouvider Limited, GB | GB | `evidence_decreased` | 9782 | 9667 | -115 |
+| AS152726 | DREAMENGINEERING-AS-AP - Dream Engineering, BD | BG | `risk_level_changed` | 79 | 188 | +109 |
+| AS272809 | AS272809 - THUNDERNET, C.A., VE | US | `evidence_decreased` | 9060 | 8953 | -107 |
+| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_increased` | 7442 | 7546 | +104 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
