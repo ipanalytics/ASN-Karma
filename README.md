@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-13T12:12:09Z`_
+_Last dataset build: `2026-10-14T09:45:00Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-13T12:12:09Z`_
+_Last updated: `2026-10-14T09:45:00Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 46060 | 47916 | +1856 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 95065 | 95852 | +787 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 185495 | 186158 | +663 |
-| AS49715 | PL-WLANTECH-AS - PTU WLAN-TECH PLUS JACEK SOLTYS, PL | PL | `evidence_decreased` | 1017 | 382 | -635 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 55842 | 56353 | +511 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 166767 | 167097 | +330 |
-| AS138415 | YANCYLIMITED-AS-HK - Yancy Limited, HK | US | `evidence_decreased` | 352 | 71 | -281 |
-| AS39287 | materialism - Materialism s.r.l., RO | RO | `evidence_increased` | 234 | 487 | +253 |
-| AS3223 | VOXILITY - Voxility LLP, GB | AE | `evidence_increased` | 323 | 563 | +240 |
-| AS41268 | SESAMEWARE-AS - Sesameware FZ-LLC, AE | AE | `evidence_decreased` | 1442 | 1202 | -240 |
-| AS267578 | AS267578 - WILLIAN MENDES DE OLIVEIRA ME, BR | BR | `evidence_decreased` | 318 | 79 | -239 |
-| AS44589 | NTservers - DIGITAL NETWORK S.R.L., MD | GB | `evidence_decreased` | 256 | 36 | -220 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 147626 | 147842 | +216 |
-| AS47154 | HUSAM-Network - HUSAM A. H. HIJAZI, PS | HK | `evidence_increased` | 79 | 256 | +177 |
-| AS136621 | CUBICHOSTING-AS-AP - Cubic Hosting, BD | US | `evidence_increased` | 47 | 204 | +157 |
-| AS27839 | AS27839 - Comteco Ltda, BO | BO | `evidence_increased` | 234 | 388 | +154 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 89569 | 89721 | +152 |
-| AS201341 | Centurion-Internet-services - trafficforce, UAB, LT | ID | `evidence_increased` | 139 | 287 | +148 |
-| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_decreased` | 5804 | 5669 | -135 |
-| AS131471 | LOGINMEPVTLTD-AS-AP - Login.Me (Pvt) Ltd, PK | PK | `evidence_decreased` | 948 | 813 | -135 |
-| AS401152 | ADCIL-ASN-01 - Ace Data Centers II, L.L.C., US | US | `evidence_decreased` | 1073 | 957 | -116 |
-| AS62240 | Clouvider - Clouvider Limited, GB | GB | `evidence_decreased` | 9782 | 9667 | -115 |
-| AS152726 | DREAMENGINEERING-AS-AP - Dream Engineering, BD | BG | `risk_level_changed` | 79 | 188 | +109 |
-| AS272809 | AS272809 - THUNDERNET, C.A., VE | US | `evidence_decreased` | 9060 | 8953 | -107 |
-| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_increased` | 7442 | 7546 | +104 |
+| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_decreased` | 3838 | 2069 | -1769 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 186158 | 187487 | +1329 |
+| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_decreased` | 3573 | 2549 | -1024 |
+| AS11427 | TWC-11427-TEXAS - Charter Communications Inc, US | US | `evidence_decreased` | 6278 | 5389 | -889 |
+| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_decreased` | 6714 | 5890 | -824 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_decreased` | 13804 | 13202 | -602 |
+| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 8265 | 7743 | -522 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 95852 | 96307 | +455 |
+| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_decreased` | 3332 | 2899 | -433 |
+| AS138415 | YANCYLIMITED-AS-HK - Yancy Limited, HK | US | `evidence_increased` | 71 | 503 | +432 |
+| AS30689 | FLOW-NET - FLOW, JM | JM | `evidence_decreased` | 1094 | 678 | -416 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 26502 | 26202 | -300 |
+| AS29484 | RUB-AS - Ruhr-Universitaet Bochum, DE | DE | `evidence_increased` | 10 | 260 | +250 |
+| AS216014 | BestDC-Limited - BestDC Limited, GB | BG | `risk_level_changed` | 256 | 7 | -249 |
+| AS50304 | BLIX - Blix Solutions AS, NO | NO | `evidence_increased` | 1168 | 1416 | +248 |
+| AS399628 | IMR-AS-01 - Internet Measurement Research, US | US | `evidence_increased` | 387 | 630 | +243 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 89721 | 89961 | +240 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 25280 | 25057 | -223 |
+| AS398101 | GO-DADDY-COM-LLC - GoDaddy.com, LLC, US | US | `evidence_decreased` | 1724 | 1508 | -216 |
+| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_increased` | 333 | 539 | +206 |
+| AS33333 | OBJX - objx.net, LLC, US | US | `risk_level_changed` | 24 | 229 | +205 |
+| AS9465 | AGOTOZPTELTD-AS-AP - AGOTOZ PTE. LTD., SG | SC | `evidence_decreased` | 256 | 67 | -189 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 147842 | 148005 | +163 |
+| AS20001 | TWC-20001-PACWEST - Charter Communications Inc, US | US | `evidence_decreased` | 9454 | 9292 | -162 |
+| AS49870 | AS49870-BV - Alsycon B.V., NL | SC | `evidence_decreased` | 508 | 347 | -161 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
