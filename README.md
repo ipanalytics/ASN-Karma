@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-14T09:45:00Z`_
+_Last dataset build: `2026-10-15T09:27:21Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-14T09:45:00Z`_
+_Last updated: `2026-10-15T09:27:21Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_decreased` | 3838 | 2069 | -1769 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 186158 | 187487 | +1329 |
-| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_decreased` | 3573 | 2549 | -1024 |
-| AS11427 | TWC-11427-TEXAS - Charter Communications Inc, US | US | `evidence_decreased` | 6278 | 5389 | -889 |
-| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_decreased` | 6714 | 5890 | -824 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_decreased` | 13804 | 13202 | -602 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 8265 | 7743 | -522 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 95852 | 96307 | +455 |
-| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_decreased` | 3332 | 2899 | -433 |
-| AS138415 | YANCYLIMITED-AS-HK - Yancy Limited, HK | US | `evidence_increased` | 71 | 503 | +432 |
-| AS30689 | FLOW-NET - FLOW, JM | JM | `evidence_decreased` | 1094 | 678 | -416 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 26502 | 26202 | -300 |
-| AS29484 | RUB-AS - Ruhr-Universitaet Bochum, DE | DE | `evidence_increased` | 10 | 260 | +250 |
-| AS216014 | BestDC-Limited - BestDC Limited, GB | BG | `risk_level_changed` | 256 | 7 | -249 |
-| AS50304 | BLIX - Blix Solutions AS, NO | NO | `evidence_increased` | 1168 | 1416 | +248 |
-| AS399628 | IMR-AS-01 - Internet Measurement Research, US | US | `evidence_increased` | 387 | 630 | +243 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 89721 | 89961 | +240 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 25280 | 25057 | -223 |
-| AS398101 | GO-DADDY-COM-LLC - GoDaddy.com, LLC, US | US | `evidence_decreased` | 1724 | 1508 | -216 |
-| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_increased` | 333 | 539 | +206 |
-| AS33333 | OBJX - objx.net, LLC, US | US | `risk_level_changed` | 24 | 229 | +205 |
-| AS9465 | AGOTOZPTELTD-AS-AP - AGOTOZ PTE. LTD., SG | SC | `evidence_decreased` | 256 | 67 | -189 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 147842 | 148005 | +163 |
-| AS20001 | TWC-20001-PACWEST - Charter Communications Inc, US | US | `evidence_decreased` | 9454 | 9292 | -162 |
-| AS49870 | AS49870-BV - Alsycon B.V., NL | SC | `evidence_decreased` | 508 | 347 | -161 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 187487 | 169901 | -17586 |
+| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_increased` | 2069 | 4082 | +2013 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 481487 | 483433 | +1946 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_decreased` | 43861 | 42031 | -1830 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 148005 | 149692 | +1687 |
+| AS37963 | ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN | CN | `evidence_decreased` | 65342 | 64107 | -1235 |
+| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_decreased` | 5971 | 4898 | -1073 |
+| AS1221 | ASN-TELSTRA - Telstra Limited, AU | AU | `evidence_decreased` | 2608 | 1690 | -918 |
+| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_increased` | 5890 | 6791 | +901 |
+| AS11427 | TWC-11427-TEXAS - Charter Communications Inc, US | US | `evidence_increased` | 5389 | 6244 | +855 |
+| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_increased` | 35149 | 35998 | +849 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 89961 | 90708 | +747 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 112532 | 111790 | -742 |
+| AS50767 | FIBERLINK-AS - FIBERLINK Sp. z o.o., PL | PL | `evidence_decreased` | 733 | 45 | -688 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 96307 | 96939 | +632 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 9967 | 9386 | -581 |
+| AS1267 | ASN-WINDTRE - WIND TRE S.P.A., IT | IT | `evidence_decreased` | 2292 | 1721 | -571 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 13202 | 13721 | +519 |
+| AS36903 | Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM, MA | MA | `evidence_decreased` | 4076 | 3558 | -518 |
+| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 7743 | 8215 | +472 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 12563 | 12091 | -472 |
+| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_decreased` | 38250 | 37809 | -441 |
+| AS30689 | FLOW-NET - FLOW, JM | JM | `evidence_increased` | 678 | 1112 | +434 |
+| AS56041 | CMNET-Zhejiang-AP - China Mobile communications corporation, CN | CN | `evidence_decreased` | 1590 | 1173 | -417 |
+| AS202004 | GREENLAN-AS - GreenLan Fiber Sp. z o.o. Sp.k., PL | PL | `risk_level_changed` | 394 | 5 | -389 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
