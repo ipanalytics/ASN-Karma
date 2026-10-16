@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-15T09:27:21Z`_
+_Last dataset build: `2026-10-16T09:18:35Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-15T09:27:21Z`_
+_Last updated: `2026-10-16T09:18:35Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 187487 | 169901 | -17586 |
-| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_increased` | 2069 | 4082 | +2013 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 481487 | 483433 | +1946 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_decreased` | 43861 | 42031 | -1830 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 148005 | 149692 | +1687 |
-| AS37963 | ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN | CN | `evidence_decreased` | 65342 | 64107 | -1235 |
-| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_decreased` | 5971 | 4898 | -1073 |
-| AS1221 | ASN-TELSTRA - Telstra Limited, AU | AU | `evidence_decreased` | 2608 | 1690 | -918 |
-| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_increased` | 5890 | 6791 | +901 |
-| AS11427 | TWC-11427-TEXAS - Charter Communications Inc, US | US | `evidence_increased` | 5389 | 6244 | +855 |
-| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_increased` | 35149 | 35998 | +849 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 89961 | 90708 | +747 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 112532 | 111790 | -742 |
-| AS50767 | FIBERLINK-AS - FIBERLINK Sp. z o.o., PL | PL | `evidence_decreased` | 733 | 45 | -688 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 96307 | 96939 | +632 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 9967 | 9386 | -581 |
-| AS1267 | ASN-WINDTRE - WIND TRE S.P.A., IT | IT | `evidence_decreased` | 2292 | 1721 | -571 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 13202 | 13721 | +519 |
-| AS36903 | Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM, MA | MA | `evidence_decreased` | 4076 | 3558 | -518 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 7743 | 8215 | +472 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 12563 | 12091 | -472 |
-| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_decreased` | 38250 | 37809 | -441 |
-| AS30689 | FLOW-NET - FLOW, JM | JM | `evidence_increased` | 678 | 1112 | +434 |
-| AS56041 | CMNET-Zhejiang-AP - China Mobile communications corporation, CN | CN | `evidence_decreased` | 1590 | 1173 | -417 |
-| AS202004 | GREENLAN-AS - GreenLan Fiber Sp. z o.o. Sp.k., PL | PL | `risk_level_changed` | 394 | 5 | -389 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 96939 | 75112 | -21827 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 169901 | 156275 | -13626 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 149692 | 139679 | -10013 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 90708 | 81442 | -9266 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 26372 | 21415 | -4957 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 12091 | 8371 | -3720 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 483433 | 479785 | -3648 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_decreased` | 24507 | 21245 | -3262 |
+| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_decreased` | 35998 | 32840 | -3158 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_decreased` | 42031 | 39176 | -2855 |
+| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_decreased` | 32811 | 30380 | -2431 |
+| AS51167 | CONTABO - Contabo GmbH, DE | DE | `evidence_decreased` | 19453 | 17024 | -2429 |
+| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_decreased` | 5632 | 3400 | -2232 |
+| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_decreased` | 8336 | 6160 | -2176 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 111790 | 109633 | -2157 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 7315 | 5398 | -1917 |
+| AS20326 | TERASWITCH - TeraSwitch Networks Inc., US | DE | `evidence_decreased` | 2104 | 202 | -1902 |
+| AS202282 | Fibrus - FIBRUS NETWORKS LTD, GB | GB | `risk_level_changed` | 1853 | 18 | -1835 |
+| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_decreased` | 4069 | 2256 | -1813 |
+| AS396356 | LATITUDE-SH - Latitude.sh, US | US | `evidence_decreased` | 6500 | 4710 | -1790 |
+| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_decreased` | 5145 | 3389 | -1756 |
+| AS3215 | AS3215 - Orange S.A., FR | FR | `evidence_decreased` | 3861 | 2122 | -1739 |
+| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_decreased` | 15178 | 13463 | -1715 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5407 | 3726 | -1681 |
+| AS8151 | AS8151 - UNINET, MX | MX | `evidence_decreased` | 10447 | 8788 | -1659 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
