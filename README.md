@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-16T09:18:35Z`_
+_Last dataset build: `2026-10-17T08:49:56Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-16T09:18:35Z`_
+_Last updated: `2026-10-17T08:49:56Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 96939 | 75112 | -21827 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 169901 | 156275 | -13626 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 149692 | 139679 | -10013 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 90708 | 81442 | -9266 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 26372 | 21415 | -4957 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 12091 | 8371 | -3720 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 483433 | 479785 | -3648 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_decreased` | 24507 | 21245 | -3262 |
-| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_decreased` | 35998 | 32840 | -3158 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_decreased` | 42031 | 39176 | -2855 |
-| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_decreased` | 32811 | 30380 | -2431 |
-| AS51167 | CONTABO - Contabo GmbH, DE | DE | `evidence_decreased` | 19453 | 17024 | -2429 |
-| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_decreased` | 5632 | 3400 | -2232 |
-| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_decreased` | 8336 | 6160 | -2176 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 111790 | 109633 | -2157 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 7315 | 5398 | -1917 |
-| AS20326 | TERASWITCH - TeraSwitch Networks Inc., US | DE | `evidence_decreased` | 2104 | 202 | -1902 |
-| AS202282 | Fibrus - FIBRUS NETWORKS LTD, GB | GB | `risk_level_changed` | 1853 | 18 | -1835 |
-| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_decreased` | 4069 | 2256 | -1813 |
-| AS396356 | LATITUDE-SH - Latitude.sh, US | US | `evidence_decreased` | 6500 | 4710 | -1790 |
-| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_decreased` | 5145 | 3389 | -1756 |
-| AS3215 | AS3215 - Orange S.A., FR | FR | `evidence_decreased` | 3861 | 2122 | -1739 |
-| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_decreased` | 15178 | 13463 | -1715 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5407 | 3726 | -1681 |
-| AS8151 | AS8151 - UNINET, MX | MX | `evidence_decreased` | 10447 | 8788 | -1659 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 75112 | 107736 | +32624 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 156275 | 167663 | +11388 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 139679 | 146485 | +6806 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 81442 | 86510 | +5068 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 479785 | 484118 | +4333 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 8371 | 11512 | +3141 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 39176 | 42171 | +2995 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 21245 | 24003 | +2758 |
+| AS51167 | CONTABO - Contabo GmbH, DE | DE | `evidence_increased` | 17024 | 19412 | +2388 |
+| AS44692 | DOMTEL-PL-AS - _Domtel Telecom_ Dariusz Dombek, PL | PL | `risk_level_changed` | 160 | 2377 | +2217 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 15099 | 17292 | +2193 |
+| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_increased` | 30380 | 32568 | +2188 |
+| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_decreased` | 3573 | 1463 | -2110 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 109633 | 111731 | +2098 |
+| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_increased` | 3400 | 5413 | +2013 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 5398 | 7306 | +1908 |
+| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_increased` | 6160 | 7998 | +1838 |
+| AS26548 | PUREVOLTAGE-INC - PureVoltage Hosting Inc., US | US | `evidence_decreased` | 11701 | 9925 | -1776 |
+| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_increased` | 2256 | 3985 | +1729 |
+| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_increased` | 3389 | 5066 | +1677 |
+| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_increased` | 32840 | 34516 | +1676 |
+| AS8151 | AS8151 - UNINET, MX | MX | `evidence_increased` | 8788 | 10395 | +1607 |
+| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 5006 | 6589 | +1583 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 54436 | 55977 | +1541 |
+| AS11878 | TZULO - tzulo, inc., US | US | `evidence_increased` | 2064 | 3523 | +1459 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
