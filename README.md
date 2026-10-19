@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-18T09:07:24Z`_
+_Last dataset build: `2026-10-19T10:18:58Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-18T09:07:24Z`_
+_Last updated: `2026-10-19T10:18:58Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 107736 | 98431 | -9305 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 167663 | 170902 | +3239 |
-| AS26548 | PUREVOLTAGE-INC - PureVoltage Hosting Inc., US | US | `evidence_increased` | 9925 | 11187 | +1262 |
-| AS216246 | RU-AEZA-AS - Aeza Group LLC, RU | RU | `evidence_increased` | 243 | 1362 | +1119 |
-| AS210644 | AEZA-AS - AEZA GROUP LLC, RU | RU | `evidence_increased` | 6031 | 6828 | +797 |
-| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_decreased` | 5495 | 4757 | -738 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 11512 | 12174 | +662 |
-| AS215540 | GCS-AS - GLOBAL CONNECTIVITY SOLUTIONS LLP, GB | RU | `evidence_increased` | 5226 | 5840 | +614 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 146485 | 147083 | +598 |
-| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_increased` | 37401 | 37933 | +532 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 24003 | 24533 | +530 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 86510 | 87030 | +520 |
-| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_decreased` | 1463 | 949 | -514 |
-| AS213954 | GTS-AS - Global Transit Systems LLC, US | US | `evidence_increased` | 4823 | 5335 | +512 |
-| AS208583 | SHADOWFORCE - Baffin Bay Networks AB, SE | SE | `evidence_increased` | 255 | 765 | +510 |
-| AS50867 | ORG-LVA15-AS - HOSTKEY B.V., NL | IL | `evidence_increased` | 362 | 833 | +471 |
-| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_increased` | 7998 | 8444 | +446 |
-| AS51069 | ASDNEPRONET - Volodymyr Shtark, UA | UA | `evidence_increased` | 649 | 1082 | +433 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_decreased` | 42171 | 41762 | -409 |
-| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_decreased` | 34516 | 34125 | -391 |
-| AS61367 | ASBALKHASH - TOO _B-TEL_, KZ | CZ | `evidence_increased` | 938 | 1319 | +381 |
-| AS46475 | LIMESTONENETWORKS - Limestone Networks, Inc., US | US | `evidence_increased` | 2845 | 3221 | +376 |
-| AS52495 | AS52495 - Cotel Ltda., BO | BO | `evidence_decreased` | 374 | 17 | -357 |
-| AS6167 | CELLCO-PART - Verizon Business, US | US | `evidence_increased` | 1720 | 2072 | +352 |
-| AS36903 | Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM - Office National des Postes et Telecommunications ONPT (Maroc Telecom) / IAM, MA | MA | `evidence_decreased` | 3717 | 3382 | -335 |
+| AS6849 | UKRTELNET - JSC _Ukrtelecom_, UA | UA | `evidence_increased` | 1348 | 6762 | +5414 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 23006 | 26728 | +3722 |
+| AS60446 | datema - Datema Bilisim Ticaret Anonim Sirketi, TR | TR | `evidence_decreased` | 3409 | 118 | -3291 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 147083 | 145138 | -1945 |
+| AS202282 | Fibrus - FIBRUS NETWORKS LTD, GB | GB | `evidence_increased` | 33 | 1862 | +1829 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 7907 | 6187 | -1720 |
+| AS396356 | LATITUDE-SH - Latitude.sh, US | US | `evidence_increased` | 4807 | 6448 | +1641 |
+| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_increased` | 8850 | 10275 | +1425 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 24081 | 25373 | +1292 |
+| AS203545 | NERZEN-BILISIM-TEKNOLOJILERI - Savas Anac, TR | US | `risk_level_changed` | 1471 | 277 | -1194 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 8464 | 9621 | +1157 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 98431 | 99470 | +1039 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 12174 | 11208 | -966 |
+| AS30900 | WEBWORLD-AS - Sternforth Ltd. trading as WebWorld, IE | GB | `evidence_increased` | 80 | 933 | +853 |
+| AS262287 | AS262287 - Latitude.sh LTDA, BR | US | `evidence_increased` | 2492 | 3327 | +835 |
+| AS203964 | x4TEL-AS - 4Tel Telekomunikacije d.o.o., HR | GB | `risk_level_changed` | 17 | 766 | +749 |
+| AS219329 | ASN-FEIT - FLASH EDGE INFORMATION TECHNOLOGY LLC, AE | UA | `risk_level_changed` | 519 | 1233 | +714 |
+| AS984 | OWS-NETWORK - OCTOPUS WEB SOLUTION INC, US | US | `evidence_increased` | 3183 | 3889 | +706 |
+| AS51765 | CREANOVA-AS - Oy Crea Nova Hosting Solution Ltd, FI | GB | `evidence_increased` | 417 | 1119 | +702 |
+| AS37153 | Xneelo (Pty) Ltd - Xneelo (Pty) Ltd, ZA | GB | `evidence_increased` | 238 | 939 | +701 |
+| AS2856 | BT-UK-AS - British Telecommunications Limited, GB | GB | `evidence_increased` | 2778 | 3439 | +661 |
+| AS215730 | H2NEXUS-AS - H2NEXUS CLOUD SERVICES - FZCO, AE | RU | `evidence_decreased` | 1829 | 1176 | -653 |
+| AS59642 | CHERRYSERVERS2-AS - UAB _Cherry Servers_, LT | LT | `evidence_increased` | 412 | 1052 | +640 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 170902 | 171511 | +609 |
+| AS29802 | HVC-AS - HIVELOCITY, Inc., US | US | `evidence_increased` | 4367 | 4945 | +578 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
