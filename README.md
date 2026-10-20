@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-19T10:18:58Z`_
+_Last dataset build: `2026-10-20T09:39:00Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-19T10:18:58Z`_
+_Last updated: `2026-10-20T09:39:00Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS6849 | UKRTELNET - JSC _Ukrtelecom_, UA | UA | `evidence_increased` | 1348 | 6762 | +5414 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 23006 | 26728 | +3722 |
-| AS60446 | datema - Datema Bilisim Ticaret Anonim Sirketi, TR | TR | `evidence_decreased` | 3409 | 118 | -3291 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 147083 | 145138 | -1945 |
-| AS202282 | Fibrus - FIBRUS NETWORKS LTD, GB | GB | `evidence_increased` | 33 | 1862 | +1829 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 7907 | 6187 | -1720 |
-| AS396356 | LATITUDE-SH - Latitude.sh, US | US | `evidence_increased` | 4807 | 6448 | +1641 |
-| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_increased` | 8850 | 10275 | +1425 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 24081 | 25373 | +1292 |
-| AS203545 | NERZEN-BILISIM-TEKNOLOJILERI - Savas Anac, TR | US | `risk_level_changed` | 1471 | 277 | -1194 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 8464 | 9621 | +1157 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 98431 | 99470 | +1039 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 12174 | 11208 | -966 |
-| AS30900 | WEBWORLD-AS - Sternforth Ltd. trading as WebWorld, IE | GB | `evidence_increased` | 80 | 933 | +853 |
-| AS262287 | AS262287 - Latitude.sh LTDA, BR | US | `evidence_increased` | 2492 | 3327 | +835 |
-| AS203964 | x4TEL-AS - 4Tel Telekomunikacije d.o.o., HR | GB | `risk_level_changed` | 17 | 766 | +749 |
-| AS219329 | ASN-FEIT - FLASH EDGE INFORMATION TECHNOLOGY LLC, AE | UA | `risk_level_changed` | 519 | 1233 | +714 |
-| AS984 | OWS-NETWORK - OCTOPUS WEB SOLUTION INC, US | US | `evidence_increased` | 3183 | 3889 | +706 |
-| AS51765 | CREANOVA-AS - Oy Crea Nova Hosting Solution Ltd, FI | GB | `evidence_increased` | 417 | 1119 | +702 |
-| AS37153 | Xneelo (Pty) Ltd - Xneelo (Pty) Ltd, ZA | GB | `evidence_increased` | 238 | 939 | +701 |
-| AS2856 | BT-UK-AS - British Telecommunications Limited, GB | GB | `evidence_increased` | 2778 | 3439 | +661 |
-| AS215730 | H2NEXUS-AS - H2NEXUS CLOUD SERVICES - FZCO, AE | RU | `evidence_decreased` | 1829 | 1176 | -653 |
-| AS59642 | CHERRYSERVERS2-AS - UAB _Cherry Servers_, LT | LT | `evidence_increased` | 412 | 1052 | +640 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 170902 | 171511 | +609 |
-| AS29802 | HVC-AS - HIVELOCITY, Inc., US | US | `evidence_increased` | 4367 | 4945 | +578 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 145138 | 143520 | -1618 |
+| AS44692 | DOMTEL-PL-AS - _Domtel Telecom_ Dariusz Dombek, PL | PL | `risk_level_changed` | 1700 | 288 | -1412 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 6187 | 7570 | +1383 |
+| AS219521 | VERSADC - VERSADC VERI MERKEZI HIZMETLERI LIMITED SIRKETI, TR | TR | `evidence_increased` | 758 | 2002 | +1244 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 171511 | 172276 | +765 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 9621 | 10171 | +550 |
+| AS3269 | ASN-IBSNAZ - Telecom Italia S.p.A., IT | IT | `evidence_decreased` | 4979 | 4438 | -541 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `evidence_increased` | 6 | 474 | +468 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 48125 | 47670 | -455 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 87423 | 86974 | -449 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 483916 | 484290 | +374 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 99470 | 99841 | +371 |
+| AS57269 | DIGI-ES - DIGI SPAIN TELECOM S.A, ES | ES | `evidence_decreased` | 1405 | 1057 | -348 |
+| AS60077 | AT-CLOUD - Asre Dadeha Asiatech, IR | IR | `risk_level_changed` | 293 | 2 | -291 |
+| AS5089 | NTL - Virgin Media Limited, GB | GB | `evidence_decreased` | 2209 | 1920 | -289 |
+| AS34470 | PTKOM-AS - PortTelekom LLC, RU | CZ | `evidence_decreased` | 295 | 40 | -255 |
+| AS218751 | Fontaine - Fontaine, LLC, US | GB | `risk_level_changed` | 4 | 256 | +252 |
+| AS216014 | BestDC-Limited - BestDC Limited, GB | BG | `risk_level_changed` | 7 | 256 | +249 |
+| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_decreased` | 487 | 241 | -246 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 4842 | 4600 | -242 |
+| AS2860 | NOS_COMUNICACOES - NOS COMUNICACOES, S.A., PT | PT | `evidence_decreased` | 1115 | 897 | -218 |
+| AS207990 | HR-CUSTOMER - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 982 | 1185 | +203 |
+| AS2856 | BT-UK-AS - British Telecommunications Limited, GB | GB | `evidence_decreased` | 3439 | 3238 | -201 |
+| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_decreased` | 1727 | 1526 | -201 |
+| AS22168 | SHADOWSERVER-FOUNDATION - The Shadowserver Foundation, Inc., US | US | `evidence_increased` | 146 | 346 | +200 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
