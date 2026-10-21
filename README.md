@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-20T09:39:00Z`_
+_Last dataset build: `2026-10-21T09:40:22Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-20T09:39:00Z`_
+_Last updated: `2026-10-21T09:40:22Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 145138 | 143520 | -1618 |
-| AS44692 | DOMTEL-PL-AS - _Domtel Telecom_ Dariusz Dombek, PL | PL | `risk_level_changed` | 1700 | 288 | -1412 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 6187 | 7570 | +1383 |
-| AS219521 | VERSADC - VERSADC VERI MERKEZI HIZMETLERI LIMITED SIRKETI, TR | TR | `evidence_increased` | 758 | 2002 | +1244 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 171511 | 172276 | +765 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 9621 | 10171 | +550 |
-| AS3269 | ASN-IBSNAZ - Telecom Italia S.p.A., IT | IT | `evidence_decreased` | 4979 | 4438 | -541 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `evidence_increased` | 6 | 474 | +468 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 48125 | 47670 | -455 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 87423 | 86974 | -449 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 483916 | 484290 | +374 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 99470 | 99841 | +371 |
-| AS57269 | DIGI-ES - DIGI SPAIN TELECOM S.A, ES | ES | `evidence_decreased` | 1405 | 1057 | -348 |
-| AS60077 | AT-CLOUD - Asre Dadeha Asiatech, IR | IR | `risk_level_changed` | 293 | 2 | -291 |
-| AS5089 | NTL - Virgin Media Limited, GB | GB | `evidence_decreased` | 2209 | 1920 | -289 |
-| AS34470 | PTKOM-AS - PortTelekom LLC, RU | CZ | `evidence_decreased` | 295 | 40 | -255 |
-| AS218751 | Fontaine - Fontaine, LLC, US | GB | `risk_level_changed` | 4 | 256 | +252 |
-| AS216014 | BestDC-Limited - BestDC Limited, GB | BG | `risk_level_changed` | 7 | 256 | +249 |
-| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_decreased` | 487 | 241 | -246 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 4842 | 4600 | -242 |
-| AS2860 | NOS_COMUNICACOES - NOS COMUNICACOES, S.A., PT | PT | `evidence_decreased` | 1115 | 897 | -218 |
-| AS207990 | HR-CUSTOMER - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 982 | 1185 | +203 |
-| AS2856 | BT-UK-AS - British Telecommunications Limited, GB | GB | `evidence_decreased` | 3439 | 3238 | -201 |
-| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_decreased` | 1727 | 1526 | -201 |
-| AS22168 | SHADOWSERVER-FOUNDATION - The Shadowserver Foundation, Inc., US | US | `evidence_increased` | 146 | 346 | +200 |
+| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 7847 | 4710 | -3137 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 7570 | 4489 | -3081 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_decreased` | 13492 | 11223 | -2269 |
+| AS398324 | CENSYS-ARIN-01 - Censys, Inc., US | US | `evidence_decreased` | 3384 | 1687 | -1697 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 17671 | 15995 | -1676 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 99841 | 101447 | +1606 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 25429 | 24011 | -1418 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 143520 | 144844 | +1324 |
+| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_decreased` | 21581 | 20526 | -1055 |
+| AS25184 | AFRANET - Afranet, IR | IR | `evidence_decreased` | 1217 | 195 | -1022 |
+| AS20473 | AS-VULTR - The Constant Company, LLC, US | US | `evidence_decreased` | 22092 | 21269 | -823 |
+| AS131279 | STAR-KP - Ryugyong-dong, KP | KP | `risk_level_changed` | 1 | 766 | +765 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 13269 | 12667 | -602 |
+| AS10753 | LUMEN-LEGACY-L3-CUSTOMER-SHARED-USE - Level 3 Parent, LLC, US | US | `evidence_decreased` | 2521 | 1999 | -522 |
+| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_decreased` | 32052 | 31535 | -517 |
+| AS198610 | BEGET-AS - Beget LLC, RU | RU | `evidence_decreased` | 2065 | 1558 | -507 |
+| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_decreased` | 15342 | 14851 | -491 |
+| AS219521 | VERSADC - VERSADC VERI MERKEZI HIZMETLERI LIMITED SIRKETI, TR | AE | `evidence_decreased` | 2002 | 1520 | -482 |
+| AS205516 | NLS-ASTANA - NLS ASTANA LLP, KZ | KZ | `evidence_decreased` | 1117 | 636 | -481 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | NL | `evidence_decreased` | 474 | 6 | -468 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 484290 | 484718 | +428 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 11164 | 10740 | -424 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 172276 | 172693 | +417 |
+| AS835 | GOCODEIT-EDGE - GoCodeIT Inc, CA | CA | `evidence_decreased` | 897 | 503 | -394 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4600 | 4987 | +387 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
