@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-22T09:39:31Z`_
+_Last dataset build: `2026-10-23T09:36:25Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-22T09:39:31Z`_
+_Last updated: `2026-10-23T09:36:25Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_increased` | 4710 | 7827 | +3117 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 4489 | 1600 | -2889 |
-| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `risk_level_changed` | 13 | 2338 | +2325 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 11223 | 13527 | +2304 |
-| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_increased` | 1907 | 4181 | +2274 |
-| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_decreased` | 37932 | 35822 | -2110 |
-| AS2516 | KDDI - KDDI CORPORATION, JP | JP | `evidence_decreased` | 2454 | 602 | -1852 |
-| AS398324 | CENSYS-ARIN-01 - Censys, Inc., US | US | `evidence_increased` | 1687 | 3391 | +1704 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 144844 | 143147 | -1697 |
-| AS55286 | SERVER-MANIA - B2 Net Solutions Inc., CA | US | `evidence_increased` | 2131 | 3722 | +1591 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 24011 | 25473 | +1462 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 484718 | 483444 | -1274 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 172693 | 173834 | +1141 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 15995 | 17107 | +1112 |
-| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_increased` | 20526 | 21636 | +1110 |
-| AS20473 | AS-VULTR - The Constant Company, LLC, US | US | `evidence_increased` | 21269 | 22217 | +948 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 101447 | 102376 | +929 |
-| AS3215 | AS3215 - Orange S.A., FR | FR | `evidence_decreased` | 3982 | 3123 | -859 |
-| AS219521 | VERSADC - VERSADC VERI MERKEZI HIZMETLERI LIMITED SIRKETI, TR | UA | `evidence_decreased` | 1520 | 758 | -762 |
-| AS46261 | QUICKPACKET - QuickPacket, LLC, US | US | `evidence_decreased` | 1932 | 1223 | -709 |
-| AS23724 | CHINANET-IDC-BJ-AP - IDC, China Telecommunications Corporation, CN | CN | `evidence_decreased` | 3486 | 2785 | -701 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 10740 | 11431 | +691 |
-| AS215730 | H2NEXUS-AS - H2NEXUS CLOUD SERVICES - FZCO, AE | US | `evidence_increased` | 1181 | 1849 | +668 |
-| AS29802 | HVC-AS - HIVELOCITY, Inc., US | US | `evidence_decreased` | 4815 | 4187 | -628 |
-| AS12322 | PROXAD - Free SAS, FR | FR | `evidence_decreased` | 3598 | 2988 | -610 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 483444 | 486122 | +2678 |
+| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `evidence_increased` | 2338 | 4709 | +2371 |
+| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_increased` | 35822 | 38014 | +2192 |
+| AS2516 | KDDI - KDDI CORPORATION, JP | JP | `evidence_increased` | 602 | 2442 | +1840 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 143147 | 144688 | +1541 |
+| AS204170 | awasr - Awaser Oman LLC, OM | DE | `evidence_decreased` | 3185 | 1655 | -1530 |
+| AS984 | OWS-NETWORK - OCTOPUS WEB SOLUTION INC, US | US | `evidence_decreased` | 3875 | 2563 | -1312 |
+| AS197838 | CHEELOO-AS - CHEELOO-AS, PL | PL | `evidence_decreased` | 2543 | 1273 | -1270 |
+| AS27884 | AS27884 - CABLECOLOR S.A., HN | HN | `evidence_decreased` | 1043 | 86 | -957 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 173834 | 174753 | +919 |
+| AS37577 | Orange Burkina Faso - Orange Burkina Faso, BF | US | `evidence_decreased` | 1566 | 675 | -891 |
+| AS29802 | HVC-AS - HIVELOCITY, Inc., US | US | `evidence_increased` | 4187 | 5020 | +833 |
+| AS264750 | AS264750 - TELEOPERADORA DEL NORDESTE S.R.L, DO | US | `risk_level_changed` | 781 | 32 | -749 |
+| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_decreased` | 31517 | 30806 | -711 |
+| AS46261 | QUICKPACKET - QuickPacket, LLC, US | US | `evidence_increased` | 1223 | 1931 | +708 |
+| AS23724 | CHINANET-IDC-BJ-AP - IDC, China Telecommunications Corporation, CN | CN | `evidence_increased` | 2785 | 3478 | +693 |
+| AS269820 | AS269820 - FULL DATA COMUNICACIONES C.A., VE | US | `evidence_decreased` | 842 | 163 | -679 |
+| AS62610 | ZEN-DPS - Zenlayer Inc, US | US | `evidence_increased` | 2102 | 2780 | +678 |
+| AS49729 | MODULBANK-AS - Open Joint Stock Company Commercial Bank _Modulbank_, RU | RU | `risk_level_changed` | 667 | 1 | -666 |
+| AS263656 | AS263656 - BRSULNET TELECOM LTDA, BR | US | `evidence_decreased` | 664 | 38 | -626 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 102376 | 102996 | +620 |
+| AS213671 | FOURTHUTILITY-AS - Vision Fibre Media Ltd., GB | US | `risk_level_changed` | 556 | 17 | -539 |
+| AS58466 | CT-Guangzhou-IDC - CHINANET Guangdong province network, CN | CN | `evidence_increased` | 191 | 722 | +531 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 47324 | 46822 | -502 |
+| AS210874 | box-broadband - Box Broadband Limited, GB | US | `evidence_increased` | 5 | 478 | +473 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
