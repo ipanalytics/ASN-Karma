@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-23T09:36:25Z`_
+_Last dataset build: `2026-10-24T09:08:36Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-23T09:36:25Z`_
+_Last updated: `2026-10-24T09:08:36Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 483444 | 486122 | +2678 |
-| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `evidence_increased` | 2338 | 4709 | +2371 |
-| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_increased` | 35822 | 38014 | +2192 |
-| AS2516 | KDDI - KDDI CORPORATION, JP | JP | `evidence_increased` | 602 | 2442 | +1840 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 143147 | 144688 | +1541 |
-| AS204170 | awasr - Awaser Oman LLC, OM | DE | `evidence_decreased` | 3185 | 1655 | -1530 |
-| AS984 | OWS-NETWORK - OCTOPUS WEB SOLUTION INC, US | US | `evidence_decreased` | 3875 | 2563 | -1312 |
-| AS197838 | CHEELOO-AS - CHEELOO-AS, PL | PL | `evidence_decreased` | 2543 | 1273 | -1270 |
-| AS27884 | AS27884 - CABLECOLOR S.A., HN | HN | `evidence_decreased` | 1043 | 86 | -957 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 173834 | 174753 | +919 |
-| AS37577 | Orange Burkina Faso - Orange Burkina Faso, BF | US | `evidence_decreased` | 1566 | 675 | -891 |
-| AS29802 | HVC-AS - HIVELOCITY, Inc., US | US | `evidence_increased` | 4187 | 5020 | +833 |
-| AS264750 | AS264750 - TELEOPERADORA DEL NORDESTE S.R.L, DO | US | `risk_level_changed` | 781 | 32 | -749 |
-| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_decreased` | 31517 | 30806 | -711 |
-| AS46261 | QUICKPACKET - QuickPacket, LLC, US | US | `evidence_increased` | 1223 | 1931 | +708 |
-| AS23724 | CHINANET-IDC-BJ-AP - IDC, China Telecommunications Corporation, CN | CN | `evidence_increased` | 2785 | 3478 | +693 |
-| AS269820 | AS269820 - FULL DATA COMUNICACIONES C.A., VE | US | `evidence_decreased` | 842 | 163 | -679 |
-| AS62610 | ZEN-DPS - Zenlayer Inc, US | US | `evidence_increased` | 2102 | 2780 | +678 |
-| AS49729 | MODULBANK-AS - Open Joint Stock Company Commercial Bank _Modulbank_, RU | RU | `risk_level_changed` | 667 | 1 | -666 |
-| AS263656 | AS263656 - BRSULNET TELECOM LTDA, BR | US | `evidence_decreased` | 664 | 38 | -626 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 102376 | 102996 | +620 |
-| AS213671 | FOURTHUTILITY-AS - Vision Fibre Media Ltd., GB | US | `risk_level_changed` | 556 | 17 | -539 |
-| AS58466 | CT-Guangzhou-IDC - CHINANET Guangdong province network, CN | CN | `evidence_increased` | 191 | 722 | +531 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 47324 | 46822 | -502 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `evidence_increased` | 5 | 478 | +473 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 486122 | 486890 | +768 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 102996 | 103633 | +637 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 144688 | 145291 | +603 |
+| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `evidence_increased` | 4709 | 5129 | +420 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 87252 | 87624 | +372 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 11391 | 11690 | +299 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 9404 | 9699 | +295 |
+| AS197838 | CHEELOO-AS - CHEELOO-AS, PL | PL | `evidence_decreased` | 1273 | 995 | -278 |
+| AS48090 | DMZHOST - TECHOFF SRV LIMITED, GB | BG | `evidence_decreased` | 567 | 293 | -274 |
+| AS34470 | PTKOM-AS - PortTelekom LLC, RU | AE | `evidence_increased` | 41 | 296 | +255 |
+| AS133033 | DNICL-AS-AP - Dragon Network Int_l Co. Ltd, HK | CN | `risk_level_changed` | 1 | 256 | +255 |
+| AS1054 | ZONT-LLC - Zont LLC, US | US | `risk_level_changed` | 33 | 287 | +254 |
+| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_decreased` | 475 | 240 | -235 |
+| AS44589 | NTservers - DIGITAL NETWORK S.R.L., MD | GB | `evidence_decreased` | 256 | 40 | -216 |
+| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_increased` | 4669 | 4869 | +200 |
+| AS24547 | CMNET-V4HEBEI-AS-AP - Hebei Mobile Communication Company Limited, CN | CN | `evidence_increased` | 1198 | 1391 | +193 |
+| AS9465 | AGOTOZPTELTD-AS-AP - AGOTOZ PTE. LTD., SG | SC | `evidence_increased` | 68 | 256 | +188 |
+| AS47154 | HUSAM-Network - HUSAM A. H. HIJAZI, PS | HK | `evidence_increased` | 72 | 256 | +184 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 174753 | 174576 | -177 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 7684 | 7859 | +175 |
+| AS209630 | KREDIT-AS - LLC VASH KREDIT BANK, UA | AE | `evidence_increased` | 121 | 287 | +166 |
+| AS49870 | AS49870-BV - Alsycon B.V., NL | SC | `evidence_increased` | 346 | 506 | +160 |
+| AS197793 | GIGABIT-NET - Gigabit LLC, RU | RU | `evidence_increased` | 170 | 330 | +160 |
+| AS213790 | LimitedNetwork-AS - Limited Network LTD, GB | DE | `evidence_increased` | 338 | 496 | +158 |
+| AS401661 | EMBNEX-AS - EMBNEX, LLC, US | US | `evidence_increased` | 111 | 261 | +150 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
