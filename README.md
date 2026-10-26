@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-25T09:25:54Z`_
+_Last dataset build: `2026-10-26T10:32:40Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-25T09:25:54Z`_
+_Last updated: `2026-10-26T10:32:40Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 486890 | 472422 | -14468 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 145291 | 143674 | -1617 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 9699 | 8237 | -1462 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 87624 | 86681 | -943 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 103633 | 104492 | +859 |
-| AS32709 | 1-JOINK - Joink, LLC, US | US | `risk_level_changed` | 832 | 9 | -823 |
-| AS18978 | ENZUINC-US - Enzu Inc, US | US | `evidence_decreased` | 2466 | 1676 | -790 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 174576 | 173921 | -655 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4138 | 4680 | +542 |
-| AS152179 | GCNL-AS-AP - GLOBAL COMMUNICATION NETWORK LIMITED, HK | US | `evidence_decreased` | 2126 | 1615 | -511 |
-| AS213929 | UP-NETWORK - UP-NETWORK Sarl, CH | GB | `evidence_increased` | 329 | 838 | +509 |
-| AS13030 | INIT7 - Init7 (Switzerland) Ltd., CH | CH | `evidence_increased` | 96 | 599 | +503 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 9150 | 8661 | -489 |
-| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `evidence_decreased` | 5129 | 4645 | -484 |
-| AS5617 | TPNET - Orange Polska Spolka Akcyjna, PL | PL | `evidence_increased` | 1650 | 2132 | +482 |
-| AS36352 | AS-COLOCROSSING - HostPapa, US | US | `evidence_decreased` | 30814 | 30338 | -476 |
-| AS210874 | box-broadband - Box Broadband Limited, GB | US | `evidence_decreased` | 478 | 5 | -473 |
-| AS203003 | magna-capax - Magna Capax Finland Oy, FI | FI | `evidence_decreased` | 466 | 64 | -402 |
-| AS213677 | FIBERCOP - Fibercop S.p.A., IT | IT | `evidence_increased` | 50 | 418 | +368 |
-| AS51167 | CONTABO - Contabo GmbH, DE | DE | `evidence_decreased` | 19856 | 19490 | -366 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 11690 | 12047 | +357 |
-| AS49531 | NETCOM-R-AS - _NetCom-R_ LLC, RU | RU | `evidence_increased` | 193 | 512 | +319 |
-| AS9829 | BSNL-NIB - National Internet Backbone, IN | IN | `evidence_decreased` | 27486 | 27175 | -311 |
-| AS215730 | H2NEXUS-AS - H2NEXUS CLOUD SERVICES - FZCO, AE | US | `evidence_decreased` | 1852 | 1546 | -306 |
-| AS57844 | SPD-Net - SPDNet Telekomunikasyon Hizmetleri Bilgi Teknolojileri Taahhut Sanayi Ve Ticaret A.S., TR | TR | `evidence_decreased` | 585 | 284 | -301 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 104492 | 124824 | +20332 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 472422 | 487240 | +14818 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 86681 | 84930 | -1751 |
+| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `evidence_increased` | 4645 | 6307 | +1662 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 55890 | 57284 | +1394 |
+| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_decreased` | 5770 | 4471 | -1299 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 173921 | 175168 | +1247 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 24311 | 25486 | +1175 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 44035 | 42863 | -1172 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 143674 | 142643 | -1031 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 111976 | 112983 | +1007 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 41831 | 42817 | +986 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 17304 | 18274 | +970 |
+| AS17072 | AS17072 - TOTAL PLAY TELECOMUNICACIONES, S.A.P.I. DE C.V., MX | MX | `evidence_decreased` | 2201 | 1232 | -969 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 8237 | 9196 | +959 |
+| AS8151 | AS8151 - UNINET, MX | MX | `evidence_decreased` | 11105 | 10167 | -938 |
+| AS131464 | DJBL-AS-AP - Digi Jadoo Broadband Ltd, BD | BD | `evidence_increased` | 345 | 1253 | +908 |
+| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_decreased` | 4930 | 4067 | -863 |
+| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_increased` | 4858 | 5693 | +835 |
+| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_decreased` | 11289 | 10466 | -823 |
+| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_decreased` | 5172 | 4391 | -781 |
+| AS701 | UUNET - Verizon Business, US | US | `evidence_decreased` | 5350 | 4574 | -776 |
+| AS58224 | TCI - Iran Telecommunication Company PJS, IR | IR | `evidence_increased` | 4976 | 5705 | +729 |
+| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_decreased` | 7228 | 6539 | -689 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4680 | 5327 | +647 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
