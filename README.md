@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-26T10:32:40Z`_
+_Last dataset build: `2026-10-27T10:03:45Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-26T10:32:40Z`_
+_Last updated: `2026-10-27T10:03:45Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 104492 | 124824 | +20332 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 472422 | 487240 | +14818 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 86681 | 84930 | -1751 |
-| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `evidence_increased` | 4645 | 6307 | +1662 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_increased` | 55890 | 57284 | +1394 |
-| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_decreased` | 5770 | 4471 | -1299 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 173921 | 175168 | +1247 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 24311 | 25486 | +1175 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 44035 | 42863 | -1172 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 143674 | 142643 | -1031 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 111976 | 112983 | +1007 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 41831 | 42817 | +986 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 17304 | 18274 | +970 |
-| AS17072 | AS17072 - TOTAL PLAY TELECOMUNICACIONES, S.A.P.I. DE C.V., MX | MX | `evidence_decreased` | 2201 | 1232 | -969 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 8237 | 9196 | +959 |
-| AS8151 | AS8151 - UNINET, MX | MX | `evidence_decreased` | 11105 | 10167 | -938 |
-| AS131464 | DJBL-AS-AP - Digi Jadoo Broadband Ltd, BD | BD | `evidence_increased` | 345 | 1253 | +908 |
-| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_decreased` | 4930 | 4067 | -863 |
-| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_increased` | 4858 | 5693 | +835 |
-| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_decreased` | 11289 | 10466 | -823 |
-| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_decreased` | 5172 | 4391 | -781 |
-| AS701 | UUNET - Verizon Business, US | US | `evidence_decreased` | 5350 | 4574 | -776 |
-| AS58224 | TCI - Iran Telecommunication Company PJS, IR | IR | `evidence_increased` | 4976 | 5705 | +729 |
-| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_decreased` | 7228 | 6539 | -689 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4680 | 5327 | +647 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 18274 | 17309 | -965 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 124824 | 125577 | +753 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 1600 | 2221 | +621 |
+| AS204144 | COMFORT-AS - Comfort XXI Century Ltd., RU | RU | `evidence_decreased` | 3088 | 2477 | -611 |
+| AS205879 | EKOLINE-AS - EKO-LINE Sp. z o.o., PL | PL | `new_asn` | 0 | 509 | +509 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5015 | 5303 | +288 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 142643 | 142914 | +271 |
+| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `evidence_increased` | 6307 | 6578 | +271 |
+| AS60068 | CDN77 - Datacamp Limited, GB | GB | `evidence_increased` | 2936 | 3197 | +261 |
+| AS5617 | TPNET - Orange Polska Spolka Akcyjna, PL | PL | `evidence_increased` | 2557 | 2813 | +256 |
+| AS211038 | FANTASYHOST - FantasyHost Servicos de Hospedagem & Provedores na Internet LTDA, BR | LT | `risk_level_changed` | 2 | 256 | +254 |
+| AS47553 | MISAKA-BYOIP - Misaka Network, Inc., US | DE | `risk_level_changed` | 1 | 250 | +249 |
+| AS211443 | SINOWORLDWIDE - SINO WORLDWIDE TRADING LIMITED, HK | NL | `evidence_increased` | 108 | 348 | +240 |
+| AS215929 | datacampus - Data Campus Limited, HK | DE | `evidence_increased` | 96 | 314 | +218 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 487240 | 487454 | +214 |
+| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 5596 | 5810 | +214 |
+| AS210328 | ALMAZ - AO ALMAZ, RU | KZ | `evidence_increased` | 246 | 460 | +214 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 175168 | 175379 | +211 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 46592 | 46789 | +197 |
+| AS213790 | LimitedNetwork-AS - Limited Network LTD, GB | US | `evidence_decreased` | 497 | 322 | -175 |
+| AS39287 | materialism - Materialism s.r.l., RO | RO | `evidence_decreased` | 411 | 238 | -173 |
+| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_decreased` | 307 | 151 | -156 |
+| AS49870 | AS49870-BV - Alsycon B.V., NL | SC | `evidence_decreased` | 511 | 358 | -153 |
+| AS401661 | EMBNEX-AS - EMBNEX, LLC, US | US | `evidence_decreased` | 262 | 112 | -150 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 12351 | 12496 | +145 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
