@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-27T10:03:45Z`_
+_Last dataset build: `2026-10-28T10:50:37Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-27T10:03:45Z`_
+_Last updated: `2026-10-28T10:50:37Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 18274 | 17309 | -965 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 124824 | 125577 | +753 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 1600 | 2221 | +621 |
-| AS204144 | COMFORT-AS - Comfort XXI Century Ltd., RU | RU | `evidence_decreased` | 3088 | 2477 | -611 |
-| AS205879 | EKOLINE-AS - EKO-LINE Sp. z o.o., PL | PL | `new_asn` | 0 | 509 | +509 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5015 | 5303 | +288 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 142643 | 142914 | +271 |
-| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `evidence_increased` | 6307 | 6578 | +271 |
-| AS60068 | CDN77 - Datacamp Limited, GB | GB | `evidence_increased` | 2936 | 3197 | +261 |
-| AS5617 | TPNET - Orange Polska Spolka Akcyjna, PL | PL | `evidence_increased` | 2557 | 2813 | +256 |
-| AS211038 | FANTASYHOST - FantasyHost Servicos de Hospedagem & Provedores na Internet LTDA, BR | LT | `risk_level_changed` | 2 | 256 | +254 |
-| AS47553 | MISAKA-BYOIP - Misaka Network, Inc., US | DE | `risk_level_changed` | 1 | 250 | +249 |
-| AS211443 | SINOWORLDWIDE - SINO WORLDWIDE TRADING LIMITED, HK | NL | `evidence_increased` | 108 | 348 | +240 |
-| AS215929 | datacampus - Data Campus Limited, HK | DE | `evidence_increased` | 96 | 314 | +218 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 487240 | 487454 | +214 |
-| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 5596 | 5810 | +214 |
-| AS210328 | ALMAZ - AO ALMAZ, RU | KZ | `evidence_increased` | 246 | 460 | +214 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 175168 | 175379 | +211 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 46592 | 46789 | +197 |
-| AS213790 | LimitedNetwork-AS - Limited Network LTD, GB | US | `evidence_decreased` | 497 | 322 | -175 |
-| AS39287 | materialism - Materialism s.r.l., RO | RO | `evidence_decreased` | 411 | 238 | -173 |
-| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_decreased` | 307 | 151 | -156 |
-| AS49870 | AS49870-BV - Alsycon B.V., NL | SC | `evidence_decreased` | 511 | 358 | -153 |
-| AS401661 | EMBNEX-AS - EMBNEX, LLC, US | US | `evidence_decreased` | 262 | 112 | -150 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 12351 | 12496 | +145 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 13233 | 6355 | -6878 |
+| AS20001 | TWC-20001-PACWEST - Charter Communications Inc, US | US | `evidence_decreased` | 9303 | 6707 | -2596 |
+| AS17561 | LCS-AS-AP LARUS Limited, HK | SC | `evidence_increased` | 2221 | 3976 | +1755 |
+| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_decreased` | 4117 | 2754 | -1363 |
+| AS4134 | CHINANET-BACKBONE No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 142914 | 141590 | -1324 |
+| AS11427 | TWC-11427-TEXAS - Charter Communications Inc, US | US | `evidence_decreased` | 6290 | 5190 | -1100 |
+| AS6461 | ZAYO-6461 - Zayo Bandwidth, US | GB | `evidence_increased` | 2878 | 3656 | +778 |
+| AS4837 | CHINA169-BACKBONE CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 85046 | 84274 | -772 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 487454 | 488189 | +735 |
+| AS7303 | Telecom Argentina S.A., AR | AR | `evidence_decreased` | 6549 | 5832 | -717 |
+| AS9808 | CHINAMOBILE-CN China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 9160 | 8508 | -652 |
+| AS204144 | COMFORT-AS, RU | RU | `evidence_increased` | 2477 | 3097 | +620 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 168674 | 169190 | +516 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5381 | 4868 | -513 |
+| AS22927 | Telefonica de Argentina, AR | AR | `evidence_decreased` | 4079 | 3567 | -512 |
+| AS45102 | ALIBABA-CN-NET Alibaba US Technology Co., Ltd., CN | US | `evidence_increased` | 42829 | 43288 | +459 |
+| AS8151 | UNINET, MX | MX | `evidence_decreased` | 10211 | 9765 | -446 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 175379 | 175767 | +388 |
+| AS54801 | ZILLION-NETWORK - Zillion Network Inc., US | SC | `evidence_decreased` | 1150 | 766 | -384 |
+| AS399628 | IMR-AS-01 - Internet Measurement Research, US | US | `evidence_increased` | 547 | 913 | +366 |
+| AS205879 | EKOLINE-AS, PL | PL | `risk_level_changed` | 509 | 842 | +333 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 12496 | 12824 | +328 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 125577 | 125251 | -326 |
+| AS28573 | Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_decreased` | 4397 | 4080 | -317 |
+| AS20011 | NTT-DATA-Inc, ZA | ZA | `evidence_increased` | 61832 | 62134 | +302 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
