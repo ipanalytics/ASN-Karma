@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-30T11:02:31Z`_
+_Last dataset build: `2026-10-31T10:37:23Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-30T11:02:31Z`_
+_Last updated: `2026-10-31T10:37:23Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 124530 | 128410 | +3880 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 6349 | 8617 | +2268 |
-| AS8151 | AS8151 - UNINET, MX | MX | `evidence_decreased` | 11138 | 9811 | -1327 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 112205 | 113517 | +1312 |
-| AS198566 | MAMUTRAHAL - MAMUT RAHAL SOFTWARE - FZCO, AE | AE | `evidence_decreased` | 1716 | 648 | -1068 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 83458 | 84430 | +972 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 487834 | 488791 | +957 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 25276 | 26219 | +943 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5154 | 6012 | +858 |
-| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_decreased` | 3930 | 3100 | -830 |
-| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_decreased` | 6478 | 5714 | -764 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 25001 | 25692 | +691 |
-| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_decreased` | 4407 | 3827 | -580 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 4869 | 5413 | +544 |
-| AS27901 | AS27901 - Pacifico Cable SPA., CL | CL | `evidence_decreased` | 1069 | 552 | -517 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 19160 | 19667 | +507 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 26895 | 27379 | +484 |
-| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_decreased` | 723 | 267 | -456 |
-| AS26548 | PUREVOLTAGE-INC - PureVoltage Hosting Inc., US | US | `evidence_decreased` | 11060 | 10617 | -443 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 46914 | 46521 | -393 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 43142 | 43523 | +381 |
-| AS22047 | AS22047 - VTR BANDA ANCHA S.A., CL | CL | `evidence_decreased` | 1624 | 1252 | -372 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 173906 | 173538 | -368 |
-| AS6789 | CRELCOM-NET - CRELCOM LLC, RU | RU | `evidence_decreased` | 4625 | 4263 | -362 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 141918 | 141557 | -361 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 173538 | 177488 | +3950 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 8617 | 6340 | -2277 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 128410 | 130637 | +2227 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 488791 | 490182 | +1391 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 141557 | 142925 | +1368 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 113517 | 114665 | +1148 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 84430 | 85474 | +1044 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 26219 | 25295 | -924 |
+| AS206094 | TELBESKID - TELBESKID Sp. z o.o., PL | PL | `risk_level_changed` | 6 | 897 | +891 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6012 | 5179 | -833 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 8082 | 8806 | +724 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 27379 | 27983 | +604 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 25692 | 26170 | +478 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 43523 | 43990 | +467 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 19667 | 20097 | +430 |
+| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 14730 | 15121 | +391 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 46521 | 46907 | +386 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_decreased` | 2708 | 2376 | -332 |
+| AS44092 | HALSERVICE - HALSERVICE, IT | IT | `evidence_increased` | 673 | 1002 | +329 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 6977 | 6687 | -290 |
+| AS210644 | AEZA-AS - AEZA GROUP LLC, RU | RU | `evidence_decreased` | 6949 | 6685 | -264 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 8210 | 8469 | +259 |
+| AS203273 | NetCraftersOU - NetCrafters OU, EE | IR | `evidence_decreased` | 1522 | 1271 | -251 |
+| AS210331 | AS210331 - FIRAT SENEM, TR | CY | `risk_level_changed` | 4 | 252 | +248 |
+| AS58224 | TCI - Iran Telecommunication Company PJS, IR | IR | `evidence_increased` | 5577 | 5823 | +246 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
