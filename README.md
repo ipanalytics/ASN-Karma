@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-10-31T10:37:23Z`_
+_Last dataset build: `2026-11-01T11:30:25Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-10-31T10:37:23Z`_
+_Last updated: `2026-11-01T11:30:25Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 173538 | 177488 | +3950 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 8617 | 6340 | -2277 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 128410 | 130637 | +2227 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 488791 | 490182 | +1391 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 141557 | 142925 | +1368 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 113517 | 114665 | +1148 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 84430 | 85474 | +1044 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 26219 | 25295 | -924 |
-| AS206094 | TELBESKID - TELBESKID Sp. z o.o., PL | PL | `risk_level_changed` | 6 | 897 | +891 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6012 | 5179 | -833 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 8082 | 8806 | +724 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 27379 | 27983 | +604 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 25692 | 26170 | +478 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 43523 | 43990 | +467 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 19667 | 20097 | +430 |
-| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 14730 | 15121 | +391 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 46521 | 46907 | +386 |
-| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_decreased` | 2708 | 2376 | -332 |
-| AS44092 | HALSERVICE - HALSERVICE, IT | IT | `evidence_increased` | 673 | 1002 | +329 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 6977 | 6687 | -290 |
-| AS210644 | AEZA-AS - AEZA GROUP LLC, RU | RU | `evidence_decreased` | 6949 | 6685 | -264 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 8210 | 8469 | +259 |
-| AS203273 | NetCraftersOU - NetCrafters OU, EE | IR | `evidence_decreased` | 1522 | 1271 | -251 |
-| AS210331 | AS210331 - FIRAT SENEM, TR | CY | `risk_level_changed` | 4 | 252 | +248 |
-| AS58224 | TCI - Iran Telecommunication Company PJS, IR | IR | `evidence_increased` | 5577 | 5823 | +246 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 142925 | 139222 | -3703 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 85474 | 82531 | -2943 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 490182 | 487559 | -2623 |
+| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_decreased` | 10489 | 7998 | -2491 |
+| AS17816 | CHINA169-GZ - China Unicom IP network China169 Guangdong province, CN | CN | `evidence_decreased` | 3359 | 2130 | -1229 |
+| AS137266 | CHINATELECOM-HUBEI-WUHAN-5G-NETWORK - CHINATELECOM Hubei province Wuhan 5G network, CN | CN | `evidence_decreased` | 2579 | 1582 | -997 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 114665 | 115417 | +752 |
+| AS213929 | UP-NETWORK - UP-NETWORK Sarl, CH | GB | `evidence_decreased` | 838 | 144 | -694 |
+| AS17488 | HATHWAY-NET-AP - Hathway IP Over Cable Internet, IN | IN | `evidence_decreased` | 2635 | 2035 | -600 |
+| AS24757 | Ethio Telecom - Ethio Telecom, ET | ET | `evidence_decreased` | 2464 | 1880 | -584 |
+| AS17501 | WLINK-NEPAL-AS-AP - WorldLink Communications Pvt Ltd, NP | NP | `evidence_decreased` | 766 | 236 | -530 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 130637 | 131131 | +494 |
+| AS133481 | AIS-Fibre-AS-AP - AIS Fibre, TH | TH | `evidence_decreased` | 1229 | 753 | -476 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 177488 | 177962 | +474 |
+| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_decreased` | 5546 | 5077 | -469 |
+| AS13030 | INIT7 - Init7 (Switzerland) Ltd., CH | CH | `evidence_decreased` | 602 | 207 | -395 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 169705 | 170062 | +357 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 26170 | 26520 | +350 |
+| AS211298 | DRIFTNET - Driftnet Ltd, GB | GB | `evidence_decreased` | 1361 | 1024 | -337 |
+| AS23688 | LINK3-TECH-AS-BD-AP - Link3 Technologies Ltd., BD | BD | `evidence_decreased` | 504 | 171 | -333 |
+| AS835 | GOCODEIT-EDGE - GoCodeIT Inc, CA | CA | `evidence_decreased` | 1202 | 875 | -327 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 8806 | 9129 | +323 |
+| AS8452 | TE-AS - IDDQD-AS, EG | EG | `evidence_decreased` | 7336 | 7039 | -297 |
+| AS15169 | GOOGLE - Google LLC, US | US | `evidence_increased` | 1546 | 1841 | +295 |
+| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_decreased` | 2493 | 2201 | -292 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
