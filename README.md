@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-02T12:53:13Z`_
+_Last dataset build: `2026-11-03T12:23:13Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-02T12:53:13Z`_
+_Last updated: `2026-11-03T12:23:13Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 139222 | 143081 | +3859 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 487559 | 491402 | +3843 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82531 | 85605 | +3074 |
-| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_increased` | 7998 | 10430 | +2432 |
-| AS57844 | SPD-Net - SPDNet Telekomunikasyon Hizmetleri Bilgi Teknolojileri Taahhut Sanayi Ve Ticaret A.S., TR | TR | `evidence_increased` | 258 | 2021 | +1763 |
-| AS198610 | BEGET-AS - Beget LLC, RU | RU | `evidence_decreased` | 1597 | 252 | -1345 |
-| AS17816 | CHINA169-GZ - China Unicom IP network China169 Guangdong province, CN | CN | `evidence_increased` | 2130 | 3372 | +1242 |
-| AS137266 | CHINATELECOM-HUBEI-WUHAN-5G-NETWORK - CHINATELECOM Hubei province Wuhan 5G network, CN | CN | `evidence_increased` | 1582 | 2574 | +992 |
-| AS131464 | DJBL-AS-AP - Digi Jadoo Broadband Ltd, BD | BD | `evidence_decreased` | 1271 | 409 | -862 |
-| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 5077 | 5686 | +609 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 13568 | 14173 | +605 |
-| AS17488 | HATHWAY-NET-AP - Hathway IP Over Cable Internet, IN | IN | `evidence_increased` | 2035 | 2626 | +591 |
-| AS17501 | WLINK-NEPAL-AS-AP - WorldLink Communications Pvt Ltd, NP | NP | `evidence_increased` | 236 | 776 | +540 |
-| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `evidence_decreased` | 6632 | 6112 | -520 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 28171 | 27652 | -519 |
-| AS133481 | AIS-Fibre-AS-AP - AIS Fibre, TH | TH | `evidence_increased` | 753 | 1256 | +503 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_decreased` | 20114 | 19625 | -489 |
-| AS26548 | PUREVOLTAGE-INC - PureVoltage Hosting Inc., US | US | `evidence_increased` | 10265 | 10746 | +481 |
-| AS835 | GOCODEIT-EDGE - GoCodeIT Inc, CA | CA | `evidence_increased` | 875 | 1318 | +443 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 131131 | 130698 | -433 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 170062 | 170459 | +397 |
-| AS207990 | HR-CUSTOMER - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_decreased` | 1272 | 890 | -382 |
-| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_decreased` | 15217 | 14868 | -349 |
-| AS211298 | DRIFTNET - Driftnet Ltd, GB | GB | `evidence_increased` | 1024 | 1359 | +335 |
-| AS23688 | LINK3-TECH-AS-BD-AP - Link3 Technologies Ltd., BD | BD | `evidence_increased` | 171 | 503 | +332 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 130698 | 136432 | +5734 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 143081 | 141686 | -1395 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 25236 | 26098 | +862 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 85605 | 84766 | -839 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 5220 | 4497 | -723 |
+| AS58224 | TCI - Iran Telecommunication Company PJS, IR | IR | `evidence_decreased` | 5765 | 5152 | -613 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5498 | 5016 | -482 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 27652 | 27224 | -428 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 491402 | 491793 | +391 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 115517 | 115160 | -357 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 9082 | 8734 | -348 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 47199 | 47544 | +345 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 57783 | 57455 | -328 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_decreased` | 26234 | 25967 | -267 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 417 | 156 | -261 |
+| AS50019 | DYNET-AS - TURKLOKASYON TELEKOM VE BILISIM TEKNOLOJILERI, TR | TR | `risk_level_changed` | 49 | 299 | +250 |
+| AS211038 | FANTASYHOST - FantasyHost Servicos de Hospedagem & Provedores na Internet LTDA, BR | LT | `evidence_decreased` | 256 | 18 | -238 |
+| AS214466 | Olfe - AE Olfe Teknoloji ve Ticaret Limited Sirketi, TR | US | `evidence_increased` | 256 | 487 | +231 |
+| AS215567 | NETVAY - NETVAY INTERNET VE BILISIM HIZMETLERI TICARET SANAYI LIMITED SIRKETI, TR | LT | `evidence_increased` | 59 | 290 | +231 |
+| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_decreased` | 3614 | 3393 | -221 |
+| AS197838 | CHEELOO-AS - CHEELOO-AS, PL | PL | `evidence_increased` | 758 | 962 | +204 |
+| AS200010 | OLFE - Olfe Veri Merkezi Anonim Sirketi, TR | TR | `evidence_increased` | 256 | 457 | +201 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 16910 | 17091 | +181 |
+| AS17622 | CNCGROUP-GZ - China Unicom Guangzhou network, CN | CN | `evidence_decreased` | 1094 | 914 | -180 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_decreased` | 19625 | 19445 | -180 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
