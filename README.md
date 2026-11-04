@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-03T12:23:13Z`_
+_Last dataset build: `2026-11-04T12:34:32Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-03T12:23:13Z`_
+_Last updated: `2026-11-04T12:34:32Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 130698 | 136432 | +5734 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 143081 | 141686 | -1395 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 25236 | 26098 | +862 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 85605 | 84766 | -839 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 5220 | 4497 | -723 |
-| AS58224 | TCI - Iran Telecommunication Company PJS, IR | IR | `evidence_decreased` | 5765 | 5152 | -613 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 5498 | 5016 | -482 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 27652 | 27224 | -428 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 491402 | 491793 | +391 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 115517 | 115160 | -357 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 9082 | 8734 | -348 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 47199 | 47544 | +345 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 57783 | 57455 | -328 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_decreased` | 26234 | 25967 | -267 |
-| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 417 | 156 | -261 |
-| AS50019 | DYNET-AS - TURKLOKASYON TELEKOM VE BILISIM TEKNOLOJILERI, TR | TR | `risk_level_changed` | 49 | 299 | +250 |
-| AS211038 | FANTASYHOST - FantasyHost Servicos de Hospedagem & Provedores na Internet LTDA, BR | LT | `evidence_decreased` | 256 | 18 | -238 |
-| AS214466 | Olfe - AE Olfe Teknoloji ve Ticaret Limited Sirketi, TR | US | `evidence_increased` | 256 | 487 | +231 |
-| AS215567 | NETVAY - NETVAY INTERNET VE BILISIM HIZMETLERI TICARET SANAYI LIMITED SIRKETI, TR | LT | `evidence_increased` | 59 | 290 | +231 |
-| AS20115 | CHARTER-20115 - Charter Communications LLC, US | US | `evidence_decreased` | 3614 | 3393 | -221 |
-| AS197838 | CHEELOO-AS - CHEELOO-AS, PL | PL | `evidence_increased` | 758 | 962 | +204 |
-| AS200010 | OLFE - Olfe Veri Merkezi Anonim Sirketi, TR | TR | `evidence_increased` | 256 | 457 | +201 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 16910 | 17091 | +181 |
-| AS17622 | CNCGROUP-GZ - China Unicom Guangzhou network, CN | CN | `evidence_decreased` | 1094 | 914 | -180 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_decreased` | 19625 | 19445 | -180 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 115160 | 114024 | -1136 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 84766 | 83820 | -946 |
+| AS400940 | RAILWAY - Railway, US | US | `risk_level_changed` | 14 | 864 | +850 |
+| AS131279 | STAR-KP - Ryugyong-dong, KP | KP | `evidence_decreased` | 1002 | 276 | -726 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 8734 | 8047 | -687 |
+| AS6762 | SEABONE-NET - TELECOM ITALIA SPARKLE S.p.A., IT | NL | `evidence_increased` | 423 | 1033 | +610 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 177731 | 177131 | -600 |
+| AS399628 | IMR-AS-01 - Internet Measurement Research, US | US | `evidence_increased` | 383 | 963 | +580 |
+| AS150820 | LIENVPS-VN - LIENVPS TECHNOLOGY COMPANY LIMITED, VN | VN | `evidence_decreased` | 797 | 303 | -494 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 5016 | 5504 | +488 |
+| AS58224 | TCI - Iran Telecommunication Company PJS, IR | IR | `evidence_increased` | 5152 | 5574 | +422 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_decreased` | 19445 | 19100 | -345 |
+| AS9457 | DREAMX-AS-KR - DREAMLINE CO., KR | KR | `evidence_decreased` | 357 | 21 | -336 |
+| AS38705 | DACOM-AS-KR-KR - KOREA DATA, KR | KR | `evidence_increased` | 94 | 430 | +336 |
+| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_decreased` | 5704 | 5373 | -331 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 47544 | 47853 | +309 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 136432 | 136142 | -290 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | US | `evidence_increased` | 156 | 423 | +267 |
+| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_increased` | 3824 | 4086 | +262 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 10107 | 9846 | -261 |
+| AS208821 | durunet - DURU INTERNET VE BILISIM TEKNOLOJILERI SANAYI TICARET LIMITED SIRKETI, TR | TR | `evidence_increased` | 256 | 512 | +256 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 8295 | 8040 | -255 |
+| AS206264 | AMARUTU-TECHNOLOGY - Amarutu Technology Ltd, SC | SC | `evidence_decreased` | 543 | 293 | -250 |
+| AS37239 | ICTGlobe Management (Pty) Ltd - ICTGlobe Management (Pty) Ltd, ZA | ZA | `risk_level_changed` | 254 | 8 | -246 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 141686 | 141445 | -241 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
