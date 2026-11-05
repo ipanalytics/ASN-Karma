@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-04T12:34:32Z`_
+_Last dataset build: `2026-11-05T12:45:48Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-04T12:34:32Z`_
+_Last updated: `2026-11-05T12:45:48Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 115160 | 114024 | -1136 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 84766 | 83820 | -946 |
-| AS400940 | RAILWAY - Railway, US | US | `risk_level_changed` | 14 | 864 | +850 |
-| AS131279 | STAR-KP - Ryugyong-dong, KP | KP | `evidence_decreased` | 1002 | 276 | -726 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 8734 | 8047 | -687 |
-| AS6762 | SEABONE-NET - TELECOM ITALIA SPARKLE S.p.A., IT | NL | `evidence_increased` | 423 | 1033 | +610 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 177731 | 177131 | -600 |
-| AS399628 | IMR-AS-01 - Internet Measurement Research, US | US | `evidence_increased` | 383 | 963 | +580 |
-| AS150820 | LIENVPS-VN - LIENVPS TECHNOLOGY COMPANY LIMITED, VN | VN | `evidence_decreased` | 797 | 303 | -494 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 5016 | 5504 | +488 |
-| AS58224 | TCI - Iran Telecommunication Company PJS, IR | IR | `evidence_increased` | 5152 | 5574 | +422 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_decreased` | 19445 | 19100 | -345 |
-| AS9457 | DREAMX-AS-KR - DREAMLINE CO., KR | KR | `evidence_decreased` | 357 | 21 | -336 |
-| AS38705 | DACOM-AS-KR-KR - KOREA DATA, KR | KR | `evidence_increased` | 94 | 430 | +336 |
-| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_decreased` | 5704 | 5373 | -331 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 47544 | 47853 | +309 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 136432 | 136142 | -290 |
-| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | US | `evidence_increased` | 156 | 423 | +267 |
-| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_increased` | 3824 | 4086 | +262 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 10107 | 9846 | -261 |
-| AS208821 | durunet - DURU INTERNET VE BILISIM TEKNOLOJILERI SANAYI TICARET LIMITED SIRKETI, TR | TR | `evidence_increased` | 256 | 512 | +256 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 8295 | 8040 | -255 |
-| AS206264 | AMARUTU-TECHNOLOGY - Amarutu Technology Ltd, SC | SC | `evidence_decreased` | 543 | 293 | -250 |
-| AS37239 | ICTGlobe Management (Pty) Ltd - ICTGlobe Management (Pty) Ltd, ZA | ZA | `risk_level_changed` | 254 | 8 | -246 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 141686 | 141445 | -241 |
+| AS210574 | POYRAZ - PH Bilisim Teknolojileri Limited Sirketi, TR | TR | `evidence_decreased` | 2304 | 3 | -2301 |
+| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `evidence_decreased` | 6048 | 4043 | -2005 |
+| AS48956 | HYPERNET-AS - HyperNET sp. z o.o., PL | PL | `evidence_increased` | 45 | 925 | +880 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 177131 | 177948 | +817 |
+| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `risk_level_changed` | 130 | 917 | +787 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 136142 | 136849 | +707 |
+| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 9255 | 8729 | -526 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 114024 | 114409 | +385 |
+| AS399628 | IMR-AS-01 - Internet Measurement Research, US | US | `evidence_decreased` | 963 | 642 | -321 |
+| AS57043 | HOSTKEY-AS - HOSTKEY B.V., NL | AE | `evidence_increased` | 4919 | 5193 | +274 |
+| AS135065 | NIDOM-AS-AP - National Directorate of Information and Technology, TL | TL | `evidence_decreased` | 283 | 25 | -258 |
+| AS208821 | durunet - DURU INTERNET VE BILISIM TEKNOLOJILERI SANAYI TICARET LIMITED SIRKETI, TR | TR | `risk_level_changed` | 512 | 256 | -256 |
+| AS39615 | XREALNET - DURU INTERNET VE BILISIM TEKNOLOJILERI SANAYI TICARET LIMITED SIRKETI, TR | TR | `risk_level_changed` | 1 | 256 | +255 |
+| AS142299 | CLOUDFORESTCOLTD-AS-AP - CLOUDFOREST CO., LTD., TH | TH | `evidence_decreased` | 350 | 95 | -255 |
+| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_decreased` | 4086 | 3835 | -251 |
+| AS206264 | AMARUTU-TECHNOLOGY - Amarutu Technology Ltd, SC | SC | `evidence_increased` | 293 | 543 | +250 |
+| AS216138 | SKYQUANTUM-TELECOM - SKYQUANTUM TELECOM LTD., GB | KR | `evidence_increased` | 88 | 327 | +239 |
+| AS38705 | DACOM-AS-KR-KR - KOREA DATA, KR | KR | `evidence_decreased` | 430 | 192 | -238 |
+| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_decreased` | 499 | 265 | -234 |
+| AS403092 | HOSTRAM - HOSTRAM, US | GB | `evidence_increased` | 43 | 256 | +213 |
+| AS6939 | HURRICANE - Hurricane Electric LLC, US | US | `evidence_decreased` | 2605 | 2415 | -190 |
+| AS9465 | AGOTOZPTELTD-AS-AP - AGOTOZ PTE. LTD., SG | SC | `evidence_increased` | 68 | 256 | +188 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 491563 | 491747 | +184 |
+| AS211466 | MTDE-PSIX-AS - Ministry of Telecommunication & Digital Economy, PS | PS | `risk_level_changed` | 211 | 33 | -178 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 14434 | 14609 | +175 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
