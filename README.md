@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-05T12:45:48Z`_
+_Last dataset build: `2026-11-06T12:29:54Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-05T12:45:48Z`_
+_Last updated: `2026-11-06T12:29:54Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS210574 | POYRAZ - PH Bilisim Teknolojileri Limited Sirketi, TR | TR | `evidence_decreased` | 2304 | 3 | -2301 |
-| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `evidence_decreased` | 6048 | 4043 | -2005 |
-| AS48956 | HYPERNET-AS - HyperNET sp. z o.o., PL | PL | `evidence_increased` | 45 | 925 | +880 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 177131 | 177948 | +817 |
-| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `risk_level_changed` | 130 | 917 | +787 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 136142 | 136849 | +707 |
-| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 9255 | 8729 | -526 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 114024 | 114409 | +385 |
-| AS399628 | IMR-AS-01 - Internet Measurement Research, US | US | `evidence_decreased` | 963 | 642 | -321 |
-| AS57043 | HOSTKEY-AS - HOSTKEY B.V., NL | AE | `evidence_increased` | 4919 | 5193 | +274 |
-| AS135065 | NIDOM-AS-AP - National Directorate of Information and Technology, TL | TL | `evidence_decreased` | 283 | 25 | -258 |
-| AS208821 | durunet - DURU INTERNET VE BILISIM TEKNOLOJILERI SANAYI TICARET LIMITED SIRKETI, TR | TR | `risk_level_changed` | 512 | 256 | -256 |
-| AS39615 | XREALNET - DURU INTERNET VE BILISIM TEKNOLOJILERI SANAYI TICARET LIMITED SIRKETI, TR | TR | `risk_level_changed` | 1 | 256 | +255 |
-| AS142299 | CLOUDFORESTCOLTD-AS-AP - CLOUDFOREST CO., LTD., TH | TH | `evidence_decreased` | 350 | 95 | -255 |
-| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_decreased` | 4086 | 3835 | -251 |
-| AS206264 | AMARUTU-TECHNOLOGY - Amarutu Technology Ltd, SC | SC | `evidence_increased` | 293 | 543 | +250 |
-| AS216138 | SKYQUANTUM-TELECOM - SKYQUANTUM TELECOM LTD., GB | KR | `evidence_increased` | 88 | 327 | +239 |
-| AS38705 | DACOM-AS-KR-KR - KOREA DATA, KR | KR | `evidence_decreased` | 430 | 192 | -238 |
-| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_decreased` | 499 | 265 | -234 |
-| AS403092 | HOSTRAM - HOSTRAM, US | GB | `evidence_increased` | 43 | 256 | +213 |
-| AS6939 | HURRICANE - Hurricane Electric LLC, US | US | `evidence_decreased` | 2605 | 2415 | -190 |
-| AS9465 | AGOTOZPTELTD-AS-AP - AGOTOZ PTE. LTD., SG | SC | `evidence_increased` | 68 | 256 | +188 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 491563 | 491747 | +184 |
-| AS211466 | MTDE-PSIX-AS - Ministry of Telecommunication & Digital Economy, PS | PS | `risk_level_changed` | 211 | 33 | -178 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 14434 | 14609 | +175 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 26188 | 34654 | +8466 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 136849 | 129808 | -7041 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 177948 | 174670 | -3278 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 141597 | 139608 | -1989 |
+| AS210246 | FUZ-AS - ADAM ROJEK, PL | PL | `evidence_increased` | 111 | 1975 | +1864 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 83940 | 82158 | -1782 |
+| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `evidence_decreased` | 4043 | 2286 | -1757 |
+| AS11427 | TWC-11427-TEXAS - Charter Communications Inc, US | US | `evidence_increased` | 5305 | 6454 | +1149 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 8037 | 6906 | -1131 |
+| AS38235 | MEKONGNET-ADC-AS-AP - ANGKOR DATA COMMUNICATION, KH | KH | `evidence_increased` | 483 | 1473 | +990 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 4506 | 5334 | +828 |
+| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_increased` | 917 | 1717 | +800 |
+| AS18978 | ENZUINC-US - Enzu Inc, US | US | `evidence_decreased` | 1365 | 604 | -761 |
+| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_decreased` | 7027 | 6300 | -727 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 170553 | 171250 | +697 |
+| AS23673 | ONLINE-AS - Cogetel Online, Cambodia, ISP, KH | KH | `evidence_increased` | 275 | 958 | +683 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 8058 | 7394 | -664 |
+| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_decreased` | 5382 | 4760 | -622 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 14202 | 14751 | +549 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 491747 | 491222 | -525 |
+| AS15169 | GOOGLE - Google LLC, US | US | `evidence_increased` | 1938 | 2446 | +508 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 2376 | 2878 | +502 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 114409 | 113916 | -493 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_decreased` | 25741 | 25317 | -424 |
+| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_increased` | 34505 | 34928 | +423 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
