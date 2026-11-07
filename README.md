@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-06T12:29:54Z`_
+_Last dataset build: `2026-11-07T11:21:00Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-06T12:29:54Z`_
+_Last updated: `2026-11-07T11:21:00Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 26188 | 34654 | +8466 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 136849 | 129808 | -7041 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 177948 | 174670 | -3278 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 141597 | 139608 | -1989 |
-| AS210246 | FUZ-AS - ADAM ROJEK, PL | PL | `evidence_increased` | 111 | 1975 | +1864 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 83940 | 82158 | -1782 |
-| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `evidence_decreased` | 4043 | 2286 | -1757 |
-| AS11427 | TWC-11427-TEXAS - Charter Communications Inc, US | US | `evidence_increased` | 5305 | 6454 | +1149 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 8037 | 6906 | -1131 |
-| AS38235 | MEKONGNET-ADC-AS-AP - ANGKOR DATA COMMUNICATION, KH | KH | `evidence_increased` | 483 | 1473 | +990 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 4506 | 5334 | +828 |
-| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_increased` | 917 | 1717 | +800 |
-| AS18978 | ENZUINC-US - Enzu Inc, US | US | `evidence_decreased` | 1365 | 604 | -761 |
-| AS55836 | RELIANCEJIO-IN - Reliance Jio Infocomm Limited, IN | IN | `evidence_decreased` | 7027 | 6300 | -727 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 170553 | 171250 | +697 |
-| AS23673 | ONLINE-AS - Cogetel Online, Cambodia, ISP, KH | KH | `evidence_increased` | 275 | 958 | +683 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_decreased` | 8058 | 7394 | -664 |
-| AS17557 | PKTELECOM-AS-PK - Pakistan Telecommunication Company Limited, PK | PK | `evidence_decreased` | 5382 | 4760 | -622 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 14202 | 14751 | +549 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 491747 | 491222 | -525 |
-| AS15169 | GOOGLE - Google LLC, US | US | `evidence_increased` | 1938 | 2446 | +508 |
-| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 2376 | 2878 | +502 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 114409 | 113916 | -493 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_decreased` | 25741 | 25317 | -424 |
-| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_increased` | 34505 | 34928 | +423 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 14751 | 16036 | +1285 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 34654 | 33677 | -977 |
+| AS205879 | EKOLINE-AS - EKO-LINE Sp. z o.o., PL | PL | `evidence_decreased` | 1024 | 102 | -922 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 174670 | 175441 | +771 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 57816 | 57163 | -653 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 129808 | 130434 | +626 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 139608 | 140192 | +584 |
+| AS203804 | VDSGLOBAL - VDS GLOBAL YAZILIM ARGE GELISTIRME LIMITED SIRKETI, TR | UA | `new_asn` | 0 | 514 | +514 |
+| AS205463 | VDSGLOBAL - Pembe Gul Isguzar Karagoz, TR | TR | `evidence_decreased` | 696 | 182 | -514 |
+| AS58224 | TCI - Iran Telecommunication Company PJS, IR | IR | `evidence_decreased` | 5371 | 4871 | -500 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82158 | 82652 | +494 |
+| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_decreased` | 1717 | 1293 | -424 |
+| AS210246 | FUZ-AS - ADAM ROJEK, PL | PL | `evidence_increased` | 1975 | 2369 | +394 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 26714 | 27104 | +390 |
+| AS62874 | WEB2OBJECTS - Web2Objects LLC, US | US | `evidence_increased` | 2105 | 2452 | +347 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 47512 | 47792 | +280 |
+| AS5650 | FRONTIER-FRTR - Frontier Communications of America, Inc., US | US | `evidence_decreased` | 3376 | 3100 | -276 |
+| AS1054 | ZONT-LLC - Zont LLC, US | HK | `evidence_decreased` | 359 | 103 | -256 |
+| AS203003 | magna-capax - Magna Capax Finland Oy, FI | FI | `evidence_increased` | 64 | 311 | +247 |
+| AS210331 | AS210331 - FIRAT SENEM, TR | CY | `evidence_decreased` | 252 | 12 | -240 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 7394 | 7623 | +229 |
+| AS206094 | TELBESKID - TELBESKID Sp. z o.o., PL | PL | `evidence_decreased` | 965 | 741 | -224 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 491222 | 491429 | +207 |
+| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `evidence_increased` | 2286 | 2486 | +200 |
+| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_increased` | 1054 | 1249 | +195 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
