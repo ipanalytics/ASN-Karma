@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-07T11:21:00Z`_
+_Last dataset build: `2026-11-08T11:32:31Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-07T11:21:00Z`_
+_Last updated: `2026-11-08T11:32:31Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 14751 | 16036 | +1285 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 34654 | 33677 | -977 |
-| AS205879 | EKOLINE-AS - EKO-LINE Sp. z o.o., PL | PL | `evidence_decreased` | 1024 | 102 | -922 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 174670 | 175441 | +771 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 57816 | 57163 | -653 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 129808 | 130434 | +626 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 139608 | 140192 | +584 |
-| AS203804 | VDSGLOBAL - VDS GLOBAL YAZILIM ARGE GELISTIRME LIMITED SIRKETI, TR | UA | `new_asn` | 0 | 514 | +514 |
-| AS205463 | VDSGLOBAL - Pembe Gul Isguzar Karagoz, TR | TR | `evidence_decreased` | 696 | 182 | -514 |
-| AS58224 | TCI - Iran Telecommunication Company PJS, IR | IR | `evidence_decreased` | 5371 | 4871 | -500 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82158 | 82652 | +494 |
-| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_decreased` | 1717 | 1293 | -424 |
-| AS210246 | FUZ-AS - ADAM ROJEK, PL | PL | `evidence_increased` | 1975 | 2369 | +394 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 26714 | 27104 | +390 |
-| AS62874 | WEB2OBJECTS - Web2Objects LLC, US | US | `evidence_increased` | 2105 | 2452 | +347 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 47512 | 47792 | +280 |
-| AS5650 | FRONTIER-FRTR - Frontier Communications of America, Inc., US | US | `evidence_decreased` | 3376 | 3100 | -276 |
-| AS1054 | ZONT-LLC - Zont LLC, US | HK | `evidence_decreased` | 359 | 103 | -256 |
-| AS203003 | magna-capax - Magna Capax Finland Oy, FI | FI | `evidence_increased` | 64 | 311 | +247 |
-| AS210331 | AS210331 - FIRAT SENEM, TR | CY | `evidence_decreased` | 252 | 12 | -240 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 7394 | 7623 | +229 |
-| AS206094 | TELBESKID - TELBESKID Sp. z o.o., PL | PL | `evidence_decreased` | 965 | 741 | -224 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 491222 | 491429 | +207 |
-| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `evidence_increased` | 2286 | 2486 | +200 |
-| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_increased` | 1054 | 1249 | +195 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 130434 | 109026 | -21408 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82652 | 86395 | +3743 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 175441 | 171707 | -3734 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 140192 | 143380 | +3188 |
+| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_decreased` | 9169 | 6084 | -3085 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 10117 | 7267 | -2850 |
+| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_increased` | 3026 | 5469 | +2443 |
+| AS8151 | AS8151 - UNINET, MX | MX | `evidence_increased` | 9930 | 11910 | +1980 |
+| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 5733 | 7484 | +1751 |
+| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_increased` | 3739 | 5385 | +1646 |
+| AS17072 | AS17072 - TOTAL PLAY TELECOMUNICACIONES, S.A.P.I. DE C.V., MX | MX | `evidence_increased` | 1174 | 2588 | +1414 |
+| AS8452 | TE-AS - IDDQD-AS, EG | EG | `evidence_decreased` | 6834 | 5421 | -1413 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 6159 | 7514 | +1355 |
+| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_increased` | 10486 | 11777 | +1291 |
+| AS63844 | ONCL-BD - One Net Communication Ltd, BD | BD | `evidence_increased` | 119 | 1286 | +1167 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_decreased` | 16036 | 14979 | -1057 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 7081 | 8114 | +1033 |
+| AS27901 | AS27901 - Pacifico Cable SPA., CL | CL | `evidence_increased` | 560 | 1550 | +990 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_decreased` | 44380 | 43471 | -909 |
+| AS21928 | T-MOBILE-AS21928 - T-Mobile USA, Inc., US | US | `evidence_increased` | 1344 | 2229 | +885 |
+| AS199739 | Earthlink-DMCC-IQ - Earthlink Telecommunications Equipment Trading & Services DMCC, AE | AE | `evidence_increased` | 797 | 1649 | +852 |
+| AS701 | UUNET - Verizon Business, US | US | `evidence_increased` | 5314 | 6129 | +815 |
+| AS10620 | AS10620 - Telmex Colombia S.A., CO | CO | `evidence_increased` | 1032 | 1842 | +810 |
+| AS7418 | AS7418 - TELEFONICA CHILE S.A., CL | CL | `evidence_increased` | 1317 | 2106 | +789 |
+| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_increased` | 31915 | 32702 | +787 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
