@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-08T11:32:31Z`_
+_Last dataset build: `2026-11-09T13:24:14Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-08T11:32:31Z`_
+_Last updated: `2026-11-09T13:24:14Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 130434 | 109026 | -21408 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 82652 | 86395 | +3743 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 175441 | 171707 | -3734 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 140192 | 143380 | +3188 |
-| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_decreased` | 9169 | 6084 | -3085 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 10117 | 7267 | -2850 |
-| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_increased` | 3026 | 5469 | +2443 |
-| AS8151 | AS8151 - UNINET, MX | MX | `evidence_increased` | 9930 | 11910 | +1980 |
-| AS7303 | AS7303 - Telecom Argentina S.A., AR | AR | `evidence_increased` | 5733 | 7484 | +1751 |
-| AS28573 | AS28573 - Claro NXT Telecomunicacoes Ltda, BR | BR | `evidence_increased` | 3739 | 5385 | +1646 |
-| AS17072 | AS17072 - TOTAL PLAY TELECOMUNICACIONES, S.A.P.I. DE C.V., MX | MX | `evidence_increased` | 1174 | 2588 | +1414 |
-| AS8452 | TE-AS - IDDQD-AS, EG | EG | `evidence_decreased` | 6834 | 5421 | -1413 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 6159 | 7514 | +1355 |
-| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_increased` | 10486 | 11777 | +1291 |
-| AS63844 | ONCL-BD - One Net Communication Ltd, BD | BD | `evidence_increased` | 119 | 1286 | +1167 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_decreased` | 16036 | 14979 | -1057 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 7081 | 8114 | +1033 |
-| AS27901 | AS27901 - Pacifico Cable SPA., CL | CL | `evidence_increased` | 560 | 1550 | +990 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_decreased` | 44380 | 43471 | -909 |
-| AS21928 | T-MOBILE-AS21928 - T-Mobile USA, Inc., US | US | `evidence_increased` | 1344 | 2229 | +885 |
-| AS199739 | Earthlink-DMCC-IQ - Earthlink Telecommunications Equipment Trading & Services DMCC, AE | AE | `evidence_increased` | 797 | 1649 | +852 |
-| AS701 | UUNET - Verizon Business, US | US | `evidence_increased` | 5314 | 6129 | +815 |
-| AS10620 | AS10620 - Telmex Colombia S.A., CO | CO | `evidence_increased` | 1032 | 1842 | +810 |
-| AS7418 | AS7418 - TELEFONICA CHILE S.A., CL | CL | `evidence_increased` | 1317 | 2106 | +789 |
-| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_increased` | 31915 | 32702 | +787 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 109026 | 97787 | -11239 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 171707 | 177414 | +5707 |
+| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_increased` | 6084 | 9380 | +3296 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 7267 | 10351 | +3084 |
+| AS8452 | TE-AS - IDDQD-AS, EG | EG | `evidence_increased` | 5421 | 7206 | +1785 |
+| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_increased` | 4345 | 5598 | +1253 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 18391 | 19310 | +919 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 14441 | 13535 | -906 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 14979 | 15836 | +857 |
+| AS20473 | AS-VULTR - The Constant Company, LLC, US | US | `evidence_increased` | 21934 | 22772 | +838 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 491123 | 491890 | +767 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 47683 | 48427 | +744 |
+| AS62240 | Clouvider - Clouvider Limited, GB | GB | `evidence_increased` | 9163 | 9870 | +707 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 7514 | 6831 | -683 |
+| AS150436 | BYTEPLUS-AS-AP - Byteplus Pte. Ltd., SG | SG | `evidence_increased` | 3558 | 4236 | +678 |
+| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_increased` | 38559 | 39188 | +629 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 43406 | 43953 | +547 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_decreased` | 25401 | 24863 | -538 |
+| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_decreased` | 5469 | 4935 | -534 |
+| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `risk_level_changed` | 2457 | 1924 | -533 |
+| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_decreased` | 32702 | 32175 | -527 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 143380 | 143841 | +461 |
+| AS1267 | ASN-WINDTRE - WIND TRE S.P.A., IT | IT | `evidence_increased` | 1704 | 2133 | +429 |
+| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 14610 | 15038 | +428 |
+| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_decreased` | 7999 | 7588 | -411 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
