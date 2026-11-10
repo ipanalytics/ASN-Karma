@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-09T13:24:14Z`_
+_Last dataset build: `2026-11-10T13:00:29Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-09T13:24:14Z`_
+_Last updated: `2026-11-10T13:00:29Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 109026 | 97787 | -11239 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 171707 | 177414 | +5707 |
-| AS400463 | DYNANODE-ASN-01 - DynaNode LLC, US | SC | `evidence_increased` | 6084 | 9380 | +3296 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 7267 | 10351 | +3084 |
-| AS8452 | TE-AS - IDDQD-AS, EG | EG | `evidence_increased` | 5421 | 7206 | +1785 |
-| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_increased` | 4345 | 5598 | +1253 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 18391 | 19310 | +919 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 14441 | 13535 | -906 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 14979 | 15836 | +857 |
-| AS20473 | AS-VULTR - The Constant Company, LLC, US | US | `evidence_increased` | 21934 | 22772 | +838 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 491123 | 491890 | +767 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 47683 | 48427 | +744 |
-| AS62240 | Clouvider - Clouvider Limited, GB | GB | `evidence_increased` | 9163 | 9870 | +707 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 7514 | 6831 | -683 |
-| AS150436 | BYTEPLUS-AS-AP - Byteplus Pte. Ltd., SG | SG | `evidence_increased` | 3558 | 4236 | +678 |
-| AS31898 | ORACLE-BMC-31898 - Oracle Corporation, US | US | `evidence_increased` | 38559 | 39188 | +629 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_increased` | 43406 | 43953 | +547 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_decreased` | 25401 | 24863 | -538 |
-| AS22927 | AS22927 - Telefonica de Argentina, AR | AR | `evidence_decreased` | 5469 | 4935 | -534 |
-| AS41676 | JMDI - JMDI Jacek Maleszko, PL | PL | `risk_level_changed` | 2457 | 1924 | -533 |
-| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_decreased` | 32702 | 32175 | -527 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 143380 | 143841 | +461 |
-| AS1267 | ASN-WINDTRE - WIND TRE S.P.A., IT | IT | `evidence_increased` | 1704 | 2133 | +429 |
-| AS9009 | M247 - M247 Europe SRL, RO | RO | `evidence_increased` | 14610 | 15038 | +428 |
-| AS9121 | TTNet - Turk Telekomunikasyon Anonim Sirketi, TR | TR | `evidence_decreased` | 7999 | 7588 | -411 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 177414 | 175613 | -1801 |
+| AS57844 | SPD-Net - SPDNet Telekomunikasyon Hizmetleri Bilgi Teknolojileri Taahhut Sanayi Ve Ticaret A.S., TR | TR | `evidence_decreased` | 1893 | 102 | -1791 |
+| AS211995 | a2z - A2Z Technologies CJSC, AZ | AZ | `evidence_decreased` | 1890 | 410 | -1480 |
+| AS47193 | LAN-Optic - LAN-Optic, Ltd, RU | RU | `evidence_decreased` | 1066 | 118 | -948 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 27493 | 26667 | -826 |
+| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_decreased` | 28373 | 27660 | -713 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 143841 | 144531 | +690 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 86088 | 86618 | +530 |
+| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_increased` | 475 | 953 | +478 |
+| AS214466 | Olfe - AE Olfe Teknoloji ve Ticaret Limited Sirketi, TR | US | `risk_level_changed` | 473 | 34 | -439 |
+| AS6849 | UKRTELNET - JSC _Ukrtelecom_, UA | UA | `evidence_decreased` | 8259 | 7838 | -421 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 48427 | 48019 | -408 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 10351 | 10749 | +398 |
+| AS47692 | NESSUS - Nessus GmbH, AT | AT | `risk_level_changed` | 420 | 37 | -383 |
+| AS200010 | OLFE - Olfe Veri Merkezi Anonim Sirketi, TR | US | `risk_level_changed` | 419 | 50 | -369 |
+| AS49325 | STAVSET-AS - OOO SET, RU | RU | `evidence_decreased` | 562 | 205 | -357 |
+| AS216071 | VDSINA - SERVERS TECH FZCO, AE | AE | `evidence_decreased` | 11734 | 11404 | -330 |
+| AS43395 | Ertebatat-Doorbord-Fars - Pooya Parto Qeshm Cooperative Company, IR | IR | `evidence_decreased` | 557 | 228 | -329 |
+| AS396356 | LATITUDE-SH - Latitude.sh, US | US | `evidence_decreased` | 6445 | 6120 | -325 |
+| AS15895 | KSNET-AS - _Kyivstar_ PJSC, UA | UA | `evidence_decreased` | 1927 | 1611 | -316 |
+| AS12912 | TMPL - T-Mobile Polska S.A., PL | PL | `evidence_decreased` | 885 | 594 | -291 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 171787 | 171501 | -286 |
+| AS47562 | FastLink - Fast Link Ltd, RU | RU | `evidence_decreased` | 942 | 673 | -269 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 491890 | 491631 | -259 |
+| AS269730 | AS269730 - TECNOVEN SERVICES CA, VE | US | `evidence_increased` | 226 | 483 | +257 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
