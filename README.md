@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-11T12:12:10Z`_
+_Last dataset build: `2026-11-12T13:17:40Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-11T12:12:10Z`_
+_Last updated: `2026-11-12T13:17:40Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 175613 | 177602 | +1989 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_decreased` | 6481 | 4583 | -1898 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 17360 | 19253 | +1893 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 48019 | 49869 | +1850 |
-| AS211995 | a2z - A2Z Technologies CJSC, AZ | AZ | `evidence_increased` | 410 | 1892 | +1482 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 171501 | 172837 | +1336 |
-| AS264681 | AS264681 - Sociedad de Telecomunicaciones Netsouth SPA, CL | US | `evidence_decreased` | 1241 | 79 | -1162 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 144531 | 143395 | -1136 |
-| AS198610 | BEGET-AS - Beget LLC, RU | RU | `evidence_increased` | 289 | 1335 | +1046 |
-| AS47193 | LAN-Optic - LAN-Optic, Ltd, RU | RU | `evidence_increased` | 118 | 1066 | +948 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_increased` | 26667 | 27507 | +840 |
-| AS215294 | luminabroadband - Lumina broadband UAB, LT | UA | `evidence_increased` | 1003 | 1561 | +558 |
-| AS6849 | UKRTELNET - JSC _Ukrtelecom_, UA | UA | `evidence_increased` | 7838 | 8307 | +469 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 491631 | 492084 | +453 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_increased` | 10749 | 11136 | +387 |
-| AS399628 | IMR-AS-01 - Internet Measurement Research, US | US | `evidence_increased` | 548 | 931 | +383 |
-| AS47692 | NESSUS - Nessus GmbH, AT | UA | `risk_level_changed` | 37 | 414 | +377 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 13591 | 13226 | -365 |
-| AS49325 | STAVSET-AS - OOO SET, RU | RU | `evidence_increased` | 205 | 565 | +360 |
-| AS216071 | VDSINA - SERVERS TECH FZCO, AE | AE | `evidence_increased` | 11404 | 11763 | +359 |
-| AS15895 | KSNET-AS - _Kyivstar_ PJSC, UA | UA | `evidence_increased` | 1611 | 1954 | +343 |
-| AS43395 | Ertebatat-Doorbord-Fars - Pooya Parto Qeshm Cooperative Company, IR | IR | `evidence_increased` | 228 | 557 | +329 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 97584 | 97269 | -315 |
-| AS262287 | AS262287 - Latitude.sh LTDA, BR | US | `evidence_decreased` | 3258 | 2945 | -313 |
-| AS12912 | TMPL - T-Mobile Polska S.A., PL | PL | `evidence_increased` | 594 | 887 | +293 |
+| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_increased` | 1052 | 2362 | +1310 |
+| AS52195 | AP-MEDIA-AS - AP-MEDIA Spolka z ograniczona odpowiedzalnoscia, PL | PL | `evidence_increased` | 200 | 1396 | +1196 |
+| AS57269 | DIGI-ES - DIGI SPAIN TELECOM S.A, ES | ES | `evidence_increased` | 1093 | 2186 | +1093 |
+| AS12849 | HOTNET-IL - Hot-Net internet services Ltd., IL | IL | `evidence_increased` | 454 | 1455 | +1001 |
+| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_decreased` | 955 | 249 | -706 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 177602 | 178219 | +617 |
+| AS9541 | CYBERNET-AP - Cyber Internet Services (Pvt) Ltd., PK | PK | `evidence_increased` | 6649 | 7217 | +568 |
+| AS3209 | VODANET - Vodafone GmbH, DE | DE | `evidence_increased` | 1980 | 2541 | +561 |
+| AS15704 | AS15704 - XTRA TELECOM S.A., ES | ES | `evidence_increased` | 916 | 1476 | +560 |
+| AS57494 | ADMAN-AS - Adman LLC, RU | SC | `evidence_increased` | 220 | 733 | +513 |
+| AS206094 | TELBESKID - TELBESKID Sp. z o.o., PL | PL | `evidence_decreased` | 722 | 334 | -388 |
+| AS27747 | AS27747 - Telecentro S.A., AR | AR | `evidence_increased` | 2597 | 2946 | +349 |
+| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_increased` | 1531 | 1874 | +343 |
+| AS29802 | HVC-AS - HIVELOCITY, Inc., US | US | `evidence_decreased` | 5105 | 4788 | -317 |
+| AS3491 | PCCWG-APAC-HK - PCCW Global (HK) Ltd., HK | GB | `evidence_increased` | 8033 | 8348 | +315 |
+| AS2914 | NTT-DATA-2914 - NTT America, Inc., US | US | `evidence_increased` | 9825 | 10136 | +311 |
+| AS262287 | AS262287 - Latitude.sh LTDA, BR | US | `evidence_increased` | 2945 | 3256 | +311 |
+| AS206067 | H3GUK - Hutchison 3G UK Limited, GB | GB | `evidence_increased` | 342 | 607 | +265 |
+| AS35444 | DigicomAlbania-AS - Digicom SHPK, AL | AL | `evidence_increased` | 45 | 301 | +256 |
+| AS44327 | DELTANET-NET - DELTA COMM LLC, GE | GE | `risk_level_changed` | 24 | 280 | +256 |
+| AS39615 | XREALNET - DURU INTERNET VE BILISIM TEKNOLOJILERI SANAYI TICARET LIMITED SIRKETI, TR | TR | `risk_level_changed` | 256 | 1 | -255 |
+| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_decreased` | 4082 | 3829 | -253 |
+| AS219122 | EXPONET - EXPONET VERI MERKEZI HIZMETLERI SAN. VE TIC. LTD. STI., TR | UA | `risk_level_changed` | 256 | 7 | -249 |
+| AS8342 | RTCOMM-AS - JSC RTComm.RU, RU | RU | `evidence_decreased` | 1370 | 1128 | -242 |
+| AS399628 | IMR-AS-01 - Internet Measurement Research, US | US | `evidence_decreased` | 931 | 692 | -239 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
