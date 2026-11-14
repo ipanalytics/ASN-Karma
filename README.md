@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-13T12:38:45Z`_
+_Last dataset build: `2026-11-14T11:46:21Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-13T12:38:45Z`_
+_Last updated: `2026-11-14T11:46:21Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 143402 | 76414 | -66988 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 178219 | 121800 | -56419 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 86937 | 46131 | -40806 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 43926 | 6802 | -37124 |
-| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_decreased` | 32218 | 8836 | -23382 |
-| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_decreased` | 37993 | 17271 | -20722 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 97357 | 81406 | -15951 |
-| AS3462 | HINET - Data Communication Business Group, TW | TW | `evidence_decreased` | 21739 | 6029 | -15710 |
-| AS9829 | BSNL-NIB - National Internet Backbone, IN | IN | `evidence_decreased` | 26718 | 11352 | -15366 |
-| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_decreased` | 35152 | 22487 | -12665 |
-| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_decreased` | 21846 | 13280 | -8566 |
-| AS37963 | ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN | CN | `evidence_decreased` | 64104 | 56560 | -7544 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 50083 | 42827 | -7256 |
-| AS8151 | AS8151 - UNINET, MX | MX | `evidence_decreased` | 11540 | 4636 | -6904 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 34381 | 28021 | -6360 |
-| AS7552 | VIETEL-AS-AP - Viettel Group, VN | VN | `evidence_decreased` | 11415 | 5396 | -6019 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_decreased` | 43444 | 37800 | -5644 |
-| AS140292 | CHINATELECOM-JIANGSU-SUZHOU-5G-NETWORK - CHINATELECOM Jiangsu province Suzhou 5G network, CN | CN | `evidence_decreased` | 7169 | 2116 | -5053 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_decreased` | 13078 | 8281 | -4797 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_decreased` | 25037 | 20337 | -4700 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 492151 | 487963 | -4188 |
-| AS8452 | TE-AS - IDDQD-AS, EG | EG | `evidence_decreased` | 7236 | 3056 | -4180 |
-| AS8048 | AS8048 - CANTV Servicios, Venezuela, VE | VE | `evidence_decreased` | 5164 | 1253 | -3911 |
-| AS7713 | telkomnet-as-ap - PT Telekomunikasi Indonesia, ID | ID | `evidence_decreased` | 8823 | 4932 | -3891 |
-| AS38365 | Baidu - Beijing Baidu Netcom Science and Technology Co., Ltd., CN | CN | `evidence_decreased` | 4739 | 919 | -3820 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 81406 | 77758 | -3648 |
+| AS38235 | MEKONGNET-ADC-AS-AP - ANGKOR DATA COMMUNICATION, KH | KH | `evidence_decreased` | 1253 | 359 | -894 |
+| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_increased` | 863 | 1753 | +890 |
+| AS210246 | FUZ-AS - ADAM ROJEK, PL | PL | `evidence_decreased` | 2071 | 1224 | -847 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 487963 | 488800 | +837 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 121800 | 120994 | -806 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 53485 | 52815 | -670 |
+| AS23673 | ONLINE-AS - Cogetel Online, Cambodia, ISP, KH | KH | `evidence_decreased` | 850 | 214 | -636 |
+| AS48955 | IRM-AS - Internet Resources Management SRL, RO | RO | `evidence_decreased` | 1757 | 1304 | -453 |
+| AS29465 | VCG-AS - MTN NIGERIA Communication limited, NG | NG | `evidence_increased` | 772 | 1195 | +423 |
+| AS62874 | WEB2OBJECTS - Web2Objects LLC, US | US | `evidence_decreased` | 2293 | 1913 | -380 |
+| AS198857 | nowogrod-net-AS - NOWOGROD.NET SP. Z O.O., PL | PL | `evidence_increased` | 31 | 397 | +366 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 7109 | 7472 | +363 |
+| AS135377 | UCLOUD-HK-AS-AP - UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED, HK | HK | `evidence_increased` | 4343 | 4694 | +351 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 12788 | 12455 | -333 |
+| AS398113 | GATEWAY-FIBER - Gateway Fiber LLC, US | US | `risk_level_changed` | 338 | 5 | -333 |
+| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_increased` | 900 | 1212 | +312 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 76414 | 76722 | +308 |
+| AS216334 | LandVPS-AS - New Hosting Technologies LLC, RU | RU | `evidence_increased` | 108 | 383 | +275 |
+| AS49531 | NETCOM-R-AS - _NetCom-R_ LLC, RU | RU | `evidence_decreased` | 469 | 195 | -274 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 26927 | 26668 | -259 |
+| AS203003 | magna-capax - Magna Capax Finland Oy, FI | FI | `evidence_decreased` | 282 | 26 | -256 |
+| AS8048 | AS8048 - CANTV Servicios, Venezuela, VE | VE | `evidence_decreased` | 1253 | 1013 | -240 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 37800 | 38038 | +238 |
+| AS55769 | SEATELECOM-KH - SOUTH EAST ASIA TELECOM (Cambodia) Co., LTD, KH | KH | `risk_level_changed` | 247 | 12 | -235 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
