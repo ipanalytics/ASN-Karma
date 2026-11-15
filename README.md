@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-14T11:46:21Z`_
+_Last dataset build: `2026-11-15T12:17:21Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-14T11:46:21Z`_
+_Last updated: `2026-11-15T12:17:21Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 81406 | 77758 | -3648 |
-| AS38235 | MEKONGNET-ADC-AS-AP - ANGKOR DATA COMMUNICATION, KH | KH | `evidence_decreased` | 1253 | 359 | -894 |
-| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_increased` | 863 | 1753 | +890 |
-| AS210246 | FUZ-AS - ADAM ROJEK, PL | PL | `evidence_decreased` | 2071 | 1224 | -847 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 487963 | 488800 | +837 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 121800 | 120994 | -806 |
-| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 53485 | 52815 | -670 |
-| AS23673 | ONLINE-AS - Cogetel Online, Cambodia, ISP, KH | KH | `evidence_decreased` | 850 | 214 | -636 |
-| AS48955 | IRM-AS - Internet Resources Management SRL, RO | RO | `evidence_decreased` | 1757 | 1304 | -453 |
-| AS29465 | VCG-AS - MTN NIGERIA Communication limited, NG | NG | `evidence_increased` | 772 | 1195 | +423 |
-| AS62874 | WEB2OBJECTS - Web2Objects LLC, US | US | `evidence_decreased` | 2293 | 1913 | -380 |
-| AS198857 | nowogrod-net-AS - NOWOGROD.NET SP. Z O.O., PL | PL | `evidence_increased` | 31 | 397 | +366 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 7109 | 7472 | +363 |
-| AS135377 | UCLOUD-HK-AS-AP - UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED, HK | HK | `evidence_increased` | 4343 | 4694 | +351 |
-| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 12788 | 12455 | -333 |
-| AS398113 | GATEWAY-FIBER - Gateway Fiber LLC, US | US | `risk_level_changed` | 338 | 5 | -333 |
-| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_increased` | 900 | 1212 | +312 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 76414 | 76722 | +308 |
-| AS216334 | LandVPS-AS - New Hosting Technologies LLC, RU | RU | `evidence_increased` | 108 | 383 | +275 |
-| AS49531 | NETCOM-R-AS - _NetCom-R_ LLC, RU | RU | `evidence_decreased` | 469 | 195 | -274 |
-| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 26927 | 26668 | -259 |
-| AS203003 | magna-capax - Magna Capax Finland Oy, FI | FI | `evidence_decreased` | 282 | 26 | -256 |
-| AS8048 | AS8048 - CANTV Servicios, Venezuela, VE | VE | `evidence_decreased` | 1253 | 1013 | -240 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 37800 | 38038 | +238 |
-| AS55769 | SEATELECOM-KH - SOUTH EAST ASIA TELECOM (Cambodia) Co., LTD, KH | KH | `risk_level_changed` | 247 | 12 | -235 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 77758 | 57382 | -20376 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 112258 | 109724 | -2534 |
+| AS6461 | ZAYO-6461 - Zayo Bandwidth, US | GB | `evidence_decreased` | 3518 | 2061 | -1457 |
+| AS398721 | OXIO-ASN-01 - OXIO, CA | US | `evidence_decreased` | 1472 | 28 | -1444 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 488800 | 487685 | -1115 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 46297 | 47359 | +1062 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 120994 | 122001 | +1007 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 76722 | 77652 | +930 |
+| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_decreased` | 1753 | 845 | -908 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 2571 | 3117 | +546 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 7472 | 7935 | +463 |
+| AS29465 | VCG-AS - MTN NIGERIA Communication limited, NG | NG | `evidence_decreased` | 1195 | 743 | -452 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 171410 | 170997 | -413 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | US | `evidence_increased` | 136 | 416 | +280 |
+| AS8612 | TISCALI-IT - Smeraldo S.p.A., IT | IT | `evidence_decreased` | 362 | 106 | -256 |
+| AS44092 | HALSERVICE - HALSERVICE, IT | IT | `evidence_decreased` | 1011 | 755 | -256 |
+| AS852 | ASN852 - TELUS Communications Inc., CA | CA | `evidence_increased` | 777 | 1029 | +252 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 38038 | 38281 | +243 |
+| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_increased` | 13340 | 13579 | +239 |
+| AS8048 | AS8048 - CANTV Servicios, Venezuela, VE | VE | `evidence_increased` | 1013 | 1249 | +236 |
+| AS8551 | BEZEQ-INTERNATIONAL-AS - Bezeq International Ltd., IL | IL | `evidence_increased` | 132 | 346 | +214 |
+| AS48721 | FLYSERVERS-ENDCLIENTS - Flyservers S.A., PA | PA | `evidence_increased` | 48 | 257 | +209 |
+| AS210246 | FUZ-AS - ADAM ROJEK, PL | PL | `evidence_decreased` | 1224 | 1015 | -209 |
+| AS58065 | PacketExchange - Orion Network Limited, GB | SC | `evidence_decreased` | 717 | 525 | -192 |
+| AS9465 | AGOTOZPTELTD-AS-AP - AGOTOZ PTE. LTD., SG | SC | `evidence_increased` | 69 | 256 | +187 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
