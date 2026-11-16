@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-15T12:17:21Z`_
+_Last dataset build: `2026-11-16T13:10:05Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-15T12:17:21Z`_
+_Last updated: `2026-11-16T13:10:05Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 77758 | 57382 | -20376 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_decreased` | 112258 | 109724 | -2534 |
-| AS6461 | ZAYO-6461 - Zayo Bandwidth, US | GB | `evidence_decreased` | 3518 | 2061 | -1457 |
-| AS398721 | OXIO-ASN-01 - OXIO, CA | US | `evidence_decreased` | 1472 | 28 | -1444 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 488800 | 487685 | -1115 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 46297 | 47359 | +1062 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 120994 | 122001 | +1007 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 76722 | 77652 | +930 |
-| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_decreased` | 1753 | 845 | -908 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 2571 | 3117 | +546 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 7472 | 7935 | +463 |
-| AS29465 | VCG-AS - MTN NIGERIA Communication limited, NG | NG | `evidence_decreased` | 1195 | 743 | -452 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 171410 | 170997 | -413 |
-| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | US | `evidence_increased` | 136 | 416 | +280 |
-| AS8612 | TISCALI-IT - Smeraldo S.p.A., IT | IT | `evidence_decreased` | 362 | 106 | -256 |
-| AS44092 | HALSERVICE - HALSERVICE, IT | IT | `evidence_decreased` | 1011 | 755 | -256 |
-| AS852 | ASN852 - TELUS Communications Inc., CA | CA | `evidence_increased` | 777 | 1029 | +252 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 38038 | 38281 | +243 |
-| AS63949 | AKAMAI-LINODE-AP - Akamai Connected Cloud, SG | US | `evidence_increased` | 13340 | 13579 | +239 |
-| AS8048 | AS8048 - CANTV Servicios, Venezuela, VE | VE | `evidence_increased` | 1013 | 1249 | +236 |
-| AS8551 | BEZEQ-INTERNATIONAL-AS - Bezeq International Ltd., IL | IL | `evidence_increased` | 132 | 346 | +214 |
-| AS48721 | FLYSERVERS-ENDCLIENTS - Flyservers S.A., PA | PA | `evidence_increased` | 48 | 257 | +209 |
-| AS210246 | FUZ-AS - ADAM ROJEK, PL | PL | `evidence_decreased` | 1224 | 1015 | -209 |
-| AS58065 | PacketExchange - Orion Network Limited, GB | SC | `evidence_decreased` | 717 | 525 | -192 |
-| AS9465 | AGOTOZPTELTD-AS-AP - AGOTOZ PTE. LTD., SG | SC | `evidence_increased` | 69 | 256 | +187 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 57382 | 76278 | +18896 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 109724 | 112440 | +2716 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 122001 | 123843 | +1842 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 487685 | 489340 | +1655 |
+| AS6461 | ZAYO-6461 - Zayo Bandwidth, US | GB | `evidence_increased` | 2061 | 3523 | +1462 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 77652 | 76397 | -1255 |
+| AS210246 | FUZ-AS - ADAM ROJEK, PL | PL | `risk_level_changed` | 1015 | 235 | -780 |
+| AS63844 | ONCL-BD - One Net Communication Ltd, BD | BD | `evidence_decreased` | 1591 | 871 | -720 |
+| AS271899 | AS271899 - GIGAPOP, C.A., VE | US | `evidence_increased` | 417 | 1097 | +680 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 170997 | 170360 | -637 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 3951 | 4576 | +625 |
+| AS5065 | BUNNY-COMMUNICATIONS-GLOBAL - Bunny Communications, US | US | `evidence_increased` | 1361 | 1915 | +554 |
+| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_increased` | 2186 | 2698 | +512 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 3117 | 2617 | -500 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 42821 | 43203 | +382 |
+| AS47692 | NESSUS - Nessus GmbH, AT | AT | `risk_level_changed` | 388 | 34 | -354 |
+| AS852 | ASN852 - TELUS Communications Inc., CA | US | `evidence_increased` | 1029 | 1313 | +284 |
+| AS35773 | ICONNECT-AS - ICONNECT-AS, BG | BG | `risk_level_changed` | 285 | 4 | -281 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 416 | 135 | -281 |
+| AS219521 | VERSADC - VERSADC VERI MERKEZI HIZMETLERI LIMITED SIRKETI, TR | UA | `risk_level_changed` | 346 | 90 | -256 |
+| AS203804 | VDSGLOBAL - VDS GLOBAL YAZILIM ARGE GELISTIRME LIMITED SIRKETI, TR | UA | `evidence_decreased` | 324 | 70 | -254 |
+| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_increased` | 257 | 491 | +234 |
+| AS151391 | VARENDRAIT-AS-AP - Varendra IT, BD | BD | `evidence_decreased` | 256 | 28 | -228 |
+| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_decreased` | 522 | 297 | -225 |
+| AS48721 | FLYSERVERS-ENDCLIENTS - Flyservers S.A., PA | PA | `evidence_decreased` | 257 | 42 | -215 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
