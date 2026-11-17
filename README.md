@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-16T13:10:05Z`_
+_Last dataset build: `2026-11-17T13:52:38Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-16T13:10:05Z`_
+_Last updated: `2026-11-17T13:52:38Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 57382 | 76278 | +18896 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 109724 | 112440 | +2716 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 122001 | 123843 | +1842 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 487685 | 489340 | +1655 |
-| AS6461 | ZAYO-6461 - Zayo Bandwidth, US | GB | `evidence_increased` | 2061 | 3523 | +1462 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 77652 | 76397 | -1255 |
-| AS210246 | FUZ-AS - ADAM ROJEK, PL | PL | `risk_level_changed` | 1015 | 235 | -780 |
-| AS63844 | ONCL-BD - One Net Communication Ltd, BD | BD | `evidence_decreased` | 1591 | 871 | -720 |
-| AS271899 | AS271899 - GIGAPOP, C.A., VE | US | `evidence_increased` | 417 | 1097 | +680 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 170997 | 170360 | -637 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 3951 | 4576 | +625 |
-| AS5065 | BUNNY-COMMUNICATIONS-GLOBAL - Bunny Communications, US | US | `evidence_increased` | 1361 | 1915 | +554 |
-| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_increased` | 2186 | 2698 | +512 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 3117 | 2617 | -500 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_increased` | 42821 | 43203 | +382 |
-| AS47692 | NESSUS - Nessus GmbH, AT | AT | `risk_level_changed` | 388 | 34 | -354 |
-| AS852 | ASN852 - TELUS Communications Inc., CA | US | `evidence_increased` | 1029 | 1313 | +284 |
-| AS35773 | ICONNECT-AS - ICONNECT-AS, BG | BG | `risk_level_changed` | 285 | 4 | -281 |
-| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 416 | 135 | -281 |
-| AS219521 | VERSADC - VERSADC VERI MERKEZI HIZMETLERI LIMITED SIRKETI, TR | UA | `risk_level_changed` | 346 | 90 | -256 |
-| AS203804 | VDSGLOBAL - VDS GLOBAL YAZILIM ARGE GELISTIRME LIMITED SIRKETI, TR | UA | `evidence_decreased` | 324 | 70 | -254 |
-| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_increased` | 257 | 491 | +234 |
-| AS151391 | VARENDRAIT-AS-AP - Varendra IT, BD | BD | `evidence_decreased` | 256 | 28 | -228 |
-| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_decreased` | 522 | 297 | -225 |
-| AS48721 | FLYSERVERS-ENDCLIENTS - Flyservers S.A., PA | PA | `evidence_decreased` | 257 | 42 | -215 |
+| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_decreased` | 22634 | 5857 | -16777 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_decreased` | 489340 | 486477 | -2863 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 76397 | 77888 | +1491 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_decreased` | 38460 | 37442 | -1018 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 4576 | 5388 | +812 |
+| AS63844 | ONCL-BD - One Net Communication Ltd, BD | BD | `evidence_decreased` | 871 | 120 | -751 |
+| AS203545 | NERZEN-BILISIM-TEKNOLOJILERI - Savas Anac, TR | EE | `evidence_increased` | 29 | 724 | +695 |
+| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_decreased` | 17309 | 16666 | -643 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 76278 | 76872 | +594 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 123843 | 124428 | +585 |
+| AS14001 | MICROADVANTAGE-INC - Vision Net Ltd, US | US | `risk_level_changed` | 4 | 506 | +502 |
+| AS19211 | HOSTINGYARD - HostingYard LLC, US | US | `evidence_decreased` | 520 | 18 | -502 |
+| AS834 | IPXO - IPXO LLC, US | UA | `evidence_decreased` | 567 | 123 | -444 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 47370 | 47010 | -360 |
+| AS3209 | VODANET - Vodafone GmbH, DE | DE | `evidence_increased` | 1668 | 2008 | +340 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 2617 | 2942 | +325 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 14822 | 15118 | +296 |
+| AS17561 | LCS-AS-AP - LARUS Limited, HK | SC | `evidence_decreased` | 12440 | 12154 | -286 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 8002 | 8239 | +237 |
+| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_decreased` | 491 | 259 | -232 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 28207 | 28434 | +227 |
+| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_increased` | 297 | 522 | +225 |
+| AS54004 | LIGHTPATH - Cablevision Lightpath LLC, US | US | `evidence_increased` | 496 | 696 | +200 |
+| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_decreased` | 5519 | 5329 | -190 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 5205 | 5370 | +165 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
