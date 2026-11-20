@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-19T13:55:58Z`_
+_Last dataset build: `2026-11-20T13:38:08Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-19T13:55:58Z`_
+_Last updated: `2026-11-20T13:38:08Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_decreased` | 38754 | 32401 | -6353 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 5056 | 7152 | +2096 |
-| AS42610 | NCNET-AS - PJSC Rostelecom, RU | RU | `evidence_decreased` | 2073 | 241 | -1832 |
-| AS43530 | IRTELCOM-AS - Limited Liability Company Irtelcom, RU | RU | `evidence_decreased` | 3770 | 1939 | -1831 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_increased` | 5360 | 7151 | +1791 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 7210 | 5444 | -1766 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 489926 | 491401 | +1475 |
-| AS12849 | HOTNET-IL - Hot-Net internet services Ltd., IL | IL | `evidence_decreased` | 1309 | 170 | -1139 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_increased` | 170418 | 171539 | +1121 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 125873 | 126967 | +1094 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 28425 | 29103 | +678 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 6557 | 7170 | +613 |
-| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_decreased` | 5654 | 5155 | -499 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 2977 | 3468 | +491 |
-| AS59651 | AS-QualityNetwork - Alex Largman, IL | HK | `evidence_decreased` | 4194 | 3710 | -484 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 8501 | 8960 | +459 |
-| AS58224 | TCI - Iran Telecommunication Company PJS, IR | IR | `evidence_decreased` | 2569 | 2110 | -459 |
-| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_increased` | 2672 | 3116 | +444 |
-| AS60404 | Liteserver - The Infrastructure Group B.V., NL | US | `evidence_decreased` | 1222 | 782 | -440 |
-| AS50463 | TRIPLEC-ASN - Triple C Cloud Computing Ltd., IL | IL | `evidence_decreased` | 917 | 514 | -403 |
-| AS37963 | ALIBABA-CN-NET - Hangzhou Alibaba Advertising Co.,Ltd., CN | CN | `evidence_decreased` | 56539 | 56167 | -372 |
-| AS6789 | CRELCOM-NET - CRELCOM LLC, RU | RU | `evidence_increased` | 4292 | 4652 | +360 |
-| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_increased` | 2358 | 2689 | +331 |
-| AS54004 | LIGHTPATH - Cablevision Lightpath LLC, US | US | `evidence_increased` | 696 | 1015 | +319 |
-| AS399628 | IMR-AS-01 - Internet Measurement Research, US | US | `evidence_decreased` | 935 | 643 | -292 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 32401 | 39466 | +7065 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 78027 | 75866 | -2161 |
+| AS42610 | NCNET-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 241 | 2082 | +1841 |
+| AS43530 | IRTELCOM-AS - Limited Liability Company Irtelcom, RU | RU | `evidence_increased` | 1939 | 3773 | +1834 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 48698 | 47167 | -1531 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 126967 | 128249 | +1282 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 7152 | 8423 | +1271 |
+| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 5444 | 4219 | -1225 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 15414 | 16630 | +1216 |
+| AS12849 | HOTNET-IL - Hot-Net internet services Ltd., IL | IL | `evidence_increased` | 170 | 1317 | +1147 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 491401 | 492498 | +1097 |
+| AS50780 | ISP-EASTNET-AS - EAST-NET Ltd, UA | UA | `risk_level_changed` | 4 | 1058 | +1054 |
+| AS59478 | IPSERVICE-AS - LLC IP SERVICE, UA | UA | `risk_level_changed` | 1126 | 72 | -1054 |
+| AS36898 | Black Currant Consultant cc - Black Currant Consultant cc, ZA | SC | `evidence_increased` | 168 | 1024 | +856 |
+| AS328608 | Africa on Cloud - Africa on Cloud, ZA | SC | `evidence_decreased` | 1836 | 980 | -856 |
+| AS18978 | ENZUINC-US - Enzu Inc, US | SC | `evidence_increased` | 694 | 1367 | +673 |
+| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 9035 | 8403 | -632 |
+| AS5650 | FRONTIER-FRTR - Frontier Communications of America, Inc., US | US | `evidence_increased` | 1847 | 2362 | +515 |
+| AS58224 | TCI - Iran Telecommunication Company PJS, IR | IR | `evidence_increased` | 2110 | 2603 | +493 |
+| AS48956 | HYPERNET-AS - HyperNET sp. z o.o., PL | PL | `evidence_decreased` | 555 | 75 | -480 |
+| AS59651 | AS-QualityNetwork - Alex Largman, IL | HK | `evidence_increased` | 3710 | 4190 | +480 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 7170 | 7620 | +450 |
+| AS60404 | Liteserver - The Infrastructure Group B.V., NL | NL | `evidence_increased` | 782 | 1228 | +446 |
+| AS401152 | ADCIL-ASN-01 - Ace Data Centers II, L.L.C., US | US | `evidence_decreased` | 824 | 388 | -436 |
+| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_decreased` | 701 | 274 | -427 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
