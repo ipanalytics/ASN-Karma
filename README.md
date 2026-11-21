@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-20T13:38:08Z`_
+_Last dataset build: `2026-11-21T13:02:55Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-20T13:38:08Z`_
+_Last updated: `2026-11-21T13:02:55Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 32401 | 39466 | +7065 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 78027 | 75866 | -2161 |
-| AS42610 | NCNET-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 241 | 2082 | +1841 |
-| AS43530 | IRTELCOM-AS - Limited Liability Company Irtelcom, RU | RU | `evidence_increased` | 1939 | 3773 | +1834 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_decreased` | 48698 | 47167 | -1531 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 126967 | 128249 | +1282 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 7152 | 8423 | +1271 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 5444 | 4219 | -1225 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 15414 | 16630 | +1216 |
-| AS12849 | HOTNET-IL - Hot-Net internet services Ltd., IL | IL | `evidence_increased` | 170 | 1317 | +1147 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 491401 | 492498 | +1097 |
-| AS50780 | ISP-EASTNET-AS - EAST-NET Ltd, UA | UA | `risk_level_changed` | 4 | 1058 | +1054 |
-| AS59478 | IPSERVICE-AS - LLC IP SERVICE, UA | UA | `risk_level_changed` | 1126 | 72 | -1054 |
-| AS36898 | Black Currant Consultant cc - Black Currant Consultant cc, ZA | SC | `evidence_increased` | 168 | 1024 | +856 |
-| AS328608 | Africa on Cloud - Africa on Cloud, ZA | SC | `evidence_decreased` | 1836 | 980 | -856 |
-| AS18978 | ENZUINC-US - Enzu Inc, US | SC | `evidence_increased` | 694 | 1367 | +673 |
-| AS17497 | LGHL-AS-AP - Liasail Global Hongkong Limited, HK | SC | `evidence_decreased` | 9035 | 8403 | -632 |
-| AS5650 | FRONTIER-FRTR - Frontier Communications of America, Inc., US | US | `evidence_increased` | 1847 | 2362 | +515 |
-| AS58224 | TCI - Iran Telecommunication Company PJS, IR | IR | `evidence_increased` | 2110 | 2603 | +493 |
-| AS48956 | HYPERNET-AS - HyperNET sp. z o.o., PL | PL | `evidence_decreased` | 555 | 75 | -480 |
-| AS59651 | AS-QualityNetwork - Alex Largman, IL | HK | `evidence_increased` | 3710 | 4190 | +480 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_increased` | 7170 | 7620 | +450 |
-| AS60404 | Liteserver - The Infrastructure Group B.V., NL | NL | `evidence_increased` | 782 | 1228 | +446 |
-| AS401152 | ADCIL-ASN-01 - Ace Data Centers II, L.L.C., US | US | `evidence_decreased` | 824 | 388 | -436 |
-| AS199585 | TELNET - TELNET Ropczyce Sp. z o.o., PL | PL | `evidence_decreased` | 701 | 274 | -427 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 19382 | 24727 | +5345 |
+| AS41745 | FORTIS-AS - Ilia Baikov, RU | RU | `evidence_decreased` | 6529 | 5076 | -1453 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 75866 | 77250 | +1384 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 128249 | 127045 | -1204 |
+| AS20473 | AS-VULTR - The Constant Company, LLC, US | US | `evidence_increased` | 21906 | 23078 | +1172 |
+| AS213954 | GTS-AS - Global Transit Systems LLC, US | SC | `evidence_decreased` | 5048 | 4136 | -912 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 7484 | 6630 | -854 |
+| AS207569 | I-SERVERS-NORTH-EU - IHOR HOSTING LTD, GB | VG | `risk_level_changed` | 820 | 32 | -788 |
+| AS35830 | BTTGROUP-AS - Fast Servers (Pty) Ltd, ZA | RU | `evidence_decreased` | 3299 | 2672 | -627 |
+| AS59651 | AS-QualityNetwork - Alex Largman, IL | HK | `evidence_decreased` | 4190 | 3624 | -566 |
+| AS46261 | QUICKPACKET - QuickPacket, LLC, US | US | `evidence_increased` | 1992 | 2484 | +492 |
+| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 171284 | 170834 | -450 |
+| AS401650 | VL - 888 Ventures LLC, US | SC | `evidence_increased` | 22 | 434 | +412 |
+| AS50053 | VDSKA-AS - Anton Levin, KG | ES | `evidence_decreased` | 1030 | 633 | -397 |
+| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_decreased` | 2690 | 2356 | -334 |
+| AS62904 | AS62904 - Eonix Corporation, US | US | `evidence_decreased` | 3385 | 3107 | -278 |
+| AS51765 | CREANOVA-AS - Oy Crea Nova Hosting Solution Ltd, FI | GB | `evidence_decreased` | 1105 | 847 | -258 |
+| AS269730 | AS269730 - TECNOVEN SERVICES CA, VE | US | `evidence_decreased` | 379 | 123 | -256 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 77245 | 77015 | -230 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 39466 | 39695 | +229 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 9071 | 9296 | +225 |
+| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_decreased` | 527 | 303 | -224 |
+| AS403092 | HOSTRAM - HOSTRAM, US | GB | `risk_level_changed` | 48 | 256 | +208 |
+| AS152460 | GREENHOST-AS-AP - Greenhost BV, NL | BG | `evidence_decreased` | 355 | 155 | -200 |
+| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 8474 | 8658 | +184 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
