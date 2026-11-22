@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-21T13:02:55Z`_
+_Last dataset build: `2026-11-22T12:52:56Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-21T13:02:55Z`_
+_Last updated: `2026-11-22T12:52:56Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 19382 | 24727 | +5345 |
-| AS41745 | FORTIS-AS - Ilia Baikov, RU | RU | `evidence_decreased` | 6529 | 5076 | -1453 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 75866 | 77250 | +1384 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 128249 | 127045 | -1204 |
-| AS20473 | AS-VULTR - The Constant Company, LLC, US | US | `evidence_increased` | 21906 | 23078 | +1172 |
-| AS213954 | GTS-AS - Global Transit Systems LLC, US | SC | `evidence_decreased` | 5048 | 4136 | -912 |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 7484 | 6630 | -854 |
-| AS207569 | I-SERVERS-NORTH-EU - IHOR HOSTING LTD, GB | VG | `risk_level_changed` | 820 | 32 | -788 |
-| AS35830 | BTTGROUP-AS - Fast Servers (Pty) Ltd, ZA | RU | `evidence_decreased` | 3299 | 2672 | -627 |
-| AS59651 | AS-QualityNetwork - Alex Largman, IL | HK | `evidence_decreased` | 4190 | 3624 | -566 |
-| AS46261 | QUICKPACKET - QuickPacket, LLC, US | US | `evidence_increased` | 1992 | 2484 | +492 |
-| AS174 | COGENT-174 - Cogent Communications, LLC, US | US | `evidence_decreased` | 171284 | 170834 | -450 |
-| AS401650 | VL - 888 Ventures LLC, US | SC | `evidence_increased` | 22 | 434 | +412 |
-| AS50053 | VDSKA-AS - Anton Levin, KG | ES | `evidence_decreased` | 1030 | 633 | -397 |
-| AS4637 | ASN-TELSTRA-GLOBAL - Telstra Global, HK | US | `evidence_decreased` | 2690 | 2356 | -334 |
-| AS62904 | AS62904 - Eonix Corporation, US | US | `evidence_decreased` | 3385 | 3107 | -278 |
-| AS51765 | CREANOVA-AS - Oy Crea Nova Hosting Solution Ltd, FI | GB | `evidence_decreased` | 1105 | 847 | -258 |
-| AS269730 | AS269730 - TECNOVEN SERVICES CA, VE | US | `evidence_decreased` | 379 | 123 | -256 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 77245 | 77015 | -230 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 39466 | 39695 | +229 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_increased` | 9071 | 9296 | +225 |
-| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_decreased` | 527 | 303 | -224 |
-| AS403092 | HOSTRAM - HOSTRAM, US | GB | `risk_level_changed` | 48 | 256 | +208 |
-| AS152460 | GREENHOST-AS-AP - Greenhost BV, NL | BG | `evidence_decreased` | 355 | 155 | -200 |
-| AS7922 | COMCAST-7922 - Comcast Cable Communications, LLC, US | US | `evidence_increased` | 8474 | 8658 | +184 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 24727 | 28834 | +4107 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 9296 | 7770 | -1526 |
+| AS41745 | FORTIS-AS - Ilia Baikov, RU | RU | `evidence_increased` | 5076 | 6544 | +1468 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 77250 | 75814 | -1436 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 127045 | 125847 | -1198 |
+| AS50780 | ISP-EASTNET-AS - EAST-NET Ltd, UA | UA | `risk_level_changed` | 1059 | 4 | -1055 |
+| AS59478 | IPSERVICE-AS - LLC IP SERVICE, UA | UA | `evidence_increased` | 72 | 1071 | +999 |
+| AS213954 | GTS-AS - Global Transit Systems LLC, US | US | `evidence_increased` | 4136 | 5021 | +885 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 492640 | 493462 | +822 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 77015 | 76196 | -819 |
+| AS207569 | I-SERVERS-NORTH-EU - IHOR HOSTING LTD, GB | VG | `risk_level_changed` | 32 | 819 | +787 |
+| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 6582 | 5802 | -780 |
+| AS203545 | NERZEN-BILISIM-TEKNOLOJILERI - Savas Anac, TR | EE | `evidence_decreased` | 724 | 27 | -697 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 3409 | 2942 | -467 |
+| AS35830 | BTTGROUP-AS - Fast Servers (Pty) Ltd, ZA | RU | `evidence_increased` | 2672 | 3085 | +413 |
+| AS50053 | VDSKA-AS - Anton Levin, KG | ES | `evidence_increased` | 633 | 1033 | +400 |
+| AS62904 | AS62904 - Eonix Corporation, US | US | `evidence_increased` | 3107 | 3494 | +387 |
+| AS271042 | AS271042 - BOT INTERNET E SERVICOS DE TELECOMUNICACOES LTDA, BR | BR | `risk_level_changed` | 1 | 385 | +384 |
+| AS46261 | QUICKPACKET - QuickPacket, LLC, US | US | `evidence_increased` | 2484 | 2822 | +338 |
+| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_increased` | 2758 | 3074 | +316 |
+| AS262287 | AS262287 - Latitude.sh LTDA, BR | US | `evidence_decreased` | 3052 | 2760 | -292 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 427 | 144 | -283 |
+| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 21202 | 21475 | +273 |
+| AS269730 | AS269730 - TECNOVEN SERVICES CA, VE | US | `evidence_increased` | 123 | 379 | +256 |
+| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 7717 | 7463 | -254 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
