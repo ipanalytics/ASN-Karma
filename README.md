@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-22T12:52:56Z`_
+_Last dataset build: `2026-11-23T15:24:22Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-22T12:52:56Z`_
+_Last updated: `2026-11-23T15:24:22Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 24727 | 28834 | +4107 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 9296 | 7770 | -1526 |
-| AS41745 | FORTIS-AS - Ilia Baikov, RU | RU | `evidence_increased` | 5076 | 6544 | +1468 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 77250 | 75814 | -1436 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 127045 | 125847 | -1198 |
-| AS50780 | ISP-EASTNET-AS - EAST-NET Ltd, UA | UA | `risk_level_changed` | 1059 | 4 | -1055 |
-| AS59478 | IPSERVICE-AS - LLC IP SERVICE, UA | UA | `evidence_increased` | 72 | 1071 | +999 |
-| AS213954 | GTS-AS - Global Transit Systems LLC, US | US | `evidence_increased` | 4136 | 5021 | +885 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 492640 | 493462 | +822 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_decreased` | 77015 | 76196 | -819 |
-| AS207569 | I-SERVERS-NORTH-EU - IHOR HOSTING LTD, GB | VG | `risk_level_changed` | 32 | 819 | +787 |
-| AS45899 | VNPT-AS-VN - VNPT Corp, VN | VN | `evidence_decreased` | 6582 | 5802 | -780 |
-| AS203545 | NERZEN-BILISIM-TEKNOLOJILERI - Savas Anac, TR | EE | `evidence_decreased` | 724 | 27 | -697 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 3409 | 2942 | -467 |
-| AS35830 | BTTGROUP-AS - Fast Servers (Pty) Ltd, ZA | RU | `evidence_increased` | 2672 | 3085 | +413 |
-| AS50053 | VDSKA-AS - Anton Levin, KG | ES | `evidence_increased` | 633 | 1033 | +400 |
-| AS62904 | AS62904 - Eonix Corporation, US | US | `evidence_increased` | 3107 | 3494 | +387 |
-| AS271042 | AS271042 - BOT INTERNET E SERVICOS DE TELECOMUNICACOES LTDA, BR | BR | `risk_level_changed` | 1 | 385 | +384 |
-| AS46261 | QUICKPACKET - QuickPacket, LLC, US | US | `evidence_increased` | 2484 | 2822 | +338 |
-| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_increased` | 2758 | 3074 | +316 |
-| AS262287 | AS262287 - Latitude.sh LTDA, BR | US | `evidence_decreased` | 3052 | 2760 | -292 |
-| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 427 | 144 | -283 |
-| AS12389 | ROSTELECOM-AS - PJSC Rostelecom, RU | RU | `evidence_increased` | 21202 | 21475 | +273 |
-| AS269730 | AS269730 - TECNOVEN SERVICES CA, VE | US | `evidence_increased` | 123 | 379 | +256 |
-| AS200373 | Drei-K-Tech-GmbH - 3xK Tech GmbH, DE | DE | `evidence_decreased` | 7717 | 7463 | -254 |
+| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_decreased` | 64012 | 671 | -63341 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 28834 | 31864 | +3030 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 493462 | 495018 | +1556 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 75814 | 77219 | +1405 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 8363 | 9548 | +1185 |
+| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 4219 | 3046 | -1173 |
+| AS268323 | - | BR | `evidence_increased` | 70 | 1021 | +951 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 41984 | 41288 | -696 |
+| AS28220 | AS28220 - Alares Cabo Servicos de Telecomunicacoes S.A., BR | BR | `evidence_increased` | 216 | 825 | +609 |
+| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 7770 | 7279 | -491 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 47282 | 47747 | +465 |
+| AS401650 | VL - 888 Ventures LLC, US | SC | `evidence_decreased` | 434 | 49 | -385 |
+| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_decreased` | 3074 | 2783 | -291 |
+| AS46261 | QUICKPACKET - QuickPacket, LLC, US | US | `evidence_increased` | 2822 | 3097 | +275 |
+| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 5387 | 5650 | +263 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 125847 | 125587 | -260 |
+| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_increased` | 288 | 527 | +239 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 112806 | 113037 | +231 |
+| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_decreased` | 4142 | 3920 | -222 |
+| AS213945 | AS213945 - DATA HOME YAZILIM BILGI TEKNOLOJILERI TICARET LIMITED SIRKETI, TR | TR | `risk_level_changed` | 700 | 481 | -219 |
+| AS213541 | ws-telecom-sdn - WS Telecom Inc, US | RU | `evidence_increased` | 955 | 1172 | +217 |
+| AS49870 | AS49870-BV - Alsycon B.V., NL | SC | `evidence_increased` | 277 | 483 | +206 |
+| AS8193 | BRM-AS - _Uzbektelekom_ Joint Stock Company, UZ | UZ | `evidence_increased` | 2303 | 2491 | +188 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 39878 | 40065 | +187 |
+| AS152194 | CTGSERVERLIMITED-AS-AP - CTG Server Limited, HK | SG | `evidence_increased` | 728 | 896 | +168 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
