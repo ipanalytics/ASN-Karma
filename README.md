@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-23T15:24:22Z`_
+_Last dataset build: `2026-11-24T15:18:41Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-23T15:24:22Z`_
+_Last updated: `2026-11-24T15:18:41Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS20011 | Dimension Data - Dimension Data, ZA | ZA | `evidence_decreased` | 64012 | 671 | -63341 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 28834 | 31864 | +3030 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 493462 | 495018 | +1556 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 75814 | 77219 | +1405 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 8363 | 9548 | +1185 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 4219 | 3046 | -1173 |
-| AS268323 | - | BR | `evidence_increased` | 70 | 1021 | +951 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 41984 | 41288 | -696 |
-| AS28220 | AS28220 - Alares Cabo Servicos de Telecomunicacoes S.A., BR | BR | `evidence_increased` | 216 | 825 | +609 |
-| AS24560 | AIRTELBROADBAND-AS-AP - Bharti Airtel Ltd., Telemedia Services, IN | IN | `evidence_decreased` | 7770 | 7279 | -491 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 47282 | 47747 | +465 |
-| AS401650 | VL - 888 Ventures LLC, US | SC | `evidence_decreased` | 434 | 49 | -385 |
-| AS43515 | YOUTUBE - Google Ireland Limited, IE | US | `evidence_decreased` | 3074 | 2783 | -291 |
-| AS46261 | QUICKPACKET - QuickPacket, LLC, US | US | `evidence_increased` | 2822 | 3097 | +275 |
-| AS25369 | BANDWIDTH-AS - Hydra Communications Ltd, GB | GB | `evidence_increased` | 5387 | 5650 | +263 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 125847 | 125587 | -260 |
-| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_increased` | 288 | 527 | +239 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 112806 | 113037 | +231 |
-| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_decreased` | 4142 | 3920 | -222 |
-| AS213945 | AS213945 - DATA HOME YAZILIM BILGI TEKNOLOJILERI TICARET LIMITED SIRKETI, TR | TR | `risk_level_changed` | 700 | 481 | -219 |
-| AS213541 | ws-telecom-sdn - WS Telecom Inc, US | RU | `evidence_increased` | 955 | 1172 | +217 |
-| AS49870 | AS49870-BV - Alsycon B.V., NL | SC | `evidence_increased` | 277 | 483 | +206 |
-| AS8193 | BRM-AS - _Uzbektelekom_ Joint Stock Company, UZ | UZ | `evidence_increased` | 2303 | 2491 | +188 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 39878 | 40065 | +187 |
-| AS152194 | CTGSERVERLIMITED-AS-AP - CTG Server Limited, HK | SG | `evidence_increased` | 728 | 896 | +168 |
+| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6676 | 4007 | -2669 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 16665 | 19243 | +2578 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 31864 | 34142 | +2278 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 77219 | 76024 | -1195 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 9548 | 10567 | +1019 |
+| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 3046 | 2032 | -1014 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 113037 | 113746 | +709 |
+| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 76212 | 76774 | +562 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 495018 | 495544 | +526 |
+| AS54600 | PEG-SV - PEG TECH INC, US | US | `evidence_increased` | 312 | 764 | +452 |
+| AS3209 | VODANET - Vodafone GmbH, DE | DE | `evidence_decreased` | 2008 | 1712 | -296 |
+| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_increased` | 23117 | 23411 | +294 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | US | `evidence_increased` | 144 | 432 | +288 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 125587 | 125872 | +285 |
+| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_increased` | 17293 | 17567 | +274 |
+| AS57043 | HOSTKEY-AS - HOSTKEY B.V., NL | AE | `evidence_decreased` | 5010 | 4746 | -264 |
+| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 40065 | 40316 | +251 |
+| AS219502 | STORMCLOUD-AS - Storm Industries LLC, US | SC | `risk_level_changed` | 8 | 256 | +248 |
+| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_increased` | 262 | 494 | +232 |
+| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_decreased` | 527 | 304 | -223 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 2946 | 3166 | +220 |
+| AS47154 | HUSAM-Network - HUSAM A. H. HIJAZI, PS | HK | `evidence_decreased` | 256 | 46 | -210 |
+| AS49870 | AS49870-BV - Alsycon B.V., NL | SC | `evidence_decreased` | 483 | 282 | -201 |
+| AS6939 | HURRICANE - Hurricane Electric LLC, US | US | `evidence_increased` | 2524 | 2709 | +185 |
+| AS20473 | AS-VULTR - The Constant Company, LLC, US | US | `evidence_decreased` | 23080 | 22895 | -185 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
