@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-24T15:18:41Z`_
+_Last dataset build: `2026-11-25T14:59:23Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-24T15:18:41Z`_
+_Last updated: `2026-11-25T14:59:23Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS7029 | WINDSTREAM - Windstream Communications LLC, US | US | `evidence_decreased` | 6676 | 4007 | -2669 |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 16665 | 19243 | +2578 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 31864 | 34142 | +2278 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 77219 | 76024 | -1195 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 9548 | 10567 | +1019 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 3046 | 2032 | -1014 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 113037 | 113746 | +709 |
-| AS396982 | GOOGLE-CLOUD-PLATFORM - Google LLC, US | US | `evidence_increased` | 76212 | 76774 | +562 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 495018 | 495544 | +526 |
-| AS54600 | PEG-SV - PEG TECH INC, US | US | `evidence_increased` | 312 | 764 | +452 |
-| AS3209 | VODANET - Vodafone GmbH, DE | DE | `evidence_decreased` | 2008 | 1712 | -296 |
-| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_increased` | 23117 | 23411 | +294 |
-| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | US | `evidence_increased` | 144 | 432 | +288 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 125587 | 125872 | +285 |
-| AS45090 | TENCENT-NET-AP - Shenzhen Tencent Computer Systems Company Limited, CN | CN | `evidence_increased` | 17293 | 17567 | +274 |
-| AS57043 | HOSTKEY-AS - HOSTKEY B.V., NL | AE | `evidence_decreased` | 5010 | 4746 | -264 |
-| AS45102 | ALIBABA-CN-NET - Alibaba (US) Technology Co., Ltd., CN | US | `evidence_increased` | 40065 | 40316 | +251 |
-| AS219502 | STORMCLOUD-AS - Storm Industries LLC, US | SC | `risk_level_changed` | 8 | 256 | +248 |
-| AS50360 | TAMATIYA-AS - Tamatiya EOOD, BG | BG | `evidence_increased` | 262 | 494 | +232 |
-| AS215925 | VPSVAULTHOST - VPSVAULT.HOST LTD, GB | SC | `evidence_decreased` | 527 | 304 | -223 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 2946 | 3166 | +220 |
-| AS47154 | HUSAM-Network - HUSAM A. H. HIJAZI, PS | HK | `evidence_decreased` | 256 | 46 | -210 |
-| AS49870 | AS49870-BV - Alsycon B.V., NL | SC | `evidence_decreased` | 483 | 282 | -201 |
-| AS6939 | HURRICANE - Hurricane Electric LLC, US | US | `evidence_increased` | 2524 | 2709 | +185 |
-| AS20473 | AS-VULTR - The Constant Company, LLC, US | US | `evidence_decreased` | 23080 | 22895 | -185 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_decreased` | 19243 | 13989 | -5254 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 34142 | 35702 | +1560 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 76024 | 77369 | +1345 |
+| AS268323 | - | BR | `evidence_decreased` | 1043 | 70 | -973 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 113746 | 114490 | +744 |
+| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 2032 | 1336 | -696 |
+| AS6461 | ZAYO-6461 - Zayo Bandwidth, US | GB | `evidence_decreased` | 3558 | 2868 | -690 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 41295 | 40646 | -649 |
+| AS28220 | AS28220 - Alares Cabo Servicos de Telecomunicacoes S.A., BR | BR | `evidence_decreased` | 836 | 211 | -625 |
+| AS150436 | BYTEPLUS-AS-AP - Byteplus Pte. Ltd., SG | SG | `evidence_decreased` | 3905 | 3387 | -518 |
+| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_increased` | 3808 | 4298 | +490 |
+| AS399628 | IMR-AS-01 - Internet Measurement Research, US | US | `evidence_increased` | 422 | 902 | +480 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 125872 | 125405 | -467 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 47930 | 48389 | +459 |
+| AS13335 | CLOUDFLARENET - Cloudflare, Inc., US | US | `evidence_decreased` | 5816 | 5364 | -452 |
+| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_increased` | 1355 | 1801 | +446 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 495544 | 495955 | +411 |
+| AS32934 | FACEBOOK - Facebook, Inc., US | IE | `evidence_increased` | 542 | 944 | +402 |
+| AS59686 | GEMINI-PL - Gemini Internet Sp. z o.o., PL | PL | `evidence_decreased` | 559 | 184 | -375 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 10567 | 10935 | +368 |
+| AS47692 | NESSUS - Nessus GmbH, AT | UA | `risk_level_changed` | 35 | 397 | +362 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 19027 | 19383 | +356 |
+| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 6212 | 6538 | +326 |
+| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_decreased` | 8473 | 8155 | -318 |
+| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_decreased` | 3961 | 3650 | -311 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
