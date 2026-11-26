@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-25T14:59:23Z`_
+_Last dataset build: `2026-11-26T14:29:43Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-25T14:59:23Z`_
+_Last updated: `2026-11-26T14:29:43Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_decreased` | 19243 | 13989 | -5254 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 34142 | 35702 | +1560 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 76024 | 77369 | +1345 |
-| AS268323 | - | BR | `evidence_decreased` | 1043 | 70 | -973 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 113746 | 114490 | +744 |
-| AS7459 | GRANDECOM-AS1 - Grande Communications Networks, LLC, US | US | `evidence_decreased` | 2032 | 1336 | -696 |
-| AS6461 | ZAYO-6461 - Zayo Bandwidth, US | GB | `evidence_decreased` | 3558 | 2868 | -690 |
-| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 41295 | 40646 | -649 |
-| AS28220 | AS28220 - Alares Cabo Servicos de Telecomunicacoes S.A., BR | BR | `evidence_decreased` | 836 | 211 | -625 |
-| AS150436 | BYTEPLUS-AS-AP - Byteplus Pte. Ltd., SG | SG | `evidence_decreased` | 3905 | 3387 | -518 |
-| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_increased` | 3808 | 4298 | +490 |
-| AS399628 | IMR-AS-01 - Internet Measurement Research, US | US | `evidence_increased` | 422 | 902 | +480 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 125872 | 125405 | -467 |
-| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 47930 | 48389 | +459 |
-| AS13335 | CLOUDFLARENET - Cloudflare, Inc., US | US | `evidence_decreased` | 5816 | 5364 | -452 |
-| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_increased` | 1355 | 1801 | +446 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 495544 | 495955 | +411 |
-| AS32934 | FACEBOOK - Facebook, Inc., US | IE | `evidence_increased` | 542 | 944 | +402 |
-| AS59686 | GEMINI-PL - Gemini Internet Sp. z o.o., PL | PL | `evidence_decreased` | 559 | 184 | -375 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 10567 | 10935 | +368 |
-| AS47692 | NESSUS - Nessus GmbH, AT | UA | `risk_level_changed` | 35 | 397 | +362 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_increased` | 19027 | 19383 | +356 |
-| AS9808 | CHINAMOBILE-CN - China Mobile Communications Group Co., Ltd., CN | CN | `evidence_increased` | 6212 | 6538 | +326 |
-| AS4766 | KIXS-AS-KR-KR - Korea Telecom, KR | KR | `evidence_decreased` | 8473 | 8155 | -318 |
-| AS14593 | SPACEX-STARLINK - Space Exploration Technologies Corporation, US | US | `evidence_decreased` | 3961 | 3650 | -311 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 13989 | 20758 | +6769 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 125405 | 127922 | +2517 |
+| AS54004 | LIGHTPATH - Cablevision Lightpath LLC, US | US | `evidence_increased` | 1285 | 3464 | +2179 |
+| AS52195 | AP-MEDIA-AS - AP-MEDIA Spolka z ograniczona odpowiedzalnoscia, PL | PL | `risk_level_changed` | 3051 | 940 | -2111 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 28811 | 30610 | +1799 |
+| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_increased` | 1801 | 2879 | +1078 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 77369 | 76375 | -994 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 35702 | 36686 | +984 |
+| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 10935 | 11815 | +880 |
+| AS30860 | YURTEH-AS - Virtual Systems LLC, UA | UA | `evidence_increased` | 389 | 1185 | +796 |
+| AS62240 | Clouvider - Clouvider Limited, GB | GB | `evidence_decreased` | 10012 | 9385 | -627 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 495955 | 496548 | +593 |
+| AS48031 | XServerCloud - Ivanov Vitaliy Sergeevich, UA | SC | `evidence_decreased` | 1612 | 1020 | -592 |
+| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_decreased` | 4298 | 3803 | -495 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 3178 | 2727 | -451 |
+| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 114490 | 114923 | +433 |
+| AS4229 | ZEN-NET - Zenlayer Inc, US | GB | `evidence_increased` | 279 | 634 | +355 |
+| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 431 | 143 | -288 |
+| AS63023 | AS-GLOBALTELEHOST - GTHost, US | US | `evidence_decreased` | 3352 | 3071 | -281 |
+| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 19383 | 19104 | -279 |
+| AS32934 | FACEBOOK - Facebook, Inc., US | IE | `evidence_increased` | 944 | 1217 | +273 |
+| AS13335 | CLOUDFLARENET - Cloudflare, Inc., US | US | `evidence_increased` | 5364 | 5631 | +267 |
+| AS43350 | NFORCE - NForce Entertainment B.V., NL | NL | `evidence_increased` | 254 | 519 | +265 |
+| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_increased` | 23617 | 23876 | +259 |
+| AS206668 | VPSROBOT - Bayram Coskun, TR | UA | `risk_level_changed` | 256 | 1 | -255 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
