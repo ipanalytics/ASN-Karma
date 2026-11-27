@@ -23,7 +23,7 @@ ASN Karma is a Go pipeline for building ASN-level risk datasets from observed Bl
 Fresh dataset artifacts are published by the scheduled build. The links below point at the latest GitHub Release assets.
 
 <!-- ASN_KARMA_RELEASE_START -->
-_Last dataset build: `2026-11-26T14:29:43Z`_
+_Last dataset build: `2026-11-27T14:23:48Z`_
 
 [Open latest GitHub release](https://github.com/ipanalytics/ASN-Karma/releases/tag/asn-karma-latest)
 
@@ -209,35 +209,35 @@ go run ./cmd/asn-karma -input data/blackroute.jsonl -out release
 The scheduled build updates this table from `asn-changes.jsonl`. It shows the largest ASN-level deltas compared with the previous persisted history snapshot.
 
 <!-- ASN_KARMA_TABLE_START -->
-_Last updated: `2026-11-26T14:29:43Z`_
+_Last updated: `2026-11-27T14:23:48Z`_
 
 | ASN | Name | Country | Change | Previous | Current | Evidence Delta |
 | --- | --- | --- | --- | ---: | ---: | ---: |
-| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 13989 | 20758 | +6769 |
-| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_increased` | 125405 | 127922 | +2517 |
-| AS54004 | LIGHTPATH - Cablevision Lightpath LLC, US | US | `evidence_increased` | 1285 | 3464 | +2179 |
-| AS52195 | AP-MEDIA-AS - AP-MEDIA Spolka z ograniczona odpowiedzalnoscia, PL | PL | `risk_level_changed` | 3051 | 940 | -2111 |
-| AS6079 | RCN-AS - RCN, US | US | `evidence_increased` | 28811 | 30610 | +1799 |
-| AS35916 | MULTA-ASN1 - MULTACOM CORPORATION, US | SC | `evidence_increased` | 1801 | 2879 | +1078 |
-| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_decreased` | 77369 | 76375 | -994 |
-| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 35702 | 36686 | +984 |
-| AS11404 | AS-WAVE-1 - Wave Broadband, US | US | `evidence_increased` | 10935 | 11815 | +880 |
-| AS30860 | YURTEH-AS - Virtual Systems LLC, UA | UA | `evidence_increased` | 389 | 1185 | +796 |
-| AS62240 | Clouvider - Clouvider Limited, GB | GB | `evidence_decreased` | 10012 | 9385 | -627 |
-| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 495955 | 496548 | +593 |
-| AS48031 | XServerCloud - Ivanov Vitaliy Sergeevich, UA | SC | `evidence_decreased` | 1612 | 1020 | -592 |
-| AS10439 | CARINET - CariNet, Inc., US | US | `evidence_decreased` | 4298 | 3803 | -495 |
-| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_decreased` | 3178 | 2727 | -451 |
-| AS14618 | AMAZON-AES - Amazon.com, Inc., US | US | `evidence_increased` | 114490 | 114923 | +433 |
-| AS4229 | ZEN-NET - Zenlayer Inc, US | GB | `evidence_increased` | 279 | 634 | +355 |
-| AS198967 | BITel-Gesellschaft-fuer-Telekommunikation-AS - BITel Gesellschaft fuer Telekommunikation mbH, DE | DE | `evidence_decreased` | 431 | 143 | -288 |
-| AS63023 | AS-GLOBALTELEHOST - GTHost, US | US | `evidence_decreased` | 3352 | 3071 | -281 |
-| AS3257 | GTT-BACKBONE - GTT Communications Inc., US | US | `evidence_decreased` | 19383 | 19104 | -279 |
-| AS32934 | FACEBOOK - Facebook, Inc., US | IE | `evidence_increased` | 944 | 1217 | +273 |
-| AS13335 | CLOUDFLARENET - Cloudflare, Inc., US | US | `evidence_increased` | 5364 | 5631 | +267 |
-| AS43350 | NFORCE - NForce Entertainment B.V., NL | NL | `evidence_increased` | 254 | 519 | +265 |
-| AS132203 | TENCENT-NET-AP-CN - Tencent Building, Kejizhongyi Avenue, CN | SG | `evidence_increased` | 23617 | 23876 | +259 |
-| AS206668 | VPSROBOT - Bayram Coskun, TR | UA | `risk_level_changed` | 256 | 1 | -255 |
+| AS6849 | UKRTELNET - JSC _Ukrtelecom_, UA | UA | `evidence_decreased` | 8761 | 2242 | -6519 |
+| AS24940 | HETZNER-AS - Hetzner Online GmbH, DE | DE | `evidence_decreased` | 26099 | 24309 | -1790 |
+| AS202468 | AbrArvan-AS - Noyan Abr Arvan Co. ( Private Joint Stock), IR | IR | `evidence_decreased` | 3485 | 1782 | -1703 |
+| AS16509 | AMAZON-02 - Amazon.com, Inc., US | US | `evidence_increased` | 496548 | 497870 | +1322 |
+| AS206092 | SECFIREWALLAS - F.N.S. HOLDINGS LIMITED, CY | NL | `evidence_decreased` | 8570 | 7284 | -1286 |
+| AS6079 | RCN-AS - RCN, US | US | `evidence_decreased` | 30610 | 29343 | -1267 |
+| AS4134 | CHINANET-BACKBONE - No.31,Jin-rong Street, CN | CN | `evidence_increased` | 76375 | 77632 | +1257 |
+| AS62240 | Clouvider - Clouvider Limited, GB | GB | `evidence_decreased` | 9385 | 8619 | -766 |
+| AS10753 | LUMEN-LEGACY-L3-CUSTOMER-SHARED-USE - Level 3 Parent, LLC, US | US | `evidence_increased` | 2241 | 2984 | +743 |
+| AS16276 | OVH - OVH SAS, FR | FR | `evidence_decreased` | 40696 | 40044 | -652 |
+| AS14061 | DIGITALOCEAN-ASN - DigitalOcean, LLC, US | US | `evidence_decreased` | 127922 | 127306 | -616 |
+| AS203020 | HostRoyale - HostRoyale Technologies Pvt Ltd, IN | US | `evidence_increased` | 36686 | 37236 | +550 |
+| AS203214 | HulumTele - Hulum Almustakbal Company for Communication Engineering and Services Ltd, IQ | AE | `evidence_decreased` | 1347 | 805 | -542 |
+| AS56340 | UmnyeSeti-AS - Grand Ltd, RU | RU | `evidence_decreased` | 1814 | 1277 | -537 |
+| AS3320 | DTAG - Deutsche Telekom AG, DE | DE | `evidence_increased` | 2727 | 3249 | +522 |
+| AS8075 | MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US | US | `evidence_decreased` | 53192 | 52671 | -521 |
+| AS22773 | ASN-CXA-ALL-CCI-22773-RDC - Cox Communications Inc., US | US | `evidence_increased` | 20758 | 21260 | +502 |
+| AS212238 | CDNEXT - Datacamp Limited, GB | US | `evidence_decreased` | 27687 | 27194 | -493 |
+| AS209372 | WSTelecom_Customers - WS Telecom Inc, US | RU | `evidence_increased` | 1180 | 1649 | +469 |
+| AS214602 | DATACENTER-CLUSTER-FL-AS - AI DATACENTER LIMITED, GB | VG | `evidence_increased` | 43 | 511 | +468 |
+| AS204339 | FIRSTSERVER-FL-AS - FIRST SERVER, SOCIEDAD LIMITADA, ES | GR | `risk_level_changed` | 505 | 41 | -464 |
+| AS1267 | ASN-WINDTRE - WIND TRE S.P.A., IT | IT | `evidence_decreased` | 1138 | 676 | -462 |
+| AS4837 | CHINA169-Backbone - CHINA UNICOM China169 Backbone, CN | CN | `evidence_increased` | 48411 | 48853 | +442 |
+| AS15557 | LDCOMNET - Societe Francaise Du Radiotelephone - SFR SA, FR | FR | `evidence_decreased` | 1365 | 947 | -418 |
+| AS6697 | BELPAK-AS - Republican Unitary Telecommunication Enterprise Beltelecom, BY | BY | `evidence_decreased` | 1558 | 1229 | -329 |
 
 <!-- ASN_KARMA_TABLE_END -->
 
